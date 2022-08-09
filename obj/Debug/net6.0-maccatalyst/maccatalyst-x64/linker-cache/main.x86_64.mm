@@ -9,12 +9,12 @@ static void xamarin_initialize_dotnet ()
 }
 
 extern "C" void xamarin_initialize_dotnet();
-extern "C" void xamarin_create_classes_Xamarin_MacCatalyst();
+extern "C" void xamarin_create_classes_Microsoft_MacCatalyst();
 
 static void xamarin_invoke_registration_methods ()
 {
 	xamarin_initialize_dotnet();
-	xamarin_create_classes_Xamarin_MacCatalyst();
+	xamarin_create_classes_Microsoft_MacCatalyst();
 }
 
 #include "xamarin/xamarin.h"

@@ -7,21 +7,18 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/SamMBP/.nuget/packages/</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/SamMBP/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.1.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/Users/SamMBP/.nuget/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.maui.controls.build.tasks/6.0.200-preview.12.2441/build/Microsoft.Maui.Controls.Build.Tasks.props" Condition="Exists('$(NuGetPackageRoot)microsoft.maui.controls.build.tasks/6.0.200-preview.12.2441/build/Microsoft.Maui.Controls.Build.Tasks.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.200-preview.12.2441/build/Microsoft.AspNetCore.Components.WebView.Maui.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.200-preview.12.2441/build/Microsoft.AspNetCore.Components.WebView.Maui.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.486/build/Microsoft.AspNetCore.Components.WebView.Maui.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.486/build/Microsoft.AspNetCore.Components.WebView.Maui.props')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.maui.controls.build.tasks/6.0.200-preview.12.2441/build/Microsoft.Maui.Controls.Build.Tasks.props" Condition="Exists('$(NuGetPackageRoot)microsoft.maui.controls.build.tasks/6.0.200-preview.12.2441/build/Microsoft.Maui.Controls.Build.Tasks.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.200-preview.12.2441/build/Microsoft.AspNetCore.Components.WebView.Maui.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.200-preview.12.2441/build/Microsoft.AspNetCore.Components.WebView.Maui.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.486/build/Microsoft.AspNetCore.Components.WebView.Maui.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.486/build/Microsoft.AspNetCore.Components.WebView.Maui.props')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-maccatalyst' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.maui.controls.build.tasks/6.0.200-preview.12.2441/build/Microsoft.Maui.Controls.Build.Tasks.props" Condition="Exists('$(NuGetPackageRoot)microsoft.maui.controls.build.tasks/6.0.200-preview.12.2441/build/Microsoft.Maui.Controls.Build.Tasks.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.200-preview.12.2441/build/Microsoft.AspNetCore.Components.WebView.Maui.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.200-preview.12.2441/build/Microsoft.AspNetCore.Components.WebView.Maui.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.486/build/Microsoft.AspNetCore.Components.WebView.Maui.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.486/build/Microsoft.AspNetCore.Components.WebView.Maui.props')" />
   </ImportGroup>
 </Project>

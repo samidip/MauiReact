@@ -32,11 +32,11 @@
             "targetAlias": "net6.0-android",
             "projectReferences": {}
           },
-          "net6.0-ios15.2": {
+          "net6.0-ios15.4": {
             "targetAlias": "net6.0-ios",
             "projectReferences": {}
           },
-          "net6.0-maccatalyst15.2": {
+          "net6.0-maccatalyst15.4": {
             "targetAlias": "net6.0-maccatalyst",
             "projectReferences": {}
           }
@@ -53,27 +53,17 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Maui.Controls.Build.Tasks": {
-              "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Maui.Resizetizer.Sdk": {
-              "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             }
           },
@@ -83,22 +73,23 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Host.linux-arm",
-              "version": "[6.0.1, 6.0.1]"
+              "version": "[6.0.6, 6.0.6]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.linux-arm64",
-              "version": "[6.0.1, 6.0.1]"
+              "version": "[6.0.6, 6.0.6]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[6.0.1, 6.0.1]"
+              "version": "[6.0.6, 6.0.6]"
             }
           ],
           "frameworkReferences": {
@@ -118,34 +109,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400-preview.22330.6/RuntimeIdentifierGraph.json"
         },
-        "net6.0-ios15.2": {
+        "net6.0-ios15.4": {
           "targetAlias": "net6.0-ios",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Maui.Controls.Build.Tasks": {
-              "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
-            "Microsoft.Maui.Resizetizer.Sdk": {
+            "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
+              "version": "[6.0.1, )",
               "autoReferenced": true
             }
           },
@@ -155,7 +141,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -176,34 +163,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400-preview.22330.6/RuntimeIdentifierGraph.json"
         },
-        "net6.0-maccatalyst15.2": {
+        "net6.0-maccatalyst15.4": {
           "targetAlias": "net6.0-maccatalyst",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
-              "autoReferenced": true
-            },
-            "Microsoft.Maui.Controls.Build.Tasks": {
-              "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
-            "Microsoft.Maui.Resizetizer.Sdk": {
+            "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
-              "version": "[6.0.200-preview.12.2441, )",
+              "version": "[6.0.1, )",
               "autoReferenced": true
             }
           },
@@ -214,7 +196,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -235,7 +218,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400-preview.22330.6/RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HTIxAhHlkkEnHaMkVecmY3hhTxcH6YIJx9sRNYNgvMw=",
+  "Hash": "Xv8asiVJ+CXYS6t0nqmTo2VSMogO89Zb5PCVJZxsijE=",
   "Source": "MauiReact",
   "BasePath": "/",
   "Mode": "Root",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/SamMBP/CLIProjects/MauiReact/obj/Debug/net6.0-android/scopedcss/projectbundle/MauiReact.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/SamMBP/CLIProjects/MauiReact/wwwroot/.DS_Store",
+      "SourceId": "MauiReact",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/SamMBP/CLIProjects/MauiReact/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
       "Identity": "/Users/SamMBP/CLIProjects/MauiReact/wwwroot/asset-manifest.json",
@@ -134,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Identity": "/Users/SamMBP/CLIProjects/MauiReact/wwwroot/css/open-iconic/FONT-LICENSE",
+      "SourceId": "MauiReact",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/SamMBP/CLIProjects/MauiReact/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
     },
     {
       "Identity": "/Users/SamMBP/CLIProjects/MauiReact/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
@@ -236,23 +270,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.woff"
-    },
-    {
-      "Identity": "/Users/SamMBP/CLIProjects/MauiReact/wwwroot/css/open-iconic/FONT-LICENSE",
-      "SourceId": "MauiReact",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/SamMBP/CLIProjects/MauiReact/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
     },
     {
       "Identity": "/Users/SamMBP/CLIProjects/MauiReact/wwwroot/css/open-iconic/ICON-LICENSE",

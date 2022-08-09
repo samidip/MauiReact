@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 6.0.2.0 (6.0.222.5408 @Commit: b96f5608dab85cdf87fb8c0b88c233808538d2d0 )"
+	.asciz "Mono AOT Compiler 6.0.5.0 (6.0.522.21309 @Commit: 70ae3df4a6f3c92fb6b315afc405edd10ff38579 )"
 	.asciz "System.Private.CoreLib.dll"
 	.asciz ""
 
@@ -1034,8 +1034,8 @@ Lme_25:
 .text
 	.align 4, 0x90
 L_m_26:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u_double
-wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u_double:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u4_double
+wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u4_double:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -1066,8 +1066,8 @@ Lme_26:
 .text
 	.align 4, 0x90
 L_m_27:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u4_double
-wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u4_double:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u8_double
+wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u8_double:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -1098,38 +1098,6 @@ Lme_27:
 .text
 	.align 4, 0x90
 L_m_28:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u8_double
-wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u8_double:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,242,15,17,68,36,64,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,242,15,16,68,36,64
-	.byte 72,137,100,36,56
-call _p_24
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,241,133,192,15,133,66,0,0,0,233,0,0,0,0,72,139,68,36,40,73,137,7,73,139,198,72,139,28
-	.byte 36,76,139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0
-	.byte 0,199,0,1,0,0,0,73,139,253
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,232,72,133,192,117,217,235,175
-
-Lme_28:
-.text
-	.align 4, 0x90
-L_m_29:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_frem_double_double
 wrapper_managed_to_native_object___icall_wrapper___emul_frem_double_double:
 .loc 1 1 0
@@ -1144,7 +1112,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,242,15,16,68,36,72
 	.byte 242,15,16,76,36,80,72,137,100,36,56
-call _p_25
+call _p_24
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1158,10 +1126,10 @@ call _p_15
 
 	.byte 242,15,16,68,36,88,72,139,200,242,15,17,68,36,64,76,139,241,72,133,192,117,190,235,133
 
-Lme_29:
+Lme_28:
 .text
 	.align 4, 0x90
-L_m_2a:
+L_m_29:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_iconv_to_r_un_int
 wrapper_managed_to_native_object___icall_wrapper___emul_iconv_to_r_un_int:
 .loc 1 1 0
@@ -1176,7 +1144,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_26
+call _p_25
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1190,12 +1158,44 @@ call _p_15
 
 	.byte 242,15,16,68,36,72,72,139,200,242,15,17,68,36,64,76,139,249,72,133,192,117,190,235,133
 
+Lme_29:
+.text
+	.align 4, 0x90
+L_m_2a:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_ovf_i8_single
+wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_ovf_i8_single:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,243,15,17,68,36,64,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,243,15,16,68,36,64
+	.byte 72,137,100,36,56
+call _p_26
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,241,133,192,15,133,66,0,0,0,233,0,0,0,0,72,139,68,36,40,73,137,7,73,139,198,72,139,28
+	.byte 36,76,139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0
+	.byte 0,199,0,1,0,0,0,73,139,253
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,232,72,133,192,117,217,235,175
+
 Lme_2a:
 .text
 	.align 4, 0x90
 L_m_2b:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_ovf_i8_single
-wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_ovf_i8_single:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_ovf_u8_single
+wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_ovf_u8_single:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -1226,8 +1226,8 @@ Lme_2b:
 .text
 	.align 4, 0x90
 L_m_2c:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_ovf_u8_single
-wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_ovf_u8_single:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_u4_single
+wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_u4_single:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -1258,8 +1258,8 @@ Lme_2c:
 .text
 	.align 4, 0x90
 L_m_2d:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_u4_single
-wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_u4_single:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_u8_single
+wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_u8_single:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -1290,38 +1290,6 @@ Lme_2d:
 .text
 	.align 4, 0x90
 L_m_2e:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_u8_single
-wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_u8_single:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,243,15,17,68,36,64,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,243,15,16,68,36,64
-	.byte 72,137,100,36,56
-call _p_30
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,241,133,192,15,133,66,0,0,0,233,0,0,0,0,72,139,68,36,40,73,137,7,73,139,198,72,139,28
-	.byte 36,76,139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0
-	.byte 0,199,0,1,0,0,0,73,139,253
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,232,72,133,192,117,217,235,175
-
-Lme_2e:
-.text
-	.align 4, 0x90
-L_m_2f:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper___emul_rrem_single_single
 wrapper_managed_to_native_object___icall_wrapper___emul_rrem_single_single:
 .loc 1 1 0
@@ -1336,7 +1304,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,243,15,16,68,36,80
 	.byte 242,15,16,200,243,15,16,68,36,72,72,137,100,36,56
-call _p_31
+call _p_30
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1350,10 +1318,10 @@ call _p_15
 
 	.byte 72,139,200,243,15,16,68,36,64,243,15,17,68,36,68,76,139,241,72,133,192,117,202,235,145
 
-Lme_2f:
+Lme_2e:
 .text
 	.align 4, 0x90
-L_m_30:
+L_m_2f:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_monoeg_g_free_intptr
 wrapper_managed_to_native_object___icall_wrapper_monoeg_g_free_intptr:
 .loc 1 1 0
@@ -1368,7 +1336,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_32
+call _p_31
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1382,10 +1350,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
-Lme_30:
+Lme_2f:
 .text
 	.align 4, 0x90
-L_m_31:
+L_m_30:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvm_init_method_intptr_intptr_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mini_llvm_init_method_intptr_intptr_intptr_intptr:
 .loc 1 1 0
@@ -1400,7 +1368,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,72,139,216,72,141,68,36,40,72,139,11,72,137,76,36,40,72,137,3,72,139,124,36,64,72
 	.byte 139,116,36,72,72,139,84,36,80,73,139,207,72,137,100,36,56
-call _p_33
+call _p_32
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1414,10 +1382,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
-Lme_31:
+Lme_30:
 .text
 	.align 4, 0x90
-L_m_32:
+L_m_31:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_init_delegate_object
 wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_init_delegate_object:
 .loc 1 1 0
@@ -1432,7 +1400,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_34
+call _p_33
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1446,10 +1414,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
-Lme_32:
+Lme_31:
 .text
 	.align 4, 0x90
-L_m_33:
+L_m_32:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_init_delegate_virtual_object_object_intptr
 wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_init_delegate_virtual_object_object_intptr:
 .loc 1 1 0
@@ -1464,7 +1432,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,72,139,116,36,72,73,139,215,72,137,100,36,56
-call _p_35
+call _p_34
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1478,10 +1446,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
-Lme_33:
+Lme_32:
 .text
 	.align 4, 0x90
-L_m_34:
+L_m_33:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_init_vtable_slot_intptr_int
 wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_init_vtable_slot_intptr_int:
 .loc 1 1 0
@@ -1496,7 +1464,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
 	.byte 139,247,72,137,100,36,56
-call _p_36
+call _p_35
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1510,12 +1478,44 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
+Lme_33:
+.text
+	.align 4, 0x90
+L_m_34:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_generic_virtual_call_intptr_int_intptr
+wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_generic_virtual_call_intptr_int_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,246,76,139,250,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
+	.byte 64,73,139,246,73,139,215,72,137,100,36,56
+call _p_36
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,4,36,73,139,199,72,139,28,36,76
+	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
+	.byte 0,1,0,0,0,73,139,254
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,240,72,133,192,117,217,235,174
+
 Lme_34:
 .text
 	.align 4, 0x90
 L_m_35:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_generic_virtual_call_intptr_int_intptr
-wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_generic_virtual_call_intptr_int_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_generic_virtual_iface_call_intptr_int_intptr
+wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_generic_virtual_iface_call_intptr_int_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -1546,40 +1546,40 @@ Lme_35:
 .text
 	.align 4, 0x90
 L_m_36:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_generic_virtual_iface_call_intptr_int_intptr
-wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_generic_virtual_iface_call_intptr_int_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_iface_call_gsharedvt_object_int_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_iface_call_gsharedvt_object_int_intptr_intptr:
 .loc 1 1 0
 
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,246,76,139,250,73,139,5
+	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,72,137,124,36,64,72,137,116,36,72,76,139,242,76,139,249,73,139,5
 	.long mono_aot_corlib_got - . + 52
 	.byte 247,0,1,0,0,0,116,5
 call _p_3
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
-	.byte 64,73,139,246,73,139,215,72,137,100,36,56
+	.byte 72,137,100,36,56,255,208,72,139,216,72,141,68,36,40,72,139,11,72,137,76,36,40,72,137,3,72,139,124,36,64,72
+	.byte 99,116,36,72,73,139,214,73,139,207,72,137,100,36,56
 call _p_38
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,4,36,73,139,199,72,139,28,36,76
-	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
-	.byte 0,1,0,0,0,73,139,254
+	.byte 139,0,76,139,249,133,192,15,133,66,0,0,0,233,0,0,0,0,72,139,68,36,40,72,137,3,73,139,199,72,139,28
+	.byte 36,76,139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,88,195,73,141,134,136,0,0
+	.byte 0,199,0,1,0,0,0,73,139,254
 call _p_14
 
 	.byte 72,137,100,36,56
 call _p_15
 
-	.byte 76,139,240,72,133,192,117,217,235,174
+	.byte 76,139,240,72,133,192,117,217,235,175
 
 Lme_36:
 .text
 	.align 4, 0x90
 L_m_37:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_iface_call_gsharedvt_object_int_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_iface_call_gsharedvt_object_int_intptr_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_vcall_gsharedvt_object_int_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_vcall_gsharedvt_object_int_intptr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -1610,38 +1610,6 @@ Lme_37:
 .text
 	.align 4, 0x90
 L_m_38:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_vcall_gsharedvt_object_int_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_resolve_vcall_gsharedvt_object_int_intptr_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,72,137,124,36,64,72,137,116,36,72,76,139,242,76,139,249,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,72,139,216,72,141,68,36,40,72,139,11,72,137,76,36,40,72,137,3,72,139,124,36,64,72
-	.byte 99,116,36,72,73,139,214,73,139,207,72,137,100,36,56
-call _p_40
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,66,0,0,0,233,0,0,0,0,72,139,68,36,40,72,137,3,73,139,199,72,139,28
-	.byte 36,76,139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,88,195,73,141,134,136,0,0
-	.byte 0,199,0,1,0,0,0,73,139,254
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,240,72,133,192,117,217,235,175
-
-Lme_38:
-.text
-	.align 4, 0x90
-L_m_39:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_throw_nullref_exception
 wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_throw_nullref_exception:
 .loc 1 1 0
@@ -1655,7 +1623,7 @@ call _p_3
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_41
+call _p_40
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1669,12 +1637,44 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,178
 
+Lme_38:
+.text
+	.align 4, 0x90
+L_m_39:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_throw_aot_failed_exception_intptr
+wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_throw_aot_failed_exception_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
+call _p_41
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,133,192,15,133,60,0,0,0,235,0,72,139,68,36,40,73,137,6,72,139,28,36,76,139,100,36,8,76,139,108
+	.byte 36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,135,136,0,0,0,199,0,1,0,0,0,73,139
+	.byte 255
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,248,72,133,192,117,217,235,178
+
 Lme_39:
 .text
 	.align 4, 0x90
 L_m_3a:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_throw_aot_failed_exception_intptr
-wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_throw_aot_failed_exception_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_pop_lmf_intptr
+wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_pop_lmf_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -1705,38 +1705,6 @@ Lme_3a:
 .text
 	.align 4, 0x90
 L_m_3b:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_pop_lmf_intptr
-wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_pop_lmf_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
-call _p_43
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,133,192,15,133,60,0,0,0,235,0,72,139,68,36,40,73,137,6,72,139,28,36,76,139,100,36,8,76,139,108
-	.byte 36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,135,136,0,0,0,199,0,1,0,0,0,73,139
-	.byte 255
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,248,72,133,192,117,217,235,178
-
-Lme_3b:
-.text
-	.align 4, 0x90
-L_m_3c:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_get_interp_entry_intptr
 wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_get_interp_entry_intptr:
 .loc 1 1 0
@@ -1751,7 +1719,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_44
+call _p_43
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1765,10 +1733,10 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
-Lme_3c:
+Lme_3b:
 .text
 	.align 4, 0x90
-L_m_3d:
+L_m_3c:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_amd64_throw_exception
 wrapper_managed_to_native_object___icall_wrapper_mono_amd64_throw_exception:
 .loc 1 1 0
@@ -1782,7 +1750,7 @@ call _p_3
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_45
+call _p_44
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1796,12 +1764,44 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,178
 
+Lme_3c:
+.text
+	.align 4, 0x90
+L_m_3d:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_arch_rethrow_exception_object
+wrapper_managed_to_native_object___icall_wrapper_mono_arch_rethrow_exception_object:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
+call _p_45
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,133,192,15,133,60,0,0,0,235,0,72,139,68,36,40,73,137,6,72,139,28,36,76,139,100,36,8,76,139,108
+	.byte 36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,135,136,0,0,0,199,0,1,0,0,0,73,139
+	.byte 255
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,248,72,133,192,117,217,235,178
+
 Lme_3d:
 .text
 	.align 4, 0x90
 L_m_3e:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_arch_rethrow_exception_object
-wrapper_managed_to_native_object___icall_wrapper_mono_arch_rethrow_exception_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_arch_throw_corlib_exception_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_arch_throw_corlib_exception_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -1832,8 +1832,8 @@ Lme_3e:
 .text
 	.align 4, 0x90
 L_m_3f:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_arch_throw_corlib_exception_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_arch_throw_corlib_exception_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_arch_throw_exception_object
+wrapper_managed_to_native_object___icall_wrapper_mono_arch_throw_exception_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -1864,38 +1864,6 @@ Lme_3f:
 .text
 	.align 4, 0x90
 L_m_40:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_arch_throw_exception_object
-wrapper_managed_to_native_object___icall_wrapper_mono_arch_throw_exception_object:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
-call _p_48
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,133,192,15,133,60,0,0,0,235,0,72,139,68,36,40,73,137,6,72,139,28,36,76,139,100,36,8,76,139,108
-	.byte 36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,135,136,0,0,0,199,0,1,0,0,0,73,139
-	.byte 255
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,248,72,133,192,117,217,235,178
-
-Lme_40:
-.text
-	.align 4, 0x90
-L_m_41:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_array_new_1_intptr_int
 wrapper_managed_to_native_object___icall_wrapper_mono_array_new_1_intptr_int:
 .loc 1 1 0
@@ -1910,7 +1878,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
 	.byte 139,247,72,137,100,36,56
-call _p_49
+call _p_48
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1924,10 +1892,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_41:
+Lme_40:
 .text
 	.align 4, 0x90
-L_m_42:
+L_m_41:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_array_new_2_intptr_int_int
 wrapper_managed_to_native_object___icall_wrapper_mono_array_new_2_intptr_int_int:
 .loc 1 1 0
@@ -1942,7 +1910,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,73,139,246,73,139,215,72,137,100,36,56
-call _p_50
+call _p_49
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1956,10 +1924,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_42:
+Lme_41:
 .text
 	.align 4, 0x90
-L_m_43:
+L_m_42:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_array_new_3_intptr_int_int_int
 wrapper_managed_to_native_object___icall_wrapper_mono_array_new_3_intptr_int_int_int:
 .loc 1 1 0
@@ -1974,7 +1942,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,72,139,216,72,141,68,36,40,72,139,11,72,137,76,36,40,72,137,3,72,139,124,36,64,72
 	.byte 99,116,36,72,73,139,214,73,139,207,72,137,100,36,56
-call _p_51
+call _p_50
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -1988,10 +1956,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,175
 
-Lme_43:
+Lme_42:
 .text
 	.align 4, 0x90
-L_m_44:
+L_m_43:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_array_new_4_intptr_int_int_int_int
 wrapper_managed_to_native_object___icall_wrapper_mono_array_new_4_intptr_int_int_int_int:
 .loc 1 1 0
@@ -2007,7 +1975,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,64,255,208,72,139,232,72,141,68,36,48,72,139,77,0,72,137,76,36,48,72,137,69,0,72,139,124,36
 	.byte 72,72,99,116,36,80,72,99,84,36,88,73,139,206,77,139,199,72,137,100,36,64
-call _p_52
+call _p_51
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2021,10 +1989,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,164
 
-Lme_44:
+Lme_43:
 .text
 	.align 4, 0x90
-L_m_45:
+L_m_44:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_array_new_n_icall_intptr_int_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_array_new_n_icall_intptr_int_intptr:
 .loc 1 1 0
@@ -2039,7 +2007,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,73,139,246,73,139,215,72,137,100,36,56
-call _p_53
+call _p_52
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2053,10 +2021,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_45:
+Lme_44:
 .text
 	.align 4, 0x90
-L_m_46:
+L_m_45:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_array_to_byte_byvalarray_intptr_object_int
 wrapper_managed_to_native_object___icall_wrapper_mono_array_to_byte_byvalarray_intptr_object_int:
 .loc 1 1 0
@@ -2071,7 +2039,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,72,139,116,36,72,73,139,215,72,137,100,36,56
-call _p_54
+call _p_53
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2085,12 +2053,44 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
+Lme_45:
+.text
+	.align 4, 0x90
+L_m_46:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_array_to_lparray_object
+wrapper_managed_to_native_object___icall_wrapper_mono_array_to_lparray_object:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
+call _p_54
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
+	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
+	.byte 1,0,0,0,73,139,253
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,232,72,133,192,117,217,235,175
+
 Lme_46:
 .text
 	.align 4, 0x90
 L_m_47:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_array_to_lparray_object
-wrapper_managed_to_native_object___icall_wrapper_mono_array_to_lparray_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_array_to_savearray_object
+wrapper_managed_to_native_object___icall_wrapper_mono_array_to_savearray_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -2121,38 +2121,6 @@ Lme_47:
 .text
 	.align 4, 0x90
 L_m_48:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_array_to_savearray_object
-wrapper_managed_to_native_object___icall_wrapper_mono_array_to_savearray_object:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
-call _p_56
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
-	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
-	.byte 1,0,0,0,73,139,253
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,232,72,133,192,117,217,235,175
-
-Lme_48:
-.text
-	.align 4, 0x90
-L_m_49:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_byvalarray_to_byte_array_object_intptr_int
 wrapper_managed_to_native_object___icall_wrapper_mono_byvalarray_to_byte_array_object_intptr_int:
 .loc 1 1 0
@@ -2167,7 +2135,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,72,139,116,36,72,73,139,215,72,137,100,36,56
-call _p_57
+call _p_56
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2181,10 +2149,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
-Lme_49:
+Lme_48:
 .text
 	.align 4, 0x90
-L_m_4a:
+L_m_49:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_ckfinite_double
 wrapper_managed_to_native_object___icall_wrapper_mono_ckfinite_double:
 .loc 1 1 0
@@ -2199,7 +2167,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,242,15,16,68,36,72
 	.byte 72,137,100,36,56
-call _p_58
+call _p_57
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2213,12 +2181,44 @@ call _p_15
 
 	.byte 242,15,16,68,36,80,72,139,200,242,15,17,68,36,64,76,139,241,72,133,192,117,190,235,133
 
+Lme_49:
+.text
+	.align 4, 0x90
+L_m_4a:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_class_static_field_address_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_class_static_field_address_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
+call _p_58
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
+	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
+	.byte 1,0,0,0,73,139,253
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,232,72,133,192,117,217,235,175
+
 Lme_4a:
 .text
 	.align 4, 0x90
 L_m_4b:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_class_static_field_address_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_class_static_field_address_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_0_int
+wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_0_int:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -2249,38 +2249,6 @@ Lme_4b:
 .text
 	.align 4, 0x90
 L_m_4c:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_0_int
-wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_0_int:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
-call _p_60
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
-	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
-	.byte 1,0,0,0,73,139,253
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,232,72,133,192,117,217,235,175
-
-Lme_4c:
-.text
-	.align 4, 0x90
-L_m_4d:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_1_int_object
 wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_1_int_object:
 .loc 1 1 0
@@ -2295,7 +2263,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
 	.byte 139,247,72,137,100,36,56
-call _p_61
+call _p_60
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2309,10 +2277,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_4d:
+Lme_4c:
 .text
 	.align 4, 0x90
-L_m_4e:
+L_m_4d:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_2_int_object_object
 wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_2_int_object_object:
 .loc 1 1 0
@@ -2327,7 +2295,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,99,124,36
 	.byte 64,73,139,246,73,139,215,72,137,100,36,56
-call _p_62
+call _p_61
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2341,10 +2309,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_4e:
+Lme_4d:
 .text
 	.align 4, 0x90
-L_m_4f:
+L_m_4e:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_debug_personality_int_int_intptr_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_debug_personality_int_int_intptr_intptr_intptr:
 .loc 1 1 0
@@ -2360,7 +2328,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,64,255,208,72,139,232,72,141,68,36,48,72,139,77,0,72,137,76,36,48,72,137,69,0,72,99,124,36
 	.byte 72,72,99,116,36,80,72,139,84,36,88,73,139,206,77,139,199,72,137,100,36,64
-call _p_63
+call _p_62
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2374,10 +2342,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,164
 
-Lme_4f:
+Lme_4e:
 .text
 	.align 4, 0x90
-L_m_50:
+L_m_4f:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_debugger_agent_user_break
 wrapper_managed_to_native_object___icall_wrapper_mono_debugger_agent_user_break:
 .loc 1 1 0
@@ -2391,7 +2359,7 @@ call _p_3
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_64
+call _p_63
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2405,12 +2373,44 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,178
 
+Lme_4f:
+.text
+	.align 4, 0x90
+L_m_50:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_delegate_begin_invoke_object_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_delegate_begin_invoke_object_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,247,76,139,254,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
+	.byte 139,247,72,137,100,36,56
+call _p_64
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,69,0,73,139,199,72,139,28,36,76
+	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
+	.byte 0,1,0,0,0,73,139,254
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,240,72,133,192,117,217,235,174
+
 Lme_50:
 .text
 	.align 4, 0x90
 L_m_51:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_delegate_begin_invoke_object_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_delegate_begin_invoke_object_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_delegate_end_invoke_object_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_delegate_end_invoke_object_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -2441,38 +2441,6 @@ Lme_51:
 .text
 	.align 4, 0x90
 L_m_52:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_delegate_end_invoke_object_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_delegate_end_invoke_object_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,247,76,139,254,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
-	.byte 139,247,72,137,100,36,56
-call _p_66
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,69,0,73,139,199,72,139,28,36,76
-	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
-	.byte 0,1,0,0,0,73,139,254
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,240,72,133,192,117,217,235,174
-
-Lme_52:
-.text
-	.align 4, 0x90
-L_m_53:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_delegate_to_ftnptr_object
 wrapper_managed_to_native_object___icall_wrapper_mono_delegate_to_ftnptr_object:
 .loc 1 1 0
@@ -2487,7 +2455,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_67
+call _p_66
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2501,10 +2469,10 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
-Lme_53:
+Lme_52:
 .text
 	.align 4, 0x90
-L_m_54:
+L_m_53:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_domain_get
 wrapper_managed_to_native_object___icall_wrapper_mono_domain_get:
 .loc 1 1 0
@@ -2518,7 +2486,7 @@ call _p_3
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_68
+call _p_67
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2532,10 +2500,10 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
-Lme_54:
+Lme_53:
 .text
 	.align 4, 0x90
-L_m_55:
+L_m_54:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_dummy_jit_icall
 wrapper_managed_to_native_object___icall_wrapper_mono_dummy_jit_icall:
 .loc 1 1 0
@@ -2549,7 +2517,7 @@ call _p_3
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_69
+call _p_68
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2563,12 +2531,44 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,178
 
+Lme_54:
+.text
+	.align 4, 0x90
+L_m_55:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_fill_class_rgctx_intptr_int
+wrapper_managed_to_native_object___icall_wrapper_mono_fill_class_rgctx_intptr_int:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,247,76,139,254,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
+	.byte 139,247,72,137,100,36,56
+call _p_69
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,69,0,73,139,199,72,139,28,36,76
+	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
+	.byte 0,1,0,0,0,73,139,254
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,240,72,133,192,117,217,235,174
+
 Lme_55:
 .text
 	.align 4, 0x90
 L_m_56:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_fill_class_rgctx_intptr_int
-wrapper_managed_to_native_object___icall_wrapper_mono_fill_class_rgctx_intptr_int:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_fill_method_rgctx_intptr_int
+wrapper_managed_to_native_object___icall_wrapper_mono_fill_method_rgctx_intptr_int:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -2599,38 +2599,6 @@ Lme_56:
 .text
 	.align 4, 0x90
 L_m_57:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_fill_method_rgctx_intptr_int
-wrapper_managed_to_native_object___icall_wrapper_mono_fill_method_rgctx_intptr_int:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,247,76,139,254,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
-	.byte 139,247,72,137,100,36,56
-call _p_71
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,69,0,73,139,199,72,139,28,36,76
-	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
-	.byte 0,1,0,0,0,73,139,254
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,240,72,133,192,117,217,235,174
-
-Lme_57:
-.text
-	.align 4, 0x90
-L_m_58:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_free_bstr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_free_bstr_intptr:
 .loc 1 1 0
@@ -2645,7 +2613,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_72
+call _p_71
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2659,10 +2627,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
-Lme_58:
+Lme_57:
 .text
 	.align 4, 0x90
-L_m_59:
+L_m_58:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_free_lparray_object_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_free_lparray_object_intptr:
 .loc 1 1 0
@@ -2677,7 +2645,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
 	.byte 64,73,139,247,72,137,100,36,56
-call _p_73
+call _p_72
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2691,12 +2659,44 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
+Lme_58:
+.text
+	.align 4, 0x90
+L_m_59:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_ftnptr_to_delegate_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_ftnptr_to_delegate_intptr_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,247,76,139,254,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
+	.byte 139,247,72,137,100,36,56
+call _p_73
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,69,0,73,139,199,72,139,28,36,76
+	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
+	.byte 0,1,0,0,0,73,139,254
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,240,72,133,192,117,217,235,174
+
 Lme_59:
 .text
 	.align 4, 0x90
 L_m_5a:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_ftnptr_to_delegate_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_ftnptr_to_delegate_intptr_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_obj_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_obj_intptr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -2727,25 +2727,25 @@ Lme_5a:
 .text
 	.align 4, 0x90
 L_m_5b:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_obj_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_obj_intptr_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_string_intptr_intptr_int
+wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_string_intptr_intptr_int:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,247,76,139,254,73,139,5
+	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,246,76,139,250,73,139,5
 	.long mono_aot_corlib_got - . + 52
 	.byte 247,0,1,0,0,0,116,5
 call _p_3
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
-	.byte 139,247,72,137,100,36,56
+	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
+	.byte 64,73,139,246,73,139,215,72,137,100,36,56
 call _p_75
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,69,0,73,139,199,72,139,28,36,76
+	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,4,36,73,139,199,72,139,28,36,76
 	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
 	.byte 0,1,0,0,0,73,139,254
 call _p_14
@@ -2759,8 +2759,8 @@ Lme_5b:
 .text
 	.align 4, 0x90
 L_m_5c:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_string_intptr_intptr_int
-wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_string_intptr_intptr_int:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_vector_intptr_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_vector_intptr_intptr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -2791,38 +2791,6 @@ Lme_5c:
 .text
 	.align 4, 0x90
 L_m_5d:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_vector_intptr_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_vector_intptr_intptr_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,246,76,139,250,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
-	.byte 64,73,139,246,73,139,215,72,137,100,36,56
-call _p_77
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,4,36,73,139,199,72,139,28,36,76
-	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
-	.byte 0,1,0,0,0,73,139,254
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,240,72,133,192,117,217,235,174
-
-Lme_5d:
-.text
-	.align 4, 0x90
-L_m_5e:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_gc_wbarrier_generic_nostore_internal_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_gc_wbarrier_generic_nostore_internal_intptr:
 .loc 1 1 0
@@ -2837,7 +2805,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_78
+call _p_77
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2851,10 +2819,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
-Lme_5e:
+Lme_5d:
 .text
 	.align 4, 0x90
-L_m_5f:
+L_m_5e:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_gc_wbarrier_range_copy_intptr_intptr_int
 wrapper_managed_to_native_object___icall_wrapper_mono_gc_wbarrier_range_copy_intptr_intptr_int:
 .loc 1 1 0
@@ -2869,7 +2837,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,72,139,116,36,72,73,139,215,72,137,100,36,56
-call _p_79
+call _p_78
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2883,10 +2851,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
-Lme_5f:
+Lme_5e:
 .text
 	.align 4, 0x90
-L_m_60:
+L_m_5f:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_gchandle_get_target_internal_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_gchandle_get_target_internal_intptr:
 .loc 1 1 0
@@ -2901,7 +2869,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_80
+call _p_79
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2915,10 +2883,10 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
-Lme_60:
+Lme_5f:
 .text
 	.align 4, 0x90
-L_m_61:
+L_m_60:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_generic_class_init_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_generic_class_init_intptr:
 .loc 1 1 0
@@ -2933,7 +2901,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_81
+call _p_80
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -2947,12 +2915,44 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
+Lme_60:
+.text
+	.align 4, 0x90
+L_m_61:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_get_assembly_object_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_get_assembly_object_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
+call _p_81
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
+	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
+	.byte 1,0,0,0,73,139,253
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,232,72,133,192,117,217,235,175
+
 Lme_61:
 .text
 	.align 4, 0x90
 L_m_62:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_get_assembly_object_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_get_assembly_object_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_get_method_object_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_get_method_object_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -2983,38 +2983,6 @@ Lme_62:
 .text
 	.align 4, 0x90
 L_m_63:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_get_method_object_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_get_method_object_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
-call _p_83
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
-	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
-	.byte 1,0,0,0,73,139,253
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,232,72,133,192,117,217,235,175
-
-Lme_63:
-.text
-	.align 4, 0x90
-L_m_64:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_get_native_calli_wrapper_intptr_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_get_native_calli_wrapper_intptr_intptr_intptr:
 .loc 1 1 0
@@ -3029,7 +2997,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,73,139,246,73,139,215,72,137,100,36,56
-call _p_84
+call _p_83
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3043,10 +3011,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_64:
+Lme_63:
 .text
 	.align 4, 0x90
-L_m_65:
+L_m_64:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_get_special_static_data_int
 wrapper_managed_to_native_object___icall_wrapper_mono_get_special_static_data_int:
 .loc 1 1 0
@@ -3061,7 +3029,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_85
+call _p_84
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3075,10 +3043,10 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
-Lme_65:
+Lme_64:
 .text
 	.align 4, 0x90
-L_m_66:
+L_m_65:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_gsharedvt_constrained_call_intptr_intptr_intptr_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_gsharedvt_constrained_call_intptr_intptr_intptr_intptr_intptr:
 .loc 1 1 0
@@ -3094,7 +3062,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,64,255,208,72,139,232,72,141,68,36,48,72,139,77,0,72,137,76,36,48,72,137,69,0,72,139,124,36
 	.byte 72,72,139,116,36,80,72,139,84,36,88,73,139,206,77,139,199,72,137,100,36,64
-call _p_86
+call _p_85
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3108,10 +3076,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,164
 
-Lme_66:
+Lme_65:
 .text
 	.align 4, 0x90
-L_m_67:
+L_m_66:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_gsharedvt_value_copy_intptr_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_gsharedvt_value_copy_intptr_intptr_intptr:
 .loc 1 1 0
@@ -3126,7 +3094,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,72,139,116,36,72,73,139,215,72,137,100,36,56
-call _p_87
+call _p_86
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3140,10 +3108,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
-Lme_67:
+Lme_66:
 .text
 	.align 4, 0x90
-L_m_68:
+L_m_67:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_helper_compile_generic_method_object_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_helper_compile_generic_method_object_intptr_intptr:
 .loc 1 1 0
@@ -3158,7 +3126,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,73,139,246,73,139,215,72,137,100,36,56
-call _p_88
+call _p_87
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3172,10 +3140,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_68:
+Lme_67:
 .text
 	.align 4, 0x90
-L_m_69:
+L_m_68:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_helper_ldstr_intptr_int
 wrapper_managed_to_native_object___icall_wrapper_mono_helper_ldstr_intptr_int:
 .loc 1 1 0
@@ -3190,7 +3158,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
 	.byte 139,247,72,137,100,36,56
-call _p_89
+call _p_88
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3204,12 +3172,44 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
+Lme_68:
+.text
+	.align 4, 0x90
+L_m_69:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_helper_ldstr_mscorlib_int
+wrapper_managed_to_native_object___icall_wrapper_mono_helper_ldstr_mscorlib_int:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
+call _p_89
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
+	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
+	.byte 1,0,0,0,73,139,253
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,232,72,133,192,117,217,235,175
+
 Lme_69:
 .text
 	.align 4, 0x90
 L_m_6a:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_helper_ldstr_mscorlib_int
-wrapper_managed_to_native_object___icall_wrapper_mono_helper_ldstr_mscorlib_int:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_helper_newobj_mscorlib_int
+wrapper_managed_to_native_object___icall_wrapper_mono_helper_newobj_mscorlib_int:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -3240,40 +3240,40 @@ Lme_6a:
 .text
 	.align 4, 0x90
 L_m_6b:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_helper_newobj_mscorlib_int
-wrapper_managed_to_native_object___icall_wrapper_mono_helper_newobj_mscorlib_int:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_helper_stelem_ref_check_object_object
+wrapper_managed_to_native_object___icall_wrapper_mono_helper_stelem_ref_check_object_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,254,73,139,5
 	.long mono_aot_corlib_got - . + 52
 	.byte 247,0,1,0,0,0,116,5
 call _p_3
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
+	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
+	.byte 64,73,139,247,72,137,100,36,56
 call _p_91
 
-	.byte 72,139,200,73,139,5
+	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
-	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
-	.byte 1,0,0,0,73,139,253
+	.byte 139,0,133,192,15,133,61,0,0,0,235,0,72,139,68,36,40,73,137,69,0,72,139,28,36,76,139,100,36,8,76,139
+	.byte 108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,135,136,0,0,0,199,0,1,0,0,0,73
+	.byte 139,255
 call _p_14
 
 	.byte 72,137,100,36,56
 call _p_15
 
-	.byte 76,139,232,72,133,192,117,217,235,175
+	.byte 76,139,248,72,133,192,117,217,235,177
 
 Lme_6b:
 .text
 	.align 4, 0x90
 L_m_6c:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_helper_stelem_ref_check_object_object
-wrapper_managed_to_native_object___icall_wrapper_mono_helper_stelem_ref_check_object_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_interp_entry_from_trampoline_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_interp_entry_from_trampoline_intptr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -3304,8 +3304,8 @@ Lme_6c:
 .text
 	.align 4, 0x90
 L_m_6d:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_interp_entry_from_trampoline_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_interp_entry_from_trampoline_intptr_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_interp_to_native_trampoline_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_interp_to_native_trampoline_intptr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -3336,38 +3336,6 @@ Lme_6d:
 .text
 	.align 4, 0x90
 L_m_6e:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_interp_to_native_trampoline_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_interp_to_native_trampoline_intptr_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,254,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
-	.byte 64,73,139,247,72,137,100,36,56
-call _p_94
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,133,192,15,133,61,0,0,0,235,0,72,139,68,36,40,73,137,69,0,72,139,28,36,76,139,100,36,8,76,139
-	.byte 108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,135,136,0,0,0,199,0,1,0,0,0,73
-	.byte 139,255
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,248,72,133,192,117,217,235,177
-
-Lme_6e:
-.text
-	.align 4, 0x90
-L_m_6f:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_ldftn_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_ldftn_intptr:
 .loc 1 1 0
@@ -3382,7 +3350,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_95
+call _p_94
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3396,12 +3364,44 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
+Lme_6e:
+.text
+	.align 4, 0x90
+L_m_6f:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_ldtoken_wrapper_intptr_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_ldtoken_wrapper_intptr_intptr_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,246,76,139,250,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
+	.byte 64,73,139,246,73,139,215,72,137,100,36,56
+call _p_95
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,4,36,73,139,199,72,139,28,36,76
+	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
+	.byte 0,1,0,0,0,73,139,254
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,240,72,133,192,117,217,235,174
+
 Lme_6f:
 .text
 	.align 4, 0x90
 L_m_70:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_ldtoken_wrapper_intptr_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_ldtoken_wrapper_intptr_intptr_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_ldtoken_wrapper_generic_shared_intptr_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_ldtoken_wrapper_generic_shared_intptr_intptr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -3432,25 +3432,25 @@ Lme_70:
 .text
 	.align 4, 0x90
 L_m_71:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_ldtoken_wrapper_generic_shared_intptr_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_ldtoken_wrapper_generic_shared_intptr_intptr_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_ldvirtfn_object_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_ldvirtfn_object_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,246,76,139,250,73,139,5
+	.byte 24,76,137,124,36,32,76,139,247,76,139,254,73,139,5
 	.long mono_aot_corlib_got - . + 52
 	.byte 247,0,1,0,0,0,116,5
 call _p_3
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
-	.byte 64,73,139,246,73,139,215,72,137,100,36,56
+	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
+	.byte 139,247,72,137,100,36,56
 call _p_97
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,4,36,73,139,199,72,139,28,36,76
+	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,69,0,73,139,199,72,139,28,36,76
 	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
 	.byte 0,1,0,0,0,73,139,254
 call _p_14
@@ -3464,8 +3464,8 @@ Lme_71:
 .text
 	.align 4, 0x90
 L_m_72:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_ldvirtfn_object_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_ldvirtfn_object_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_ldvirtfn_gshared_object_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_ldvirtfn_gshared_object_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -3496,38 +3496,6 @@ Lme_72:
 .text
 	.align 4, 0x90
 L_m_73:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_ldvirtfn_gshared_object_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_ldvirtfn_gshared_object_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,247,76,139,254,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
-	.byte 139,247,72,137,100,36,56
-call _p_99
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,69,0,73,139,199,72,139,28,36,76
-	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
-	.byte 0,1,0,0,0,73,139,254
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,240,72,133,192,117,217,235,174
-
-Lme_73:
-.text
-	.align 4, 0x90
-L_m_74:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_llvm_load_exception
 wrapper_managed_to_native_object___icall_wrapper_mono_llvm_load_exception:
 .loc 1 1 0
@@ -3541,7 +3509,7 @@ call _p_3
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_100
+call _p_99
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3555,10 +3523,10 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
-Lme_74:
+Lme_73:
 .text
 	.align 4, 0x90
-L_m_75:
+L_m_74:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_llvm_match_exception_intptr_int_int_intptr_object
 wrapper_managed_to_native_object___icall_wrapper_mono_llvm_match_exception_intptr_int_int_intptr_object:
 .loc 1 1 0
@@ -3574,7 +3542,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,64,255,208,72,139,232,72,141,68,36,48,72,139,77,0,72,137,76,36,48,72,137,69,0,72,139,124,36
 	.byte 72,72,99,116,36,80,72,99,84,36,88,73,139,206,77,139,199,72,137,100,36,64
-call _p_101
+call _p_100
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3588,10 +3556,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,164
 
-Lme_75:
+Lme_74:
 .text
 	.align 4, 0x90
-L_m_76:
+L_m_75:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_llvm_resume_exception
 wrapper_managed_to_native_object___icall_wrapper_mono_llvm_resume_exception:
 .loc 1 1 0
@@ -3605,7 +3573,7 @@ call _p_3
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_102
+call _p_101
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3619,12 +3587,44 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,178
 
+Lme_75:
+.text
+	.align 4, 0x90
+L_m_76:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_llvm_rethrow_exception_object
+wrapper_managed_to_native_object___icall_wrapper_mono_llvm_rethrow_exception_object:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
+call _p_102
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,133,192,15,133,60,0,0,0,235,0,72,139,68,36,40,73,137,6,72,139,28,36,76,139,100,36,8,76,139,108
+	.byte 36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,135,136,0,0,0,199,0,1,0,0,0,73,139
+	.byte 255
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,248,72,133,192,117,217,235,178
+
 Lme_76:
 .text
 	.align 4, 0x90
 L_m_77:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_llvm_rethrow_exception_object
-wrapper_managed_to_native_object___icall_wrapper_mono_llvm_rethrow_exception_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_llvm_throw_corlib_exception_int
+wrapper_managed_to_native_object___icall_wrapper_mono_llvm_throw_corlib_exception_int:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -3655,8 +3655,8 @@ Lme_77:
 .text
 	.align 4, 0x90
 L_m_78:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_llvm_throw_corlib_exception_int
-wrapper_managed_to_native_object___icall_wrapper_mono_llvm_throw_corlib_exception_int:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_llvm_throw_exception_object
+wrapper_managed_to_native_object___icall_wrapper_mono_llvm_throw_exception_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -3687,38 +3687,6 @@ Lme_78:
 .text
 	.align 4, 0x90
 L_m_79:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_llvm_throw_exception_object
-wrapper_managed_to_native_object___icall_wrapper_mono_llvm_throw_exception_object:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
-call _p_105
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,133,192,15,133,60,0,0,0,235,0,72,139,68,36,40,73,137,6,72,139,28,36,76,139,100,36,8,76,139,108
-	.byte 36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,135,136,0,0,0,199,0,1,0,0,0,73,139
-	.byte 255
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,248,72,133,192,117,217,235,178
-
-Lme_79:
-.text
-	.align 4, 0x90
-L_m_7a:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_asany_object_int_int
 wrapper_managed_to_native_object___icall_wrapper_mono_marshal_asany_object_int_int:
 .loc 1 1 0
@@ -3733,7 +3701,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,73,139,246,73,139,215,72,137,100,36,56
-call _p_106
+call _p_105
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3747,10 +3715,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_7a:
+Lme_79:
 .text
 	.align 4, 0x90
-L_m_7b:
+L_m_7a:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_clear_last_error
 wrapper_managed_to_native_object___icall_wrapper_mono_marshal_clear_last_error:
 .loc 1 1 0
@@ -3764,7 +3732,7 @@ call _p_3
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_107
+call _p_106
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3778,10 +3746,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,178
 
-Lme_7b:
+Lme_7a:
 .text
 	.align 4, 0x90
-L_m_7c:
+L_m_7b:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_free_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_marshal_free_intptr:
 .loc 1 1 0
@@ -3796,7 +3764,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_108
+call _p_107
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3810,10 +3778,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
-Lme_7c:
+Lme_7b:
 .text
 	.align 4, 0x90
-L_m_7d:
+L_m_7c:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_free_array_intptr_int
 wrapper_managed_to_native_object___icall_wrapper_mono_marshal_free_array_intptr_int:
 .loc 1 1 0
@@ -3828,7 +3796,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
 	.byte 64,73,139,247,72,137,100,36,56
-call _p_109
+call _p_108
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3842,10 +3810,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
-Lme_7d:
+Lme_7c:
 .text
 	.align 4, 0x90
-L_m_7e:
+L_m_7d:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_free_asany_object_intptr_int_int
 wrapper_managed_to_native_object___icall_wrapper_mono_marshal_free_asany_object_intptr_int_int:
 .loc 1 1 0
@@ -3860,7 +3828,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,72,139,216,72,141,68,36,40,72,139,11,72,137,76,36,40,72,137,3,72,139,124,36,64,72
 	.byte 139,116,36,72,72,99,84,36,80,73,139,207,72,137,100,36,56
-call _p_110
+call _p_109
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3874,10 +3842,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
-Lme_7e:
+Lme_7d:
 .text
 	.align 4, 0x90
-L_m_7f:
+L_m_7e:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_get_type_object_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_marshal_get_type_object_intptr:
 .loc 1 1 0
@@ -3892,7 +3860,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_111
+call _p_110
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3906,10 +3874,10 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
-Lme_7f:
+Lme_7e:
 .text
 	.align 4, 0x90
-L_m_80:
+L_m_7f:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_isinst_with_cache_object_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_marshal_isinst_with_cache_object_intptr_intptr:
 .loc 1 1 0
@@ -3924,7 +3892,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,73,139,246,73,139,215,72,137,100,36,56
-call _p_112
+call _p_111
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3938,10 +3906,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_80:
+Lme_7f:
 .text
 	.align 4, 0x90
-L_m_81:
+L_m_80:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_set_last_error
 wrapper_managed_to_native_object___icall_wrapper_mono_marshal_set_last_error:
 .loc 1 1 0
@@ -3955,7 +3923,7 @@ call _p_3
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_113
+call _p_112
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -3969,10 +3937,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,178
 
-Lme_81:
+Lme_80:
 .text
 	.align 4, 0x90
-L_m_82:
+L_m_81:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_set_last_error_windows_int
 wrapper_managed_to_native_object___icall_wrapper_mono_marshal_set_last_error_windows_int:
 .loc 1 1 0
@@ -3987,7 +3955,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_114
+call _p_113
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -4001,12 +3969,44 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
+Lme_81:
+.text
+	.align 4, 0x90
+L_m_82:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_string_to_utf16_object
+wrapper_managed_to_native_object___icall_wrapper_mono_marshal_string_to_utf16_object:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
+call _p_114
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
+	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
+	.byte 1,0,0,0,73,139,253
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,232,72,133,192,117,217,235,175
+
 Lme_82:
 .text
 	.align 4, 0x90
 L_m_83:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_string_to_utf16_object
-wrapper_managed_to_native_object___icall_wrapper_mono_marshal_string_to_utf16_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_string_to_utf16_copy_object
+wrapper_managed_to_native_object___icall_wrapper_mono_marshal_string_to_utf16_copy_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4037,8 +4037,8 @@ Lme_83:
 .text
 	.align 4, 0x90
 L_m_84:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_string_to_utf16_copy_object
-wrapper_managed_to_native_object___icall_wrapper_mono_marshal_string_to_utf16_copy_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_fast_object
+wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_fast_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4069,8 +4069,8 @@ Lme_84:
 .text
 	.align 4, 0x90
 L_m_85:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_fast_object
-wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_fast_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_internal_object
+wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_internal_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4101,38 +4101,6 @@ Lme_85:
 .text
 	.align 4, 0x90
 L_m_86:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_internal_object
-wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_internal_object:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
-call _p_118
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
-	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
-	.byte 1,0,0,0,73,139,253
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,232,72,133,192,117,217,235,175
-
-Lme_86:
-.text
-	.align 4, 0x90
-L_m_87:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_v4_fast_object_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_v4_fast_object_intptr:
 .loc 1 1 0
@@ -4147,7 +4115,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
 	.byte 139,247,72,137,100,36,56
-call _p_119
+call _p_118
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -4161,10 +4129,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_87:
+Lme_86:
 .text
 	.align 4, 0x90
-L_m_88:
+L_m_87:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_v4_internal_object_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_v4_internal_object_intptr:
 .loc 1 1 0
@@ -4179,7 +4147,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
 	.byte 64,73,139,247,72,137,100,36,56
-call _p_120
+call _p_119
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -4193,10 +4161,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
-Lme_88:
+Lme_87:
 .text
 	.align 4, 0x90
-L_m_89:
+L_m_88:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_object_castclass_unbox_object_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_object_castclass_unbox_object_intptr:
 .loc 1 1 0
@@ -4211,7 +4179,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
 	.byte 139,247,72,137,100,36,56
-call _p_121
+call _p_120
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -4225,10 +4193,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_89:
+Lme_88:
 .text
 	.align 4, 0x90
-L_m_8a:
+L_m_89:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_object_castclass_with_cache_object_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_object_castclass_with_cache_object_intptr_intptr:
 .loc 1 1 0
@@ -4243,7 +4211,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,73,139,246,73,139,215,72,137,100,36,56
-call _p_122
+call _p_121
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -4257,10 +4225,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_8a:
+Lme_89:
 .text
 	.align 4, 0x90
-L_m_8b:
+L_m_8a:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_object_isinst_icall_object_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_object_isinst_icall_object_intptr:
 .loc 1 1 0
@@ -4275,7 +4243,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
 	.byte 139,247,72,137,100,36,56
-call _p_123
+call _p_122
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -4289,10 +4257,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_8b:
+Lme_8a:
 .text
 	.align 4, 0x90
-L_m_8c:
+L_m_8b:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_object_isinst_with_cache_object_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_object_isinst_with_cache_object_intptr_intptr:
 .loc 1 1 0
@@ -4307,7 +4275,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
 	.byte 64,73,139,246,73,139,215,72,137,100,36,56
-call _p_124
+call _p_123
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -4321,10 +4289,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_8c:
+Lme_8b:
 .text
 	.align 4, 0x90
-L_m_8d:
+L_m_8c:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_exception_clause_intptr_int_int_object
 wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_exception_clause_intptr_int_int_object:
 .loc 1 1 0
@@ -4339,7 +4307,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,72,139,216,72,141,68,36,40,72,139,11,72,137,76,36,40,72,137,3,72,139,124,36,64,72
 	.byte 99,116,36,72,72,99,84,36,80,73,139,207,72,137,100,36,56
-call _p_125
+call _p_124
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -4353,10 +4321,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
-Lme_8d:
+Lme_8c:
 .text
 	.align 4, 0x90
-L_m_8e:
+L_m_8d:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_gc_allocation_object
 wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_gc_allocation_object:
 .loc 1 1 0
@@ -4371,7 +4339,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_126
+call _p_125
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -4385,12 +4353,44 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
+Lme_8d:
+.text
+	.align 4, 0x90
+L_m_8e:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_method_enter_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_method_enter_intptr_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,254,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
+	.byte 64,73,139,247,72,137,100,36,56
+call _p_126
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,133,192,15,133,61,0,0,0,235,0,72,139,68,36,40,73,137,69,0,72,139,28,36,76,139,100,36,8,76,139
+	.byte 108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,135,136,0,0,0,199,0,1,0,0,0,73
+	.byte 139,255
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,248,72,133,192,117,217,235,177
+
 Lme_8e:
 .text
 	.align 4, 0x90
 L_m_8f:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_method_enter_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_method_enter_intptr_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_method_leave_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_method_leave_intptr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4421,8 +4421,8 @@ Lme_8f:
 .text
 	.align 4, 0x90
 L_m_90:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_method_leave_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_method_leave_intptr_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_method_tail_call_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_method_tail_call_intptr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4453,38 +4453,6 @@ Lme_90:
 .text
 	.align 4, 0x90
 L_m_91:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_method_tail_call_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_method_tail_call_intptr_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,254,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
-	.byte 64,73,139,247,72,137,100,36,56
-call _p_129
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,133,192,15,133,61,0,0,0,235,0,72,139,68,36,40,73,137,69,0,72,139,28,36,76,139,100,36,8,76,139
-	.byte 108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,135,136,0,0,0,199,0,1,0,0,0,73
-	.byte 139,255
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,248,72,133,192,117,217,235,177
-
-Lme_91:
-.text
-	.align 4, 0x90
-L_m_92:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_resume_unwind_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_resume_unwind_intptr:
 .loc 1 1 0
@@ -4499,7 +4467,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_130
+call _p_129
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -4513,12 +4481,44 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
+Lme_91:
+.text
+	.align 4, 0x90
+L_m_92:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_builder_to_utf16_object
+wrapper_managed_to_native_object___icall_wrapper_mono_string_builder_to_utf16_object:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
+call _p_130
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
+	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
+	.byte 1,0,0,0,73,139,253
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,232,72,133,192,117,217,235,175
+
 Lme_92:
 .text
 	.align 4, 0x90
 L_m_93:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_builder_to_utf16_object
-wrapper_managed_to_native_object___icall_wrapper_mono_string_builder_to_utf16_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_builder_to_utf8_object
+wrapper_managed_to_native_object___icall_wrapper_mono_string_builder_to_utf8_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4549,8 +4549,8 @@ Lme_93:
 .text
 	.align 4, 0x90
 L_m_94:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_builder_to_utf8_object
-wrapper_managed_to_native_object___icall_wrapper_mono_string_builder_to_utf8_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_from_ansibstr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_string_from_ansibstr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4581,8 +4581,8 @@ Lme_94:
 .text
 	.align 4, 0x90
 L_m_95:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_from_ansibstr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_string_from_ansibstr_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_from_bstr_icall_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_string_from_bstr_icall_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4613,40 +4613,40 @@ Lme_95:
 .text
 	.align 4, 0x90
 L_m_96:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_from_bstr_icall_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_string_from_bstr_icall_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_from_byvalstr_intptr_int
+wrapper_managed_to_native_object___icall_wrapper_mono_string_from_byvalstr_intptr_int:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.byte 24,76,137,124,36,32,76,139,247,76,139,254,73,139,5
 	.long mono_aot_corlib_got - . + 52
 	.byte 247,0,1,0,0,0,116,5
 call _p_3
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
+	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
+	.byte 139,247,72,137,100,36,56
 call _p_134
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
-	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
-	.byte 1,0,0,0,73,139,253
+	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,69,0,73,139,199,72,139,28,36,76
+	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
+	.byte 0,1,0,0,0,73,139,254
 call _p_14
 
 	.byte 72,137,100,36,56
 call _p_15
 
-	.byte 76,139,232,72,133,192,117,217,235,175
+	.byte 76,139,240,72,133,192,117,217,235,174
 
 Lme_96:
 .text
 	.align 4, 0x90
 L_m_97:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_from_byvalstr_intptr_int
-wrapper_managed_to_native_object___icall_wrapper_mono_string_from_byvalstr_intptr_int:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_from_byvalwstr_intptr_int
+wrapper_managed_to_native_object___icall_wrapper_mono_string_from_byvalwstr_intptr_int:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4677,38 +4677,6 @@ Lme_97:
 .text
 	.align 4, 0x90
 L_m_98:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_from_byvalwstr_intptr_int
-wrapper_managed_to_native_object___icall_wrapper_mono_string_from_byvalwstr_intptr_int:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,247,76,139,254,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
-	.byte 139,247,72,137,100,36,56
-call _p_136
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,64,0,0,0,235,0,72,139,68,36,40,73,137,69,0,73,139,199,72,139,28,36,76
-	.byte 139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199
-	.byte 0,1,0,0,0,73,139,254
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,240,72,133,192,117,217,235,174
-
-Lme_98:
-.text
-	.align 4, 0x90
-L_m_99:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_from_tbstr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_string_from_tbstr_intptr:
 .loc 1 1 0
@@ -4723,7 +4691,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_137
+call _p_136
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -4737,10 +4705,10 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
-Lme_99:
+Lme_98:
 .text
 	.align 4, 0x90
-L_m_9a:
+L_m_99:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_new_len_wrapper_intptr_int
 wrapper_managed_to_native_object___icall_wrapper_mono_string_new_len_wrapper_intptr_int:
 .loc 1 1 0
@@ -4755,7 +4723,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
 	.byte 139,247,72,137,100,36,56
-call _p_138
+call _p_137
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -4769,12 +4737,44 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
+Lme_99:
+.text
+	.align 4, 0x90
+L_m_9a:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_new_wrapper_internal_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_string_new_wrapper_internal_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
+call _p_138
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
+	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
+	.byte 1,0,0,0,73,139,253
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,232,72,133,192,117,217,235,175
+
 Lme_9a:
 .text
 	.align 4, 0x90
 L_m_9b:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_new_wrapper_internal_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_string_new_wrapper_internal_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_ansibstr_object
+wrapper_managed_to_native_object___icall_wrapper_mono_string_to_ansibstr_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4805,8 +4805,8 @@ Lme_9b:
 .text
 	.align 4, 0x90
 L_m_9c:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_ansibstr_object
-wrapper_managed_to_native_object___icall_wrapper_mono_string_to_ansibstr_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_bstr_object
+wrapper_managed_to_native_object___icall_wrapper_mono_string_to_bstr_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4837,40 +4837,40 @@ Lme_9c:
 .text
 	.align 4, 0x90
 L_m_9d:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_bstr_object
-wrapper_managed_to_native_object___icall_wrapper_mono_string_to_bstr_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_byvalstr_intptr_intptr_int
+wrapper_managed_to_native_object___icall_wrapper_mono_string_to_byvalstr_intptr_intptr_int:
 .loc 1 1 0
 
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,72,137,124,36,64,72,137,116,36,72,76,139,250,73,139,5
 	.long mono_aot_corlib_got - . + 52
 	.byte 247,0,1,0,0,0,116,5
 call _p_3
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
+	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
+	.byte 64,72,139,116,36,72,73,139,215,72,137,100,36,56
 call _p_141
 
-	.byte 72,139,200,73,139,5
+	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
-	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
-	.byte 1,0,0,0,73,139,253
+	.byte 139,0,133,192,15,133,64,0,0,0,233,0,0,0,0,72,139,68,36,40,73,137,4,36,72,139,28,36,76,139,100,36
+	.byte 8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,88,195,73,141,135,136,0,0,0,199,0,1,0
+	.byte 0,0,73,139,255
 call _p_14
 
 	.byte 72,137,100,36,56
 call _p_15
 
-	.byte 76,139,232,72,133,192,117,217,235,175
+	.byte 76,139,248,72,133,192,117,217,235,177
 
 Lme_9d:
 .text
 	.align 4, 0x90
 L_m_9e:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_byvalstr_intptr_intptr_int
-wrapper_managed_to_native_object___icall_wrapper_mono_string_to_byvalstr_intptr_intptr_int:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_byvalwstr_intptr_intptr_int
+wrapper_managed_to_native_object___icall_wrapper_mono_string_to_byvalwstr_intptr_intptr_int:
 .loc 1 1 0
 
 	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4901,40 +4901,40 @@ Lme_9e:
 .text
 	.align 4, 0x90
 L_m_9f:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_byvalwstr_intptr_intptr_int
-wrapper_managed_to_native_object___icall_wrapper_mono_string_to_byvalwstr_intptr_intptr_int:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_tbstr_object
+wrapper_managed_to_native_object___icall_wrapper_mono_string_to_tbstr_object:
 .loc 1 1 0
 
-	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,72,137,124,36,64,72,137,116,36,72,76,139,250,73,139,5
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
 	.long mono_aot_corlib_got - . + 52
 	.byte 247,0,1,0,0,0,116,5
 call _p_3
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
-	.byte 64,72,139,116,36,72,73,139,215,72,137,100,36,56
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
 call _p_143
 
-	.byte 73,139,5
+	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,133,192,15,133,64,0,0,0,233,0,0,0,0,72,139,68,36,40,73,137,4,36,72,139,28,36,76,139,100,36
-	.byte 8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,88,195,73,141,135,136,0,0,0,199,0,1,0
-	.byte 0,0,73,139,255
+	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
+	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
+	.byte 1,0,0,0,73,139,253
 call _p_14
 
 	.byte 72,137,100,36,56
 call _p_15
 
-	.byte 76,139,248,72,133,192,117,217,235,177
+	.byte 76,139,232,72,133,192,117,217,235,175
 
 Lme_9f:
 .text
 	.align 4, 0x90
 L_m_a0:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_tbstr_object
-wrapper_managed_to_native_object___icall_wrapper_mono_string_to_tbstr_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_utf16_internal_object
+wrapper_managed_to_native_object___icall_wrapper_mono_string_to_utf16_internal_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4965,8 +4965,8 @@ Lme_a0:
 .text
 	.align 4, 0x90
 L_m_a1:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_utf16_internal_object
-wrapper_managed_to_native_object___icall_wrapper_mono_string_to_utf16_internal_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_utf8str_object
+wrapper_managed_to_native_object___icall_wrapper_mono_string_to_utf8str_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -4997,38 +4997,6 @@ Lme_a1:
 .text
 	.align 4, 0x90
 L_m_a2:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_to_utf8str_object
-wrapper_managed_to_native_object___icall_wrapper_mono_string_to_utf8str_object:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
-call _p_146
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
-	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
-	.byte 1,0,0,0,73,139,253
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,232,72,133,192,117,217,235,175
-
-Lme_a2:
-.text
-	.align 4, 0x90
-L_m_a3:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_utf16_to_builder_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_string_utf16_to_builder_intptr_intptr:
 .loc 1 1 0
@@ -5043,7 +5011,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
 	.byte 64,73,139,247,72,137,100,36,56
-call _p_147
+call _p_146
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -5057,10 +5025,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
-Lme_a3:
+Lme_a2:
 .text
 	.align 4, 0x90
-L_m_a4:
+L_m_a3:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_utf16_to_builder2_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_string_utf16_to_builder2_intptr:
 .loc 1 1 0
@@ -5075,7 +5043,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_148
+call _p_147
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -5089,10 +5057,10 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
-Lme_a4:
+Lme_a3:
 .text
 	.align 4, 0x90
-L_m_a5:
+L_m_a4:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_utf8_to_builder_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_string_utf8_to_builder_intptr_intptr:
 .loc 1 1 0
@@ -5107,7 +5075,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
 	.byte 64,73,139,247,72,137,100,36,56
-call _p_149
+call _p_148
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -5121,10 +5089,10 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
-Lme_a5:
+Lme_a4:
 .text
 	.align 4, 0x90
-L_m_a6:
+L_m_a5:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_string_utf8_to_builder2_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_string_utf8_to_builder2_intptr:
 .loc 1 1 0
@@ -5139,7 +5107,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_150
+call _p_149
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -5153,10 +5121,10 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
-Lme_a6:
+Lme_a5:
 .text
 	.align 4, 0x90
-L_m_a7:
+L_m_a6:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_struct_delete_old_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_struct_delete_old_intptr_intptr:
 .loc 1 1 0
@@ -5171,7 +5139,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
 	.byte 64,73,139,247,72,137,100,36,56
-call _p_151
+call _p_150
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -5185,12 +5153,43 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
+Lme_a6:
+.text
+	.align 4, 0x90
+L_m_a7:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_thread_force_interruption_checkpoint_noraise
+wrapper_managed_to_native_object___icall_wrapper_mono_thread_force_interruption_checkpoint_noraise:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
+call _p_151
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,241,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,7,73,139,198,72,139,28,36,76,139
+	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
+	.byte 1,0,0,0,73,139,253
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,232,72,133,192,117,217,235,175
+
 Lme_a7:
 .text
 	.align 4, 0x90
 L_m_a8:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_thread_force_interruption_checkpoint_noraise
-wrapper_managed_to_native_object___icall_wrapper_mono_thread_force_interruption_checkpoint_noraise:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_thread_get_undeniable_exception
+wrapper_managed_to_native_object___icall_wrapper_mono_thread_get_undeniable_exception:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -5220,37 +5219,6 @@ Lme_a8:
 .text
 	.align 4, 0x90
 L_m_a9:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_thread_get_undeniable_exception
-wrapper_managed_to_native_object___icall_wrapper_mono_thread_get_undeniable_exception:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_153
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,241,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,7,73,139,198,72,139,28,36,76,139
-	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
-	.byte 1,0,0,0,73,139,253
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,232,72,133,192,117,217,235,175
-
-Lme_a9:
-.text
-	.align 4, 0x90
-L_m_aa:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_thread_interruption_checkpoint
 wrapper_managed_to_native_object___icall_wrapper_mono_thread_interruption_checkpoint:
 .loc 1 1 0
@@ -5259,15 +5227,15 @@ wrapper_managed_to_native_object___icall_wrapper_mono_thread_interruption_checkp
 	.byte 24,76,137,124,36,32,73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_154
+call _p_153
 
 	.byte 72,139,76,36,40,73,137,15,72,139,28,36,76,139,100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32
 	.byte 72,131,196,72,195
 
-Lme_aa:
+Lme_a9:
 .text
 	.align 4, 0x90
-L_m_ab:
+L_m_aa:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_threads_attach_coop_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_threads_attach_coop_intptr_intptr:
 .loc 1 1 0
@@ -5282,7 +5250,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
 	.byte 139,247,72,137,100,36,56
-call _p_155
+call _p_154
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -5296,10 +5264,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_ab:
+Lme_aa:
 .text
 	.align 4, 0x90
-L_m_ac:
+L_m_ab:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_threads_detach_coop_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_threads_detach_coop_intptr_intptr:
 .loc 1 1 0
@@ -5314,7 +5282,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
 	.byte 64,73,139,247,72,137,100,36,56
-call _p_156
+call _p_155
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -5328,12 +5296,44 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
+Lme_ab:
+.text
+	.align 4, 0x90
+L_m_ac:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_threads_enter_gc_safe_region_unbalanced_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_threads_enter_gc_safe_region_unbalanced_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
+call _p_156
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
+	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
+	.byte 1,0,0,0,73,139,253
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,232,72,133,192,117,217,235,175
+
 Lme_ac:
 .text
 	.align 4, 0x90
 L_m_ad:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_threads_enter_gc_safe_region_unbalanced_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_threads_enter_gc_safe_region_unbalanced_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_threads_enter_gc_unsafe_region_unbalanced_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_threads_enter_gc_unsafe_region_unbalanced_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -5364,44 +5364,44 @@ Lme_ad:
 .text
 	.align 4, 0x90
 L_m_ae:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_threads_enter_gc_unsafe_region_unbalanced_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_threads_enter_gc_unsafe_region_unbalanced_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
-call _p_158
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
-	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
-	.byte 1,0,0,0,73,139,253
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,232,72,133,192,117,217,235,175
-
-Lme_ae:
-.text
-	.align 4, 0x90
-L_m_af:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_threads_exit_gc_safe_region_unbalanced_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_threads_exit_gc_safe_region_unbalanced_intptr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
 	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,254,73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
+	.byte 64,73,139,247,72,137,100,36,56
+call _p_158
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,133,192,15,133,61,0,0,0,235,0,72,139,68,36,40,73,137,69,0,72,139,28,36,76,139,100,36,8,76,139
+	.byte 108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,135,136,0,0,0,199,0,1,0,0,0,73
+	.byte 139,255
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,248,72,133,192,117,217,235,177
+
+Lme_ae:
+.text
+	.align 4, 0x90
+L_m_af:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_threads_exit_gc_unsafe_region_unbalanced_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_threads_exit_gc_unsafe_region_unbalanced_intptr_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,254,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
 	.byte 64,73,139,247,72,137,100,36,56
@@ -5423,38 +5423,6 @@ Lme_af:
 .text
 	.align 4, 0x90
 L_m_b0:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_threads_exit_gc_unsafe_region_unbalanced_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_threads_exit_gc_unsafe_region_unbalanced_intptr_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,72,137,124,36,64,76,139,254,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
-	.byte 64,73,139,247,72,137,100,36,56
-call _p_160
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,133,192,15,133,61,0,0,0,235,0,72,139,68,36,40,73,137,69,0,72,139,28,36,76,139,100,36,8,76,139
-	.byte 108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,135,136,0,0,0,199,0,1,0,0,0,73
-	.byte 139,255
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,248,72,133,192,117,217,235,177
-
-Lme_b0:
-.text
-	.align 4, 0x90
-L_m_b1:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_threads_state_poll
 wrapper_managed_to_native_object___icall_wrapper_mono_threads_state_poll:
 .loc 1 1 0
@@ -5463,7 +5431,7 @@ wrapper_managed_to_native_object___icall_wrapper_mono_threads_state_poll:
 	.byte 24,76,137,124,36,32,73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_161
+call _p_160
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -5477,10 +5445,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,178
 
-Lme_b1:
+Lme_b0:
 .text
 	.align 4, 0x90
-L_m_b2:
+L_m_b1:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_throw_method_access_intptr_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_throw_method_access_intptr_intptr:
 .loc 1 1 0
@@ -5495,7 +5463,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,72,139,124,36
 	.byte 64,73,139,247,72,137,100,36,56
-call _p_162
+call _p_161
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -5509,12 +5477,43 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,177
 
+Lme_b1:
+.text
+	.align 4, 0x90
+L_m_b2:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_throw_bad_image
+wrapper_managed_to_native_object___icall_wrapper_mono_throw_bad_image:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
+call _p_162
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,133,192,15,133,60,0,0,0,235,0,72,139,68,36,40,73,137,7,72,139,28,36,76,139,100,36,8,76,139,108
+	.byte 36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199,0,1,0,0,0,73,139
+	.byte 254
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,240,72,133,192,117,217,235,178
+
 Lme_b2:
 .text
 	.align 4, 0x90
 L_m_b3:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_throw_bad_image
-wrapper_managed_to_native_object___icall_wrapper_mono_throw_bad_image:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_throw_not_supported
+wrapper_managed_to_native_object___icall_wrapper_mono_throw_not_supported:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -5544,8 +5543,8 @@ Lme_b3:
 .text
 	.align 4, 0x90
 L_m_b4:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_throw_not_supported
-wrapper_managed_to_native_object___icall_wrapper_mono_throw_not_supported:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_throw_platform_not_supported
+wrapper_managed_to_native_object___icall_wrapper_mono_throw_platform_not_supported:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -5575,37 +5574,6 @@ Lme_b4:
 .text
 	.align 4, 0x90
 L_m_b5:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_throw_platform_not_supported
-wrapper_managed_to_native_object___icall_wrapper_mono_throw_platform_not_supported:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_165
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,133,192,15,133,60,0,0,0,235,0,72,139,68,36,40,73,137,7,72,139,28,36,76,139,100,36,8,76,139,108
-	.byte 36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,134,136,0,0,0,199,0,1,0,0,0,73,139
-	.byte 254
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,240,72,133,192,117,217,235,178
-
-Lme_b5:
-.text
-	.align 4, 0x90
-L_m_b6:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_throw_invalid_program_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_throw_invalid_program_intptr:
 .loc 1 1 0
@@ -5620,7 +5588,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_166
+call _p_165
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -5634,12 +5602,44 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
+Lme_b5:
+.text
+	.align 4, 0x90
+L_m_b6:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_trace_enter_method_intptr_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_trace_enter_method_intptr_intptr_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,72,137,124,36,64,72,137,116,36,72,76,139,250,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
+	.byte 64,72,139,116,36,72,73,139,215,72,137,100,36,56
+call _p_166
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,133,192,15,133,64,0,0,0,233,0,0,0,0,72,139,68,36,40,73,137,4,36,72,139,28,36,76,139,100,36
+	.byte 8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,88,195,73,141,135,136,0,0,0,199,0,1,0
+	.byte 0,0,73,139,255
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,248,72,133,192,117,217,235,177
+
 Lme_b6:
 .text
 	.align 4, 0x90
 L_m_b7:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_trace_enter_method_intptr_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_trace_enter_method_intptr_intptr_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_trace_leave_method_intptr_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_trace_leave_method_intptr_intptr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -5670,8 +5670,8 @@ Lme_b7:
 .text
 	.align 4, 0x90
 L_m_b8:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_trace_leave_method_intptr_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_trace_leave_method_intptr_intptr_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_trace_tail_method_intptr_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_trace_tail_method_intptr_intptr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -5702,8 +5702,8 @@ Lme_b8:
 .text
 	.align 4, 0x90
 L_m_b9:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_trace_tail_method_intptr_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_trace_tail_method_intptr_intptr_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_value_copy_internal_intptr_intptr_intptr
+wrapper_managed_to_native_object___icall_wrapper_mono_value_copy_internal_intptr_intptr_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -5734,38 +5734,6 @@ Lme_b9:
 .text
 	.align 4, 0x90
 L_m_ba:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_value_copy_internal_intptr_intptr_intptr
-wrapper_managed_to_native_object___icall_wrapper_mono_value_copy_internal_intptr_intptr_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,72,137,124,36,64,72,137,116,36,72,76,139,250,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
-	.byte 64,72,139,116,36,72,73,139,215,72,137,100,36,56
-call _p_170
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,133,192,15,133,64,0,0,0,233,0,0,0,0,72,139,68,36,40,73,137,4,36,72,139,28,36,76,139,100,36
-	.byte 8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,88,195,73,141,135,136,0,0,0,199,0,1,0
-	.byte 0,0,73,139,255
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,248,72,133,192,117,217,235,177
-
-Lme_ba:
-.text
-	.align 4, 0x90
-L_m_bb:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_array_new_specific_intptr_int
 wrapper_managed_to_native_object___icall_wrapper_ves_icall_array_new_specific_intptr_int:
 .loc 1 1 0
@@ -5780,7 +5748,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,232,72,141,68,36,40,73,139,77,0,72,137,76,36,40,73,137,69,0,73,139,254,73
 	.byte 139,247,72,137,100,36,56
-call _p_171
+call _p_170
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -5794,10 +5762,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,174
 
-Lme_bb:
+Lme_ba:
 .text
 	.align 4, 0x90
-L_m_bc:
+L_m_bb:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_marshal_alloc_intptr
 wrapper_managed_to_native_object___icall_wrapper_ves_icall_marshal_alloc_intptr:
 .loc 1 1 0
@@ -5812,7 +5780,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_172
+call _p_171
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -5826,12 +5794,44 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
+Lme_bb:
+.text
+	.align 4, 0x90
+L_m_bc:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_delegate_ctor_object_object_intptr
+wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_delegate_ctor_object_object_intptr:
+.loc 1 1 0
+
+	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,72,137,124,36,64,72,137,116,36,72,76,139,250,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
+	.byte 64,72,139,116,36,72,73,139,215,72,137,100,36,56
+call _p_172
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,133,192,15,133,64,0,0,0,233,0,0,0,0,72,139,68,36,40,73,137,4,36,72,139,28,36,76,139,100,36
+	.byte 8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,88,195,73,141,135,136,0,0,0,199,0,1,0
+	.byte 0,0,73,139,255
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,248,72,133,192,117,217,235,177
+
 Lme_bc:
 .text
 	.align 4, 0x90
 L_m_bd:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_delegate_ctor_object_object_intptr
-wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_delegate_ctor_object_object_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_delegate_ctor_interp_object_object_intptr
+wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_delegate_ctor_interp_object_object_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -5862,40 +5862,40 @@ Lme_bd:
 .text
 	.align 4, 0x90
 L_m_be:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_delegate_ctor_interp_object_object_intptr
-wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_delegate_ctor_interp_object_object_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_string_from_utf16_intptr
+wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_string_from_utf16_intptr:
 .loc 1 1 0
 
-	.byte 72,131,236,88,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,72,137,124,36,64,72,137,116,36,72,76,139,250,73,139,5
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
 	.long mono_aot_corlib_got - . + 52
 	.byte 247,0,1,0,0,0,116,5
 call _p_3
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,224,72,141,68,36,40,73,139,12,36,72,137,76,36,40,73,137,4,36,72,139,124,36
-	.byte 64,72,139,116,36,72,73,139,215,72,137,100,36,56
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
 call _p_174
 
-	.byte 73,139,5
+	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,133,192,15,133,64,0,0,0,233,0,0,0,0,72,139,68,36,40,73,137,4,36,72,139,28,36,76,139,100,36
-	.byte 8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,88,195,73,141,135,136,0,0,0,199,0,1,0
-	.byte 0,0,73,139,255
+	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
+	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
+	.byte 1,0,0,0,73,139,253
 call _p_14
 
 	.byte 72,137,100,36,56
 call _p_15
 
-	.byte 76,139,248,72,133,192,117,217,235,177
+	.byte 76,139,232,72,133,192,117,217,235,175
 
 Lme_be:
 .text
 	.align 4, 0x90
 L_m_bf:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_string_from_utf16_intptr
-wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_string_from_utf16_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_string_to_utf8_object
+wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_string_to_utf8_object:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -5926,8 +5926,8 @@ Lme_bf:
 .text
 	.align 4, 0x90
 L_m_c0:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_string_to_utf8_object
-wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_string_to_utf8_object:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_object_new_intptr
+wrapper_managed_to_native_object___icall_wrapper_ves_icall_object_new_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -5958,8 +5958,8 @@ Lme_c0:
 .text
 	.align 4, 0x90
 L_m_c1:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_object_new_intptr
-wrapper_managed_to_native_object___icall_wrapper_ves_icall_object_new_intptr:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_object_new_specific_intptr
+wrapper_managed_to_native_object___icall_wrapper_ves_icall_object_new_specific_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -5990,38 +5990,6 @@ Lme_c1:
 .text
 	.align 4, 0x90
 L_m_c2:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_object_new_specific_intptr
-wrapper_managed_to_native_object___icall_wrapper_ves_icall_object_new_specific_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
-call _p_178
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
-	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
-	.byte 1,0,0,0,73,139,253
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,232,72,133,192,117,217,235,175
-
-Lme_c2:
-.text
-	.align 4, 0x90
-L_m_c3:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_runtime_class_init_intptr
 wrapper_managed_to_native_object___icall_wrapper_ves_icall_runtime_class_init_intptr:
 .loc 1 1 0
@@ -6036,7 +6004,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_179
+call _p_178
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -6050,12 +6018,44 @@ call _p_15
 
 	.byte 76,139,248,72,133,192,117,217,235,178
 
+Lme_c2:
+.text
+	.align 4, 0x90
+L_m_c3:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_string_alloc_int
+wrapper_managed_to_native_object___icall_wrapper_ves_icall_string_alloc_int:
+.loc 1 1 0
+
+	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
+	.byte 24,76,137,124,36,32,76,139,255,73,139,5
+	.long mono_aot_corlib_got - . + 52
+	.byte 247,0,1,0,0,0,116,5
+call _p_3
+
+	.byte 73,139,5
+	.long mono_aot_corlib_got - . + 76
+	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
+	.byte 36,56
+call _p_179
+
+	.byte 72,139,200,73,139,5
+	.long mono_aot_corlib_got - . + 44
+	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
+	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
+	.byte 1,0,0,0,73,139,253
+call _p_14
+
+	.byte 72,137,100,36,56
+call _p_15
+
+	.byte 76,139,232,72,133,192,117,217,235,175
+
 Lme_c3:
 .text
 	.align 4, 0x90
 L_m_c4:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_string_alloc_int
-wrapper_managed_to_native_object___icall_wrapper_ves_icall_string_alloc_int:
+	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_string_new_wrapper_intptr
+wrapper_managed_to_native_object___icall_wrapper_ves_icall_string_new_wrapper_intptr:
 .loc 1 1 0
 
 	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
@@ -6086,38 +6086,6 @@ Lme_c4:
 .text
 	.align 4, 0x90
 L_m_c5:
-	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_string_new_wrapper_intptr
-wrapper_managed_to_native_object___icall_wrapper_ves_icall_string_new_wrapper_intptr:
-.loc 1 1 0
-
-	.byte 72,131,236,72,72,137,100,36,56,72,137,108,36,48,72,137,28,36,76,137,100,36,8,76,137,108,36,16,76,137,116,36
-	.byte 24,76,137,124,36,32,76,139,255,73,139,5
-	.long mono_aot_corlib_got - . + 52
-	.byte 247,0,1,0,0,0,116,5
-call _p_3
-
-	.byte 73,139,5
-	.long mono_aot_corlib_got - . + 76
-	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
-	.byte 36,56
-call _p_181
-
-	.byte 72,139,200,73,139,5
-	.long mono_aot_corlib_got - . + 44
-	.byte 139,0,76,139,249,133,192,15,133,63,0,0,0,235,0,72,139,68,36,40,73,137,6,73,139,199,72,139,28,36,76,139
-	.byte 100,36,8,76,139,108,36,16,76,139,116,36,24,76,139,124,36,32,72,131,196,72,195,73,141,133,136,0,0,0,199,0
-	.byte 1,0,0,0,73,139,253
-call _p_14
-
-	.byte 72,137,100,36,56
-call _p_15
-
-	.byte 76,139,232,72,133,192,117,217,235,175
-
-Lme_c5:
-.text
-	.align 4, 0x90
-L_m_c6:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_ves_icall_thread_finish_async_abort
 wrapper_managed_to_native_object___icall_wrapper_ves_icall_thread_finish_async_abort:
 .loc 1 1 0
@@ -6131,7 +6099,7 @@ call _p_3
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,248,72,141,68,36,40,73,139,15,72,137,76,36,40,73,137,7,72,137,100,36,56
-call _p_182
+call _p_181
 
 	.byte 73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -6145,10 +6113,10 @@ call _p_15
 
 	.byte 76,139,240,72,133,192,117,217,235,178
 
-Lme_c6:
+Lme_c5:
 .text
 	.align 4, 0x90
-L_m_c7:
+L_m_c6:
 	.no_dead_strip wrapper_managed_to_native_object___icall_wrapper_mono_marshal_lookup_pinvoke_intptr
 wrapper_managed_to_native_object___icall_wrapper_mono_marshal_lookup_pinvoke_intptr:
 .loc 1 1 0
@@ -6163,7 +6131,7 @@ call _p_3
 	.long mono_aot_corlib_got - . + 76
 	.byte 72,137,100,36,56,255,208,76,139,240,72,141,68,36,40,73,139,14,72,137,76,36,40,73,137,6,73,139,255,72,137,100
 	.byte 36,56
-call _p_183
+call _p_182
 
 	.byte 72,139,200,73,139,5
 	.long mono_aot_corlib_got - . + 44
@@ -6177,7 +6145,7 @@ call _p_15
 
 	.byte 76,139,232,72,133,192,117,217,235,175
 
-Lme_c7:
+Lme_c6:
 .text
 	.align 3, 0x90
 jit_code_end:
@@ -6386,7 +6354,6 @@ call L_m_c3
 call L_m_c4
 call L_m_c5
 call L_m_c6
-call L_m_c7
 method_addresses_end:
 
 .section __TEXT, __const
@@ -6437,7 +6404,7 @@ Lnamede_generic_trampoline_jit:
 .section __TEXT, __const
 _generic_trampoline_jit_p:
 
-	.long 2577
+	.long 2565
 LDIFF_SYM3=Lnamede_generic_trampoline_jit - _generic_trampoline_jit
 	.long LDIFF_SYM3,0
 .section __DWARF, __debug_info,regular,debug
@@ -6499,7 +6466,7 @@ Lnamede_generic_trampoline_jump:
 .section __TEXT, __const
 _generic_trampoline_jump_p:
 
-	.long 2584
+	.long 2572
 LDIFF_SYM5=Lnamede_generic_trampoline_jump - _generic_trampoline_jump
 	.long LDIFF_SYM5,74
 .section __DWARF, __debug_info,regular,debug
@@ -6561,7 +6528,7 @@ Lnamede_generic_trampoline_rgctx_lazy_fetch:
 .section __TEXT, __const
 _generic_trampoline_rgctx_lazy_fetch_p:
 
-	.long 2591
+	.long 2579
 LDIFF_SYM7=Lnamede_generic_trampoline_rgctx_lazy_fetch - _generic_trampoline_rgctx_lazy_fetch
 	.long LDIFF_SYM7,0
 .section __DWARF, __debug_info,regular,debug
@@ -6623,7 +6590,7 @@ Lnamede_generic_trampoline_aot:
 .section __TEXT, __const
 _generic_trampoline_aot_p:
 
-	.long 2598
+	.long 2586
 LDIFF_SYM9=Lnamede_generic_trampoline_aot - _generic_trampoline_aot
 	.long LDIFF_SYM9,0
 .section __DWARF, __debug_info,regular,debug
@@ -6685,7 +6652,7 @@ Lnamede_generic_trampoline_aot_plt:
 .section __TEXT, __const
 _generic_trampoline_aot_plt_p:
 
-	.long 2605
+	.long 2593
 LDIFF_SYM11=Lnamede_generic_trampoline_aot_plt - _generic_trampoline_aot_plt
 	.long LDIFF_SYM11,0
 .section __DWARF, __debug_info,regular,debug
@@ -6747,7 +6714,7 @@ Lnamede_generic_trampoline_delegate:
 .section __TEXT, __const
 _generic_trampoline_delegate_p:
 
-	.long 2612
+	.long 2600
 LDIFF_SYM13=Lnamede_generic_trampoline_delegate - _generic_trampoline_delegate
 	.long LDIFF_SYM13,0
 .section __DWARF, __debug_info,regular,debug
@@ -6809,7 +6776,7 @@ Lnamede_generic_trampoline_vcall:
 .section __TEXT, __const
 _generic_trampoline_vcall_p:
 
-	.long 2619
+	.long 2607
 LDIFF_SYM15=Lnamede_generic_trampoline_vcall - _generic_trampoline_vcall
 	.long LDIFF_SYM15,0
 .section __DWARF, __debug_info,regular,debug
@@ -6845,7 +6812,7 @@ Lnamede_restore_context:
 .section __TEXT, __const
 _restore_context_p:
 
-	.long 2626
+	.long 2614
 LDIFF_SYM17=Lnamede_restore_context - _restore_context
 	.long LDIFF_SYM17,148
 .text
@@ -6859,7 +6826,7 @@ Lnamede_call_filter:
 .section __TEXT, __const
 _call_filter_p:
 
-	.long 2627
+	.long 2615
 LDIFF_SYM18=Lnamede_call_filter - _call_filter
 	.long LDIFF_SYM18,148
 .text
@@ -6879,7 +6846,7 @@ Lnamede_throw_exception:
 .section __TEXT, __const
 _throw_exception_p:
 
-	.long 2628
+	.long 2616
 LDIFF_SYM19=Lnamede_throw_exception - _throw_exception
 	.long LDIFF_SYM19,149
 .section __DWARF, __debug_info,regular,debug
@@ -6919,7 +6886,7 @@ Lnamede_rethrow_exception:
 .section __TEXT, __const
 _rethrow_exception_p:
 
-	.long 2630
+	.long 2618
 LDIFF_SYM21=Lnamede_rethrow_exception - _rethrow_exception
 	.long LDIFF_SYM21,149
 .section __DWARF, __debug_info,regular,debug
@@ -6959,7 +6926,7 @@ Lnamede_rethrow_preserve_exception:
 .section __TEXT, __const
 _rethrow_preserve_exception_p:
 
-	.long 2632
+	.long 2620
 LDIFF_SYM23=Lnamede_rethrow_preserve_exception - _rethrow_preserve_exception
 	.long LDIFF_SYM23,149
 .section __DWARF, __debug_info,regular,debug
@@ -6998,7 +6965,7 @@ Lnamede_throw_corlib_exception:
 .section __TEXT, __const
 _throw_corlib_exception_p:
 
-	.long 2634
+	.long 2622
 LDIFF_SYM25=Lnamede_throw_corlib_exception - _throw_corlib_exception
 	.long LDIFF_SYM25,149
 .section __DWARF, __debug_info,regular,debug
@@ -7038,7 +7005,7 @@ Lnamede_sdb_single_step_trampoline:
 .section __TEXT, __const
 _sdb_single_step_trampoline_p:
 
-	.long 2636
+	.long 2624
 LDIFF_SYM27=Lnamede_sdb_single_step_trampoline - _sdb_single_step_trampoline
 	.long LDIFF_SYM27,159
 .section __DWARF, __debug_info,regular,debug
@@ -7078,7 +7045,7 @@ Lnamede_sdb_breakpoint_trampoline:
 .section __TEXT, __const
 _sdb_breakpoint_trampoline_p:
 
-	.long 2638
+	.long 2626
 LDIFF_SYM29=Lnamede_sdb_breakpoint_trampoline - _sdb_breakpoint_trampoline
 	.long LDIFF_SYM29,159
 .section __DWARF, __debug_info,regular,debug
@@ -7129,7 +7096,7 @@ Lnamede_gsharedvt_trampoline:
 .section __TEXT, __const
 _gsharedvt_trampoline_p:
 
-	.long 2640
+	.long 2628
 LDIFF_SYM31=Lnamede_gsharedvt_trampoline - _gsharedvt_trampoline
 	.long LDIFF_SYM31,178
 .section __DWARF, __debug_info,regular,debug
@@ -7180,7 +7147,7 @@ Lnamede_gsharedvt_out_trampoline:
 .section __TEXT, __const
 _gsharedvt_out_trampoline_p:
 
-	.long 2642
+	.long 2630
 LDIFF_SYM33=Lnamede_gsharedvt_out_trampoline - _gsharedvt_out_trampoline
 	.long LDIFF_SYM33,178
 .section __DWARF, __debug_info,regular,debug
@@ -7220,7 +7187,7 @@ Lnamede_llvm_resume_unwind_trampoline:
 .section __TEXT, __const
 _llvm_resume_unwind_trampoline_p:
 
-	.long 2644
+	.long 2632
 LDIFF_SYM35=Lnamede_llvm_resume_unwind_trampoline - _llvm_resume_unwind_trampoline
 	.long LDIFF_SYM35,149
 .section __DWARF, __debug_info,regular,debug
@@ -7259,7 +7226,7 @@ Lnamede_llvm_throw_corlib_exception_abs_trampoline:
 .section __TEXT, __const
 _llvm_throw_corlib_exception_abs_trampoline_p:
 
-	.long 2646
+	.long 2634
 LDIFF_SYM37=Lnamede_llvm_throw_corlib_exception_abs_trampoline - _llvm_throw_corlib_exception_abs_trampoline
 	.long LDIFF_SYM37,149
 .section __DWARF, __debug_info,regular,debug
@@ -7298,7 +7265,7 @@ Lnamede_llvm_throw_corlib_exception_trampoline:
 .section __TEXT, __const
 _llvm_throw_corlib_exception_trampoline_p:
 
-	.long 2648
+	.long 2636
 LDIFF_SYM39=Lnamede_llvm_throw_corlib_exception_trampoline - _llvm_throw_corlib_exception_trampoline
 	.long LDIFF_SYM39,149
 .section __DWARF, __debug_info,regular,debug
@@ -7333,7 +7300,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_0:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_0_p:
 
-	.long 2650
+	.long 2638
 LDIFF_SYM41=Lnamede_rgctx_fetch_trampoline_rgctx_0 - _rgctx_fetch_trampoline_rgctx_0
 	.long LDIFF_SYM41,192
 .section __DWARF, __debug_info,regular,debug
@@ -7367,7 +7334,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_0:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_0_p:
 
-	.long 2652
+	.long 2640
 LDIFF_SYM43=Lnamede_rgctx_fetch_trampoline_mrgctx_0 - _rgctx_fetch_trampoline_mrgctx_0
 	.long LDIFF_SYM43,192
 .section __DWARF, __debug_info,regular,debug
@@ -7401,7 +7368,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_1:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_1_p:
 
-	.long 2654
+	.long 2642
 LDIFF_SYM45=Lnamede_rgctx_fetch_trampoline_rgctx_1 - _rgctx_fetch_trampoline_rgctx_1
 	.long LDIFF_SYM45,192
 .section __DWARF, __debug_info,regular,debug
@@ -7435,7 +7402,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_1:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_1_p:
 
-	.long 2656
+	.long 2644
 LDIFF_SYM47=Lnamede_rgctx_fetch_trampoline_mrgctx_1 - _rgctx_fetch_trampoline_mrgctx_1
 	.long LDIFF_SYM47,192
 .section __DWARF, __debug_info,regular,debug
@@ -7469,7 +7436,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_2:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_2_p:
 
-	.long 2658
+	.long 2646
 LDIFF_SYM49=Lnamede_rgctx_fetch_trampoline_rgctx_2 - _rgctx_fetch_trampoline_rgctx_2
 	.long LDIFF_SYM49,192
 .section __DWARF, __debug_info,regular,debug
@@ -7503,7 +7470,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_2:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_2_p:
 
-	.long 2660
+	.long 2648
 LDIFF_SYM51=Lnamede_rgctx_fetch_trampoline_mrgctx_2 - _rgctx_fetch_trampoline_mrgctx_2
 	.long LDIFF_SYM51,192
 .section __DWARF, __debug_info,regular,debug
@@ -7537,7 +7504,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_3:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_3_p:
 
-	.long 2662
+	.long 2650
 LDIFF_SYM53=Lnamede_rgctx_fetch_trampoline_rgctx_3 - _rgctx_fetch_trampoline_rgctx_3
 	.long LDIFF_SYM53,192
 .section __DWARF, __debug_info,regular,debug
@@ -7571,7 +7538,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_3:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_3_p:
 
-	.long 2664
+	.long 2652
 LDIFF_SYM55=Lnamede_rgctx_fetch_trampoline_mrgctx_3 - _rgctx_fetch_trampoline_mrgctx_3
 	.long LDIFF_SYM55,192
 .section __DWARF, __debug_info,regular,debug
@@ -7605,7 +7572,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_4:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_4_p:
 
-	.long 2666
+	.long 2654
 LDIFF_SYM57=Lnamede_rgctx_fetch_trampoline_rgctx_4 - _rgctx_fetch_trampoline_rgctx_4
 	.long LDIFF_SYM57,192
 .section __DWARF, __debug_info,regular,debug
@@ -7639,7 +7606,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_4:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_4_p:
 
-	.long 2668
+	.long 2656
 LDIFF_SYM59=Lnamede_rgctx_fetch_trampoline_mrgctx_4 - _rgctx_fetch_trampoline_mrgctx_4
 	.long LDIFF_SYM59,192
 .section __DWARF, __debug_info,regular,debug
@@ -7673,7 +7640,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_5:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_5_p:
 
-	.long 2670
+	.long 2658
 LDIFF_SYM61=Lnamede_rgctx_fetch_trampoline_rgctx_5 - _rgctx_fetch_trampoline_rgctx_5
 	.long LDIFF_SYM61,192
 .section __DWARF, __debug_info,regular,debug
@@ -7707,7 +7674,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_5:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_5_p:
 
-	.long 2672
+	.long 2660
 LDIFF_SYM63=Lnamede_rgctx_fetch_trampoline_mrgctx_5 - _rgctx_fetch_trampoline_mrgctx_5
 	.long LDIFF_SYM63,192
 .section __DWARF, __debug_info,regular,debug
@@ -7741,7 +7708,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_6:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_6_p:
 
-	.long 2674
+	.long 2662
 LDIFF_SYM65=Lnamede_rgctx_fetch_trampoline_rgctx_6 - _rgctx_fetch_trampoline_rgctx_6
 	.long LDIFF_SYM65,192
 .section __DWARF, __debug_info,regular,debug
@@ -7775,7 +7742,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_6:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_6_p:
 
-	.long 2676
+	.long 2664
 LDIFF_SYM67=Lnamede_rgctx_fetch_trampoline_mrgctx_6 - _rgctx_fetch_trampoline_mrgctx_6
 	.long LDIFF_SYM67,192
 .section __DWARF, __debug_info,regular,debug
@@ -7809,7 +7776,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_7:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_7_p:
 
-	.long 2678
+	.long 2666
 LDIFF_SYM69=Lnamede_rgctx_fetch_trampoline_rgctx_7 - _rgctx_fetch_trampoline_rgctx_7
 	.long LDIFF_SYM69,192
 .section __DWARF, __debug_info,regular,debug
@@ -7843,7 +7810,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_7:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_7_p:
 
-	.long 2680
+	.long 2668
 LDIFF_SYM71=Lnamede_rgctx_fetch_trampoline_mrgctx_7 - _rgctx_fetch_trampoline_mrgctx_7
 	.long LDIFF_SYM71,192
 .section __DWARF, __debug_info,regular,debug
@@ -7877,7 +7844,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_8:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_8_p:
 
-	.long 2682
+	.long 2670
 LDIFF_SYM73=Lnamede_rgctx_fetch_trampoline_rgctx_8 - _rgctx_fetch_trampoline_rgctx_8
 	.long LDIFF_SYM73,192
 .section __DWARF, __debug_info,regular,debug
@@ -7911,7 +7878,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_8:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_8_p:
 
-	.long 2684
+	.long 2672
 LDIFF_SYM75=Lnamede_rgctx_fetch_trampoline_mrgctx_8 - _rgctx_fetch_trampoline_mrgctx_8
 	.long LDIFF_SYM75,192
 .section __DWARF, __debug_info,regular,debug
@@ -7945,7 +7912,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_9:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_9_p:
 
-	.long 2686
+	.long 2674
 LDIFF_SYM77=Lnamede_rgctx_fetch_trampoline_rgctx_9 - _rgctx_fetch_trampoline_rgctx_9
 	.long LDIFF_SYM77,192
 .section __DWARF, __debug_info,regular,debug
@@ -7979,7 +7946,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_9:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_9_p:
 
-	.long 2688
+	.long 2676
 LDIFF_SYM79=Lnamede_rgctx_fetch_trampoline_mrgctx_9 - _rgctx_fetch_trampoline_mrgctx_9
 	.long LDIFF_SYM79,192
 .section __DWARF, __debug_info,regular,debug
@@ -8013,7 +7980,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_10:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_10_p:
 
-	.long 2690
+	.long 2678
 LDIFF_SYM81=Lnamede_rgctx_fetch_trampoline_rgctx_10 - _rgctx_fetch_trampoline_rgctx_10
 	.long LDIFF_SYM81,192
 .section __DWARF, __debug_info,regular,debug
@@ -8047,7 +8014,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_10:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_10_p:
 
-	.long 2692
+	.long 2680
 LDIFF_SYM83=Lnamede_rgctx_fetch_trampoline_mrgctx_10 - _rgctx_fetch_trampoline_mrgctx_10
 	.long LDIFF_SYM83,192
 .section __DWARF, __debug_info,regular,debug
@@ -8081,7 +8048,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_11:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_11_p:
 
-	.long 2694
+	.long 2682
 LDIFF_SYM85=Lnamede_rgctx_fetch_trampoline_rgctx_11 - _rgctx_fetch_trampoline_rgctx_11
 	.long LDIFF_SYM85,192
 .section __DWARF, __debug_info,regular,debug
@@ -8115,7 +8082,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_11:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_11_p:
 
-	.long 2696
+	.long 2684
 LDIFF_SYM87=Lnamede_rgctx_fetch_trampoline_mrgctx_11 - _rgctx_fetch_trampoline_mrgctx_11
 	.long LDIFF_SYM87,192
 .section __DWARF, __debug_info,regular,debug
@@ -8149,7 +8116,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_12:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_12_p:
 
-	.long 2698
+	.long 2686
 LDIFF_SYM89=Lnamede_rgctx_fetch_trampoline_rgctx_12 - _rgctx_fetch_trampoline_rgctx_12
 	.long LDIFF_SYM89,192
 .section __DWARF, __debug_info,regular,debug
@@ -8183,7 +8150,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_12:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_12_p:
 
-	.long 2700
+	.long 2688
 LDIFF_SYM91=Lnamede_rgctx_fetch_trampoline_mrgctx_12 - _rgctx_fetch_trampoline_mrgctx_12
 	.long LDIFF_SYM91,192
 .section __DWARF, __debug_info,regular,debug
@@ -8217,7 +8184,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_13:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_13_p:
 
-	.long 2702
+	.long 2690
 LDIFF_SYM93=Lnamede_rgctx_fetch_trampoline_rgctx_13 - _rgctx_fetch_trampoline_rgctx_13
 	.long LDIFF_SYM93,192
 .section __DWARF, __debug_info,regular,debug
@@ -8251,7 +8218,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_13:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_13_p:
 
-	.long 2704
+	.long 2692
 LDIFF_SYM95=Lnamede_rgctx_fetch_trampoline_mrgctx_13 - _rgctx_fetch_trampoline_mrgctx_13
 	.long LDIFF_SYM95,192
 .section __DWARF, __debug_info,regular,debug
@@ -8285,7 +8252,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_14:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_14_p:
 
-	.long 2706
+	.long 2694
 LDIFF_SYM97=Lnamede_rgctx_fetch_trampoline_rgctx_14 - _rgctx_fetch_trampoline_rgctx_14
 	.long LDIFF_SYM97,192
 .section __DWARF, __debug_info,regular,debug
@@ -8320,7 +8287,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_14:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_14_p:
 
-	.long 2708
+	.long 2696
 LDIFF_SYM99=Lnamede_rgctx_fetch_trampoline_mrgctx_14 - _rgctx_fetch_trampoline_mrgctx_14
 	.long LDIFF_SYM99,192
 .section __DWARF, __debug_info,regular,debug
@@ -8354,7 +8321,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_15:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_15_p:
 
-	.long 2710
+	.long 2698
 LDIFF_SYM101=Lnamede_rgctx_fetch_trampoline_rgctx_15 - _rgctx_fetch_trampoline_rgctx_15
 	.long LDIFF_SYM101,192
 .section __DWARF, __debug_info,regular,debug
@@ -8389,7 +8356,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_15:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_15_p:
 
-	.long 2712
+	.long 2700
 LDIFF_SYM103=Lnamede_rgctx_fetch_trampoline_mrgctx_15 - _rgctx_fetch_trampoline_mrgctx_15
 	.long LDIFF_SYM103,192
 .section __DWARF, __debug_info,regular,debug
@@ -8423,7 +8390,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_16:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_16_p:
 
-	.long 2714
+	.long 2702
 LDIFF_SYM105=Lnamede_rgctx_fetch_trampoline_rgctx_16 - _rgctx_fetch_trampoline_rgctx_16
 	.long LDIFF_SYM105,192
 .section __DWARF, __debug_info,regular,debug
@@ -8458,7 +8425,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_16:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_16_p:
 
-	.long 2716
+	.long 2704
 LDIFF_SYM107=Lnamede_rgctx_fetch_trampoline_mrgctx_16 - _rgctx_fetch_trampoline_mrgctx_16
 	.long LDIFF_SYM107,192
 .section __DWARF, __debug_info,regular,debug
@@ -8492,7 +8459,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_17:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_17_p:
 
-	.long 2718
+	.long 2706
 LDIFF_SYM109=Lnamede_rgctx_fetch_trampoline_rgctx_17 - _rgctx_fetch_trampoline_rgctx_17
 	.long LDIFF_SYM109,192
 .section __DWARF, __debug_info,regular,debug
@@ -8527,7 +8494,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_17:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_17_p:
 
-	.long 2720
+	.long 2708
 LDIFF_SYM111=Lnamede_rgctx_fetch_trampoline_mrgctx_17 - _rgctx_fetch_trampoline_mrgctx_17
 	.long LDIFF_SYM111,192
 .section __DWARF, __debug_info,regular,debug
@@ -8561,7 +8528,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_18:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_18_p:
 
-	.long 2722
+	.long 2710
 LDIFF_SYM113=Lnamede_rgctx_fetch_trampoline_rgctx_18 - _rgctx_fetch_trampoline_rgctx_18
 	.long LDIFF_SYM113,192
 .section __DWARF, __debug_info,regular,debug
@@ -8596,7 +8563,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_18:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_18_p:
 
-	.long 2724
+	.long 2712
 LDIFF_SYM115=Lnamede_rgctx_fetch_trampoline_mrgctx_18 - _rgctx_fetch_trampoline_mrgctx_18
 	.long LDIFF_SYM115,192
 .section __DWARF, __debug_info,regular,debug
@@ -8630,7 +8597,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_19:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_19_p:
 
-	.long 2726
+	.long 2714
 LDIFF_SYM117=Lnamede_rgctx_fetch_trampoline_rgctx_19 - _rgctx_fetch_trampoline_rgctx_19
 	.long LDIFF_SYM117,192
 .section __DWARF, __debug_info,regular,debug
@@ -8665,7 +8632,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_19:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_19_p:
 
-	.long 2728
+	.long 2716
 LDIFF_SYM119=Lnamede_rgctx_fetch_trampoline_mrgctx_19 - _rgctx_fetch_trampoline_mrgctx_19
 	.long LDIFF_SYM119,192
 .section __DWARF, __debug_info,regular,debug
@@ -8699,7 +8666,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_20:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_20_p:
 
-	.long 2730
+	.long 2718
 LDIFF_SYM121=Lnamede_rgctx_fetch_trampoline_rgctx_20 - _rgctx_fetch_trampoline_rgctx_20
 	.long LDIFF_SYM121,192
 .section __DWARF, __debug_info,regular,debug
@@ -8734,7 +8701,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_20:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_20_p:
 
-	.long 2732
+	.long 2720
 LDIFF_SYM123=Lnamede_rgctx_fetch_trampoline_mrgctx_20 - _rgctx_fetch_trampoline_mrgctx_20
 	.long LDIFF_SYM123,192
 .section __DWARF, __debug_info,regular,debug
@@ -8768,7 +8735,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_21:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_21_p:
 
-	.long 2734
+	.long 2722
 LDIFF_SYM125=Lnamede_rgctx_fetch_trampoline_rgctx_21 - _rgctx_fetch_trampoline_rgctx_21
 	.long LDIFF_SYM125,192
 .section __DWARF, __debug_info,regular,debug
@@ -8803,7 +8770,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_21:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_21_p:
 
-	.long 2736
+	.long 2724
 LDIFF_SYM127=Lnamede_rgctx_fetch_trampoline_mrgctx_21 - _rgctx_fetch_trampoline_mrgctx_21
 	.long LDIFF_SYM127,192
 .section __DWARF, __debug_info,regular,debug
@@ -8837,7 +8804,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_22:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_22_p:
 
-	.long 2738
+	.long 2726
 LDIFF_SYM129=Lnamede_rgctx_fetch_trampoline_rgctx_22 - _rgctx_fetch_trampoline_rgctx_22
 	.long LDIFF_SYM129,192
 .section __DWARF, __debug_info,regular,debug
@@ -8872,7 +8839,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_22:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_22_p:
 
-	.long 2740
+	.long 2728
 LDIFF_SYM131=Lnamede_rgctx_fetch_trampoline_mrgctx_22 - _rgctx_fetch_trampoline_mrgctx_22
 	.long LDIFF_SYM131,192
 .section __DWARF, __debug_info,regular,debug
@@ -8906,7 +8873,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_23:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_23_p:
 
-	.long 2742
+	.long 2730
 LDIFF_SYM133=Lnamede_rgctx_fetch_trampoline_rgctx_23 - _rgctx_fetch_trampoline_rgctx_23
 	.long LDIFF_SYM133,192
 .section __DWARF, __debug_info,regular,debug
@@ -8941,7 +8908,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_23:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_23_p:
 
-	.long 2744
+	.long 2732
 LDIFF_SYM135=Lnamede_rgctx_fetch_trampoline_mrgctx_23 - _rgctx_fetch_trampoline_mrgctx_23
 	.long LDIFF_SYM135,192
 .section __DWARF, __debug_info,regular,debug
@@ -8975,7 +8942,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_24:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_24_p:
 
-	.long 2746
+	.long 2734
 LDIFF_SYM137=Lnamede_rgctx_fetch_trampoline_rgctx_24 - _rgctx_fetch_trampoline_rgctx_24
 	.long LDIFF_SYM137,192
 .section __DWARF, __debug_info,regular,debug
@@ -9010,7 +8977,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_24:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_24_p:
 
-	.long 2748
+	.long 2736
 LDIFF_SYM139=Lnamede_rgctx_fetch_trampoline_mrgctx_24 - _rgctx_fetch_trampoline_mrgctx_24
 	.long LDIFF_SYM139,192
 .section __DWARF, __debug_info,regular,debug
@@ -9044,7 +9011,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_25:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_25_p:
 
-	.long 2750
+	.long 2738
 LDIFF_SYM141=Lnamede_rgctx_fetch_trampoline_rgctx_25 - _rgctx_fetch_trampoline_rgctx_25
 	.long LDIFF_SYM141,192
 .section __DWARF, __debug_info,regular,debug
@@ -9079,7 +9046,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_25:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_25_p:
 
-	.long 2752
+	.long 2740
 LDIFF_SYM143=Lnamede_rgctx_fetch_trampoline_mrgctx_25 - _rgctx_fetch_trampoline_mrgctx_25
 	.long LDIFF_SYM143,192
 .section __DWARF, __debug_info,regular,debug
@@ -9113,7 +9080,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_26:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_26_p:
 
-	.long 2754
+	.long 2742
 LDIFF_SYM145=Lnamede_rgctx_fetch_trampoline_rgctx_26 - _rgctx_fetch_trampoline_rgctx_26
 	.long LDIFF_SYM145,192
 .section __DWARF, __debug_info,regular,debug
@@ -9148,7 +9115,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_26:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_26_p:
 
-	.long 2756
+	.long 2744
 LDIFF_SYM147=Lnamede_rgctx_fetch_trampoline_mrgctx_26 - _rgctx_fetch_trampoline_mrgctx_26
 	.long LDIFF_SYM147,192
 .section __DWARF, __debug_info,regular,debug
@@ -9182,7 +9149,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_27:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_27_p:
 
-	.long 2758
+	.long 2746
 LDIFF_SYM149=Lnamede_rgctx_fetch_trampoline_rgctx_27 - _rgctx_fetch_trampoline_rgctx_27
 	.long LDIFF_SYM149,192
 .section __DWARF, __debug_info,regular,debug
@@ -9217,7 +9184,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_27:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_27_p:
 
-	.long 2760
+	.long 2748
 LDIFF_SYM151=Lnamede_rgctx_fetch_trampoline_mrgctx_27 - _rgctx_fetch_trampoline_mrgctx_27
 	.long LDIFF_SYM151,192
 .section __DWARF, __debug_info,regular,debug
@@ -9251,7 +9218,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_28:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_28_p:
 
-	.long 2762
+	.long 2750
 LDIFF_SYM153=Lnamede_rgctx_fetch_trampoline_rgctx_28 - _rgctx_fetch_trampoline_rgctx_28
 	.long LDIFF_SYM153,192
 .section __DWARF, __debug_info,regular,debug
@@ -9286,7 +9253,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_28:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_28_p:
 
-	.long 2764
+	.long 2752
 LDIFF_SYM155=Lnamede_rgctx_fetch_trampoline_mrgctx_28 - _rgctx_fetch_trampoline_mrgctx_28
 	.long LDIFF_SYM155,192
 .section __DWARF, __debug_info,regular,debug
@@ -9320,7 +9287,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_29:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_29_p:
 
-	.long 2766
+	.long 2754
 LDIFF_SYM157=Lnamede_rgctx_fetch_trampoline_rgctx_29 - _rgctx_fetch_trampoline_rgctx_29
 	.long LDIFF_SYM157,192
 .section __DWARF, __debug_info,regular,debug
@@ -9355,7 +9322,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_29:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_29_p:
 
-	.long 2768
+	.long 2756
 LDIFF_SYM159=Lnamede_rgctx_fetch_trampoline_mrgctx_29 - _rgctx_fetch_trampoline_mrgctx_29
 	.long LDIFF_SYM159,192
 .section __DWARF, __debug_info,regular,debug
@@ -9390,7 +9357,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_30:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_30_p:
 
-	.long 2770
+	.long 2758
 LDIFF_SYM161=Lnamede_rgctx_fetch_trampoline_rgctx_30 - _rgctx_fetch_trampoline_rgctx_30
 	.long LDIFF_SYM161,192
 .section __DWARF, __debug_info,regular,debug
@@ -9425,7 +9392,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_30:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_30_p:
 
-	.long 2772
+	.long 2760
 LDIFF_SYM163=Lnamede_rgctx_fetch_trampoline_mrgctx_30 - _rgctx_fetch_trampoline_mrgctx_30
 	.long LDIFF_SYM163,192
 .section __DWARF, __debug_info,regular,debug
@@ -9460,7 +9427,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_31:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_31_p:
 
-	.long 2774
+	.long 2762
 LDIFF_SYM165=Lnamede_rgctx_fetch_trampoline_rgctx_31 - _rgctx_fetch_trampoline_rgctx_31
 	.long LDIFF_SYM165,192
 .section __DWARF, __debug_info,regular,debug
@@ -9495,7 +9462,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_31:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_31_p:
 
-	.long 2776
+	.long 2764
 LDIFF_SYM167=Lnamede_rgctx_fetch_trampoline_mrgctx_31 - _rgctx_fetch_trampoline_mrgctx_31
 	.long LDIFF_SYM167,192
 .section __DWARF, __debug_info,regular,debug
@@ -9530,7 +9497,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_32:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_32_p:
 
-	.long 2778
+	.long 2766
 LDIFF_SYM169=Lnamede_rgctx_fetch_trampoline_rgctx_32 - _rgctx_fetch_trampoline_rgctx_32
 	.long LDIFF_SYM169,192
 .section __DWARF, __debug_info,regular,debug
@@ -9565,7 +9532,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_32:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_32_p:
 
-	.long 2780
+	.long 2768
 LDIFF_SYM171=Lnamede_rgctx_fetch_trampoline_mrgctx_32 - _rgctx_fetch_trampoline_mrgctx_32
 	.long LDIFF_SYM171,192
 .section __DWARF, __debug_info,regular,debug
@@ -9600,7 +9567,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_33:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_33_p:
 
-	.long 2782
+	.long 2770
 LDIFF_SYM173=Lnamede_rgctx_fetch_trampoline_rgctx_33 - _rgctx_fetch_trampoline_rgctx_33
 	.long LDIFF_SYM173,192
 .section __DWARF, __debug_info,regular,debug
@@ -9635,7 +9602,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_33:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_33_p:
 
-	.long 2784
+	.long 2772
 LDIFF_SYM175=Lnamede_rgctx_fetch_trampoline_mrgctx_33 - _rgctx_fetch_trampoline_mrgctx_33
 	.long LDIFF_SYM175,192
 .section __DWARF, __debug_info,regular,debug
@@ -9670,7 +9637,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_34:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_34_p:
 
-	.long 2786
+	.long 2774
 LDIFF_SYM177=Lnamede_rgctx_fetch_trampoline_rgctx_34 - _rgctx_fetch_trampoline_rgctx_34
 	.long LDIFF_SYM177,192
 .section __DWARF, __debug_info,regular,debug
@@ -9705,7 +9672,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_34:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_34_p:
 
-	.long 2788
+	.long 2776
 LDIFF_SYM179=Lnamede_rgctx_fetch_trampoline_mrgctx_34 - _rgctx_fetch_trampoline_mrgctx_34
 	.long LDIFF_SYM179,192
 .section __DWARF, __debug_info,regular,debug
@@ -9740,7 +9707,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_35:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_35_p:
 
-	.long 2790
+	.long 2778
 LDIFF_SYM181=Lnamede_rgctx_fetch_trampoline_rgctx_35 - _rgctx_fetch_trampoline_rgctx_35
 	.long LDIFF_SYM181,192
 .section __DWARF, __debug_info,regular,debug
@@ -9775,7 +9742,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_35:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_35_p:
 
-	.long 2792
+	.long 2780
 LDIFF_SYM183=Lnamede_rgctx_fetch_trampoline_mrgctx_35 - _rgctx_fetch_trampoline_mrgctx_35
 	.long LDIFF_SYM183,192
 .section __DWARF, __debug_info,regular,debug
@@ -9810,7 +9777,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_36:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_36_p:
 
-	.long 2794
+	.long 2782
 LDIFF_SYM185=Lnamede_rgctx_fetch_trampoline_rgctx_36 - _rgctx_fetch_trampoline_rgctx_36
 	.long LDIFF_SYM185,192
 .section __DWARF, __debug_info,regular,debug
@@ -9845,7 +9812,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_36:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_36_p:
 
-	.long 2796
+	.long 2784
 LDIFF_SYM187=Lnamede_rgctx_fetch_trampoline_mrgctx_36 - _rgctx_fetch_trampoline_mrgctx_36
 	.long LDIFF_SYM187,192
 .section __DWARF, __debug_info,regular,debug
@@ -9880,7 +9847,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_37:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_37_p:
 
-	.long 2798
+	.long 2786
 LDIFF_SYM189=Lnamede_rgctx_fetch_trampoline_rgctx_37 - _rgctx_fetch_trampoline_rgctx_37
 	.long LDIFF_SYM189,192
 .section __DWARF, __debug_info,regular,debug
@@ -9915,7 +9882,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_37:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_37_p:
 
-	.long 2800
+	.long 2788
 LDIFF_SYM191=Lnamede_rgctx_fetch_trampoline_mrgctx_37 - _rgctx_fetch_trampoline_mrgctx_37
 	.long LDIFF_SYM191,192
 .section __DWARF, __debug_info,regular,debug
@@ -9950,7 +9917,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_38:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_38_p:
 
-	.long 2802
+	.long 2790
 LDIFF_SYM193=Lnamede_rgctx_fetch_trampoline_rgctx_38 - _rgctx_fetch_trampoline_rgctx_38
 	.long LDIFF_SYM193,192
 .section __DWARF, __debug_info,regular,debug
@@ -9985,7 +9952,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_38:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_38_p:
 
-	.long 2804
+	.long 2792
 LDIFF_SYM195=Lnamede_rgctx_fetch_trampoline_mrgctx_38 - _rgctx_fetch_trampoline_mrgctx_38
 	.long LDIFF_SYM195,192
 .section __DWARF, __debug_info,regular,debug
@@ -10020,7 +9987,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_39:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_39_p:
 
-	.long 2806
+	.long 2794
 LDIFF_SYM197=Lnamede_rgctx_fetch_trampoline_rgctx_39 - _rgctx_fetch_trampoline_rgctx_39
 	.long LDIFF_SYM197,192
 .section __DWARF, __debug_info,regular,debug
@@ -10055,7 +10022,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_39:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_39_p:
 
-	.long 2808
+	.long 2796
 LDIFF_SYM199=Lnamede_rgctx_fetch_trampoline_mrgctx_39 - _rgctx_fetch_trampoline_mrgctx_39
 	.long LDIFF_SYM199,192
 .section __DWARF, __debug_info,regular,debug
@@ -10090,7 +10057,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_40:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_40_p:
 
-	.long 2810
+	.long 2798
 LDIFF_SYM201=Lnamede_rgctx_fetch_trampoline_rgctx_40 - _rgctx_fetch_trampoline_rgctx_40
 	.long LDIFF_SYM201,192
 .section __DWARF, __debug_info,regular,debug
@@ -10125,7 +10092,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_40:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_40_p:
 
-	.long 2812
+	.long 2800
 LDIFF_SYM203=Lnamede_rgctx_fetch_trampoline_mrgctx_40 - _rgctx_fetch_trampoline_mrgctx_40
 	.long LDIFF_SYM203,192
 .section __DWARF, __debug_info,regular,debug
@@ -10160,7 +10127,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_41:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_41_p:
 
-	.long 2814
+	.long 2802
 LDIFF_SYM205=Lnamede_rgctx_fetch_trampoline_rgctx_41 - _rgctx_fetch_trampoline_rgctx_41
 	.long LDIFF_SYM205,192
 .section __DWARF, __debug_info,regular,debug
@@ -10195,7 +10162,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_41:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_41_p:
 
-	.long 2816
+	.long 2804
 LDIFF_SYM207=Lnamede_rgctx_fetch_trampoline_mrgctx_41 - _rgctx_fetch_trampoline_mrgctx_41
 	.long LDIFF_SYM207,192
 .section __DWARF, __debug_info,regular,debug
@@ -10230,7 +10197,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_42:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_42_p:
 
-	.long 2818
+	.long 2806
 LDIFF_SYM209=Lnamede_rgctx_fetch_trampoline_rgctx_42 - _rgctx_fetch_trampoline_rgctx_42
 	.long LDIFF_SYM209,192
 .section __DWARF, __debug_info,regular,debug
@@ -10265,7 +10232,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_42:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_42_p:
 
-	.long 2820
+	.long 2808
 LDIFF_SYM211=Lnamede_rgctx_fetch_trampoline_mrgctx_42 - _rgctx_fetch_trampoline_mrgctx_42
 	.long LDIFF_SYM211,192
 .section __DWARF, __debug_info,regular,debug
@@ -10300,7 +10267,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_43:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_43_p:
 
-	.long 2822
+	.long 2810
 LDIFF_SYM213=Lnamede_rgctx_fetch_trampoline_rgctx_43 - _rgctx_fetch_trampoline_rgctx_43
 	.long LDIFF_SYM213,192
 .section __DWARF, __debug_info,regular,debug
@@ -10335,7 +10302,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_43:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_43_p:
 
-	.long 2824
+	.long 2812
 LDIFF_SYM215=Lnamede_rgctx_fetch_trampoline_mrgctx_43 - _rgctx_fetch_trampoline_mrgctx_43
 	.long LDIFF_SYM215,192
 .section __DWARF, __debug_info,regular,debug
@@ -10370,7 +10337,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_44:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_44_p:
 
-	.long 2827
+	.long 2815
 LDIFF_SYM217=Lnamede_rgctx_fetch_trampoline_rgctx_44 - _rgctx_fetch_trampoline_rgctx_44
 	.long LDIFF_SYM217,192
 .section __DWARF, __debug_info,regular,debug
@@ -10405,7 +10372,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_44:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_44_p:
 
-	.long 2830
+	.long 2818
 LDIFF_SYM219=Lnamede_rgctx_fetch_trampoline_mrgctx_44 - _rgctx_fetch_trampoline_mrgctx_44
 	.long LDIFF_SYM219,192
 .section __DWARF, __debug_info,regular,debug
@@ -10440,7 +10407,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_45:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_45_p:
 
-	.long 2833
+	.long 2821
 LDIFF_SYM221=Lnamede_rgctx_fetch_trampoline_rgctx_45 - _rgctx_fetch_trampoline_rgctx_45
 	.long LDIFF_SYM221,192
 .section __DWARF, __debug_info,regular,debug
@@ -10475,7 +10442,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_45:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_45_p:
 
-	.long 2836
+	.long 2824
 LDIFF_SYM223=Lnamede_rgctx_fetch_trampoline_mrgctx_45 - _rgctx_fetch_trampoline_mrgctx_45
 	.long LDIFF_SYM223,192
 .section __DWARF, __debug_info,regular,debug
@@ -10510,7 +10477,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_46:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_46_p:
 
-	.long 2839
+	.long 2827
 LDIFF_SYM225=Lnamede_rgctx_fetch_trampoline_rgctx_46 - _rgctx_fetch_trampoline_rgctx_46
 	.long LDIFF_SYM225,192
 .section __DWARF, __debug_info,regular,debug
@@ -10545,7 +10512,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_46:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_46_p:
 
-	.long 2842
+	.long 2830
 LDIFF_SYM227=Lnamede_rgctx_fetch_trampoline_mrgctx_46 - _rgctx_fetch_trampoline_mrgctx_46
 	.long LDIFF_SYM227,192
 .section __DWARF, __debug_info,regular,debug
@@ -10580,7 +10547,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_47:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_47_p:
 
-	.long 2845
+	.long 2833
 LDIFF_SYM229=Lnamede_rgctx_fetch_trampoline_rgctx_47 - _rgctx_fetch_trampoline_rgctx_47
 	.long LDIFF_SYM229,192
 .section __DWARF, __debug_info,regular,debug
@@ -10615,7 +10582,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_47:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_47_p:
 
-	.long 2848
+	.long 2836
 LDIFF_SYM231=Lnamede_rgctx_fetch_trampoline_mrgctx_47 - _rgctx_fetch_trampoline_mrgctx_47
 	.long LDIFF_SYM231,192
 .section __DWARF, __debug_info,regular,debug
@@ -10650,7 +10617,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_48:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_48_p:
 
-	.long 2851
+	.long 2839
 LDIFF_SYM233=Lnamede_rgctx_fetch_trampoline_rgctx_48 - _rgctx_fetch_trampoline_rgctx_48
 	.long LDIFF_SYM233,192
 .section __DWARF, __debug_info,regular,debug
@@ -10685,7 +10652,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_48:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_48_p:
 
-	.long 2854
+	.long 2842
 LDIFF_SYM235=Lnamede_rgctx_fetch_trampoline_mrgctx_48 - _rgctx_fetch_trampoline_mrgctx_48
 	.long LDIFF_SYM235,192
 .section __DWARF, __debug_info,regular,debug
@@ -10720,7 +10687,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_49:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_49_p:
 
-	.long 2857
+	.long 2845
 LDIFF_SYM237=Lnamede_rgctx_fetch_trampoline_rgctx_49 - _rgctx_fetch_trampoline_rgctx_49
 	.long LDIFF_SYM237,192
 .section __DWARF, __debug_info,regular,debug
@@ -10755,7 +10722,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_49:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_49_p:
 
-	.long 2860
+	.long 2848
 LDIFF_SYM239=Lnamede_rgctx_fetch_trampoline_mrgctx_49 - _rgctx_fetch_trampoline_mrgctx_49
 	.long LDIFF_SYM239,192
 .section __DWARF, __debug_info,regular,debug
@@ -10790,7 +10757,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_50:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_50_p:
 
-	.long 2863
+	.long 2851
 LDIFF_SYM241=Lnamede_rgctx_fetch_trampoline_rgctx_50 - _rgctx_fetch_trampoline_rgctx_50
 	.long LDIFF_SYM241,192
 .section __DWARF, __debug_info,regular,debug
@@ -10825,7 +10792,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_50:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_50_p:
 
-	.long 2866
+	.long 2854
 LDIFF_SYM243=Lnamede_rgctx_fetch_trampoline_mrgctx_50 - _rgctx_fetch_trampoline_mrgctx_50
 	.long LDIFF_SYM243,192
 .section __DWARF, __debug_info,regular,debug
@@ -10860,7 +10827,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_51:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_51_p:
 
-	.long 2869
+	.long 2857
 LDIFF_SYM245=Lnamede_rgctx_fetch_trampoline_rgctx_51 - _rgctx_fetch_trampoline_rgctx_51
 	.long LDIFF_SYM245,192
 .section __DWARF, __debug_info,regular,debug
@@ -10895,7 +10862,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_51:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_51_p:
 
-	.long 2872
+	.long 2860
 LDIFF_SYM247=Lnamede_rgctx_fetch_trampoline_mrgctx_51 - _rgctx_fetch_trampoline_mrgctx_51
 	.long LDIFF_SYM247,192
 .section __DWARF, __debug_info,regular,debug
@@ -10930,7 +10897,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_52:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_52_p:
 
-	.long 2875
+	.long 2863
 LDIFF_SYM249=Lnamede_rgctx_fetch_trampoline_rgctx_52 - _rgctx_fetch_trampoline_rgctx_52
 	.long LDIFF_SYM249,192
 .section __DWARF, __debug_info,regular,debug
@@ -10965,7 +10932,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_52:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_52_p:
 
-	.long 2878
+	.long 2866
 LDIFF_SYM251=Lnamede_rgctx_fetch_trampoline_mrgctx_52 - _rgctx_fetch_trampoline_mrgctx_52
 	.long LDIFF_SYM251,192
 .section __DWARF, __debug_info,regular,debug
@@ -11000,7 +10967,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_53:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_53_p:
 
-	.long 2881
+	.long 2869
 LDIFF_SYM253=Lnamede_rgctx_fetch_trampoline_rgctx_53 - _rgctx_fetch_trampoline_rgctx_53
 	.long LDIFF_SYM253,192
 .section __DWARF, __debug_info,regular,debug
@@ -11035,7 +11002,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_53:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_53_p:
 
-	.long 2884
+	.long 2872
 LDIFF_SYM255=Lnamede_rgctx_fetch_trampoline_mrgctx_53 - _rgctx_fetch_trampoline_mrgctx_53
 	.long LDIFF_SYM255,192
 .section __DWARF, __debug_info,regular,debug
@@ -11070,7 +11037,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_54:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_54_p:
 
-	.long 2887
+	.long 2875
 LDIFF_SYM257=Lnamede_rgctx_fetch_trampoline_rgctx_54 - _rgctx_fetch_trampoline_rgctx_54
 	.long LDIFF_SYM257,192
 .section __DWARF, __debug_info,regular,debug
@@ -11105,7 +11072,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_54:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_54_p:
 
-	.long 2890
+	.long 2878
 LDIFF_SYM259=Lnamede_rgctx_fetch_trampoline_mrgctx_54 - _rgctx_fetch_trampoline_mrgctx_54
 	.long LDIFF_SYM259,192
 .section __DWARF, __debug_info,regular,debug
@@ -11140,7 +11107,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_55:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_55_p:
 
-	.long 2893
+	.long 2881
 LDIFF_SYM261=Lnamede_rgctx_fetch_trampoline_rgctx_55 - _rgctx_fetch_trampoline_rgctx_55
 	.long LDIFF_SYM261,192
 .section __DWARF, __debug_info,regular,debug
@@ -11175,7 +11142,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_55:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_55_p:
 
-	.long 2896
+	.long 2884
 LDIFF_SYM263=Lnamede_rgctx_fetch_trampoline_mrgctx_55 - _rgctx_fetch_trampoline_mrgctx_55
 	.long LDIFF_SYM263,192
 .section __DWARF, __debug_info,regular,debug
@@ -11210,7 +11177,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_56:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_56_p:
 
-	.long 2899
+	.long 2887
 LDIFF_SYM265=Lnamede_rgctx_fetch_trampoline_rgctx_56 - _rgctx_fetch_trampoline_rgctx_56
 	.long LDIFF_SYM265,192
 .section __DWARF, __debug_info,regular,debug
@@ -11245,7 +11212,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_56:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_56_p:
 
-	.long 2902
+	.long 2890
 LDIFF_SYM267=Lnamede_rgctx_fetch_trampoline_mrgctx_56 - _rgctx_fetch_trampoline_mrgctx_56
 	.long LDIFF_SYM267,192
 .section __DWARF, __debug_info,regular,debug
@@ -11280,7 +11247,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_57:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_57_p:
 
-	.long 2905
+	.long 2893
 LDIFF_SYM269=Lnamede_rgctx_fetch_trampoline_rgctx_57 - _rgctx_fetch_trampoline_rgctx_57
 	.long LDIFF_SYM269,192
 .section __DWARF, __debug_info,regular,debug
@@ -11315,7 +11282,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_57:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_57_p:
 
-	.long 2908
+	.long 2896
 LDIFF_SYM271=Lnamede_rgctx_fetch_trampoline_mrgctx_57 - _rgctx_fetch_trampoline_mrgctx_57
 	.long LDIFF_SYM271,192
 .section __DWARF, __debug_info,regular,debug
@@ -11350,7 +11317,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_58:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_58_p:
 
-	.long 2911
+	.long 2899
 LDIFF_SYM273=Lnamede_rgctx_fetch_trampoline_rgctx_58 - _rgctx_fetch_trampoline_rgctx_58
 	.long LDIFF_SYM273,192
 .section __DWARF, __debug_info,regular,debug
@@ -11385,7 +11352,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_58:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_58_p:
 
-	.long 2914
+	.long 2902
 LDIFF_SYM275=Lnamede_rgctx_fetch_trampoline_mrgctx_58 - _rgctx_fetch_trampoline_mrgctx_58
 	.long LDIFF_SYM275,192
 .section __DWARF, __debug_info,regular,debug
@@ -11420,7 +11387,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_59:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_59_p:
 
-	.long 2917
+	.long 2905
 LDIFF_SYM277=Lnamede_rgctx_fetch_trampoline_rgctx_59 - _rgctx_fetch_trampoline_rgctx_59
 	.long LDIFF_SYM277,192
 .section __DWARF, __debug_info,regular,debug
@@ -11455,7 +11422,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_59:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_59_p:
 
-	.long 2920
+	.long 2908
 LDIFF_SYM279=Lnamede_rgctx_fetch_trampoline_mrgctx_59 - _rgctx_fetch_trampoline_mrgctx_59
 	.long LDIFF_SYM279,192
 .section __DWARF, __debug_info,regular,debug
@@ -11490,7 +11457,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_60:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_60_p:
 
-	.long 2923
+	.long 2911
 LDIFF_SYM281=Lnamede_rgctx_fetch_trampoline_rgctx_60 - _rgctx_fetch_trampoline_rgctx_60
 	.long LDIFF_SYM281,192
 .section __DWARF, __debug_info,regular,debug
@@ -11525,7 +11492,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_60:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_60_p:
 
-	.long 2926
+	.long 2914
 LDIFF_SYM283=Lnamede_rgctx_fetch_trampoline_mrgctx_60 - _rgctx_fetch_trampoline_mrgctx_60
 	.long LDIFF_SYM283,192
 .section __DWARF, __debug_info,regular,debug
@@ -11560,7 +11527,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_61:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_61_p:
 
-	.long 2929
+	.long 2917
 LDIFF_SYM285=Lnamede_rgctx_fetch_trampoline_rgctx_61 - _rgctx_fetch_trampoline_rgctx_61
 	.long LDIFF_SYM285,192
 .section __DWARF, __debug_info,regular,debug
@@ -11595,7 +11562,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_61:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_61_p:
 
-	.long 2932
+	.long 2920
 LDIFF_SYM287=Lnamede_rgctx_fetch_trampoline_mrgctx_61 - _rgctx_fetch_trampoline_mrgctx_61
 	.long LDIFF_SYM287,192
 .section __DWARF, __debug_info,regular,debug
@@ -11630,7 +11597,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_62:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_62_p:
 
-	.long 2935
+	.long 2923
 LDIFF_SYM289=Lnamede_rgctx_fetch_trampoline_rgctx_62 - _rgctx_fetch_trampoline_rgctx_62
 	.long LDIFF_SYM289,192
 .section __DWARF, __debug_info,regular,debug
@@ -11665,7 +11632,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_62:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_62_p:
 
-	.long 2938
+	.long 2926
 LDIFF_SYM291=Lnamede_rgctx_fetch_trampoline_mrgctx_62 - _rgctx_fetch_trampoline_mrgctx_62
 	.long LDIFF_SYM291,192
 .section __DWARF, __debug_info,regular,debug
@@ -11700,7 +11667,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_63:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_63_p:
 
-	.long 2941
+	.long 2929
 LDIFF_SYM293=Lnamede_rgctx_fetch_trampoline_rgctx_63 - _rgctx_fetch_trampoline_rgctx_63
 	.long LDIFF_SYM293,192
 .section __DWARF, __debug_info,regular,debug
@@ -11735,7 +11702,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_63:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_63_p:
 
-	.long 2944
+	.long 2932
 LDIFF_SYM295=Lnamede_rgctx_fetch_trampoline_mrgctx_63 - _rgctx_fetch_trampoline_mrgctx_63
 	.long LDIFF_SYM295,192
 .section __DWARF, __debug_info,regular,debug
@@ -11770,7 +11737,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_64:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_64_p:
 
-	.long 2947
+	.long 2935
 LDIFF_SYM297=Lnamede_rgctx_fetch_trampoline_rgctx_64 - _rgctx_fetch_trampoline_rgctx_64
 	.long LDIFF_SYM297,192
 .section __DWARF, __debug_info,regular,debug
@@ -11805,7 +11772,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_64:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_64_p:
 
-	.long 2950
+	.long 2938
 LDIFF_SYM299=Lnamede_rgctx_fetch_trampoline_mrgctx_64 - _rgctx_fetch_trampoline_mrgctx_64
 	.long LDIFF_SYM299,192
 .section __DWARF, __debug_info,regular,debug
@@ -11840,7 +11807,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_65:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_65_p:
 
-	.long 2953
+	.long 2941
 LDIFF_SYM301=Lnamede_rgctx_fetch_trampoline_rgctx_65 - _rgctx_fetch_trampoline_rgctx_65
 	.long LDIFF_SYM301,192
 .section __DWARF, __debug_info,regular,debug
@@ -11875,7 +11842,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_65:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_65_p:
 
-	.long 2956
+	.long 2944
 LDIFF_SYM303=Lnamede_rgctx_fetch_trampoline_mrgctx_65 - _rgctx_fetch_trampoline_mrgctx_65
 	.long LDIFF_SYM303,192
 .section __DWARF, __debug_info,regular,debug
@@ -11910,7 +11877,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_66:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_66_p:
 
-	.long 2959
+	.long 2947
 LDIFF_SYM305=Lnamede_rgctx_fetch_trampoline_rgctx_66 - _rgctx_fetch_trampoline_rgctx_66
 	.long LDIFF_SYM305,192
 .section __DWARF, __debug_info,regular,debug
@@ -11945,7 +11912,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_66:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_66_p:
 
-	.long 2962
+	.long 2950
 LDIFF_SYM307=Lnamede_rgctx_fetch_trampoline_mrgctx_66 - _rgctx_fetch_trampoline_mrgctx_66
 	.long LDIFF_SYM307,192
 .section __DWARF, __debug_info,regular,debug
@@ -11980,7 +11947,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_67:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_67_p:
 
-	.long 2965
+	.long 2953
 LDIFF_SYM309=Lnamede_rgctx_fetch_trampoline_rgctx_67 - _rgctx_fetch_trampoline_rgctx_67
 	.long LDIFF_SYM309,192
 .section __DWARF, __debug_info,regular,debug
@@ -12015,7 +11982,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_67:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_67_p:
 
-	.long 2968
+	.long 2956
 LDIFF_SYM311=Lnamede_rgctx_fetch_trampoline_mrgctx_67 - _rgctx_fetch_trampoline_mrgctx_67
 	.long LDIFF_SYM311,192
 .section __DWARF, __debug_info,regular,debug
@@ -12050,7 +12017,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_68:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_68_p:
 
-	.long 2971
+	.long 2959
 LDIFF_SYM313=Lnamede_rgctx_fetch_trampoline_rgctx_68 - _rgctx_fetch_trampoline_rgctx_68
 	.long LDIFF_SYM313,192
 .section __DWARF, __debug_info,regular,debug
@@ -12085,7 +12052,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_68:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_68_p:
 
-	.long 2974
+	.long 2962
 LDIFF_SYM315=Lnamede_rgctx_fetch_trampoline_mrgctx_68 - _rgctx_fetch_trampoline_mrgctx_68
 	.long LDIFF_SYM315,192
 .section __DWARF, __debug_info,regular,debug
@@ -12120,7 +12087,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_69:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_69_p:
 
-	.long 2977
+	.long 2965
 LDIFF_SYM317=Lnamede_rgctx_fetch_trampoline_rgctx_69 - _rgctx_fetch_trampoline_rgctx_69
 	.long LDIFF_SYM317,192
 .section __DWARF, __debug_info,regular,debug
@@ -12155,7 +12122,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_69:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_69_p:
 
-	.long 2980
+	.long 2968
 LDIFF_SYM319=Lnamede_rgctx_fetch_trampoline_mrgctx_69 - _rgctx_fetch_trampoline_mrgctx_69
 	.long LDIFF_SYM319,192
 .section __DWARF, __debug_info,regular,debug
@@ -12190,7 +12157,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_70:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_70_p:
 
-	.long 2983
+	.long 2971
 LDIFF_SYM321=Lnamede_rgctx_fetch_trampoline_rgctx_70 - _rgctx_fetch_trampoline_rgctx_70
 	.long LDIFF_SYM321,192
 .section __DWARF, __debug_info,regular,debug
@@ -12225,7 +12192,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_70:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_70_p:
 
-	.long 2986
+	.long 2974
 LDIFF_SYM323=Lnamede_rgctx_fetch_trampoline_mrgctx_70 - _rgctx_fetch_trampoline_mrgctx_70
 	.long LDIFF_SYM323,192
 .section __DWARF, __debug_info,regular,debug
@@ -12260,7 +12227,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_71:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_71_p:
 
-	.long 2989
+	.long 2977
 LDIFF_SYM325=Lnamede_rgctx_fetch_trampoline_rgctx_71 - _rgctx_fetch_trampoline_rgctx_71
 	.long LDIFF_SYM325,192
 .section __DWARF, __debug_info,regular,debug
@@ -12295,7 +12262,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_71:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_71_p:
 
-	.long 2992
+	.long 2980
 LDIFF_SYM327=Lnamede_rgctx_fetch_trampoline_mrgctx_71 - _rgctx_fetch_trampoline_mrgctx_71
 	.long LDIFF_SYM327,192
 .section __DWARF, __debug_info,regular,debug
@@ -12330,7 +12297,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_72:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_72_p:
 
-	.long 2995
+	.long 2983
 LDIFF_SYM329=Lnamede_rgctx_fetch_trampoline_rgctx_72 - _rgctx_fetch_trampoline_rgctx_72
 	.long LDIFF_SYM329,192
 .section __DWARF, __debug_info,regular,debug
@@ -12365,7 +12332,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_72:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_72_p:
 
-	.long 2998
+	.long 2986
 LDIFF_SYM331=Lnamede_rgctx_fetch_trampoline_mrgctx_72 - _rgctx_fetch_trampoline_mrgctx_72
 	.long LDIFF_SYM331,192
 .section __DWARF, __debug_info,regular,debug
@@ -12400,7 +12367,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_73:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_73_p:
 
-	.long 3001
+	.long 2989
 LDIFF_SYM333=Lnamede_rgctx_fetch_trampoline_rgctx_73 - _rgctx_fetch_trampoline_rgctx_73
 	.long LDIFF_SYM333,192
 .section __DWARF, __debug_info,regular,debug
@@ -12435,7 +12402,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_73:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_73_p:
 
-	.long 3004
+	.long 2992
 LDIFF_SYM335=Lnamede_rgctx_fetch_trampoline_mrgctx_73 - _rgctx_fetch_trampoline_mrgctx_73
 	.long LDIFF_SYM335,192
 .section __DWARF, __debug_info,regular,debug
@@ -12470,7 +12437,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_74:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_74_p:
 
-	.long 3007
+	.long 2995
 LDIFF_SYM337=Lnamede_rgctx_fetch_trampoline_rgctx_74 - _rgctx_fetch_trampoline_rgctx_74
 	.long LDIFF_SYM337,192
 .section __DWARF, __debug_info,regular,debug
@@ -12505,7 +12472,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_74:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_74_p:
 
-	.long 3010
+	.long 2998
 LDIFF_SYM339=Lnamede_rgctx_fetch_trampoline_mrgctx_74 - _rgctx_fetch_trampoline_mrgctx_74
 	.long LDIFF_SYM339,192
 .section __DWARF, __debug_info,regular,debug
@@ -12540,7 +12507,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_75:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_75_p:
 
-	.long 3013
+	.long 3001
 LDIFF_SYM341=Lnamede_rgctx_fetch_trampoline_rgctx_75 - _rgctx_fetch_trampoline_rgctx_75
 	.long LDIFF_SYM341,192
 .section __DWARF, __debug_info,regular,debug
@@ -12575,7 +12542,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_75:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_75_p:
 
-	.long 3016
+	.long 3004
 LDIFF_SYM343=Lnamede_rgctx_fetch_trampoline_mrgctx_75 - _rgctx_fetch_trampoline_mrgctx_75
 	.long LDIFF_SYM343,192
 .section __DWARF, __debug_info,regular,debug
@@ -12610,7 +12577,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_76:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_76_p:
 
-	.long 3019
+	.long 3007
 LDIFF_SYM345=Lnamede_rgctx_fetch_trampoline_rgctx_76 - _rgctx_fetch_trampoline_rgctx_76
 	.long LDIFF_SYM345,192
 .section __DWARF, __debug_info,regular,debug
@@ -12645,7 +12612,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_76:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_76_p:
 
-	.long 3022
+	.long 3010
 LDIFF_SYM347=Lnamede_rgctx_fetch_trampoline_mrgctx_76 - _rgctx_fetch_trampoline_mrgctx_76
 	.long LDIFF_SYM347,192
 .section __DWARF, __debug_info,regular,debug
@@ -12680,7 +12647,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_77:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_77_p:
 
-	.long 3025
+	.long 3013
 LDIFF_SYM349=Lnamede_rgctx_fetch_trampoline_rgctx_77 - _rgctx_fetch_trampoline_rgctx_77
 	.long LDIFF_SYM349,192
 .section __DWARF, __debug_info,regular,debug
@@ -12715,7 +12682,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_77:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_77_p:
 
-	.long 3028
+	.long 3016
 LDIFF_SYM351=Lnamede_rgctx_fetch_trampoline_mrgctx_77 - _rgctx_fetch_trampoline_mrgctx_77
 	.long LDIFF_SYM351,192
 .section __DWARF, __debug_info,regular,debug
@@ -12750,7 +12717,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_78:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_78_p:
 
-	.long 3031
+	.long 3019
 LDIFF_SYM353=Lnamede_rgctx_fetch_trampoline_rgctx_78 - _rgctx_fetch_trampoline_rgctx_78
 	.long LDIFF_SYM353,192
 .section __DWARF, __debug_info,regular,debug
@@ -12785,7 +12752,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_78:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_78_p:
 
-	.long 3034
+	.long 3022
 LDIFF_SYM355=Lnamede_rgctx_fetch_trampoline_mrgctx_78 - _rgctx_fetch_trampoline_mrgctx_78
 	.long LDIFF_SYM355,192
 .section __DWARF, __debug_info,regular,debug
@@ -12820,7 +12787,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_79:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_79_p:
 
-	.long 3037
+	.long 3025
 LDIFF_SYM357=Lnamede_rgctx_fetch_trampoline_rgctx_79 - _rgctx_fetch_trampoline_rgctx_79
 	.long LDIFF_SYM357,192
 .section __DWARF, __debug_info,regular,debug
@@ -12855,7 +12822,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_79:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_79_p:
 
-	.long 3040
+	.long 3028
 LDIFF_SYM359=Lnamede_rgctx_fetch_trampoline_mrgctx_79 - _rgctx_fetch_trampoline_mrgctx_79
 	.long LDIFF_SYM359,192
 .section __DWARF, __debug_info,regular,debug
@@ -12890,7 +12857,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_80:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_80_p:
 
-	.long 3043
+	.long 3031
 LDIFF_SYM361=Lnamede_rgctx_fetch_trampoline_rgctx_80 - _rgctx_fetch_trampoline_rgctx_80
 	.long LDIFF_SYM361,192
 .section __DWARF, __debug_info,regular,debug
@@ -12925,7 +12892,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_80:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_80_p:
 
-	.long 3046
+	.long 3034
 LDIFF_SYM363=Lnamede_rgctx_fetch_trampoline_mrgctx_80 - _rgctx_fetch_trampoline_mrgctx_80
 	.long LDIFF_SYM363,192
 .section __DWARF, __debug_info,regular,debug
@@ -12960,7 +12927,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_81:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_81_p:
 
-	.long 3049
+	.long 3037
 LDIFF_SYM365=Lnamede_rgctx_fetch_trampoline_rgctx_81 - _rgctx_fetch_trampoline_rgctx_81
 	.long LDIFF_SYM365,192
 .section __DWARF, __debug_info,regular,debug
@@ -12995,7 +12962,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_81:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_81_p:
 
-	.long 3052
+	.long 3040
 LDIFF_SYM367=Lnamede_rgctx_fetch_trampoline_mrgctx_81 - _rgctx_fetch_trampoline_mrgctx_81
 	.long LDIFF_SYM367,192
 .section __DWARF, __debug_info,regular,debug
@@ -13030,7 +12997,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_82:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_82_p:
 
-	.long 3055
+	.long 3043
 LDIFF_SYM369=Lnamede_rgctx_fetch_trampoline_rgctx_82 - _rgctx_fetch_trampoline_rgctx_82
 	.long LDIFF_SYM369,192
 .section __DWARF, __debug_info,regular,debug
@@ -13065,7 +13032,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_82:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_82_p:
 
-	.long 3058
+	.long 3046
 LDIFF_SYM371=Lnamede_rgctx_fetch_trampoline_mrgctx_82 - _rgctx_fetch_trampoline_mrgctx_82
 	.long LDIFF_SYM371,192
 .section __DWARF, __debug_info,regular,debug
@@ -13100,7 +13067,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_83:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_83_p:
 
-	.long 3061
+	.long 3049
 LDIFF_SYM373=Lnamede_rgctx_fetch_trampoline_rgctx_83 - _rgctx_fetch_trampoline_rgctx_83
 	.long LDIFF_SYM373,192
 .section __DWARF, __debug_info,regular,debug
@@ -13135,7 +13102,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_83:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_83_p:
 
-	.long 3064
+	.long 3052
 LDIFF_SYM375=Lnamede_rgctx_fetch_trampoline_mrgctx_83 - _rgctx_fetch_trampoline_mrgctx_83
 	.long LDIFF_SYM375,192
 .section __DWARF, __debug_info,regular,debug
@@ -13170,7 +13137,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_84:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_84_p:
 
-	.long 3067
+	.long 3055
 LDIFF_SYM377=Lnamede_rgctx_fetch_trampoline_rgctx_84 - _rgctx_fetch_trampoline_rgctx_84
 	.long LDIFF_SYM377,192
 .section __DWARF, __debug_info,regular,debug
@@ -13205,7 +13172,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_84:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_84_p:
 
-	.long 3070
+	.long 3058
 LDIFF_SYM379=Lnamede_rgctx_fetch_trampoline_mrgctx_84 - _rgctx_fetch_trampoline_mrgctx_84
 	.long LDIFF_SYM379,192
 .section __DWARF, __debug_info,regular,debug
@@ -13240,7 +13207,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_85:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_85_p:
 
-	.long 3073
+	.long 3061
 LDIFF_SYM381=Lnamede_rgctx_fetch_trampoline_rgctx_85 - _rgctx_fetch_trampoline_rgctx_85
 	.long LDIFF_SYM381,192
 .section __DWARF, __debug_info,regular,debug
@@ -13275,7 +13242,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_85:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_85_p:
 
-	.long 3076
+	.long 3064
 LDIFF_SYM383=Lnamede_rgctx_fetch_trampoline_mrgctx_85 - _rgctx_fetch_trampoline_mrgctx_85
 	.long LDIFF_SYM383,192
 .section __DWARF, __debug_info,regular,debug
@@ -13310,7 +13277,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_86:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_86_p:
 
-	.long 3079
+	.long 3067
 LDIFF_SYM385=Lnamede_rgctx_fetch_trampoline_rgctx_86 - _rgctx_fetch_trampoline_rgctx_86
 	.long LDIFF_SYM385,192
 .section __DWARF, __debug_info,regular,debug
@@ -13345,7 +13312,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_86:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_86_p:
 
-	.long 3082
+	.long 3070
 LDIFF_SYM387=Lnamede_rgctx_fetch_trampoline_mrgctx_86 - _rgctx_fetch_trampoline_mrgctx_86
 	.long LDIFF_SYM387,192
 .section __DWARF, __debug_info,regular,debug
@@ -13380,7 +13347,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_87:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_87_p:
 
-	.long 3085
+	.long 3073
 LDIFF_SYM389=Lnamede_rgctx_fetch_trampoline_rgctx_87 - _rgctx_fetch_trampoline_rgctx_87
 	.long LDIFF_SYM389,192
 .section __DWARF, __debug_info,regular,debug
@@ -13415,7 +13382,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_87:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_87_p:
 
-	.long 3088
+	.long 3076
 LDIFF_SYM391=Lnamede_rgctx_fetch_trampoline_mrgctx_87 - _rgctx_fetch_trampoline_mrgctx_87
 	.long LDIFF_SYM391,192
 .section __DWARF, __debug_info,regular,debug
@@ -13450,7 +13417,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_88:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_88_p:
 
-	.long 3091
+	.long 3079
 LDIFF_SYM393=Lnamede_rgctx_fetch_trampoline_rgctx_88 - _rgctx_fetch_trampoline_rgctx_88
 	.long LDIFF_SYM393,192
 .section __DWARF, __debug_info,regular,debug
@@ -13485,7 +13452,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_88:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_88_p:
 
-	.long 3094
+	.long 3082
 LDIFF_SYM395=Lnamede_rgctx_fetch_trampoline_mrgctx_88 - _rgctx_fetch_trampoline_mrgctx_88
 	.long LDIFF_SYM395,192
 .section __DWARF, __debug_info,regular,debug
@@ -13520,7 +13487,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_89:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_89_p:
 
-	.long 3097
+	.long 3085
 LDIFF_SYM397=Lnamede_rgctx_fetch_trampoline_rgctx_89 - _rgctx_fetch_trampoline_rgctx_89
 	.long LDIFF_SYM397,192
 .section __DWARF, __debug_info,regular,debug
@@ -13555,7 +13522,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_89:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_89_p:
 
-	.long 3100
+	.long 3088
 LDIFF_SYM399=Lnamede_rgctx_fetch_trampoline_mrgctx_89 - _rgctx_fetch_trampoline_mrgctx_89
 	.long LDIFF_SYM399,192
 .section __DWARF, __debug_info,regular,debug
@@ -13590,7 +13557,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_90:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_90_p:
 
-	.long 3103
+	.long 3091
 LDIFF_SYM401=Lnamede_rgctx_fetch_trampoline_rgctx_90 - _rgctx_fetch_trampoline_rgctx_90
 	.long LDIFF_SYM401,192
 .section __DWARF, __debug_info,regular,debug
@@ -13625,7 +13592,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_90:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_90_p:
 
-	.long 3106
+	.long 3094
 LDIFF_SYM403=Lnamede_rgctx_fetch_trampoline_mrgctx_90 - _rgctx_fetch_trampoline_mrgctx_90
 	.long LDIFF_SYM403,192
 .section __DWARF, __debug_info,regular,debug
@@ -13660,7 +13627,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_91:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_91_p:
 
-	.long 3109
+	.long 3097
 LDIFF_SYM405=Lnamede_rgctx_fetch_trampoline_rgctx_91 - _rgctx_fetch_trampoline_rgctx_91
 	.long LDIFF_SYM405,192
 .section __DWARF, __debug_info,regular,debug
@@ -13695,7 +13662,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_91:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_91_p:
 
-	.long 3112
+	.long 3100
 LDIFF_SYM407=Lnamede_rgctx_fetch_trampoline_mrgctx_91 - _rgctx_fetch_trampoline_mrgctx_91
 	.long LDIFF_SYM407,192
 .section __DWARF, __debug_info,regular,debug
@@ -13730,7 +13697,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_92:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_92_p:
 
-	.long 3115
+	.long 3103
 LDIFF_SYM409=Lnamede_rgctx_fetch_trampoline_rgctx_92 - _rgctx_fetch_trampoline_rgctx_92
 	.long LDIFF_SYM409,192
 .section __DWARF, __debug_info,regular,debug
@@ -13765,7 +13732,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_92:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_92_p:
 
-	.long 3118
+	.long 3106
 LDIFF_SYM411=Lnamede_rgctx_fetch_trampoline_mrgctx_92 - _rgctx_fetch_trampoline_mrgctx_92
 	.long LDIFF_SYM411,192
 .section __DWARF, __debug_info,regular,debug
@@ -13800,7 +13767,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_93:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_93_p:
 
-	.long 3121
+	.long 3109
 LDIFF_SYM413=Lnamede_rgctx_fetch_trampoline_rgctx_93 - _rgctx_fetch_trampoline_rgctx_93
 	.long LDIFF_SYM413,192
 .section __DWARF, __debug_info,regular,debug
@@ -13835,7 +13802,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_93:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_93_p:
 
-	.long 3124
+	.long 3112
 LDIFF_SYM415=Lnamede_rgctx_fetch_trampoline_mrgctx_93 - _rgctx_fetch_trampoline_mrgctx_93
 	.long LDIFF_SYM415,192
 .section __DWARF, __debug_info,regular,debug
@@ -13870,7 +13837,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_94:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_94_p:
 
-	.long 3127
+	.long 3115
 LDIFF_SYM417=Lnamede_rgctx_fetch_trampoline_rgctx_94 - _rgctx_fetch_trampoline_rgctx_94
 	.long LDIFF_SYM417,192
 .section __DWARF, __debug_info,regular,debug
@@ -13905,7 +13872,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_94:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_94_p:
 
-	.long 3130
+	.long 3118
 LDIFF_SYM419=Lnamede_rgctx_fetch_trampoline_mrgctx_94 - _rgctx_fetch_trampoline_mrgctx_94
 	.long LDIFF_SYM419,192
 .section __DWARF, __debug_info,regular,debug
@@ -13940,7 +13907,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_95:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_95_p:
 
-	.long 3133
+	.long 3121
 LDIFF_SYM421=Lnamede_rgctx_fetch_trampoline_rgctx_95 - _rgctx_fetch_trampoline_rgctx_95
 	.long LDIFF_SYM421,192
 .section __DWARF, __debug_info,regular,debug
@@ -13975,7 +13942,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_95:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_95_p:
 
-	.long 3136
+	.long 3124
 LDIFF_SYM423=Lnamede_rgctx_fetch_trampoline_mrgctx_95 - _rgctx_fetch_trampoline_mrgctx_95
 	.long LDIFF_SYM423,192
 .section __DWARF, __debug_info,regular,debug
@@ -14010,7 +13977,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_96:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_96_p:
 
-	.long 3139
+	.long 3127
 LDIFF_SYM425=Lnamede_rgctx_fetch_trampoline_rgctx_96 - _rgctx_fetch_trampoline_rgctx_96
 	.long LDIFF_SYM425,192
 .section __DWARF, __debug_info,regular,debug
@@ -14045,7 +14012,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_96:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_96_p:
 
-	.long 3142
+	.long 3130
 LDIFF_SYM427=Lnamede_rgctx_fetch_trampoline_mrgctx_96 - _rgctx_fetch_trampoline_mrgctx_96
 	.long LDIFF_SYM427,192
 .section __DWARF, __debug_info,regular,debug
@@ -14080,7 +14047,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_97:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_97_p:
 
-	.long 3145
+	.long 3133
 LDIFF_SYM429=Lnamede_rgctx_fetch_trampoline_rgctx_97 - _rgctx_fetch_trampoline_rgctx_97
 	.long LDIFF_SYM429,192
 .section __DWARF, __debug_info,regular,debug
@@ -14115,7 +14082,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_97:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_97_p:
 
-	.long 3148
+	.long 3136
 LDIFF_SYM431=Lnamede_rgctx_fetch_trampoline_mrgctx_97 - _rgctx_fetch_trampoline_mrgctx_97
 	.long LDIFF_SYM431,192
 .section __DWARF, __debug_info,regular,debug
@@ -14150,7 +14117,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_98:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_98_p:
 
-	.long 3151
+	.long 3139
 LDIFF_SYM433=Lnamede_rgctx_fetch_trampoline_rgctx_98 - _rgctx_fetch_trampoline_rgctx_98
 	.long LDIFF_SYM433,192
 .section __DWARF, __debug_info,regular,debug
@@ -14185,7 +14152,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_98:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_98_p:
 
-	.long 3154
+	.long 3142
 LDIFF_SYM435=Lnamede_rgctx_fetch_trampoline_mrgctx_98 - _rgctx_fetch_trampoline_mrgctx_98
 	.long LDIFF_SYM435,192
 .section __DWARF, __debug_info,regular,debug
@@ -14220,7 +14187,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_99:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_99_p:
 
-	.long 3157
+	.long 3145
 LDIFF_SYM437=Lnamede_rgctx_fetch_trampoline_rgctx_99 - _rgctx_fetch_trampoline_rgctx_99
 	.long LDIFF_SYM437,192
 .section __DWARF, __debug_info,regular,debug
@@ -14255,7 +14222,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_99:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_99_p:
 
-	.long 3160
+	.long 3148
 LDIFF_SYM439=Lnamede_rgctx_fetch_trampoline_mrgctx_99 - _rgctx_fetch_trampoline_mrgctx_99
 	.long LDIFF_SYM439,192
 .section __DWARF, __debug_info,regular,debug
@@ -14290,7 +14257,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_100:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_100_p:
 
-	.long 3163
+	.long 3151
 LDIFF_SYM441=Lnamede_rgctx_fetch_trampoline_rgctx_100 - _rgctx_fetch_trampoline_rgctx_100
 	.long LDIFF_SYM441,192
 .section __DWARF, __debug_info,regular,debug
@@ -14325,7 +14292,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_100:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_100_p:
 
-	.long 3166
+	.long 3154
 LDIFF_SYM443=Lnamede_rgctx_fetch_trampoline_mrgctx_100 - _rgctx_fetch_trampoline_mrgctx_100
 	.long LDIFF_SYM443,192
 .section __DWARF, __debug_info,regular,debug
@@ -14360,7 +14327,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_101:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_101_p:
 
-	.long 3169
+	.long 3157
 LDIFF_SYM445=Lnamede_rgctx_fetch_trampoline_rgctx_101 - _rgctx_fetch_trampoline_rgctx_101
 	.long LDIFF_SYM445,192
 .section __DWARF, __debug_info,regular,debug
@@ -14395,7 +14362,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_101:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_101_p:
 
-	.long 3172
+	.long 3160
 LDIFF_SYM447=Lnamede_rgctx_fetch_trampoline_mrgctx_101 - _rgctx_fetch_trampoline_mrgctx_101
 	.long LDIFF_SYM447,192
 .section __DWARF, __debug_info,regular,debug
@@ -14430,7 +14397,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_102:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_102_p:
 
-	.long 3175
+	.long 3163
 LDIFF_SYM449=Lnamede_rgctx_fetch_trampoline_rgctx_102 - _rgctx_fetch_trampoline_rgctx_102
 	.long LDIFF_SYM449,192
 .section __DWARF, __debug_info,regular,debug
@@ -14465,7 +14432,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_102:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_102_p:
 
-	.long 3178
+	.long 3166
 LDIFF_SYM451=Lnamede_rgctx_fetch_trampoline_mrgctx_102 - _rgctx_fetch_trampoline_mrgctx_102
 	.long LDIFF_SYM451,192
 .section __DWARF, __debug_info,regular,debug
@@ -14500,7 +14467,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_103:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_103_p:
 
-	.long 3181
+	.long 3169
 LDIFF_SYM453=Lnamede_rgctx_fetch_trampoline_rgctx_103 - _rgctx_fetch_trampoline_rgctx_103
 	.long LDIFF_SYM453,192
 .section __DWARF, __debug_info,regular,debug
@@ -14535,7 +14502,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_103:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_103_p:
 
-	.long 3184
+	.long 3172
 LDIFF_SYM455=Lnamede_rgctx_fetch_trampoline_mrgctx_103 - _rgctx_fetch_trampoline_mrgctx_103
 	.long LDIFF_SYM455,192
 .section __DWARF, __debug_info,regular,debug
@@ -14570,7 +14537,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_104:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_104_p:
 
-	.long 3187
+	.long 3175
 LDIFF_SYM457=Lnamede_rgctx_fetch_trampoline_rgctx_104 - _rgctx_fetch_trampoline_rgctx_104
 	.long LDIFF_SYM457,192
 .section __DWARF, __debug_info,regular,debug
@@ -14605,7 +14572,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_104:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_104_p:
 
-	.long 3190
+	.long 3178
 LDIFF_SYM459=Lnamede_rgctx_fetch_trampoline_mrgctx_104 - _rgctx_fetch_trampoline_mrgctx_104
 	.long LDIFF_SYM459,192
 .section __DWARF, __debug_info,regular,debug
@@ -14640,7 +14607,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_105:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_105_p:
 
-	.long 3193
+	.long 3181
 LDIFF_SYM461=Lnamede_rgctx_fetch_trampoline_rgctx_105 - _rgctx_fetch_trampoline_rgctx_105
 	.long LDIFF_SYM461,192
 .section __DWARF, __debug_info,regular,debug
@@ -14675,7 +14642,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_105:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_105_p:
 
-	.long 3196
+	.long 3184
 LDIFF_SYM463=Lnamede_rgctx_fetch_trampoline_mrgctx_105 - _rgctx_fetch_trampoline_mrgctx_105
 	.long LDIFF_SYM463,192
 .section __DWARF, __debug_info,regular,debug
@@ -14710,7 +14677,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_106:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_106_p:
 
-	.long 3199
+	.long 3187
 LDIFF_SYM465=Lnamede_rgctx_fetch_trampoline_rgctx_106 - _rgctx_fetch_trampoline_rgctx_106
 	.long LDIFF_SYM465,192
 .section __DWARF, __debug_info,regular,debug
@@ -14745,7 +14712,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_106:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_106_p:
 
-	.long 3202
+	.long 3190
 LDIFF_SYM467=Lnamede_rgctx_fetch_trampoline_mrgctx_106 - _rgctx_fetch_trampoline_mrgctx_106
 	.long LDIFF_SYM467,192
 .section __DWARF, __debug_info,regular,debug
@@ -14780,7 +14747,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_107:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_107_p:
 
-	.long 3205
+	.long 3193
 LDIFF_SYM469=Lnamede_rgctx_fetch_trampoline_rgctx_107 - _rgctx_fetch_trampoline_rgctx_107
 	.long LDIFF_SYM469,192
 .section __DWARF, __debug_info,regular,debug
@@ -14815,7 +14782,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_107:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_107_p:
 
-	.long 3208
+	.long 3196
 LDIFF_SYM471=Lnamede_rgctx_fetch_trampoline_mrgctx_107 - _rgctx_fetch_trampoline_mrgctx_107
 	.long LDIFF_SYM471,192
 .section __DWARF, __debug_info,regular,debug
@@ -14850,7 +14817,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_108:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_108_p:
 
-	.long 3211
+	.long 3199
 LDIFF_SYM473=Lnamede_rgctx_fetch_trampoline_rgctx_108 - _rgctx_fetch_trampoline_rgctx_108
 	.long LDIFF_SYM473,192
 .section __DWARF, __debug_info,regular,debug
@@ -14885,7 +14852,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_108:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_108_p:
 
-	.long 3214
+	.long 3202
 LDIFF_SYM475=Lnamede_rgctx_fetch_trampoline_mrgctx_108 - _rgctx_fetch_trampoline_mrgctx_108
 	.long LDIFF_SYM475,192
 .section __DWARF, __debug_info,regular,debug
@@ -14920,7 +14887,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_109:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_109_p:
 
-	.long 3217
+	.long 3205
 LDIFF_SYM477=Lnamede_rgctx_fetch_trampoline_rgctx_109 - _rgctx_fetch_trampoline_rgctx_109
 	.long LDIFF_SYM477,192
 .section __DWARF, __debug_info,regular,debug
@@ -14955,7 +14922,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_109:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_109_p:
 
-	.long 3220
+	.long 3208
 LDIFF_SYM479=Lnamede_rgctx_fetch_trampoline_mrgctx_109 - _rgctx_fetch_trampoline_mrgctx_109
 	.long LDIFF_SYM479,192
 .section __DWARF, __debug_info,regular,debug
@@ -14990,7 +14957,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_110:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_110_p:
 
-	.long 3223
+	.long 3211
 LDIFF_SYM481=Lnamede_rgctx_fetch_trampoline_rgctx_110 - _rgctx_fetch_trampoline_rgctx_110
 	.long LDIFF_SYM481,192
 .section __DWARF, __debug_info,regular,debug
@@ -15025,7 +14992,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_110:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_110_p:
 
-	.long 3226
+	.long 3214
 LDIFF_SYM483=Lnamede_rgctx_fetch_trampoline_mrgctx_110 - _rgctx_fetch_trampoline_mrgctx_110
 	.long LDIFF_SYM483,192
 .section __DWARF, __debug_info,regular,debug
@@ -15060,7 +15027,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_111:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_111_p:
 
-	.long 3229
+	.long 3217
 LDIFF_SYM485=Lnamede_rgctx_fetch_trampoline_rgctx_111 - _rgctx_fetch_trampoline_rgctx_111
 	.long LDIFF_SYM485,192
 .section __DWARF, __debug_info,regular,debug
@@ -15095,7 +15062,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_111:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_111_p:
 
-	.long 3232
+	.long 3220
 LDIFF_SYM487=Lnamede_rgctx_fetch_trampoline_mrgctx_111 - _rgctx_fetch_trampoline_mrgctx_111
 	.long LDIFF_SYM487,192
 .section __DWARF, __debug_info,regular,debug
@@ -15130,7 +15097,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_112:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_112_p:
 
-	.long 3235
+	.long 3223
 LDIFF_SYM489=Lnamede_rgctx_fetch_trampoline_rgctx_112 - _rgctx_fetch_trampoline_rgctx_112
 	.long LDIFF_SYM489,192
 .section __DWARF, __debug_info,regular,debug
@@ -15165,7 +15132,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_112:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_112_p:
 
-	.long 3238
+	.long 3226
 LDIFF_SYM491=Lnamede_rgctx_fetch_trampoline_mrgctx_112 - _rgctx_fetch_trampoline_mrgctx_112
 	.long LDIFF_SYM491,192
 .section __DWARF, __debug_info,regular,debug
@@ -15200,7 +15167,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_113:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_113_p:
 
-	.long 3241
+	.long 3229
 LDIFF_SYM493=Lnamede_rgctx_fetch_trampoline_rgctx_113 - _rgctx_fetch_trampoline_rgctx_113
 	.long LDIFF_SYM493,192
 .section __DWARF, __debug_info,regular,debug
@@ -15235,7 +15202,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_113:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_113_p:
 
-	.long 3244
+	.long 3232
 LDIFF_SYM495=Lnamede_rgctx_fetch_trampoline_mrgctx_113 - _rgctx_fetch_trampoline_mrgctx_113
 	.long LDIFF_SYM495,192
 .section __DWARF, __debug_info,regular,debug
@@ -15270,7 +15237,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_114:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_114_p:
 
-	.long 3247
+	.long 3235
 LDIFF_SYM497=Lnamede_rgctx_fetch_trampoline_rgctx_114 - _rgctx_fetch_trampoline_rgctx_114
 	.long LDIFF_SYM497,192
 .section __DWARF, __debug_info,regular,debug
@@ -15305,7 +15272,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_114:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_114_p:
 
-	.long 3250
+	.long 3238
 LDIFF_SYM499=Lnamede_rgctx_fetch_trampoline_mrgctx_114 - _rgctx_fetch_trampoline_mrgctx_114
 	.long LDIFF_SYM499,192
 .section __DWARF, __debug_info,regular,debug
@@ -15340,7 +15307,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_115:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_115_p:
 
-	.long 3253
+	.long 3241
 LDIFF_SYM501=Lnamede_rgctx_fetch_trampoline_rgctx_115 - _rgctx_fetch_trampoline_rgctx_115
 	.long LDIFF_SYM501,192
 .section __DWARF, __debug_info,regular,debug
@@ -15375,7 +15342,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_115:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_115_p:
 
-	.long 3256
+	.long 3244
 LDIFF_SYM503=Lnamede_rgctx_fetch_trampoline_mrgctx_115 - _rgctx_fetch_trampoline_mrgctx_115
 	.long LDIFF_SYM503,192
 .section __DWARF, __debug_info,regular,debug
@@ -15410,7 +15377,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_116:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_116_p:
 
-	.long 3259
+	.long 3247
 LDIFF_SYM505=Lnamede_rgctx_fetch_trampoline_rgctx_116 - _rgctx_fetch_trampoline_rgctx_116
 	.long LDIFF_SYM505,192
 .section __DWARF, __debug_info,regular,debug
@@ -15445,7 +15412,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_116:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_116_p:
 
-	.long 3262
+	.long 3250
 LDIFF_SYM507=Lnamede_rgctx_fetch_trampoline_mrgctx_116 - _rgctx_fetch_trampoline_mrgctx_116
 	.long LDIFF_SYM507,192
 .section __DWARF, __debug_info,regular,debug
@@ -15480,7 +15447,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_117:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_117_p:
 
-	.long 3265
+	.long 3253
 LDIFF_SYM509=Lnamede_rgctx_fetch_trampoline_rgctx_117 - _rgctx_fetch_trampoline_rgctx_117
 	.long LDIFF_SYM509,192
 .section __DWARF, __debug_info,regular,debug
@@ -15515,7 +15482,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_117:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_117_p:
 
-	.long 3268
+	.long 3256
 LDIFF_SYM511=Lnamede_rgctx_fetch_trampoline_mrgctx_117 - _rgctx_fetch_trampoline_mrgctx_117
 	.long LDIFF_SYM511,192
 .section __DWARF, __debug_info,regular,debug
@@ -15550,7 +15517,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_118:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_118_p:
 
-	.long 3271
+	.long 3259
 LDIFF_SYM513=Lnamede_rgctx_fetch_trampoline_rgctx_118 - _rgctx_fetch_trampoline_rgctx_118
 	.long LDIFF_SYM513,192
 .section __DWARF, __debug_info,regular,debug
@@ -15585,7 +15552,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_118:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_118_p:
 
-	.long 3274
+	.long 3262
 LDIFF_SYM515=Lnamede_rgctx_fetch_trampoline_mrgctx_118 - _rgctx_fetch_trampoline_mrgctx_118
 	.long LDIFF_SYM515,192
 .section __DWARF, __debug_info,regular,debug
@@ -15620,7 +15587,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_119:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_119_p:
 
-	.long 3277
+	.long 3265
 LDIFF_SYM517=Lnamede_rgctx_fetch_trampoline_rgctx_119 - _rgctx_fetch_trampoline_rgctx_119
 	.long LDIFF_SYM517,192
 .section __DWARF, __debug_info,regular,debug
@@ -15655,7 +15622,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_119:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_119_p:
 
-	.long 3280
+	.long 3268
 LDIFF_SYM519=Lnamede_rgctx_fetch_trampoline_mrgctx_119 - _rgctx_fetch_trampoline_mrgctx_119
 	.long LDIFF_SYM519,192
 .section __DWARF, __debug_info,regular,debug
@@ -15690,7 +15657,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_120:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_120_p:
 
-	.long 3283
+	.long 3271
 LDIFF_SYM521=Lnamede_rgctx_fetch_trampoline_rgctx_120 - _rgctx_fetch_trampoline_rgctx_120
 	.long LDIFF_SYM521,192
 .section __DWARF, __debug_info,regular,debug
@@ -15725,7 +15692,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_120:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_120_p:
 
-	.long 3286
+	.long 3274
 LDIFF_SYM523=Lnamede_rgctx_fetch_trampoline_mrgctx_120 - _rgctx_fetch_trampoline_mrgctx_120
 	.long LDIFF_SYM523,192
 .section __DWARF, __debug_info,regular,debug
@@ -15760,7 +15727,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_121:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_121_p:
 
-	.long 3289
+	.long 3277
 LDIFF_SYM525=Lnamede_rgctx_fetch_trampoline_rgctx_121 - _rgctx_fetch_trampoline_rgctx_121
 	.long LDIFF_SYM525,192
 .section __DWARF, __debug_info,regular,debug
@@ -15795,7 +15762,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_121:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_121_p:
 
-	.long 3292
+	.long 3280
 LDIFF_SYM527=Lnamede_rgctx_fetch_trampoline_mrgctx_121 - _rgctx_fetch_trampoline_mrgctx_121
 	.long LDIFF_SYM527,192
 .section __DWARF, __debug_info,regular,debug
@@ -15830,7 +15797,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_122:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_122_p:
 
-	.long 3295
+	.long 3283
 LDIFF_SYM529=Lnamede_rgctx_fetch_trampoline_rgctx_122 - _rgctx_fetch_trampoline_rgctx_122
 	.long LDIFF_SYM529,192
 .section __DWARF, __debug_info,regular,debug
@@ -15865,7 +15832,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_122:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_122_p:
 
-	.long 3298
+	.long 3286
 LDIFF_SYM531=Lnamede_rgctx_fetch_trampoline_mrgctx_122 - _rgctx_fetch_trampoline_mrgctx_122
 	.long LDIFF_SYM531,192
 .section __DWARF, __debug_info,regular,debug
@@ -15900,7 +15867,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_123:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_123_p:
 
-	.long 3301
+	.long 3289
 LDIFF_SYM533=Lnamede_rgctx_fetch_trampoline_rgctx_123 - _rgctx_fetch_trampoline_rgctx_123
 	.long LDIFF_SYM533,192
 .section __DWARF, __debug_info,regular,debug
@@ -15935,7 +15902,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_123:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_123_p:
 
-	.long 3304
+	.long 3292
 LDIFF_SYM535=Lnamede_rgctx_fetch_trampoline_mrgctx_123 - _rgctx_fetch_trampoline_mrgctx_123
 	.long LDIFF_SYM535,192
 .section __DWARF, __debug_info,regular,debug
@@ -15970,7 +15937,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_124:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_124_p:
 
-	.long 3307
+	.long 3295
 LDIFF_SYM537=Lnamede_rgctx_fetch_trampoline_rgctx_124 - _rgctx_fetch_trampoline_rgctx_124
 	.long LDIFF_SYM537,192
 .section __DWARF, __debug_info,regular,debug
@@ -16005,7 +15972,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_124:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_124_p:
 
-	.long 3310
+	.long 3298
 LDIFF_SYM539=Lnamede_rgctx_fetch_trampoline_mrgctx_124 - _rgctx_fetch_trampoline_mrgctx_124
 	.long LDIFF_SYM539,192
 .section __DWARF, __debug_info,regular,debug
@@ -16040,7 +16007,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_125:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_125_p:
 
-	.long 3313
+	.long 3301
 LDIFF_SYM541=Lnamede_rgctx_fetch_trampoline_rgctx_125 - _rgctx_fetch_trampoline_rgctx_125
 	.long LDIFF_SYM541,192
 .section __DWARF, __debug_info,regular,debug
@@ -16075,7 +16042,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_125:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_125_p:
 
-	.long 3316
+	.long 3304
 LDIFF_SYM543=Lnamede_rgctx_fetch_trampoline_mrgctx_125 - _rgctx_fetch_trampoline_mrgctx_125
 	.long LDIFF_SYM543,192
 .section __DWARF, __debug_info,regular,debug
@@ -16110,7 +16077,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_126:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_126_p:
 
-	.long 3319
+	.long 3307
 LDIFF_SYM545=Lnamede_rgctx_fetch_trampoline_rgctx_126 - _rgctx_fetch_trampoline_rgctx_126
 	.long LDIFF_SYM545,192
 .section __DWARF, __debug_info,regular,debug
@@ -16145,7 +16112,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_126:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_126_p:
 
-	.long 3322
+	.long 3310
 LDIFF_SYM547=Lnamede_rgctx_fetch_trampoline_mrgctx_126 - _rgctx_fetch_trampoline_mrgctx_126
 	.long LDIFF_SYM547,192
 .section __DWARF, __debug_info,regular,debug
@@ -16180,7 +16147,7 @@ Lnamede_rgctx_fetch_trampoline_rgctx_127:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_rgctx_127_p:
 
-	.long 3325
+	.long 3313
 LDIFF_SYM549=Lnamede_rgctx_fetch_trampoline_rgctx_127 - _rgctx_fetch_trampoline_rgctx_127
 	.long LDIFF_SYM549,192
 .section __DWARF, __debug_info,regular,debug
@@ -16215,7 +16182,7 @@ Lnamede_rgctx_fetch_trampoline_mrgctx_127:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_mrgctx_127_p:
 
-	.long 3328
+	.long 3316
 LDIFF_SYM551=Lnamede_rgctx_fetch_trampoline_mrgctx_127 - _rgctx_fetch_trampoline_mrgctx_127
 	.long LDIFF_SYM551,192
 .section __DWARF, __debug_info,regular,debug
@@ -16247,7 +16214,7 @@ Lnamede_rgctx_fetch_trampoline_general:
 .section __TEXT, __const
 _rgctx_fetch_trampoline_general_p:
 
-	.long 3331
+	.long 3319
 LDIFF_SYM553=Lnamede_rgctx_fetch_trampoline_general - _rgctx_fetch_trampoline_general
 	.long LDIFF_SYM553,192
 .section __DWARF, __debug_info,regular,debug
@@ -16279,7 +16246,7 @@ Lnamede_delegate_virtual_invoke_imt_32:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_32_p:
 
-	.long 3332
+	.long 3320
 LDIFF_SYM555=Lnamede_delegate_virtual_invoke_imt_32 - _delegate_virtual_invoke_imt_32
 	.long LDIFF_SYM555,192
 .section __DWARF, __debug_info,regular,debug
@@ -16311,7 +16278,7 @@ Lnamede_delegate_virtual_invoke_32:
 .section __TEXT, __const
 _delegate_virtual_invoke_32_p:
 
-	.long 3333
+	.long 3321
 LDIFF_SYM557=Lnamede_delegate_virtual_invoke_32 - _delegate_virtual_invoke_32
 	.long LDIFF_SYM557,192
 .section __DWARF, __debug_info,regular,debug
@@ -16343,7 +16310,7 @@ Lnamede_delegate_virtual_invoke_imt_31:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_31_p:
 
-	.long 3334
+	.long 3322
 LDIFF_SYM559=Lnamede_delegate_virtual_invoke_imt_31 - _delegate_virtual_invoke_imt_31
 	.long LDIFF_SYM559,192
 .section __DWARF, __debug_info,regular,debug
@@ -16375,7 +16342,7 @@ Lnamede_delegate_virtual_invoke_31:
 .section __TEXT, __const
 _delegate_virtual_invoke_31_p:
 
-	.long 3335
+	.long 3323
 LDIFF_SYM561=Lnamede_delegate_virtual_invoke_31 - _delegate_virtual_invoke_31
 	.long LDIFF_SYM561,192
 .section __DWARF, __debug_info,regular,debug
@@ -16407,7 +16374,7 @@ Lnamede_delegate_virtual_invoke_imt_30:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_30_p:
 
-	.long 3336
+	.long 3324
 LDIFF_SYM563=Lnamede_delegate_virtual_invoke_imt_30 - _delegate_virtual_invoke_imt_30
 	.long LDIFF_SYM563,192
 .section __DWARF, __debug_info,regular,debug
@@ -16439,7 +16406,7 @@ Lnamede_delegate_virtual_invoke_30:
 .section __TEXT, __const
 _delegate_virtual_invoke_30_p:
 
-	.long 3337
+	.long 3325
 LDIFF_SYM565=Lnamede_delegate_virtual_invoke_30 - _delegate_virtual_invoke_30
 	.long LDIFF_SYM565,192
 .section __DWARF, __debug_info,regular,debug
@@ -16471,7 +16438,7 @@ Lnamede_delegate_virtual_invoke_imt_29:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_29_p:
 
-	.long 3338
+	.long 3326
 LDIFF_SYM567=Lnamede_delegate_virtual_invoke_imt_29 - _delegate_virtual_invoke_imt_29
 	.long LDIFF_SYM567,192
 .section __DWARF, __debug_info,regular,debug
@@ -16503,7 +16470,7 @@ Lnamede_delegate_virtual_invoke_29:
 .section __TEXT, __const
 _delegate_virtual_invoke_29_p:
 
-	.long 3339
+	.long 3327
 LDIFF_SYM569=Lnamede_delegate_virtual_invoke_29 - _delegate_virtual_invoke_29
 	.long LDIFF_SYM569,192
 .section __DWARF, __debug_info,regular,debug
@@ -16535,7 +16502,7 @@ Lnamede_delegate_virtual_invoke_imt_28:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_28_p:
 
-	.long 3340
+	.long 3328
 LDIFF_SYM571=Lnamede_delegate_virtual_invoke_imt_28 - _delegate_virtual_invoke_imt_28
 	.long LDIFF_SYM571,192
 .section __DWARF, __debug_info,regular,debug
@@ -16567,7 +16534,7 @@ Lnamede_delegate_virtual_invoke_28:
 .section __TEXT, __const
 _delegate_virtual_invoke_28_p:
 
-	.long 3341
+	.long 3329
 LDIFF_SYM573=Lnamede_delegate_virtual_invoke_28 - _delegate_virtual_invoke_28
 	.long LDIFF_SYM573,192
 .section __DWARF, __debug_info,regular,debug
@@ -16599,7 +16566,7 @@ Lnamede_delegate_virtual_invoke_imt_27:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_27_p:
 
-	.long 3342
+	.long 3330
 LDIFF_SYM575=Lnamede_delegate_virtual_invoke_imt_27 - _delegate_virtual_invoke_imt_27
 	.long LDIFF_SYM575,192
 .section __DWARF, __debug_info,regular,debug
@@ -16631,7 +16598,7 @@ Lnamede_delegate_virtual_invoke_27:
 .section __TEXT, __const
 _delegate_virtual_invoke_27_p:
 
-	.long 3343
+	.long 3331
 LDIFF_SYM577=Lnamede_delegate_virtual_invoke_27 - _delegate_virtual_invoke_27
 	.long LDIFF_SYM577,192
 .section __DWARF, __debug_info,regular,debug
@@ -16663,7 +16630,7 @@ Lnamede_delegate_virtual_invoke_imt_26:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_26_p:
 
-	.long 3344
+	.long 3332
 LDIFF_SYM579=Lnamede_delegate_virtual_invoke_imt_26 - _delegate_virtual_invoke_imt_26
 	.long LDIFF_SYM579,192
 .section __DWARF, __debug_info,regular,debug
@@ -16695,7 +16662,7 @@ Lnamede_delegate_virtual_invoke_26:
 .section __TEXT, __const
 _delegate_virtual_invoke_26_p:
 
-	.long 3345
+	.long 3333
 LDIFF_SYM581=Lnamede_delegate_virtual_invoke_26 - _delegate_virtual_invoke_26
 	.long LDIFF_SYM581,192
 .section __DWARF, __debug_info,regular,debug
@@ -16727,7 +16694,7 @@ Lnamede_delegate_virtual_invoke_imt_25:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_25_p:
 
-	.long 3346
+	.long 3334
 LDIFF_SYM583=Lnamede_delegate_virtual_invoke_imt_25 - _delegate_virtual_invoke_imt_25
 	.long LDIFF_SYM583,192
 .section __DWARF, __debug_info,regular,debug
@@ -16759,7 +16726,7 @@ Lnamede_delegate_virtual_invoke_25:
 .section __TEXT, __const
 _delegate_virtual_invoke_25_p:
 
-	.long 3347
+	.long 3335
 LDIFF_SYM585=Lnamede_delegate_virtual_invoke_25 - _delegate_virtual_invoke_25
 	.long LDIFF_SYM585,192
 .section __DWARF, __debug_info,regular,debug
@@ -16791,7 +16758,7 @@ Lnamede_delegate_virtual_invoke_imt_24:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_24_p:
 
-	.long 3348
+	.long 3336
 LDIFF_SYM587=Lnamede_delegate_virtual_invoke_imt_24 - _delegate_virtual_invoke_imt_24
 	.long LDIFF_SYM587,192
 .section __DWARF, __debug_info,regular,debug
@@ -16823,7 +16790,7 @@ Lnamede_delegate_virtual_invoke_24:
 .section __TEXT, __const
 _delegate_virtual_invoke_24_p:
 
-	.long 3349
+	.long 3337
 LDIFF_SYM589=Lnamede_delegate_virtual_invoke_24 - _delegate_virtual_invoke_24
 	.long LDIFF_SYM589,192
 .section __DWARF, __debug_info,regular,debug
@@ -16855,7 +16822,7 @@ Lnamede_delegate_virtual_invoke_imt_23:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_23_p:
 
-	.long 3350
+	.long 3338
 LDIFF_SYM591=Lnamede_delegate_virtual_invoke_imt_23 - _delegate_virtual_invoke_imt_23
 	.long LDIFF_SYM591,192
 .section __DWARF, __debug_info,regular,debug
@@ -16887,7 +16854,7 @@ Lnamede_delegate_virtual_invoke_23:
 .section __TEXT, __const
 _delegate_virtual_invoke_23_p:
 
-	.long 3351
+	.long 3339
 LDIFF_SYM593=Lnamede_delegate_virtual_invoke_23 - _delegate_virtual_invoke_23
 	.long LDIFF_SYM593,192
 .section __DWARF, __debug_info,regular,debug
@@ -16919,7 +16886,7 @@ Lnamede_delegate_virtual_invoke_imt_22:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_22_p:
 
-	.long 3352
+	.long 3340
 LDIFF_SYM595=Lnamede_delegate_virtual_invoke_imt_22 - _delegate_virtual_invoke_imt_22
 	.long LDIFF_SYM595,192
 .section __DWARF, __debug_info,regular,debug
@@ -16951,7 +16918,7 @@ Lnamede_delegate_virtual_invoke_22:
 .section __TEXT, __const
 _delegate_virtual_invoke_22_p:
 
-	.long 3353
+	.long 3341
 LDIFF_SYM597=Lnamede_delegate_virtual_invoke_22 - _delegate_virtual_invoke_22
 	.long LDIFF_SYM597,192
 .section __DWARF, __debug_info,regular,debug
@@ -16983,7 +16950,7 @@ Lnamede_delegate_virtual_invoke_imt_21:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_21_p:
 
-	.long 3354
+	.long 3342
 LDIFF_SYM599=Lnamede_delegate_virtual_invoke_imt_21 - _delegate_virtual_invoke_imt_21
 	.long LDIFF_SYM599,192
 .section __DWARF, __debug_info,regular,debug
@@ -17015,7 +16982,7 @@ Lnamede_delegate_virtual_invoke_21:
 .section __TEXT, __const
 _delegate_virtual_invoke_21_p:
 
-	.long 3355
+	.long 3343
 LDIFF_SYM601=Lnamede_delegate_virtual_invoke_21 - _delegate_virtual_invoke_21
 	.long LDIFF_SYM601,192
 .section __DWARF, __debug_info,regular,debug
@@ -17047,7 +17014,7 @@ Lnamede_delegate_virtual_invoke_imt_20:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_20_p:
 
-	.long 3356
+	.long 3344
 LDIFF_SYM603=Lnamede_delegate_virtual_invoke_imt_20 - _delegate_virtual_invoke_imt_20
 	.long LDIFF_SYM603,192
 .section __DWARF, __debug_info,regular,debug
@@ -17079,7 +17046,7 @@ Lnamede_delegate_virtual_invoke_20:
 .section __TEXT, __const
 _delegate_virtual_invoke_20_p:
 
-	.long 3357
+	.long 3345
 LDIFF_SYM605=Lnamede_delegate_virtual_invoke_20 - _delegate_virtual_invoke_20
 	.long LDIFF_SYM605,192
 .section __DWARF, __debug_info,regular,debug
@@ -17111,7 +17078,7 @@ Lnamede_delegate_virtual_invoke_imt_19:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_19_p:
 
-	.long 3358
+	.long 3346
 LDIFF_SYM607=Lnamede_delegate_virtual_invoke_imt_19 - _delegate_virtual_invoke_imt_19
 	.long LDIFF_SYM607,192
 .section __DWARF, __debug_info,regular,debug
@@ -17143,7 +17110,7 @@ Lnamede_delegate_virtual_invoke_19:
 .section __TEXT, __const
 _delegate_virtual_invoke_19_p:
 
-	.long 3359
+	.long 3347
 LDIFF_SYM609=Lnamede_delegate_virtual_invoke_19 - _delegate_virtual_invoke_19
 	.long LDIFF_SYM609,192
 .section __DWARF, __debug_info,regular,debug
@@ -17175,7 +17142,7 @@ Lnamede_delegate_virtual_invoke_imt_18:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_18_p:
 
-	.long 3360
+	.long 3348
 LDIFF_SYM611=Lnamede_delegate_virtual_invoke_imt_18 - _delegate_virtual_invoke_imt_18
 	.long LDIFF_SYM611,192
 .section __DWARF, __debug_info,regular,debug
@@ -17207,7 +17174,7 @@ Lnamede_delegate_virtual_invoke_18:
 .section __TEXT, __const
 _delegate_virtual_invoke_18_p:
 
-	.long 3361
+	.long 3349
 LDIFF_SYM613=Lnamede_delegate_virtual_invoke_18 - _delegate_virtual_invoke_18
 	.long LDIFF_SYM613,192
 .section __DWARF, __debug_info,regular,debug
@@ -17239,7 +17206,7 @@ Lnamede_delegate_virtual_invoke_imt_17:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_17_p:
 
-	.long 3362
+	.long 3350
 LDIFF_SYM615=Lnamede_delegate_virtual_invoke_imt_17 - _delegate_virtual_invoke_imt_17
 	.long LDIFF_SYM615,192
 .section __DWARF, __debug_info,regular,debug
@@ -17271,7 +17238,7 @@ Lnamede_delegate_virtual_invoke_17:
 .section __TEXT, __const
 _delegate_virtual_invoke_17_p:
 
-	.long 3363
+	.long 3351
 LDIFF_SYM617=Lnamede_delegate_virtual_invoke_17 - _delegate_virtual_invoke_17
 	.long LDIFF_SYM617,192
 .section __DWARF, __debug_info,regular,debug
@@ -17303,7 +17270,7 @@ Lnamede_delegate_virtual_invoke_imt_16:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_16_p:
 
-	.long 3364
+	.long 3352
 LDIFF_SYM619=Lnamede_delegate_virtual_invoke_imt_16 - _delegate_virtual_invoke_imt_16
 	.long LDIFF_SYM619,192
 .section __DWARF, __debug_info,regular,debug
@@ -17335,7 +17302,7 @@ Lnamede_delegate_virtual_invoke_16:
 .section __TEXT, __const
 _delegate_virtual_invoke_16_p:
 
-	.long 3365
+	.long 3353
 LDIFF_SYM621=Lnamede_delegate_virtual_invoke_16 - _delegate_virtual_invoke_16
 	.long LDIFF_SYM621,192
 .section __DWARF, __debug_info,regular,debug
@@ -17367,7 +17334,7 @@ Lnamede_delegate_virtual_invoke_imt_15:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_15_p:
 
-	.long 3366
+	.long 3354
 LDIFF_SYM623=Lnamede_delegate_virtual_invoke_imt_15 - _delegate_virtual_invoke_imt_15
 	.long LDIFF_SYM623,192
 .section __DWARF, __debug_info,regular,debug
@@ -17399,7 +17366,7 @@ Lnamede_delegate_virtual_invoke_15:
 .section __TEXT, __const
 _delegate_virtual_invoke_15_p:
 
-	.long 3367
+	.long 3355
 LDIFF_SYM625=Lnamede_delegate_virtual_invoke_15 - _delegate_virtual_invoke_15
 	.long LDIFF_SYM625,192
 .section __DWARF, __debug_info,regular,debug
@@ -17431,7 +17398,7 @@ Lnamede_delegate_virtual_invoke_imt_14:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_14_p:
 
-	.long 3368
+	.long 3356
 LDIFF_SYM627=Lnamede_delegate_virtual_invoke_imt_14 - _delegate_virtual_invoke_imt_14
 	.long LDIFF_SYM627,192
 .section __DWARF, __debug_info,regular,debug
@@ -17463,7 +17430,7 @@ Lnamede_delegate_virtual_invoke_14:
 .section __TEXT, __const
 _delegate_virtual_invoke_14_p:
 
-	.long 3369
+	.long 3357
 LDIFF_SYM629=Lnamede_delegate_virtual_invoke_14 - _delegate_virtual_invoke_14
 	.long LDIFF_SYM629,192
 .section __DWARF, __debug_info,regular,debug
@@ -17495,7 +17462,7 @@ Lnamede_delegate_virtual_invoke_imt_13:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_13_p:
 
-	.long 3370
+	.long 3358
 LDIFF_SYM631=Lnamede_delegate_virtual_invoke_imt_13 - _delegate_virtual_invoke_imt_13
 	.long LDIFF_SYM631,192
 .section __DWARF, __debug_info,regular,debug
@@ -17527,7 +17494,7 @@ Lnamede_delegate_virtual_invoke_13:
 .section __TEXT, __const
 _delegate_virtual_invoke_13_p:
 
-	.long 3371
+	.long 3359
 LDIFF_SYM633=Lnamede_delegate_virtual_invoke_13 - _delegate_virtual_invoke_13
 	.long LDIFF_SYM633,192
 .section __DWARF, __debug_info,regular,debug
@@ -17559,7 +17526,7 @@ Lnamede_delegate_virtual_invoke_imt_12:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_12_p:
 
-	.long 3372
+	.long 3360
 LDIFF_SYM635=Lnamede_delegate_virtual_invoke_imt_12 - _delegate_virtual_invoke_imt_12
 	.long LDIFF_SYM635,192
 .section __DWARF, __debug_info,regular,debug
@@ -17591,7 +17558,7 @@ Lnamede_delegate_virtual_invoke_12:
 .section __TEXT, __const
 _delegate_virtual_invoke_12_p:
 
-	.long 3373
+	.long 3361
 LDIFF_SYM637=Lnamede_delegate_virtual_invoke_12 - _delegate_virtual_invoke_12
 	.long LDIFF_SYM637,192
 .section __DWARF, __debug_info,regular,debug
@@ -17623,7 +17590,7 @@ Lnamede_delegate_virtual_invoke_imt_11:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_11_p:
 
-	.long 3374
+	.long 3362
 LDIFF_SYM639=Lnamede_delegate_virtual_invoke_imt_11 - _delegate_virtual_invoke_imt_11
 	.long LDIFF_SYM639,192
 .section __DWARF, __debug_info,regular,debug
@@ -17655,7 +17622,7 @@ Lnamede_delegate_virtual_invoke_11:
 .section __TEXT, __const
 _delegate_virtual_invoke_11_p:
 
-	.long 3375
+	.long 3363
 LDIFF_SYM641=Lnamede_delegate_virtual_invoke_11 - _delegate_virtual_invoke_11
 	.long LDIFF_SYM641,192
 .section __DWARF, __debug_info,regular,debug
@@ -17687,7 +17654,7 @@ Lnamede_delegate_virtual_invoke_imt_10:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_10_p:
 
-	.long 3376
+	.long 3364
 LDIFF_SYM643=Lnamede_delegate_virtual_invoke_imt_10 - _delegate_virtual_invoke_imt_10
 	.long LDIFF_SYM643,192
 .section __DWARF, __debug_info,regular,debug
@@ -17719,7 +17686,7 @@ Lnamede_delegate_virtual_invoke_10:
 .section __TEXT, __const
 _delegate_virtual_invoke_10_p:
 
-	.long 3377
+	.long 3365
 LDIFF_SYM645=Lnamede_delegate_virtual_invoke_10 - _delegate_virtual_invoke_10
 	.long LDIFF_SYM645,192
 .section __DWARF, __debug_info,regular,debug
@@ -17751,7 +17718,7 @@ Lnamede_delegate_virtual_invoke_imt_9:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_9_p:
 
-	.long 3378
+	.long 3366
 LDIFF_SYM647=Lnamede_delegate_virtual_invoke_imt_9 - _delegate_virtual_invoke_imt_9
 	.long LDIFF_SYM647,192
 .section __DWARF, __debug_info,regular,debug
@@ -17783,7 +17750,7 @@ Lnamede_delegate_virtual_invoke_9:
 .section __TEXT, __const
 _delegate_virtual_invoke_9_p:
 
-	.long 3379
+	.long 3367
 LDIFF_SYM649=Lnamede_delegate_virtual_invoke_9 - _delegate_virtual_invoke_9
 	.long LDIFF_SYM649,192
 .section __DWARF, __debug_info,regular,debug
@@ -17815,7 +17782,7 @@ Lnamede_delegate_virtual_invoke_imt_8:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_8_p:
 
-	.long 3380
+	.long 3368
 LDIFF_SYM651=Lnamede_delegate_virtual_invoke_imt_8 - _delegate_virtual_invoke_imt_8
 	.long LDIFF_SYM651,192
 .section __DWARF, __debug_info,regular,debug
@@ -17847,7 +17814,7 @@ Lnamede_delegate_virtual_invoke_8:
 .section __TEXT, __const
 _delegate_virtual_invoke_8_p:
 
-	.long 3381
+	.long 3369
 LDIFF_SYM653=Lnamede_delegate_virtual_invoke_8 - _delegate_virtual_invoke_8
 	.long LDIFF_SYM653,192
 .section __DWARF, __debug_info,regular,debug
@@ -17879,7 +17846,7 @@ Lnamede_delegate_virtual_invoke_imt_7:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_7_p:
 
-	.long 3382
+	.long 3370
 LDIFF_SYM655=Lnamede_delegate_virtual_invoke_imt_7 - _delegate_virtual_invoke_imt_7
 	.long LDIFF_SYM655,192
 .section __DWARF, __debug_info,regular,debug
@@ -17911,7 +17878,7 @@ Lnamede_delegate_virtual_invoke_7:
 .section __TEXT, __const
 _delegate_virtual_invoke_7_p:
 
-	.long 3383
+	.long 3371
 LDIFF_SYM657=Lnamede_delegate_virtual_invoke_7 - _delegate_virtual_invoke_7
 	.long LDIFF_SYM657,192
 .section __DWARF, __debug_info,regular,debug
@@ -17943,7 +17910,7 @@ Lnamede_delegate_virtual_invoke_imt_6:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_6_p:
 
-	.long 3384
+	.long 3372
 LDIFF_SYM659=Lnamede_delegate_virtual_invoke_imt_6 - _delegate_virtual_invoke_imt_6
 	.long LDIFF_SYM659,192
 .section __DWARF, __debug_info,regular,debug
@@ -17975,7 +17942,7 @@ Lnamede_delegate_virtual_invoke_6:
 .section __TEXT, __const
 _delegate_virtual_invoke_6_p:
 
-	.long 3385
+	.long 3373
 LDIFF_SYM661=Lnamede_delegate_virtual_invoke_6 - _delegate_virtual_invoke_6
 	.long LDIFF_SYM661,192
 .section __DWARF, __debug_info,regular,debug
@@ -18007,7 +17974,7 @@ Lnamede_delegate_virtual_invoke_imt_5:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_5_p:
 
-	.long 3386
+	.long 3374
 LDIFF_SYM663=Lnamede_delegate_virtual_invoke_imt_5 - _delegate_virtual_invoke_imt_5
 	.long LDIFF_SYM663,192
 .section __DWARF, __debug_info,regular,debug
@@ -18039,7 +18006,7 @@ Lnamede_delegate_virtual_invoke_5:
 .section __TEXT, __const
 _delegate_virtual_invoke_5_p:
 
-	.long 3387
+	.long 3375
 LDIFF_SYM665=Lnamede_delegate_virtual_invoke_5 - _delegate_virtual_invoke_5
 	.long LDIFF_SYM665,192
 .section __DWARF, __debug_info,regular,debug
@@ -18071,7 +18038,7 @@ Lnamede_delegate_virtual_invoke_imt_4:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_4_p:
 
-	.long 3388
+	.long 3376
 LDIFF_SYM667=Lnamede_delegate_virtual_invoke_imt_4 - _delegate_virtual_invoke_imt_4
 	.long LDIFF_SYM667,192
 .section __DWARF, __debug_info,regular,debug
@@ -18103,7 +18070,7 @@ Lnamede_delegate_virtual_invoke_4:
 .section __TEXT, __const
 _delegate_virtual_invoke_4_p:
 
-	.long 3389
+	.long 3377
 LDIFF_SYM669=Lnamede_delegate_virtual_invoke_4 - _delegate_virtual_invoke_4
 	.long LDIFF_SYM669,192
 .section __DWARF, __debug_info,regular,debug
@@ -18135,7 +18102,7 @@ Lnamede_delegate_virtual_invoke_imt_3:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_3_p:
 
-	.long 3390
+	.long 3378
 LDIFF_SYM671=Lnamede_delegate_virtual_invoke_imt_3 - _delegate_virtual_invoke_imt_3
 	.long LDIFF_SYM671,192
 .section __DWARF, __debug_info,regular,debug
@@ -18167,7 +18134,7 @@ Lnamede_delegate_virtual_invoke_3:
 .section __TEXT, __const
 _delegate_virtual_invoke_3_p:
 
-	.long 3391
+	.long 3379
 LDIFF_SYM673=Lnamede_delegate_virtual_invoke_3 - _delegate_virtual_invoke_3
 	.long LDIFF_SYM673,192
 .section __DWARF, __debug_info,regular,debug
@@ -18199,7 +18166,7 @@ Lnamede_delegate_virtual_invoke_imt_2:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_2_p:
 
-	.long 3392
+	.long 3380
 LDIFF_SYM675=Lnamede_delegate_virtual_invoke_imt_2 - _delegate_virtual_invoke_imt_2
 	.long LDIFF_SYM675,192
 .section __DWARF, __debug_info,regular,debug
@@ -18231,7 +18198,7 @@ Lnamede_delegate_virtual_invoke_2:
 .section __TEXT, __const
 _delegate_virtual_invoke_2_p:
 
-	.long 3393
+	.long 3381
 LDIFF_SYM677=Lnamede_delegate_virtual_invoke_2 - _delegate_virtual_invoke_2
 	.long LDIFF_SYM677,192
 .section __DWARF, __debug_info,regular,debug
@@ -18263,7 +18230,7 @@ Lnamede_delegate_virtual_invoke_imt_1:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_1_p:
 
-	.long 3394
+	.long 3382
 LDIFF_SYM679=Lnamede_delegate_virtual_invoke_imt_1 - _delegate_virtual_invoke_imt_1
 	.long LDIFF_SYM679,192
 .section __DWARF, __debug_info,regular,debug
@@ -18295,7 +18262,7 @@ Lnamede_delegate_virtual_invoke_1:
 .section __TEXT, __const
 _delegate_virtual_invoke_1_p:
 
-	.long 3395
+	.long 3383
 LDIFF_SYM681=Lnamede_delegate_virtual_invoke_1 - _delegate_virtual_invoke_1
 	.long LDIFF_SYM681,192
 .section __DWARF, __debug_info,regular,debug
@@ -18327,7 +18294,7 @@ Lnamede_delegate_virtual_invoke_imt_0:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_0_p:
 
-	.long 3396
+	.long 3384
 LDIFF_SYM683=Lnamede_delegate_virtual_invoke_imt_0 - _delegate_virtual_invoke_imt_0
 	.long LDIFF_SYM683,192
 .section __DWARF, __debug_info,regular,debug
@@ -18359,7 +18326,7 @@ Lnamede_delegate_virtual_invoke_0:
 .section __TEXT, __const
 _delegate_virtual_invoke_0_p:
 
-	.long 3397
+	.long 3385
 LDIFF_SYM685=Lnamede_delegate_virtual_invoke_0 - _delegate_virtual_invoke_0
 	.long LDIFF_SYM685,192
 .section __DWARF, __debug_info,regular,debug
@@ -18391,7 +18358,7 @@ Lnamede_delegate_virtual_invoke_imt_m_19:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_19_p:
 
-	.long 3398
+	.long 3386
 LDIFF_SYM687=Lnamede_delegate_virtual_invoke_imt_m_19 - _delegate_virtual_invoke_imt_m_19
 	.long LDIFF_SYM687,192
 .section __DWARF, __debug_info,regular,debug
@@ -18423,7 +18390,7 @@ Lnamede_delegate_virtual_invoke_imt_m_18:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_18_p:
 
-	.long 3399
+	.long 3387
 LDIFF_SYM689=Lnamede_delegate_virtual_invoke_imt_m_18 - _delegate_virtual_invoke_imt_m_18
 	.long LDIFF_SYM689,192
 .section __DWARF, __debug_info,regular,debug
@@ -18455,7 +18422,7 @@ Lnamede_delegate_virtual_invoke_imt_m_17:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_17_p:
 
-	.long 3400
+	.long 3388
 LDIFF_SYM691=Lnamede_delegate_virtual_invoke_imt_m_17 - _delegate_virtual_invoke_imt_m_17
 	.long LDIFF_SYM691,192
 .section __DWARF, __debug_info,regular,debug
@@ -18487,7 +18454,7 @@ Lnamede_delegate_virtual_invoke_imt_m_16:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_16_p:
 
-	.long 3401
+	.long 3389
 LDIFF_SYM693=Lnamede_delegate_virtual_invoke_imt_m_16 - _delegate_virtual_invoke_imt_m_16
 	.long LDIFF_SYM693,192
 .section __DWARF, __debug_info,regular,debug
@@ -18519,7 +18486,7 @@ Lnamede_delegate_virtual_invoke_imt_m_15:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_15_p:
 
-	.long 3402
+	.long 3390
 LDIFF_SYM695=Lnamede_delegate_virtual_invoke_imt_m_15 - _delegate_virtual_invoke_imt_m_15
 	.long LDIFF_SYM695,192
 .section __DWARF, __debug_info,regular,debug
@@ -18551,7 +18518,7 @@ Lnamede_delegate_virtual_invoke_imt_m_14:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_14_p:
 
-	.long 3403
+	.long 3391
 LDIFF_SYM697=Lnamede_delegate_virtual_invoke_imt_m_14 - _delegate_virtual_invoke_imt_m_14
 	.long LDIFF_SYM697,192
 .section __DWARF, __debug_info,regular,debug
@@ -18583,7 +18550,7 @@ Lnamede_delegate_virtual_invoke_imt_m_13:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_13_p:
 
-	.long 3404
+	.long 3392
 LDIFF_SYM699=Lnamede_delegate_virtual_invoke_imt_m_13 - _delegate_virtual_invoke_imt_m_13
 	.long LDIFF_SYM699,192
 .section __DWARF, __debug_info,regular,debug
@@ -18615,7 +18582,7 @@ Lnamede_delegate_virtual_invoke_imt_m_12:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_12_p:
 
-	.long 3405
+	.long 3393
 LDIFF_SYM701=Lnamede_delegate_virtual_invoke_imt_m_12 - _delegate_virtual_invoke_imt_m_12
 	.long LDIFF_SYM701,192
 .section __DWARF, __debug_info,regular,debug
@@ -18647,7 +18614,7 @@ Lnamede_delegate_virtual_invoke_imt_m_11:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_11_p:
 
-	.long 3406
+	.long 3394
 LDIFF_SYM703=Lnamede_delegate_virtual_invoke_imt_m_11 - _delegate_virtual_invoke_imt_m_11
 	.long LDIFF_SYM703,192
 .section __DWARF, __debug_info,regular,debug
@@ -18679,7 +18646,7 @@ Lnamede_delegate_virtual_invoke_imt_m_10:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_10_p:
 
-	.long 3407
+	.long 3395
 LDIFF_SYM705=Lnamede_delegate_virtual_invoke_imt_m_10 - _delegate_virtual_invoke_imt_m_10
 	.long LDIFF_SYM705,192
 .section __DWARF, __debug_info,regular,debug
@@ -18711,7 +18678,7 @@ Lnamede_delegate_virtual_invoke_imt_m_9:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_9_p:
 
-	.long 3408
+	.long 3396
 LDIFF_SYM707=Lnamede_delegate_virtual_invoke_imt_m_9 - _delegate_virtual_invoke_imt_m_9
 	.long LDIFF_SYM707,192
 .section __DWARF, __debug_info,regular,debug
@@ -18743,7 +18710,7 @@ Lnamede_delegate_virtual_invoke_imt_m_8:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_8_p:
 
-	.long 3409
+	.long 3397
 LDIFF_SYM709=Lnamede_delegate_virtual_invoke_imt_m_8 - _delegate_virtual_invoke_imt_m_8
 	.long LDIFF_SYM709,192
 .section __DWARF, __debug_info,regular,debug
@@ -18775,7 +18742,7 @@ Lnamede_delegate_virtual_invoke_imt_m_7:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_7_p:
 
-	.long 3410
+	.long 3398
 LDIFF_SYM711=Lnamede_delegate_virtual_invoke_imt_m_7 - _delegate_virtual_invoke_imt_m_7
 	.long LDIFF_SYM711,192
 .section __DWARF, __debug_info,regular,debug
@@ -18807,7 +18774,7 @@ Lnamede_delegate_virtual_invoke_imt_m_6:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_6_p:
 
-	.long 3411
+	.long 3399
 LDIFF_SYM713=Lnamede_delegate_virtual_invoke_imt_m_6 - _delegate_virtual_invoke_imt_m_6
 	.long LDIFF_SYM713,192
 .section __DWARF, __debug_info,regular,debug
@@ -18839,7 +18806,7 @@ Lnamede_delegate_virtual_invoke_imt_m_5:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_5_p:
 
-	.long 3412
+	.long 3400
 LDIFF_SYM715=Lnamede_delegate_virtual_invoke_imt_m_5 - _delegate_virtual_invoke_imt_m_5
 	.long LDIFF_SYM715,192
 .section __DWARF, __debug_info,regular,debug
@@ -18871,7 +18838,7 @@ Lnamede_delegate_virtual_invoke_imt_m_4:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_4_p:
 
-	.long 3413
+	.long 3401
 LDIFF_SYM717=Lnamede_delegate_virtual_invoke_imt_m_4 - _delegate_virtual_invoke_imt_m_4
 	.long LDIFF_SYM717,192
 .section __DWARF, __debug_info,regular,debug
@@ -18903,7 +18870,7 @@ Lnamede_delegate_virtual_invoke_imt_m_3:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_3_p:
 
-	.long 3414
+	.long 3402
 LDIFF_SYM719=Lnamede_delegate_virtual_invoke_imt_m_3 - _delegate_virtual_invoke_imt_m_3
 	.long LDIFF_SYM719,192
 .section __DWARF, __debug_info,regular,debug
@@ -18935,7 +18902,7 @@ Lnamede_delegate_virtual_invoke_imt_m_2:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_2_p:
 
-	.long 3415
+	.long 3403
 LDIFF_SYM721=Lnamede_delegate_virtual_invoke_imt_m_2 - _delegate_virtual_invoke_imt_m_2
 	.long LDIFF_SYM721,192
 .section __DWARF, __debug_info,regular,debug
@@ -18967,7 +18934,7 @@ Lnamede_delegate_virtual_invoke_imt_m_1:
 .section __TEXT, __const
 _delegate_virtual_invoke_imt_m_1_p:
 
-	.long 3416
+	.long 3404
 LDIFF_SYM723=Lnamede_delegate_virtual_invoke_imt_m_1 - _delegate_virtual_invoke_imt_m_1
 	.long LDIFF_SYM723,192
 .section __DWARF, __debug_info,regular,debug
@@ -19000,7 +18967,7 @@ Lnamede_delegate_invoke_impl_target_10:
 .section __TEXT, __const
 _delegate_invoke_impl_target_10_p:
 
-	.long 3417
+	.long 3405
 LDIFF_SYM725=Lnamede_delegate_invoke_impl_target_10 - _delegate_invoke_impl_target_10
 	.long LDIFF_SYM725,192
 .section __DWARF, __debug_info,regular,debug
@@ -19033,7 +19000,7 @@ Lnamede_delegate_invoke_impl_target_9:
 .section __TEXT, __const
 _delegate_invoke_impl_target_9_p:
 
-	.long 3418
+	.long 3406
 LDIFF_SYM727=Lnamede_delegate_invoke_impl_target_9 - _delegate_invoke_impl_target_9
 	.long LDIFF_SYM727,192
 .section __DWARF, __debug_info,regular,debug
@@ -19065,7 +19032,7 @@ Lnamede_delegate_invoke_impl_target_8:
 .section __TEXT, __const
 _delegate_invoke_impl_target_8_p:
 
-	.long 3419
+	.long 3407
 LDIFF_SYM729=Lnamede_delegate_invoke_impl_target_8 - _delegate_invoke_impl_target_8
 	.long LDIFF_SYM729,192
 .section __DWARF, __debug_info,regular,debug
@@ -19097,7 +19064,7 @@ Lnamede_delegate_invoke_impl_target_7:
 .section __TEXT, __const
 _delegate_invoke_impl_target_7_p:
 
-	.long 3420
+	.long 3408
 LDIFF_SYM731=Lnamede_delegate_invoke_impl_target_7 - _delegate_invoke_impl_target_7
 	.long LDIFF_SYM731,192
 .section __DWARF, __debug_info,regular,debug
@@ -19129,7 +19096,7 @@ Lnamede_delegate_invoke_impl_target_6:
 .section __TEXT, __const
 _delegate_invoke_impl_target_6_p:
 
-	.long 3421
+	.long 3409
 LDIFF_SYM733=Lnamede_delegate_invoke_impl_target_6 - _delegate_invoke_impl_target_6
 	.long LDIFF_SYM733,192
 .section __DWARF, __debug_info,regular,debug
@@ -19161,7 +19128,7 @@ Lnamede_delegate_invoke_impl_target_5:
 .section __TEXT, __const
 _delegate_invoke_impl_target_5_p:
 
-	.long 3422
+	.long 3410
 LDIFF_SYM735=Lnamede_delegate_invoke_impl_target_5 - _delegate_invoke_impl_target_5
 	.long LDIFF_SYM735,192
 .section __DWARF, __debug_info,regular,debug
@@ -19193,7 +19160,7 @@ Lnamede_delegate_invoke_impl_target_4:
 .section __TEXT, __const
 _delegate_invoke_impl_target_4_p:
 
-	.long 3423
+	.long 3411
 LDIFF_SYM737=Lnamede_delegate_invoke_impl_target_4 - _delegate_invoke_impl_target_4
 	.long LDIFF_SYM737,192
 .section __DWARF, __debug_info,regular,debug
@@ -19225,7 +19192,7 @@ Lnamede_delegate_invoke_impl_target_3:
 .section __TEXT, __const
 _delegate_invoke_impl_target_3_p:
 
-	.long 3424
+	.long 3412
 LDIFF_SYM739=Lnamede_delegate_invoke_impl_target_3 - _delegate_invoke_impl_target_3
 	.long LDIFF_SYM739,192
 .section __DWARF, __debug_info,regular,debug
@@ -19257,7 +19224,7 @@ Lnamede_delegate_invoke_impl_target_2:
 .section __TEXT, __const
 _delegate_invoke_impl_target_2_p:
 
-	.long 3425
+	.long 3413
 LDIFF_SYM741=Lnamede_delegate_invoke_impl_target_2 - _delegate_invoke_impl_target_2
 	.long LDIFF_SYM741,192
 .section __DWARF, __debug_info,regular,debug
@@ -19289,7 +19256,7 @@ Lnamede_delegate_invoke_impl_target_1:
 .section __TEXT, __const
 _delegate_invoke_impl_target_1_p:
 
-	.long 3426
+	.long 3414
 LDIFF_SYM743=Lnamede_delegate_invoke_impl_target_1 - _delegate_invoke_impl_target_1
 	.long LDIFF_SYM743,192
 .section __DWARF, __debug_info,regular,debug
@@ -19321,7 +19288,7 @@ Lnamede_delegate_invoke_impl_target_0:
 .section __TEXT, __const
 _delegate_invoke_impl_target_0_p:
 
-	.long 3427
+	.long 3415
 LDIFF_SYM745=Lnamede_delegate_invoke_impl_target_0 - _delegate_invoke_impl_target_0
 	.long LDIFF_SYM745,192
 .section __DWARF, __debug_info,regular,debug
@@ -19353,7 +19320,7 @@ Lnamede_delegate_invoke_impl_has_target:
 .section __TEXT, __const
 _delegate_invoke_impl_has_target_p:
 
-	.long 3428
+	.long 3416
 LDIFF_SYM747=Lnamede_delegate_invoke_impl_has_target - _delegate_invoke_impl_has_target
 	.long LDIFF_SYM747,192
 .section __DWARF, __debug_info,regular,debug
@@ -19391,7 +19358,7 @@ Lnamede_interp_to_native_trampoline:
 .section __TEXT, __const
 _interp_to_native_trampoline_p:
 
-	.long 3429
+	.long 3417
 LDIFF_SYM749=Lnamede_interp_to_native_trampoline - _interp_to_native_trampoline
 	.long LDIFF_SYM749,198
 .section __DWARF, __debug_info,regular,debug
@@ -19429,7 +19396,7 @@ Lnamede_native_to_interp_trampoline:
 .section __TEXT, __const
 _native_to_interp_trampoline_p:
 
-	.long 3430
+	.long 3418
 LDIFF_SYM751=Lnamede_native_to_interp_trampoline - _native_to_interp_trampoline
 	.long LDIFF_SYM751,219
 .section __DWARF, __debug_info,regular,debug
@@ -53834,1103 +53801,1097 @@ plt__jit_icall_mono_interp_to_native_trampoline:
 _p_1:
 jmp *mono_aot_corlib_got+137552(%rip)
 
-	.long 4537
+	.long 4525
 	.no_dead_strip plt__jit_icall_mono_interp_entry_from_trampoline
 plt__jit_icall_mono_interp_entry_from_trampoline:
 _p_2:
 jmp *mono_aot_corlib_got+137560(%rip)
 
-	.long 4540
+	.long 4528
 	.no_dead_strip plt__jit_icall_mono_threads_state_poll
 plt__jit_icall_mono_threads_state_poll:
 _p_3:
 jmp *mono_aot_corlib_got+137568(%rip)
 
-	.long 4543
+	.long 4531
 	.no_dead_strip plt__jit_icall_mono_gc_alloc_obj
 plt__jit_icall_mono_gc_alloc_obj:
 _p_4:
 jmp *mono_aot_corlib_got+137576(%rip)
 
-	.long 4546
+	.long 4534
 	.no_dead_strip plt__jit_icall_mono_create_corlib_exception_0
 plt__jit_icall_mono_create_corlib_exception_0:
 _p_5:
 jmp *mono_aot_corlib_got+137584(%rip)
 
-	.long 4549
+	.long 4537
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_6:
 jmp *mono_aot_corlib_got+137592(%rip)
 
-	.long 4552
+	.long 4540
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_7:
 jmp *mono_aot_corlib_got+137600(%rip)
 
-	.long 4554
+	.long 4542
 	.no_dead_strip plt__jit_icall_mono_profiler_raise_gc_allocation
 plt__jit_icall_mono_profiler_raise_gc_allocation:
 _p_8:
 jmp *mono_aot_corlib_got+137608(%rip)
 
-	.long 4557
+	.long 4545
 	.no_dead_strip plt__jit_icall_mono_gc_alloc_vector
 plt__jit_icall_mono_gc_alloc_vector:
 _p_9:
 jmp *mono_aot_corlib_got+137616(%rip)
 
-	.long 4560
+	.long 4548
 	.no_dead_strip plt__jit_icall_ves_icall_array_new_specific
 plt__jit_icall_ves_icall_array_new_specific:
 _p_10:
 jmp *mono_aot_corlib_got+137624(%rip)
 
-	.long 4563
+	.long 4551
 	.no_dead_strip plt__jit_icall_mono_gc_alloc_string
 plt__jit_icall_mono_gc_alloc_string:
 _p_11:
 jmp *mono_aot_corlib_got+137632(%rip)
 
-	.long 4566
+	.long 4554
 	.no_dead_strip plt__jit_icall_ves_icall_string_alloc
 plt__jit_icall_ves_icall_string_alloc:
 _p_12:
 jmp *mono_aot_corlib_got+137640(%rip)
 
-	.long 4569
+	.long 4557
 	.no_dead_strip plt__jit_icall_native_mono_tls_get_domain_extern
 plt__jit_icall_native_mono_tls_get_domain_extern:
 _p_13:
 jmp *mono_aot_corlib_got+137648(%rip)
 
-	.long 4572
+	.long 4560
 	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
 plt__jit_icall_mono_arch_rethrow_exception:
 _p_14:
 jmp *mono_aot_corlib_got+137656(%rip)
 
-	.long 4574
+	.long 4562
 	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
 plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_15:
 jmp *mono_aot_corlib_got+137664(%rip)
 
-	.long 4576
+	.long 4564
 	.no_dead_strip plt__jit_icall_native_mono_tls_get_jit_tls_extern
 plt__jit_icall_native_mono_tls_get_jit_tls_extern:
 _p_16:
 jmp *mono_aot_corlib_got+137672(%rip)
 
-	.long 4579
+	.long 4567
 	.no_dead_strip plt__jit_icall_native_mono_tls_get_lmf_addr_extern
 plt__jit_icall_native_mono_tls_get_lmf_addr_extern:
 _p_17:
 jmp *mono_aot_corlib_got+137680(%rip)
 
-	.long 4581
+	.long 4569
 	.no_dead_strip plt__jit_icall_native_mono_tls_get_sgen_thread_info_extern
 plt__jit_icall_native_mono_tls_get_sgen_thread_info_extern:
 _p_18:
 jmp *mono_aot_corlib_got+137688(%rip)
 
-	.long 4583
+	.long 4571
 	.no_dead_strip plt__jit_icall_native_mono_tls_get_thread_extern
 plt__jit_icall_native_mono_tls_get_thread_extern:
 _p_19:
 jmp *mono_aot_corlib_got+137696(%rip)
 
-	.long 4585
+	.long 4573
 	.no_dead_strip plt__jit_icall_native___emul_fconv_to_ovf_i8
 plt__jit_icall_native___emul_fconv_to_ovf_i8:
 _p_20:
 jmp *mono_aot_corlib_got+137704(%rip)
 
-	.long 4587
+	.long 4575
 	.no_dead_strip plt__jit_icall_native___emul_fconv_to_ovf_u8
 plt__jit_icall_native___emul_fconv_to_ovf_u8:
 _p_21:
 jmp *mono_aot_corlib_got+137712(%rip)
 
-	.long 4589
-	.no_dead_strip plt__jit_icall_native___emul_fconv_to_u
-plt__jit_icall_native___emul_fconv_to_u:
+	.long 4577
+	.no_dead_strip plt__jit_icall_native___emul_fconv_to_u4
+plt__jit_icall_native___emul_fconv_to_u4:
 _p_22:
 jmp *mono_aot_corlib_got+137720(%rip)
 
-	.long 4591
-	.no_dead_strip plt__jit_icall_native___emul_fconv_to_u4
-plt__jit_icall_native___emul_fconv_to_u4:
+	.long 4579
+	.no_dead_strip plt__jit_icall_native___emul_fconv_to_u8
+plt__jit_icall_native___emul_fconv_to_u8:
 _p_23:
 jmp *mono_aot_corlib_got+137728(%rip)
 
-	.long 4593
-	.no_dead_strip plt__jit_icall_native___emul_fconv_to_u8
-plt__jit_icall_native___emul_fconv_to_u8:
+	.long 4581
+	.no_dead_strip plt__jit_icall_native___emul_frem
+plt__jit_icall_native___emul_frem:
 _p_24:
 jmp *mono_aot_corlib_got+137736(%rip)
 
-	.long 4595
-	.no_dead_strip plt__jit_icall_native___emul_frem
-plt__jit_icall_native___emul_frem:
+	.long 4583
+	.no_dead_strip plt__jit_icall_native___emul_iconv_to_r_un
+plt__jit_icall_native___emul_iconv_to_r_un:
 _p_25:
 jmp *mono_aot_corlib_got+137744(%rip)
 
-	.long 4597
-	.no_dead_strip plt__jit_icall_native___emul_iconv_to_r_un
-plt__jit_icall_native___emul_iconv_to_r_un:
+	.long 4585
+	.no_dead_strip plt__jit_icall_native___emul_rconv_to_ovf_i8
+plt__jit_icall_native___emul_rconv_to_ovf_i8:
 _p_26:
 jmp *mono_aot_corlib_got+137752(%rip)
 
-	.long 4599
-	.no_dead_strip plt__jit_icall_native___emul_rconv_to_ovf_i8
-plt__jit_icall_native___emul_rconv_to_ovf_i8:
+	.long 4587
+	.no_dead_strip plt__jit_icall_native___emul_rconv_to_ovf_u8
+plt__jit_icall_native___emul_rconv_to_ovf_u8:
 _p_27:
 jmp *mono_aot_corlib_got+137760(%rip)
 
-	.long 4601
-	.no_dead_strip plt__jit_icall_native___emul_rconv_to_ovf_u8
-plt__jit_icall_native___emul_rconv_to_ovf_u8:
+	.long 4589
+	.no_dead_strip plt__jit_icall_native___emul_rconv_to_u4
+plt__jit_icall_native___emul_rconv_to_u4:
 _p_28:
 jmp *mono_aot_corlib_got+137768(%rip)
 
-	.long 4603
-	.no_dead_strip plt__jit_icall_native___emul_rconv_to_u4
-plt__jit_icall_native___emul_rconv_to_u4:
+	.long 4591
+	.no_dead_strip plt__jit_icall_native___emul_rconv_to_u8
+plt__jit_icall_native___emul_rconv_to_u8:
 _p_29:
 jmp *mono_aot_corlib_got+137776(%rip)
 
-	.long 4605
-	.no_dead_strip plt__jit_icall_native___emul_rconv_to_u8
-plt__jit_icall_native___emul_rconv_to_u8:
+	.long 4593
+	.no_dead_strip plt__jit_icall_native___emul_rrem
+plt__jit_icall_native___emul_rrem:
 _p_30:
 jmp *mono_aot_corlib_got+137784(%rip)
 
-	.long 4607
-	.no_dead_strip plt__jit_icall_native___emul_rrem
-plt__jit_icall_native___emul_rrem:
+	.long 4595
+	.no_dead_strip plt__jit_icall_native_monoeg_g_free
+plt__jit_icall_native_monoeg_g_free:
 _p_31:
 jmp *mono_aot_corlib_got+137792(%rip)
 
-	.long 4609
-	.no_dead_strip plt__jit_icall_native_monoeg_g_free
-plt__jit_icall_native_monoeg_g_free:
+	.long 4597
+	.no_dead_strip plt__jit_icall_native_mini_llvm_init_method
+plt__jit_icall_native_mini_llvm_init_method:
 _p_32:
 jmp *mono_aot_corlib_got+137800(%rip)
 
-	.long 4611
-	.no_dead_strip plt__jit_icall_native_mini_llvm_init_method
-plt__jit_icall_native_mini_llvm_init_method:
+	.long 4599
+	.no_dead_strip plt__jit_icall_native_mini_llvmonly_init_delegate
+plt__jit_icall_native_mini_llvmonly_init_delegate:
 _p_33:
 jmp *mono_aot_corlib_got+137808(%rip)
 
-	.long 4613
-	.no_dead_strip plt__jit_icall_native_mini_llvmonly_init_delegate
-plt__jit_icall_native_mini_llvmonly_init_delegate:
+	.long 4601
+	.no_dead_strip plt__jit_icall_native_mini_llvmonly_init_delegate_virtual
+plt__jit_icall_native_mini_llvmonly_init_delegate_virtual:
 _p_34:
 jmp *mono_aot_corlib_got+137816(%rip)
 
-	.long 4615
-	.no_dead_strip plt__jit_icall_native_mini_llvmonly_init_delegate_virtual
-plt__jit_icall_native_mini_llvmonly_init_delegate_virtual:
+	.long 4603
+	.no_dead_strip plt__jit_icall_native_mini_llvmonly_init_vtable_slot
+plt__jit_icall_native_mini_llvmonly_init_vtable_slot:
 _p_35:
 jmp *mono_aot_corlib_got+137824(%rip)
 
-	.long 4617
-	.no_dead_strip plt__jit_icall_native_mini_llvmonly_init_vtable_slot
-plt__jit_icall_native_mini_llvmonly_init_vtable_slot:
+	.long 4605
+	.no_dead_strip plt__jit_icall_native_mini_llvmonly_resolve_generic_virtual_call
+plt__jit_icall_native_mini_llvmonly_resolve_generic_virtual_call:
 _p_36:
 jmp *mono_aot_corlib_got+137832(%rip)
 
-	.long 4619
-	.no_dead_strip plt__jit_icall_native_mini_llvmonly_resolve_generic_virtual_call
-plt__jit_icall_native_mini_llvmonly_resolve_generic_virtual_call:
+	.long 4607
+	.no_dead_strip plt__jit_icall_native_mini_llvmonly_resolve_generic_virtual_iface_call
+plt__jit_icall_native_mini_llvmonly_resolve_generic_virtual_iface_call:
 _p_37:
 jmp *mono_aot_corlib_got+137840(%rip)
 
-	.long 4621
-	.no_dead_strip plt__jit_icall_native_mini_llvmonly_resolve_generic_virtual_iface_call
-plt__jit_icall_native_mini_llvmonly_resolve_generic_virtual_iface_call:
+	.long 4609
+	.no_dead_strip plt__jit_icall_native_mini_llvmonly_resolve_iface_call_gsharedvt
+plt__jit_icall_native_mini_llvmonly_resolve_iface_call_gsharedvt:
 _p_38:
 jmp *mono_aot_corlib_got+137848(%rip)
 
-	.long 4623
-	.no_dead_strip plt__jit_icall_native_mini_llvmonly_resolve_iface_call_gsharedvt
-plt__jit_icall_native_mini_llvmonly_resolve_iface_call_gsharedvt:
+	.long 4611
+	.no_dead_strip plt__jit_icall_native_mini_llvmonly_resolve_vcall_gsharedvt
+plt__jit_icall_native_mini_llvmonly_resolve_vcall_gsharedvt:
 _p_39:
 jmp *mono_aot_corlib_got+137856(%rip)
 
-	.long 4625
-	.no_dead_strip plt__jit_icall_native_mini_llvmonly_resolve_vcall_gsharedvt
-plt__jit_icall_native_mini_llvmonly_resolve_vcall_gsharedvt:
+	.long 4613
+	.no_dead_strip plt__jit_icall_native_mini_llvmonly_throw_nullref_exception
+plt__jit_icall_native_mini_llvmonly_throw_nullref_exception:
 _p_40:
 jmp *mono_aot_corlib_got+137864(%rip)
 
-	.long 4627
-	.no_dead_strip plt__jit_icall_native_mini_llvmonly_throw_nullref_exception
-plt__jit_icall_native_mini_llvmonly_throw_nullref_exception:
+	.long 4615
+	.no_dead_strip plt__jit_icall_native_mini_llvmonly_throw_aot_failed_exception
+plt__jit_icall_native_mini_llvmonly_throw_aot_failed_exception:
 _p_41:
 jmp *mono_aot_corlib_got+137872(%rip)
 
-	.long 4629
-	.no_dead_strip plt__jit_icall_native_mini_llvmonly_throw_aot_failed_exception
-plt__jit_icall_native_mini_llvmonly_throw_aot_failed_exception:
+	.long 4617
+	.no_dead_strip plt__jit_icall_native_mini_llvmonly_pop_lmf
+plt__jit_icall_native_mini_llvmonly_pop_lmf:
 _p_42:
 jmp *mono_aot_corlib_got+137880(%rip)
 
-	.long 4631
-	.no_dead_strip plt__jit_icall_native_mini_llvmonly_pop_lmf
-plt__jit_icall_native_mini_llvmonly_pop_lmf:
+	.long 4619
+	.no_dead_strip plt__jit_icall_native_mini_llvmonly_get_interp_entry
+plt__jit_icall_native_mini_llvmonly_get_interp_entry:
 _p_43:
 jmp *mono_aot_corlib_got+137888(%rip)
 
-	.long 4633
-	.no_dead_strip plt__jit_icall_native_mini_llvmonly_get_interp_entry
-plt__jit_icall_native_mini_llvmonly_get_interp_entry:
+	.long 4621
+	.no_dead_strip plt__jit_icall_native_mono_amd64_throw_exception
+plt__jit_icall_native_mono_amd64_throw_exception:
 _p_44:
 jmp *mono_aot_corlib_got+137896(%rip)
 
-	.long 4635
-	.no_dead_strip plt__jit_icall_native_mono_amd64_throw_exception
-plt__jit_icall_native_mono_amd64_throw_exception:
+	.long 4623
+	.no_dead_strip plt__jit_icall_native_mono_arch_rethrow_exception
+plt__jit_icall_native_mono_arch_rethrow_exception:
 _p_45:
 jmp *mono_aot_corlib_got+137904(%rip)
 
-	.long 4637
-	.no_dead_strip plt__jit_icall_native_mono_arch_rethrow_exception
-plt__jit_icall_native_mono_arch_rethrow_exception:
+	.long 4625
+	.no_dead_strip plt__jit_icall_native_mono_arch_throw_corlib_exception
+plt__jit_icall_native_mono_arch_throw_corlib_exception:
 _p_46:
 jmp *mono_aot_corlib_got+137912(%rip)
 
-	.long 4639
-	.no_dead_strip plt__jit_icall_native_mono_arch_throw_corlib_exception
-plt__jit_icall_native_mono_arch_throw_corlib_exception:
+	.long 4627
+	.no_dead_strip plt__jit_icall_native_mono_arch_throw_exception
+plt__jit_icall_native_mono_arch_throw_exception:
 _p_47:
 jmp *mono_aot_corlib_got+137920(%rip)
 
-	.long 4641
-	.no_dead_strip plt__jit_icall_native_mono_arch_throw_exception
-plt__jit_icall_native_mono_arch_throw_exception:
+	.long 4629
+	.no_dead_strip plt__jit_icall_native_mono_array_new_1
+plt__jit_icall_native_mono_array_new_1:
 _p_48:
 jmp *mono_aot_corlib_got+137928(%rip)
 
-	.long 4643
-	.no_dead_strip plt__jit_icall_native_mono_array_new_1
-plt__jit_icall_native_mono_array_new_1:
+	.long 4631
+	.no_dead_strip plt__jit_icall_native_mono_array_new_2
+plt__jit_icall_native_mono_array_new_2:
 _p_49:
 jmp *mono_aot_corlib_got+137936(%rip)
 
-	.long 4645
-	.no_dead_strip plt__jit_icall_native_mono_array_new_2
-plt__jit_icall_native_mono_array_new_2:
+	.long 4633
+	.no_dead_strip plt__jit_icall_native_mono_array_new_3
+plt__jit_icall_native_mono_array_new_3:
 _p_50:
 jmp *mono_aot_corlib_got+137944(%rip)
 
-	.long 4647
-	.no_dead_strip plt__jit_icall_native_mono_array_new_3
-plt__jit_icall_native_mono_array_new_3:
+	.long 4635
+	.no_dead_strip plt__jit_icall_native_mono_array_new_4
+plt__jit_icall_native_mono_array_new_4:
 _p_51:
 jmp *mono_aot_corlib_got+137952(%rip)
 
-	.long 4649
-	.no_dead_strip plt__jit_icall_native_mono_array_new_4
-plt__jit_icall_native_mono_array_new_4:
+	.long 4637
+	.no_dead_strip plt__jit_icall_native_mono_array_new_n_icall
+plt__jit_icall_native_mono_array_new_n_icall:
 _p_52:
 jmp *mono_aot_corlib_got+137960(%rip)
 
-	.long 4651
-	.no_dead_strip plt__jit_icall_native_mono_array_new_n_icall
-plt__jit_icall_native_mono_array_new_n_icall:
+	.long 4639
+	.no_dead_strip plt__jit_icall_native_mono_array_to_byte_byvalarray
+plt__jit_icall_native_mono_array_to_byte_byvalarray:
 _p_53:
 jmp *mono_aot_corlib_got+137968(%rip)
 
-	.long 4653
-	.no_dead_strip plt__jit_icall_native_mono_array_to_byte_byvalarray
-plt__jit_icall_native_mono_array_to_byte_byvalarray:
+	.long 4641
+	.no_dead_strip plt__jit_icall_native_mono_array_to_lparray
+plt__jit_icall_native_mono_array_to_lparray:
 _p_54:
 jmp *mono_aot_corlib_got+137976(%rip)
 
-	.long 4655
-	.no_dead_strip plt__jit_icall_native_mono_array_to_lparray
-plt__jit_icall_native_mono_array_to_lparray:
+	.long 4643
+	.no_dead_strip plt__jit_icall_native_mono_array_to_savearray
+plt__jit_icall_native_mono_array_to_savearray:
 _p_55:
 jmp *mono_aot_corlib_got+137984(%rip)
 
-	.long 4657
-	.no_dead_strip plt__jit_icall_native_mono_array_to_savearray
-plt__jit_icall_native_mono_array_to_savearray:
+	.long 4645
+	.no_dead_strip plt__jit_icall_native_mono_byvalarray_to_byte_array
+plt__jit_icall_native_mono_byvalarray_to_byte_array:
 _p_56:
 jmp *mono_aot_corlib_got+137992(%rip)
 
-	.long 4659
-	.no_dead_strip plt__jit_icall_native_mono_byvalarray_to_byte_array
-plt__jit_icall_native_mono_byvalarray_to_byte_array:
+	.long 4647
+	.no_dead_strip plt__jit_icall_native_mono_ckfinite
+plt__jit_icall_native_mono_ckfinite:
 _p_57:
 jmp *mono_aot_corlib_got+138000(%rip)
 
-	.long 4661
-	.no_dead_strip plt__jit_icall_native_mono_ckfinite
-plt__jit_icall_native_mono_ckfinite:
+	.long 4649
+	.no_dead_strip plt__jit_icall_native_mono_class_static_field_address
+plt__jit_icall_native_mono_class_static_field_address:
 _p_58:
 jmp *mono_aot_corlib_got+138008(%rip)
 
-	.long 4663
-	.no_dead_strip plt__jit_icall_native_mono_class_static_field_address
-plt__jit_icall_native_mono_class_static_field_address:
+	.long 4651
+	.no_dead_strip plt__jit_icall_native_mono_create_corlib_exception_0
+plt__jit_icall_native_mono_create_corlib_exception_0:
 _p_59:
 jmp *mono_aot_corlib_got+138016(%rip)
 
-	.long 4665
-	.no_dead_strip plt__jit_icall_native_mono_create_corlib_exception_0
-plt__jit_icall_native_mono_create_corlib_exception_0:
+	.long 4653
+	.no_dead_strip plt__jit_icall_native_mono_create_corlib_exception_1
+plt__jit_icall_native_mono_create_corlib_exception_1:
 _p_60:
 jmp *mono_aot_corlib_got+138024(%rip)
 
-	.long 4667
-	.no_dead_strip plt__jit_icall_native_mono_create_corlib_exception_1
-plt__jit_icall_native_mono_create_corlib_exception_1:
+	.long 4656
+	.no_dead_strip plt__jit_icall_native_mono_create_corlib_exception_2
+plt__jit_icall_native_mono_create_corlib_exception_2:
 _p_61:
 jmp *mono_aot_corlib_got+138032(%rip)
 
-	.long 4670
-	.no_dead_strip plt__jit_icall_native_mono_create_corlib_exception_2
-plt__jit_icall_native_mono_create_corlib_exception_2:
+	.long 4659
+	.no_dead_strip plt__jit_icall_native_mono_debug_personality
+plt__jit_icall_native_mono_debug_personality:
 _p_62:
 jmp *mono_aot_corlib_got+138040(%rip)
 
-	.long 4673
-	.no_dead_strip plt__jit_icall_native_mono_debug_personality
-plt__jit_icall_native_mono_debug_personality:
+	.long 4662
+	.no_dead_strip plt__jit_icall_native_mono_debugger_agent_user_break
+plt__jit_icall_native_mono_debugger_agent_user_break:
 _p_63:
 jmp *mono_aot_corlib_got+138048(%rip)
 
-	.long 4676
-	.no_dead_strip plt__jit_icall_native_mono_debugger_agent_user_break
-plt__jit_icall_native_mono_debugger_agent_user_break:
+	.long 4665
+	.no_dead_strip plt__jit_icall_native_mono_delegate_begin_invoke
+plt__jit_icall_native_mono_delegate_begin_invoke:
 _p_64:
 jmp *mono_aot_corlib_got+138056(%rip)
 
-	.long 4679
-	.no_dead_strip plt__jit_icall_native_mono_delegate_begin_invoke
-plt__jit_icall_native_mono_delegate_begin_invoke:
+	.long 4668
+	.no_dead_strip plt__jit_icall_native_mono_delegate_end_invoke
+plt__jit_icall_native_mono_delegate_end_invoke:
 _p_65:
 jmp *mono_aot_corlib_got+138064(%rip)
 
-	.long 4682
-	.no_dead_strip plt__jit_icall_native_mono_delegate_end_invoke
-plt__jit_icall_native_mono_delegate_end_invoke:
+	.long 4671
+	.no_dead_strip plt__jit_icall_native_mono_delegate_to_ftnptr
+plt__jit_icall_native_mono_delegate_to_ftnptr:
 _p_66:
 jmp *mono_aot_corlib_got+138072(%rip)
 
-	.long 4685
-	.no_dead_strip plt__jit_icall_native_mono_delegate_to_ftnptr
-plt__jit_icall_native_mono_delegate_to_ftnptr:
+	.long 4674
+	.no_dead_strip plt__jit_icall_native_mono_domain_get
+plt__jit_icall_native_mono_domain_get:
 _p_67:
 jmp *mono_aot_corlib_got+138080(%rip)
 
-	.long 4688
-	.no_dead_strip plt__jit_icall_native_mono_domain_get
-plt__jit_icall_native_mono_domain_get:
+	.long 4677
+	.no_dead_strip plt__jit_icall_native_mono_dummy_jit_icall
+plt__jit_icall_native_mono_dummy_jit_icall:
 _p_68:
 jmp *mono_aot_corlib_got+138088(%rip)
 
-	.long 4691
-	.no_dead_strip plt__jit_icall_native_mono_dummy_jit_icall
-plt__jit_icall_native_mono_dummy_jit_icall:
+	.long 4680
+	.no_dead_strip plt__jit_icall_native_mono_fill_class_rgctx
+plt__jit_icall_native_mono_fill_class_rgctx:
 _p_69:
 jmp *mono_aot_corlib_got+138096(%rip)
 
-	.long 4694
-	.no_dead_strip plt__jit_icall_native_mono_fill_class_rgctx
-plt__jit_icall_native_mono_fill_class_rgctx:
+	.long 4683
+	.no_dead_strip plt__jit_icall_native_mono_fill_method_rgctx
+plt__jit_icall_native_mono_fill_method_rgctx:
 _p_70:
 jmp *mono_aot_corlib_got+138104(%rip)
 
-	.long 4697
-	.no_dead_strip plt__jit_icall_native_mono_fill_method_rgctx
-plt__jit_icall_native_mono_fill_method_rgctx:
+	.long 4686
+	.no_dead_strip plt__jit_icall_native_mono_free_bstr
+plt__jit_icall_native_mono_free_bstr:
 _p_71:
 jmp *mono_aot_corlib_got+138112(%rip)
 
-	.long 4700
-	.no_dead_strip plt__jit_icall_native_mono_free_bstr
-plt__jit_icall_native_mono_free_bstr:
+	.long 4689
+	.no_dead_strip plt__jit_icall_native_mono_free_lparray
+plt__jit_icall_native_mono_free_lparray:
 _p_72:
 jmp *mono_aot_corlib_got+138120(%rip)
 
-	.long 4703
-	.no_dead_strip plt__jit_icall_native_mono_free_lparray
-plt__jit_icall_native_mono_free_lparray:
+	.long 4692
+	.no_dead_strip plt__jit_icall_native_mono_ftnptr_to_delegate
+plt__jit_icall_native_mono_ftnptr_to_delegate:
 _p_73:
 jmp *mono_aot_corlib_got+138128(%rip)
 
-	.long 4706
-	.no_dead_strip plt__jit_icall_native_mono_ftnptr_to_delegate
-plt__jit_icall_native_mono_ftnptr_to_delegate:
+	.long 4695
+	.no_dead_strip plt__jit_icall_native_mono_gc_alloc_obj
+plt__jit_icall_native_mono_gc_alloc_obj:
 _p_74:
 jmp *mono_aot_corlib_got+138136(%rip)
 
-	.long 4709
-	.no_dead_strip plt__jit_icall_native_mono_gc_alloc_obj
-plt__jit_icall_native_mono_gc_alloc_obj:
+	.long 4698
+	.no_dead_strip plt__jit_icall_native_mono_gc_alloc_string
+plt__jit_icall_native_mono_gc_alloc_string:
 _p_75:
 jmp *mono_aot_corlib_got+138144(%rip)
 
-	.long 4712
-	.no_dead_strip plt__jit_icall_native_mono_gc_alloc_string
-plt__jit_icall_native_mono_gc_alloc_string:
+	.long 4701
+	.no_dead_strip plt__jit_icall_native_mono_gc_alloc_vector
+plt__jit_icall_native_mono_gc_alloc_vector:
 _p_76:
 jmp *mono_aot_corlib_got+138152(%rip)
 
-	.long 4715
-	.no_dead_strip plt__jit_icall_native_mono_gc_alloc_vector
-plt__jit_icall_native_mono_gc_alloc_vector:
+	.long 4704
+	.no_dead_strip plt__jit_icall_native_mono_gc_wbarrier_generic_nostore_internal
+plt__jit_icall_native_mono_gc_wbarrier_generic_nostore_internal:
 _p_77:
 jmp *mono_aot_corlib_got+138160(%rip)
 
-	.long 4718
-	.no_dead_strip plt__jit_icall_native_mono_gc_wbarrier_generic_nostore_internal
-plt__jit_icall_native_mono_gc_wbarrier_generic_nostore_internal:
+	.long 4707
+	.no_dead_strip plt__jit_icall_native_mono_gc_wbarrier_range_copy
+plt__jit_icall_native_mono_gc_wbarrier_range_copy:
 _p_78:
 jmp *mono_aot_corlib_got+138168(%rip)
 
-	.long 4721
-	.no_dead_strip plt__jit_icall_native_mono_gc_wbarrier_range_copy
-plt__jit_icall_native_mono_gc_wbarrier_range_copy:
+	.long 4710
+	.no_dead_strip plt__jit_icall_native_mono_gchandle_get_target_internal
+plt__jit_icall_native_mono_gchandle_get_target_internal:
 _p_79:
 jmp *mono_aot_corlib_got+138176(%rip)
 
-	.long 4724
-	.no_dead_strip plt__jit_icall_native_mono_gchandle_get_target_internal
-plt__jit_icall_native_mono_gchandle_get_target_internal:
+	.long 4713
+	.no_dead_strip plt__jit_icall_native_mono_generic_class_init
+plt__jit_icall_native_mono_generic_class_init:
 _p_80:
 jmp *mono_aot_corlib_got+138184(%rip)
 
-	.long 4727
-	.no_dead_strip plt__jit_icall_native_mono_generic_class_init
-plt__jit_icall_native_mono_generic_class_init:
+	.long 4716
+	.no_dead_strip plt__jit_icall_native_mono_get_assembly_object
+plt__jit_icall_native_mono_get_assembly_object:
 _p_81:
 jmp *mono_aot_corlib_got+138192(%rip)
 
-	.long 4730
-	.no_dead_strip plt__jit_icall_native_mono_get_assembly_object
-plt__jit_icall_native_mono_get_assembly_object:
+	.long 4719
+	.no_dead_strip plt__jit_icall_native_mono_get_method_object
+plt__jit_icall_native_mono_get_method_object:
 _p_82:
 jmp *mono_aot_corlib_got+138200(%rip)
 
-	.long 4733
-	.no_dead_strip plt__jit_icall_native_mono_get_method_object
-plt__jit_icall_native_mono_get_method_object:
+	.long 4722
+	.no_dead_strip plt__jit_icall_native_mono_get_native_calli_wrapper
+plt__jit_icall_native_mono_get_native_calli_wrapper:
 _p_83:
 jmp *mono_aot_corlib_got+138208(%rip)
 
-	.long 4736
-	.no_dead_strip plt__jit_icall_native_mono_get_native_calli_wrapper
-plt__jit_icall_native_mono_get_native_calli_wrapper:
+	.long 4725
+	.no_dead_strip plt__jit_icall_native_mono_get_special_static_data
+plt__jit_icall_native_mono_get_special_static_data:
 _p_84:
 jmp *mono_aot_corlib_got+138216(%rip)
 
-	.long 4739
-	.no_dead_strip plt__jit_icall_native_mono_get_special_static_data
-plt__jit_icall_native_mono_get_special_static_data:
+	.long 4728
+	.no_dead_strip plt__jit_icall_native_mono_gsharedvt_constrained_call
+plt__jit_icall_native_mono_gsharedvt_constrained_call:
 _p_85:
 jmp *mono_aot_corlib_got+138224(%rip)
 
-	.long 4742
-	.no_dead_strip plt__jit_icall_native_mono_gsharedvt_constrained_call
-plt__jit_icall_native_mono_gsharedvt_constrained_call:
+	.long 4731
+	.no_dead_strip plt__jit_icall_native_mono_gsharedvt_value_copy
+plt__jit_icall_native_mono_gsharedvt_value_copy:
 _p_86:
 jmp *mono_aot_corlib_got+138232(%rip)
 
-	.long 4745
-	.no_dead_strip plt__jit_icall_native_mono_gsharedvt_value_copy
-plt__jit_icall_native_mono_gsharedvt_value_copy:
+	.long 4734
+	.no_dead_strip plt__jit_icall_native_mono_helper_compile_generic_method
+plt__jit_icall_native_mono_helper_compile_generic_method:
 _p_87:
 jmp *mono_aot_corlib_got+138240(%rip)
 
-	.long 4748
-	.no_dead_strip plt__jit_icall_native_mono_helper_compile_generic_method
-plt__jit_icall_native_mono_helper_compile_generic_method:
+	.long 4737
+	.no_dead_strip plt__jit_icall_native_mono_helper_ldstr
+plt__jit_icall_native_mono_helper_ldstr:
 _p_88:
 jmp *mono_aot_corlib_got+138248(%rip)
 
-	.long 4751
-	.no_dead_strip plt__jit_icall_native_mono_helper_ldstr
-plt__jit_icall_native_mono_helper_ldstr:
+	.long 4740
+	.no_dead_strip plt__jit_icall_native_mono_helper_ldstr_mscorlib
+plt__jit_icall_native_mono_helper_ldstr_mscorlib:
 _p_89:
 jmp *mono_aot_corlib_got+138256(%rip)
 
-	.long 4754
-	.no_dead_strip plt__jit_icall_native_mono_helper_ldstr_mscorlib
-plt__jit_icall_native_mono_helper_ldstr_mscorlib:
+	.long 4743
+	.no_dead_strip plt__jit_icall_native_mono_helper_newobj_mscorlib
+plt__jit_icall_native_mono_helper_newobj_mscorlib:
 _p_90:
 jmp *mono_aot_corlib_got+138264(%rip)
 
-	.long 4757
-	.no_dead_strip plt__jit_icall_native_mono_helper_newobj_mscorlib
-plt__jit_icall_native_mono_helper_newobj_mscorlib:
+	.long 4746
+	.no_dead_strip plt__jit_icall_native_mono_helper_stelem_ref_check
+plt__jit_icall_native_mono_helper_stelem_ref_check:
 _p_91:
 jmp *mono_aot_corlib_got+138272(%rip)
 
-	.long 4760
-	.no_dead_strip plt__jit_icall_native_mono_helper_stelem_ref_check
-plt__jit_icall_native_mono_helper_stelem_ref_check:
+	.long 4749
+	.no_dead_strip plt__jit_icall_native_mono_interp_entry_from_trampoline
+plt__jit_icall_native_mono_interp_entry_from_trampoline:
 _p_92:
 jmp *mono_aot_corlib_got+138280(%rip)
 
-	.long 4763
-	.no_dead_strip plt__jit_icall_native_mono_interp_entry_from_trampoline
-plt__jit_icall_native_mono_interp_entry_from_trampoline:
+	.long 4752
+	.no_dead_strip plt__jit_icall_native_mono_interp_to_native_trampoline
+plt__jit_icall_native_mono_interp_to_native_trampoline:
 _p_93:
 jmp *mono_aot_corlib_got+138288(%rip)
 
-	.long 4766
-	.no_dead_strip plt__jit_icall_native_mono_interp_to_native_trampoline
-plt__jit_icall_native_mono_interp_to_native_trampoline:
+	.long 4755
+	.no_dead_strip plt__jit_icall_native_mono_ldftn
+plt__jit_icall_native_mono_ldftn:
 _p_94:
 jmp *mono_aot_corlib_got+138296(%rip)
 
-	.long 4769
-	.no_dead_strip plt__jit_icall_native_mono_ldftn
-plt__jit_icall_native_mono_ldftn:
+	.long 4758
+	.no_dead_strip plt__jit_icall_native_mono_ldtoken_wrapper
+plt__jit_icall_native_mono_ldtoken_wrapper:
 _p_95:
 jmp *mono_aot_corlib_got+138304(%rip)
 
-	.long 4772
-	.no_dead_strip plt__jit_icall_native_mono_ldtoken_wrapper
-plt__jit_icall_native_mono_ldtoken_wrapper:
+	.long 4761
+	.no_dead_strip plt__jit_icall_native_mono_ldtoken_wrapper_generic_shared
+plt__jit_icall_native_mono_ldtoken_wrapper_generic_shared:
 _p_96:
 jmp *mono_aot_corlib_got+138312(%rip)
 
-	.long 4775
-	.no_dead_strip plt__jit_icall_native_mono_ldtoken_wrapper_generic_shared
-plt__jit_icall_native_mono_ldtoken_wrapper_generic_shared:
+	.long 4764
+	.no_dead_strip plt__jit_icall_native_mono_ldvirtfn
+plt__jit_icall_native_mono_ldvirtfn:
 _p_97:
 jmp *mono_aot_corlib_got+138320(%rip)
 
-	.long 4778
-	.no_dead_strip plt__jit_icall_native_mono_ldvirtfn
-plt__jit_icall_native_mono_ldvirtfn:
+	.long 4767
+	.no_dead_strip plt__jit_icall_native_mono_ldvirtfn_gshared
+plt__jit_icall_native_mono_ldvirtfn_gshared:
 _p_98:
 jmp *mono_aot_corlib_got+138328(%rip)
 
-	.long 4781
-	.no_dead_strip plt__jit_icall_native_mono_ldvirtfn_gshared
-plt__jit_icall_native_mono_ldvirtfn_gshared:
+	.long 4770
+	.no_dead_strip plt__jit_icall_native_mono_llvm_load_exception
+plt__jit_icall_native_mono_llvm_load_exception:
 _p_99:
 jmp *mono_aot_corlib_got+138336(%rip)
 
-	.long 4784
-	.no_dead_strip plt__jit_icall_native_mono_llvm_load_exception
-plt__jit_icall_native_mono_llvm_load_exception:
+	.long 4773
+	.no_dead_strip plt__jit_icall_native_mono_llvm_match_exception
+plt__jit_icall_native_mono_llvm_match_exception:
 _p_100:
 jmp *mono_aot_corlib_got+138344(%rip)
 
-	.long 4787
-	.no_dead_strip plt__jit_icall_native_mono_llvm_match_exception
-plt__jit_icall_native_mono_llvm_match_exception:
+	.long 4776
+	.no_dead_strip plt__jit_icall_native_mono_llvm_resume_exception
+plt__jit_icall_native_mono_llvm_resume_exception:
 _p_101:
 jmp *mono_aot_corlib_got+138352(%rip)
 
-	.long 4790
-	.no_dead_strip plt__jit_icall_native_mono_llvm_resume_exception
-plt__jit_icall_native_mono_llvm_resume_exception:
+	.long 4779
+	.no_dead_strip plt__jit_icall_native_mono_llvm_rethrow_exception
+plt__jit_icall_native_mono_llvm_rethrow_exception:
 _p_102:
 jmp *mono_aot_corlib_got+138360(%rip)
 
-	.long 4793
-	.no_dead_strip plt__jit_icall_native_mono_llvm_rethrow_exception
-plt__jit_icall_native_mono_llvm_rethrow_exception:
+	.long 4782
+	.no_dead_strip plt__jit_icall_native_mono_llvm_throw_corlib_exception
+plt__jit_icall_native_mono_llvm_throw_corlib_exception:
 _p_103:
 jmp *mono_aot_corlib_got+138368(%rip)
 
-	.long 4796
-	.no_dead_strip plt__jit_icall_native_mono_llvm_throw_corlib_exception
-plt__jit_icall_native_mono_llvm_throw_corlib_exception:
+	.long 4785
+	.no_dead_strip plt__jit_icall_native_mono_llvm_throw_exception
+plt__jit_icall_native_mono_llvm_throw_exception:
 _p_104:
 jmp *mono_aot_corlib_got+138376(%rip)
 
-	.long 4799
-	.no_dead_strip plt__jit_icall_native_mono_llvm_throw_exception
-plt__jit_icall_native_mono_llvm_throw_exception:
+	.long 4788
+	.no_dead_strip plt__jit_icall_native_mono_marshal_asany
+plt__jit_icall_native_mono_marshal_asany:
 _p_105:
 jmp *mono_aot_corlib_got+138384(%rip)
 
-	.long 4802
-	.no_dead_strip plt__jit_icall_native_mono_marshal_asany
-plt__jit_icall_native_mono_marshal_asany:
+	.long 4791
+	.no_dead_strip plt__jit_icall_native_mono_marshal_clear_last_error
+plt__jit_icall_native_mono_marshal_clear_last_error:
 _p_106:
 jmp *mono_aot_corlib_got+138392(%rip)
 
-	.long 4805
-	.no_dead_strip plt__jit_icall_native_mono_marshal_clear_last_error
-plt__jit_icall_native_mono_marshal_clear_last_error:
+	.long 4794
+	.no_dead_strip plt__jit_icall_native_mono_marshal_free
+plt__jit_icall_native_mono_marshal_free:
 _p_107:
 jmp *mono_aot_corlib_got+138400(%rip)
 
-	.long 4808
-	.no_dead_strip plt__jit_icall_native_mono_marshal_free
-plt__jit_icall_native_mono_marshal_free:
+	.long 4797
+	.no_dead_strip plt__jit_icall_native_mono_marshal_free_array
+plt__jit_icall_native_mono_marshal_free_array:
 _p_108:
 jmp *mono_aot_corlib_got+138408(%rip)
 
-	.long 4811
-	.no_dead_strip plt__jit_icall_native_mono_marshal_free_array
-plt__jit_icall_native_mono_marshal_free_array:
+	.long 4800
+	.no_dead_strip plt__jit_icall_native_mono_marshal_free_asany
+plt__jit_icall_native_mono_marshal_free_asany:
 _p_109:
 jmp *mono_aot_corlib_got+138416(%rip)
 
-	.long 4814
-	.no_dead_strip plt__jit_icall_native_mono_marshal_free_asany
-plt__jit_icall_native_mono_marshal_free_asany:
+	.long 4803
+	.no_dead_strip plt__jit_icall_native_mono_marshal_get_type_object
+plt__jit_icall_native_mono_marshal_get_type_object:
 _p_110:
 jmp *mono_aot_corlib_got+138424(%rip)
 
-	.long 4817
-	.no_dead_strip plt__jit_icall_native_mono_marshal_get_type_object
-plt__jit_icall_native_mono_marshal_get_type_object:
+	.long 4806
+	.no_dead_strip plt__jit_icall_native_mono_marshal_isinst_with_cache
+plt__jit_icall_native_mono_marshal_isinst_with_cache:
 _p_111:
 jmp *mono_aot_corlib_got+138432(%rip)
 
-	.long 4820
-	.no_dead_strip plt__jit_icall_native_mono_marshal_isinst_with_cache
-plt__jit_icall_native_mono_marshal_isinst_with_cache:
+	.long 4809
+	.no_dead_strip plt__jit_icall_native_mono_marshal_set_last_error
+plt__jit_icall_native_mono_marshal_set_last_error:
 _p_112:
 jmp *mono_aot_corlib_got+138440(%rip)
 
-	.long 4823
-	.no_dead_strip plt__jit_icall_native_mono_marshal_set_last_error
-plt__jit_icall_native_mono_marshal_set_last_error:
+	.long 4812
+	.no_dead_strip plt__jit_icall_native_mono_marshal_set_last_error_windows
+plt__jit_icall_native_mono_marshal_set_last_error_windows:
 _p_113:
 jmp *mono_aot_corlib_got+138448(%rip)
 
-	.long 4826
-	.no_dead_strip plt__jit_icall_native_mono_marshal_set_last_error_windows
-plt__jit_icall_native_mono_marshal_set_last_error_windows:
+	.long 4815
+	.no_dead_strip plt__jit_icall_native_mono_marshal_string_to_utf16
+plt__jit_icall_native_mono_marshal_string_to_utf16:
 _p_114:
 jmp *mono_aot_corlib_got+138456(%rip)
 
-	.long 4829
-	.no_dead_strip plt__jit_icall_native_mono_marshal_string_to_utf16
-plt__jit_icall_native_mono_marshal_string_to_utf16:
+	.long 4818
+	.no_dead_strip plt__jit_icall_native_mono_marshal_string_to_utf16_copy
+plt__jit_icall_native_mono_marshal_string_to_utf16_copy:
 _p_115:
 jmp *mono_aot_corlib_got+138464(%rip)
 
-	.long 4832
-	.no_dead_strip plt__jit_icall_native_mono_marshal_string_to_utf16_copy
-plt__jit_icall_native_mono_marshal_string_to_utf16_copy:
+	.long 4821
+	.no_dead_strip plt__jit_icall_native_mono_monitor_enter_fast
+plt__jit_icall_native_mono_monitor_enter_fast:
 _p_116:
 jmp *mono_aot_corlib_got+138472(%rip)
 
-	.long 4835
-	.no_dead_strip plt__jit_icall_native_mono_monitor_enter_fast
-plt__jit_icall_native_mono_monitor_enter_fast:
+	.long 4824
+	.no_dead_strip plt__jit_icall_native_mono_monitor_enter_internal
+plt__jit_icall_native_mono_monitor_enter_internal:
 _p_117:
 jmp *mono_aot_corlib_got+138480(%rip)
 
-	.long 4838
-	.no_dead_strip plt__jit_icall_native_mono_monitor_enter_internal
-plt__jit_icall_native_mono_monitor_enter_internal:
+	.long 4827
+	.no_dead_strip plt__jit_icall_native_mono_monitor_enter_v4_fast
+plt__jit_icall_native_mono_monitor_enter_v4_fast:
 _p_118:
 jmp *mono_aot_corlib_got+138488(%rip)
 
-	.long 4841
-	.no_dead_strip plt__jit_icall_native_mono_monitor_enter_v4_fast
-plt__jit_icall_native_mono_monitor_enter_v4_fast:
+	.long 4830
+	.no_dead_strip plt__jit_icall_native_mono_monitor_enter_v4_internal
+plt__jit_icall_native_mono_monitor_enter_v4_internal:
 _p_119:
 jmp *mono_aot_corlib_got+138496(%rip)
 
-	.long 4844
-	.no_dead_strip plt__jit_icall_native_mono_monitor_enter_v4_internal
-plt__jit_icall_native_mono_monitor_enter_v4_internal:
+	.long 4833
+	.no_dead_strip plt__jit_icall_native_mono_object_castclass_unbox
+plt__jit_icall_native_mono_object_castclass_unbox:
 _p_120:
 jmp *mono_aot_corlib_got+138504(%rip)
 
-	.long 4847
-	.no_dead_strip plt__jit_icall_native_mono_object_castclass_unbox
-plt__jit_icall_native_mono_object_castclass_unbox:
+	.long 4836
+	.no_dead_strip plt__jit_icall_native_mono_object_castclass_with_cache
+plt__jit_icall_native_mono_object_castclass_with_cache:
 _p_121:
 jmp *mono_aot_corlib_got+138512(%rip)
 
-	.long 4850
-	.no_dead_strip plt__jit_icall_native_mono_object_castclass_with_cache
-plt__jit_icall_native_mono_object_castclass_with_cache:
+	.long 4839
+	.no_dead_strip plt__jit_icall_native_mono_object_isinst_icall
+plt__jit_icall_native_mono_object_isinst_icall:
 _p_122:
 jmp *mono_aot_corlib_got+138520(%rip)
 
-	.long 4853
-	.no_dead_strip plt__jit_icall_native_mono_object_isinst_icall
-plt__jit_icall_native_mono_object_isinst_icall:
+	.long 4842
+	.no_dead_strip plt__jit_icall_native_mono_object_isinst_with_cache
+plt__jit_icall_native_mono_object_isinst_with_cache:
 _p_123:
 jmp *mono_aot_corlib_got+138528(%rip)
 
-	.long 4856
-	.no_dead_strip plt__jit_icall_native_mono_object_isinst_with_cache
-plt__jit_icall_native_mono_object_isinst_with_cache:
+	.long 4845
+	.no_dead_strip plt__jit_icall_native_mono_profiler_raise_exception_clause
+plt__jit_icall_native_mono_profiler_raise_exception_clause:
 _p_124:
 jmp *mono_aot_corlib_got+138536(%rip)
 
-	.long 4859
-	.no_dead_strip plt__jit_icall_native_mono_profiler_raise_exception_clause
-plt__jit_icall_native_mono_profiler_raise_exception_clause:
+	.long 4848
+	.no_dead_strip plt__jit_icall_native_mono_profiler_raise_gc_allocation
+plt__jit_icall_native_mono_profiler_raise_gc_allocation:
 _p_125:
 jmp *mono_aot_corlib_got+138544(%rip)
 
-	.long 4862
-	.no_dead_strip plt__jit_icall_native_mono_profiler_raise_gc_allocation
-plt__jit_icall_native_mono_profiler_raise_gc_allocation:
+	.long 4851
+	.no_dead_strip plt__jit_icall_native_mono_profiler_raise_method_enter
+plt__jit_icall_native_mono_profiler_raise_method_enter:
 _p_126:
 jmp *mono_aot_corlib_got+138552(%rip)
 
-	.long 4865
-	.no_dead_strip plt__jit_icall_native_mono_profiler_raise_method_enter
-plt__jit_icall_native_mono_profiler_raise_method_enter:
+	.long 4854
+	.no_dead_strip plt__jit_icall_native_mono_profiler_raise_method_leave
+plt__jit_icall_native_mono_profiler_raise_method_leave:
 _p_127:
 jmp *mono_aot_corlib_got+138560(%rip)
 
-	.long 4868
-	.no_dead_strip plt__jit_icall_native_mono_profiler_raise_method_leave
-plt__jit_icall_native_mono_profiler_raise_method_leave:
+	.long 4857
+	.no_dead_strip plt__jit_icall_native_mono_profiler_raise_method_tail_call
+plt__jit_icall_native_mono_profiler_raise_method_tail_call:
 _p_128:
 jmp *mono_aot_corlib_got+138568(%rip)
 
-	.long 4871
-	.no_dead_strip plt__jit_icall_native_mono_profiler_raise_method_tail_call
-plt__jit_icall_native_mono_profiler_raise_method_tail_call:
+	.long 4860
+	.no_dead_strip plt__jit_icall_native_mono_resume_unwind
+plt__jit_icall_native_mono_resume_unwind:
 _p_129:
 jmp *mono_aot_corlib_got+138576(%rip)
 
-	.long 4874
-	.no_dead_strip plt__jit_icall_native_mono_resume_unwind
-plt__jit_icall_native_mono_resume_unwind:
+	.long 4863
+	.no_dead_strip plt__jit_icall_native_mono_string_builder_to_utf16
+plt__jit_icall_native_mono_string_builder_to_utf16:
 _p_130:
 jmp *mono_aot_corlib_got+138584(%rip)
 
-	.long 4877
-	.no_dead_strip plt__jit_icall_native_mono_string_builder_to_utf16
-plt__jit_icall_native_mono_string_builder_to_utf16:
+	.long 4866
+	.no_dead_strip plt__jit_icall_native_mono_string_builder_to_utf8
+plt__jit_icall_native_mono_string_builder_to_utf8:
 _p_131:
 jmp *mono_aot_corlib_got+138592(%rip)
 
-	.long 4880
-	.no_dead_strip plt__jit_icall_native_mono_string_builder_to_utf8
-plt__jit_icall_native_mono_string_builder_to_utf8:
+	.long 4869
+	.no_dead_strip plt__jit_icall_native_mono_string_from_ansibstr
+plt__jit_icall_native_mono_string_from_ansibstr:
 _p_132:
 jmp *mono_aot_corlib_got+138600(%rip)
 
-	.long 4883
-	.no_dead_strip plt__jit_icall_native_mono_string_from_ansibstr
-plt__jit_icall_native_mono_string_from_ansibstr:
+	.long 4872
+	.no_dead_strip plt__jit_icall_native_mono_string_from_bstr_icall
+plt__jit_icall_native_mono_string_from_bstr_icall:
 _p_133:
 jmp *mono_aot_corlib_got+138608(%rip)
 
-	.long 4886
-	.no_dead_strip plt__jit_icall_native_mono_string_from_bstr_icall
-plt__jit_icall_native_mono_string_from_bstr_icall:
+	.long 4875
+	.no_dead_strip plt__jit_icall_native_mono_string_from_byvalstr
+plt__jit_icall_native_mono_string_from_byvalstr:
 _p_134:
 jmp *mono_aot_corlib_got+138616(%rip)
 
-	.long 4889
-	.no_dead_strip plt__jit_icall_native_mono_string_from_byvalstr
-plt__jit_icall_native_mono_string_from_byvalstr:
+	.long 4878
+	.no_dead_strip plt__jit_icall_native_mono_string_from_byvalwstr
+plt__jit_icall_native_mono_string_from_byvalwstr:
 _p_135:
 jmp *mono_aot_corlib_got+138624(%rip)
 
-	.long 4892
-	.no_dead_strip plt__jit_icall_native_mono_string_from_byvalwstr
-plt__jit_icall_native_mono_string_from_byvalwstr:
+	.long 4881
+	.no_dead_strip plt__jit_icall_native_mono_string_from_tbstr
+plt__jit_icall_native_mono_string_from_tbstr:
 _p_136:
 jmp *mono_aot_corlib_got+138632(%rip)
 
-	.long 4895
-	.no_dead_strip plt__jit_icall_native_mono_string_from_tbstr
-plt__jit_icall_native_mono_string_from_tbstr:
+	.long 4884
+	.no_dead_strip plt__jit_icall_native_mono_string_new_len_wrapper
+plt__jit_icall_native_mono_string_new_len_wrapper:
 _p_137:
 jmp *mono_aot_corlib_got+138640(%rip)
 
-	.long 4898
-	.no_dead_strip plt__jit_icall_native_mono_string_new_len_wrapper
-plt__jit_icall_native_mono_string_new_len_wrapper:
+	.long 4887
+	.no_dead_strip plt__jit_icall_native_mono_string_new_wrapper_internal
+plt__jit_icall_native_mono_string_new_wrapper_internal:
 _p_138:
 jmp *mono_aot_corlib_got+138648(%rip)
 
-	.long 4901
-	.no_dead_strip plt__jit_icall_native_mono_string_new_wrapper_internal
-plt__jit_icall_native_mono_string_new_wrapper_internal:
+	.long 4890
+	.no_dead_strip plt__jit_icall_native_mono_string_to_ansibstr
+plt__jit_icall_native_mono_string_to_ansibstr:
 _p_139:
 jmp *mono_aot_corlib_got+138656(%rip)
 
-	.long 4904
-	.no_dead_strip plt__jit_icall_native_mono_string_to_ansibstr
-plt__jit_icall_native_mono_string_to_ansibstr:
+	.long 4893
+	.no_dead_strip plt__jit_icall_native_mono_string_to_bstr
+plt__jit_icall_native_mono_string_to_bstr:
 _p_140:
 jmp *mono_aot_corlib_got+138664(%rip)
 
-	.long 4907
-	.no_dead_strip plt__jit_icall_native_mono_string_to_bstr
-plt__jit_icall_native_mono_string_to_bstr:
+	.long 4896
+	.no_dead_strip plt__jit_icall_native_mono_string_to_byvalstr
+plt__jit_icall_native_mono_string_to_byvalstr:
 _p_141:
 jmp *mono_aot_corlib_got+138672(%rip)
 
-	.long 4910
-	.no_dead_strip plt__jit_icall_native_mono_string_to_byvalstr
-plt__jit_icall_native_mono_string_to_byvalstr:
+	.long 4899
+	.no_dead_strip plt__jit_icall_native_mono_string_to_byvalwstr
+plt__jit_icall_native_mono_string_to_byvalwstr:
 _p_142:
 jmp *mono_aot_corlib_got+138680(%rip)
 
-	.long 4913
-	.no_dead_strip plt__jit_icall_native_mono_string_to_byvalwstr
-plt__jit_icall_native_mono_string_to_byvalwstr:
+	.long 4902
+	.no_dead_strip plt__jit_icall_native_mono_string_to_tbstr
+plt__jit_icall_native_mono_string_to_tbstr:
 _p_143:
 jmp *mono_aot_corlib_got+138688(%rip)
 
-	.long 4916
-	.no_dead_strip plt__jit_icall_native_mono_string_to_tbstr
-plt__jit_icall_native_mono_string_to_tbstr:
+	.long 4905
+	.no_dead_strip plt__jit_icall_native_mono_string_to_utf16_internal
+plt__jit_icall_native_mono_string_to_utf16_internal:
 _p_144:
 jmp *mono_aot_corlib_got+138696(%rip)
 
-	.long 4919
-	.no_dead_strip plt__jit_icall_native_mono_string_to_utf16_internal
-plt__jit_icall_native_mono_string_to_utf16_internal:
+	.long 4908
+	.no_dead_strip plt__jit_icall_native_mono_string_to_utf8str
+plt__jit_icall_native_mono_string_to_utf8str:
 _p_145:
 jmp *mono_aot_corlib_got+138704(%rip)
 
-	.long 4922
-	.no_dead_strip plt__jit_icall_native_mono_string_to_utf8str
-plt__jit_icall_native_mono_string_to_utf8str:
+	.long 4911
+	.no_dead_strip plt__jit_icall_native_mono_string_utf16_to_builder
+plt__jit_icall_native_mono_string_utf16_to_builder:
 _p_146:
 jmp *mono_aot_corlib_got+138712(%rip)
 
-	.long 4925
-	.no_dead_strip plt__jit_icall_native_mono_string_utf16_to_builder
-plt__jit_icall_native_mono_string_utf16_to_builder:
+	.long 4914
+	.no_dead_strip plt__jit_icall_native_mono_string_utf16_to_builder2
+plt__jit_icall_native_mono_string_utf16_to_builder2:
 _p_147:
 jmp *mono_aot_corlib_got+138720(%rip)
 
-	.long 4928
-	.no_dead_strip plt__jit_icall_native_mono_string_utf16_to_builder2
-plt__jit_icall_native_mono_string_utf16_to_builder2:
+	.long 4917
+	.no_dead_strip plt__jit_icall_native_mono_string_utf8_to_builder
+plt__jit_icall_native_mono_string_utf8_to_builder:
 _p_148:
 jmp *mono_aot_corlib_got+138728(%rip)
 
-	.long 4931
-	.no_dead_strip plt__jit_icall_native_mono_string_utf8_to_builder
-plt__jit_icall_native_mono_string_utf8_to_builder:
+	.long 4920
+	.no_dead_strip plt__jit_icall_native_mono_string_utf8_to_builder2
+plt__jit_icall_native_mono_string_utf8_to_builder2:
 _p_149:
 jmp *mono_aot_corlib_got+138736(%rip)
 
-	.long 4934
-	.no_dead_strip plt__jit_icall_native_mono_string_utf8_to_builder2
-plt__jit_icall_native_mono_string_utf8_to_builder2:
+	.long 4923
+	.no_dead_strip plt__jit_icall_native_mono_struct_delete_old
+plt__jit_icall_native_mono_struct_delete_old:
 _p_150:
 jmp *mono_aot_corlib_got+138744(%rip)
 
-	.long 4937
-	.no_dead_strip plt__jit_icall_native_mono_struct_delete_old
-plt__jit_icall_native_mono_struct_delete_old:
+	.long 4926
+	.no_dead_strip plt__jit_icall_native_mono_thread_force_interruption_checkpoint_noraise
+plt__jit_icall_native_mono_thread_force_interruption_checkpoint_noraise:
 _p_151:
 jmp *mono_aot_corlib_got+138752(%rip)
 
-	.long 4940
-	.no_dead_strip plt__jit_icall_native_mono_thread_force_interruption_checkpoint_noraise
-plt__jit_icall_native_mono_thread_force_interruption_checkpoint_noraise:
+	.long 4929
+	.no_dead_strip plt__jit_icall_native_mono_thread_get_undeniable_exception
+plt__jit_icall_native_mono_thread_get_undeniable_exception:
 _p_152:
 jmp *mono_aot_corlib_got+138760(%rip)
 
-	.long 4943
-	.no_dead_strip plt__jit_icall_native_mono_thread_get_undeniable_exception
-plt__jit_icall_native_mono_thread_get_undeniable_exception:
+	.long 4932
+	.no_dead_strip plt__jit_icall_native_mono_thread_interruption_checkpoint
+plt__jit_icall_native_mono_thread_interruption_checkpoint:
 _p_153:
 jmp *mono_aot_corlib_got+138768(%rip)
 
-	.long 4946
-	.no_dead_strip plt__jit_icall_native_mono_thread_interruption_checkpoint
-plt__jit_icall_native_mono_thread_interruption_checkpoint:
+	.long 4935
+	.no_dead_strip plt__jit_icall_native_mono_threads_attach_coop
+plt__jit_icall_native_mono_threads_attach_coop:
 _p_154:
 jmp *mono_aot_corlib_got+138776(%rip)
 
-	.long 4949
-	.no_dead_strip plt__jit_icall_native_mono_threads_attach_coop
-plt__jit_icall_native_mono_threads_attach_coop:
+	.long 4938
+	.no_dead_strip plt__jit_icall_native_mono_threads_detach_coop
+plt__jit_icall_native_mono_threads_detach_coop:
 _p_155:
 jmp *mono_aot_corlib_got+138784(%rip)
 
-	.long 4952
-	.no_dead_strip plt__jit_icall_native_mono_threads_detach_coop
-plt__jit_icall_native_mono_threads_detach_coop:
+	.long 4941
+	.no_dead_strip plt__jit_icall_native_mono_threads_enter_gc_safe_region_unbalanced
+plt__jit_icall_native_mono_threads_enter_gc_safe_region_unbalanced:
 _p_156:
 jmp *mono_aot_corlib_got+138792(%rip)
 
-	.long 4955
-	.no_dead_strip plt__jit_icall_native_mono_threads_enter_gc_safe_region_unbalanced
-plt__jit_icall_native_mono_threads_enter_gc_safe_region_unbalanced:
+	.long 4944
+	.no_dead_strip plt__jit_icall_native_mono_threads_enter_gc_unsafe_region_unbalanced
+plt__jit_icall_native_mono_threads_enter_gc_unsafe_region_unbalanced:
 _p_157:
 jmp *mono_aot_corlib_got+138800(%rip)
 
-	.long 4958
-	.no_dead_strip plt__jit_icall_native_mono_threads_enter_gc_unsafe_region_unbalanced
-plt__jit_icall_native_mono_threads_enter_gc_unsafe_region_unbalanced:
+	.long 4947
+	.no_dead_strip plt__jit_icall_native_mono_threads_exit_gc_safe_region_unbalanced
+plt__jit_icall_native_mono_threads_exit_gc_safe_region_unbalanced:
 _p_158:
 jmp *mono_aot_corlib_got+138808(%rip)
 
-	.long 4961
-	.no_dead_strip plt__jit_icall_native_mono_threads_exit_gc_safe_region_unbalanced
-plt__jit_icall_native_mono_threads_exit_gc_safe_region_unbalanced:
+	.long 4950
+	.no_dead_strip plt__jit_icall_native_mono_threads_exit_gc_unsafe_region_unbalanced
+plt__jit_icall_native_mono_threads_exit_gc_unsafe_region_unbalanced:
 _p_159:
 jmp *mono_aot_corlib_got+138816(%rip)
 
-	.long 4964
-	.no_dead_strip plt__jit_icall_native_mono_threads_exit_gc_unsafe_region_unbalanced
-plt__jit_icall_native_mono_threads_exit_gc_unsafe_region_unbalanced:
+	.long 4953
+	.no_dead_strip plt__jit_icall_native_mono_threads_state_poll
+plt__jit_icall_native_mono_threads_state_poll:
 _p_160:
 jmp *mono_aot_corlib_got+138824(%rip)
 
-	.long 4967
-	.no_dead_strip plt__jit_icall_native_mono_threads_state_poll
-plt__jit_icall_native_mono_threads_state_poll:
+	.long 4956
+	.no_dead_strip plt__jit_icall_native_mono_throw_method_access
+plt__jit_icall_native_mono_throw_method_access:
 _p_161:
 jmp *mono_aot_corlib_got+138832(%rip)
 
-	.long 4970
-	.no_dead_strip plt__jit_icall_native_mono_throw_method_access
-plt__jit_icall_native_mono_throw_method_access:
+	.long 4959
+	.no_dead_strip plt__jit_icall_native_mono_throw_bad_image
+plt__jit_icall_native_mono_throw_bad_image:
 _p_162:
 jmp *mono_aot_corlib_got+138840(%rip)
 
-	.long 4973
-	.no_dead_strip plt__jit_icall_native_mono_throw_bad_image
-plt__jit_icall_native_mono_throw_bad_image:
+	.long 4962
+	.no_dead_strip plt__jit_icall_native_mono_throw_not_supported
+plt__jit_icall_native_mono_throw_not_supported:
 _p_163:
 jmp *mono_aot_corlib_got+138848(%rip)
 
-	.long 4976
-	.no_dead_strip plt__jit_icall_native_mono_throw_not_supported
-plt__jit_icall_native_mono_throw_not_supported:
+	.long 4965
+	.no_dead_strip plt__jit_icall_native_mono_throw_platform_not_supported
+plt__jit_icall_native_mono_throw_platform_not_supported:
 _p_164:
 jmp *mono_aot_corlib_got+138856(%rip)
 
-	.long 4979
-	.no_dead_strip plt__jit_icall_native_mono_throw_platform_not_supported
-plt__jit_icall_native_mono_throw_platform_not_supported:
+	.long 4968
+	.no_dead_strip plt__jit_icall_native_mono_throw_invalid_program
+plt__jit_icall_native_mono_throw_invalid_program:
 _p_165:
 jmp *mono_aot_corlib_got+138864(%rip)
 
-	.long 4982
-	.no_dead_strip plt__jit_icall_native_mono_throw_invalid_program
-plt__jit_icall_native_mono_throw_invalid_program:
+	.long 4971
+	.no_dead_strip plt__jit_icall_native_mono_trace_enter_method
+plt__jit_icall_native_mono_trace_enter_method:
 _p_166:
 jmp *mono_aot_corlib_got+138872(%rip)
 
-	.long 4985
-	.no_dead_strip plt__jit_icall_native_mono_trace_enter_method
-plt__jit_icall_native_mono_trace_enter_method:
+	.long 4974
+	.no_dead_strip plt__jit_icall_native_mono_trace_leave_method
+plt__jit_icall_native_mono_trace_leave_method:
 _p_167:
 jmp *mono_aot_corlib_got+138880(%rip)
 
-	.long 4988
-	.no_dead_strip plt__jit_icall_native_mono_trace_leave_method
-plt__jit_icall_native_mono_trace_leave_method:
+	.long 4977
+	.no_dead_strip plt__jit_icall_native_mono_trace_tail_method
+plt__jit_icall_native_mono_trace_tail_method:
 _p_168:
 jmp *mono_aot_corlib_got+138888(%rip)
 
-	.long 4991
-	.no_dead_strip plt__jit_icall_native_mono_trace_tail_method
-plt__jit_icall_native_mono_trace_tail_method:
+	.long 4980
+	.no_dead_strip plt__jit_icall_native_mono_value_copy_internal
+plt__jit_icall_native_mono_value_copy_internal:
 _p_169:
 jmp *mono_aot_corlib_got+138896(%rip)
 
-	.long 4994
-	.no_dead_strip plt__jit_icall_native_mono_value_copy_internal
-plt__jit_icall_native_mono_value_copy_internal:
+	.long 4983
+	.no_dead_strip plt__jit_icall_native_ves_icall_array_new_specific
+plt__jit_icall_native_ves_icall_array_new_specific:
 _p_170:
 jmp *mono_aot_corlib_got+138904(%rip)
 
-	.long 4997
-	.no_dead_strip plt__jit_icall_native_ves_icall_array_new_specific
-plt__jit_icall_native_ves_icall_array_new_specific:
+	.long 4986
+	.no_dead_strip plt__jit_icall_native_ves_icall_marshal_alloc
+plt__jit_icall_native_ves_icall_marshal_alloc:
 _p_171:
 jmp *mono_aot_corlib_got+138912(%rip)
 
-	.long 5000
-	.no_dead_strip plt__jit_icall_native_ves_icall_marshal_alloc
-plt__jit_icall_native_ves_icall_marshal_alloc:
+	.long 4989
+	.no_dead_strip plt__jit_icall_native_ves_icall_mono_delegate_ctor
+plt__jit_icall_native_ves_icall_mono_delegate_ctor:
 _p_172:
 jmp *mono_aot_corlib_got+138920(%rip)
 
-	.long 5003
-	.no_dead_strip plt__jit_icall_native_ves_icall_mono_delegate_ctor
-plt__jit_icall_native_ves_icall_mono_delegate_ctor:
+	.long 4992
+	.no_dead_strip plt__jit_icall_native_ves_icall_mono_delegate_ctor_interp
+plt__jit_icall_native_ves_icall_mono_delegate_ctor_interp:
 _p_173:
 jmp *mono_aot_corlib_got+138928(%rip)
 
-	.long 5006
-	.no_dead_strip plt__jit_icall_native_ves_icall_mono_delegate_ctor_interp
-plt__jit_icall_native_ves_icall_mono_delegate_ctor_interp:
+	.long 4995
+	.no_dead_strip plt__jit_icall_native_ves_icall_mono_string_from_utf16
+plt__jit_icall_native_ves_icall_mono_string_from_utf16:
 _p_174:
 jmp *mono_aot_corlib_got+138936(%rip)
 
-	.long 5009
-	.no_dead_strip plt__jit_icall_native_ves_icall_mono_string_from_utf16
-plt__jit_icall_native_ves_icall_mono_string_from_utf16:
+	.long 4998
+	.no_dead_strip plt__jit_icall_native_ves_icall_mono_string_to_utf8
+plt__jit_icall_native_ves_icall_mono_string_to_utf8:
 _p_175:
 jmp *mono_aot_corlib_got+138944(%rip)
 
-	.long 5012
-	.no_dead_strip plt__jit_icall_native_ves_icall_mono_string_to_utf8
-plt__jit_icall_native_ves_icall_mono_string_to_utf8:
+	.long 5001
+	.no_dead_strip plt__jit_icall_native_ves_icall_object_new
+plt__jit_icall_native_ves_icall_object_new:
 _p_176:
 jmp *mono_aot_corlib_got+138952(%rip)
 
-	.long 5015
-	.no_dead_strip plt__jit_icall_native_ves_icall_object_new
-plt__jit_icall_native_ves_icall_object_new:
+	.long 5004
+	.no_dead_strip plt__jit_icall_native_ves_icall_object_new_specific
+plt__jit_icall_native_ves_icall_object_new_specific:
 _p_177:
 jmp *mono_aot_corlib_got+138960(%rip)
 
-	.long 5018
-	.no_dead_strip plt__jit_icall_native_ves_icall_object_new_specific
-plt__jit_icall_native_ves_icall_object_new_specific:
+	.long 5007
+	.no_dead_strip plt__jit_icall_native_ves_icall_runtime_class_init
+plt__jit_icall_native_ves_icall_runtime_class_init:
 _p_178:
 jmp *mono_aot_corlib_got+138968(%rip)
 
-	.long 5021
-	.no_dead_strip plt__jit_icall_native_ves_icall_runtime_class_init
-plt__jit_icall_native_ves_icall_runtime_class_init:
+	.long 5010
+	.no_dead_strip plt__jit_icall_native_ves_icall_string_alloc
+plt__jit_icall_native_ves_icall_string_alloc:
 _p_179:
 jmp *mono_aot_corlib_got+138976(%rip)
 
-	.long 5024
-	.no_dead_strip plt__jit_icall_native_ves_icall_string_alloc
-plt__jit_icall_native_ves_icall_string_alloc:
+	.long 5013
+	.no_dead_strip plt__jit_icall_native_ves_icall_string_new_wrapper
+plt__jit_icall_native_ves_icall_string_new_wrapper:
 _p_180:
 jmp *mono_aot_corlib_got+138984(%rip)
 
-	.long 5027
-	.no_dead_strip plt__jit_icall_native_ves_icall_string_new_wrapper
-plt__jit_icall_native_ves_icall_string_new_wrapper:
+	.long 5016
+	.no_dead_strip plt__jit_icall_native_ves_icall_thread_finish_async_abort
+plt__jit_icall_native_ves_icall_thread_finish_async_abort:
 _p_181:
 jmp *mono_aot_corlib_got+138992(%rip)
 
-	.long 5030
-	.no_dead_strip plt__jit_icall_native_ves_icall_thread_finish_async_abort
-plt__jit_icall_native_ves_icall_thread_finish_async_abort:
+	.long 5019
+	.no_dead_strip plt__jit_icall_native_mono_marshal_lookup_pinvoke
+plt__jit_icall_native_mono_marshal_lookup_pinvoke:
 _p_182:
 jmp *mono_aot_corlib_got+139000(%rip)
 
-	.long 5033
-	.no_dead_strip plt__jit_icall_native_mono_marshal_lookup_pinvoke
-plt__jit_icall_native_mono_marshal_lookup_pinvoke:
-_p_183:
-jmp *mono_aot_corlib_got+139008(%rip)
-
-	.long 5036
+	.long 5022
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_corlib_got, 139016
+.lcomm mono_aot_corlib_got, 139008
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -61328,7 +61289,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "2C5D4EC2-ADFF-4F52-AEE7-441487CAE494"
+	.asciz "0E88C329-E4FD-466B-97A2-452667C8F179"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -61417,15 +61378,15 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 17193,297,139016,176,184,200,199,352
-	.long 374417919,0,97068,128,8,8,7,9
-	.long 8388607,0,5,22,126992,0,0,29912
-	.long 7032,26432,0,26128,5432,488,25720,0
-	.long 29792,29904,280,4096,4096,512,0,0
+	.long 17193,297,139008,176,183,199,198,352
+	.long 374417919,0,96977,128,8,8,7,9
+	.long 8388607,0,5,22,126872,0,0,29888
+	.long 7008,26408,0,26104,5416,472,25696,0
+	.long 29768,29880,272,4096,4096,512,0,0
 	.long 0,297,8489,16681,17193,17193,17193,8
 	.long 13,45,0,0,0,0,0,0
 	.long 0,0,0
-	.byte 137,8,43,220,233,142,199,55,105,106,165,17,190,236,170,191
+	.byte 66,106,100,95,73,28,154,6,142,44,229,186,89,194,196,153
 	.globl _mono_aot_module_System_Private_CoreLib_info
 	.align 3
 _mono_aot_module_System_Private_CoreLib_info:
@@ -63272,11 +63233,11 @@ Lfde410_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_fconv_to_u"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u_double"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_fconv_to_u4"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u4_double"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_fconv_to_u"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_fconv_to_u4"
 	.quad L_m_26
 	.quad Lme_26
 
@@ -63308,11 +63269,11 @@ Lfde411_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_fconv_to_u4"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u4_double"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_fconv_to_u8"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u8_double"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_fconv_to_u4"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_fconv_to_u8"
 	.quad L_m_27
 	.quad Lme_27
 
@@ -63344,11 +63305,11 @@ Lfde412_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_fconv_to_u8"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_fconv_to_u8_double"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_frem"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_frem_double_double"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_fconv_to_u8"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_frem"
 	.quad L_m_28
 	.quad Lme_28
 
@@ -63357,22 +63318,27 @@ Lfde412_end:
 
 LDIFF_SYM970=LDIE_R8 - Ldebug_info_start
 	.long LDIFF_SYM970
-	.byte 3,119,192,0,0
+	.byte 3,119,200,0,3
+	.asciz "param1"
+
+LDIFF_SYM971=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM971
+	.byte 3,119,208,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM971=Lfde413_end - Lfde413_start
-	.long LDIFF_SYM971
+LDIFF_SYM972=Lfde413_end - Lfde413_start
+	.long LDIFF_SYM972
 Lfde413_start:
 
 	.long 0
 	.align 3
 	.quad L_m_28
 
-LDIFF_SYM972=Lme_28 - L_m_28
-	.long LDIFF_SYM972
+LDIFF_SYM973=Lme_28 - L_m_28
+	.long LDIFF_SYM973
 	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 68,14,112,74,134,8,68,131,14,69,140,13,69,141,12,69,142,11,69,143,10,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
 Lfde413_end:
@@ -63380,25 +63346,20 @@ Lfde413_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_frem"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_frem_double_double"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_iconv_to_r_un"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_iconv_to_r_un_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_frem"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_iconv_to_r_un"
 	.quad L_m_29
 	.quad Lme_29
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM973=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM973
-	.byte 3,119,200,0,3
-	.asciz "param1"
-
-LDIFF_SYM974=LDIE_R8 - Ldebug_info_start
+LDIFF_SYM974=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM974
-	.byte 3,119,208,0,0
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -63413,46 +63374,10 @@ Lfde414_start:
 LDIFF_SYM976=Lme_29 - L_m_29
 	.long LDIFF_SYM976
 	.long 0
-	.byte 68,14,112,74,134,8,68,131,14,69,140,13,69,141,12,69,142,11,69,143,10,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde414_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_iconv_to_r_un"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_iconv_to_r_un_int"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_iconv_to_r_un"
-	.quad L_m_2a
-	.quad Lme_2a
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM977=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM977
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM978=Lfde415_end - Lfde415_start
-	.long LDIFF_SYM978
-Lfde415_start:
-
-	.long 0
-	.align 3
-	.quad L_m_2a
-
-LDIFF_SYM979=Lme_2a - L_m_2a
-	.long LDIFF_SYM979
-	.long 0
 	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde415_end:
+Lfde414_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_4:
@@ -63461,34 +63386,70 @@ LTDIE_4:
 	.asciz "System_Single"
 
 	.byte 20,16
-LDIFF_SYM980=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM980
+LDIFF_SYM977=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM977
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM981=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM981
+LDIFF_SYM978=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM978
 	.byte 2,35,16,0,7
 	.asciz "System_Single"
 
-LDIFF_SYM982=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM982
+LDIFF_SYM979=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM979
 LTDIE_4_POINTER:
 
 	.byte 13
-LDIFF_SYM983=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM983
+LDIFF_SYM980=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM980
 LTDIE_4_REFERENCE:
 
 	.byte 14
-LDIFF_SYM984=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM984
+LDIFF_SYM981=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM981
 	.byte 2
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_ovf_i8"
 	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_ovf_i8_single"
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_ovf_i8"
+	.quad L_m_2a
+	.quad Lme_2a
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM982=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM982
+	.byte 3,119,192,0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM983=Lfde415_end - Lfde415_start
+	.long LDIFF_SYM983
+Lfde415_start:
+
+	.long 0
+	.align 3
+	.quad L_m_2a
+
+LDIFF_SYM984=Lme_2a - L_m_2a
+	.long LDIFF_SYM984
+	.long 0
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
+	.align 3
+Lfde415_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_ovf_u8"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_ovf_u8_single"
+
+	.byte 0,0
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_ovf_u8"
 	.quad L_m_2b
 	.quad Lme_2b
 
@@ -63520,11 +63481,11 @@ Lfde416_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_ovf_u8"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_ovf_u8_single"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_u4"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_u4_single"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_ovf_u8"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_u4"
 	.quad L_m_2c
 	.quad Lme_2c
 
@@ -63556,11 +63517,11 @@ Lfde417_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_u4"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_u4_single"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_u8"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_u8_single"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_u4"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_u8"
 	.quad L_m_2d
 	.quad Lme_2d
 
@@ -63592,11 +63553,11 @@ Lfde418_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_u8"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_rconv_to_u8_single"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rrem"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_rrem_single_single"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rconv_to_u8"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rrem"
 	.quad L_m_2e
 	.quad Lme_2e
 
@@ -63605,22 +63566,27 @@ Lfde418_end:
 
 LDIFF_SYM994=LDIE_R4 - Ldebug_info_start
 	.long LDIFF_SYM994
-	.byte 3,119,192,0,0
+	.byte 3,119,200,0,3
+	.asciz "param1"
+
+LDIFF_SYM995=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM995
+	.byte 3,119,208,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM995=Lfde419_end - Lfde419_start
-	.long LDIFF_SYM995
+LDIFF_SYM996=Lfde419_end - Lfde419_start
+	.long LDIFF_SYM996
 Lfde419_start:
 
 	.long 0
 	.align 3
 	.quad L_m_2e
 
-LDIFF_SYM996=Lme_2e - L_m_2e
-	.long LDIFF_SYM996
+LDIFF_SYM997=Lme_2e - L_m_2e
+	.long LDIFF_SYM997
 	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
 Lfde419_end:
@@ -63628,25 +63594,20 @@ Lfde419_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rrem"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper___emul_rrem_single_single"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_monoeg_g_free"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_monoeg_g_free_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper___emul_rrem"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_monoeg_g_free"
 	.quad L_m_2f
 	.quad Lme_2f
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM997=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM997
-	.byte 3,119,200,0,3
-	.asciz "param1"
-
-LDIFF_SYM998=LDIE_R4 - Ldebug_info_start
+LDIFF_SYM998=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM998
-	.byte 3,119,208,0,0
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -63661,46 +63622,10 @@ Lfde420_start:
 LDIFF_SYM1000=Lme_2f - L_m_2f
 	.long LDIFF_SYM1000
 	.long 0
-	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde420_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_monoeg_g_free"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_monoeg_g_free_intptr"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_monoeg_g_free"
-	.quad L_m_30
-	.quad Lme_30
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1001=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1001
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1002=Lfde421_end - Lfde421_start
-	.long LDIFF_SYM1002
-Lfde421_start:
-
-	.long 0
-	.align 3
-	.quad L_m_30
-
-LDIFF_SYM1003=Lme_30 - L_m_30
-	.long LDIFF_SYM1003
-	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde421_end:
+Lfde420_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -63710,28 +63635,64 @@ Lfde421_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvm_init_method"
+	.quad L_m_30
+	.quad Lme_30
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1001=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1001
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1002=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1002
+	.byte 3,119,200,0,3
+	.asciz "param2"
+
+LDIFF_SYM1003=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1003
+	.byte 3,119,208,0,3
+	.asciz "param3"
+
+LDIFF_SYM1004=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1004
+	.byte 1,95,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1005=Lfde421_end - Lfde421_start
+	.long LDIFF_SYM1005
+Lfde421_start:
+
+	.long 0
+	.align 3
+	.quad L_m_30
+
+LDIFF_SYM1006=Lme_30 - L_m_30
+	.long LDIFF_SYM1006
+	.long 0
+	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
+	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
+	.align 3
+Lfde421_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_init_delegate"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_init_delegate_object"
+
+	.byte 0,0
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_init_delegate"
 	.quad L_m_31
 	.quad Lme_31
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1004=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1004
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1005=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1005
-	.byte 3,119,200,0,3
-	.asciz "param2"
-
-LDIFF_SYM1006=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1006
-	.byte 3,119,208,0,3
-	.asciz "param3"
-
-LDIFF_SYM1007=LDIE_I - Ldebug_info_start
+LDIFF_SYM1007=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1007
 	.byte 1,95,0
 
@@ -63748,46 +63709,10 @@ Lfde422_start:
 LDIFF_SYM1009=Lme_31 - L_m_31
 	.long LDIFF_SYM1009
 	.long 0
-	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde422_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_init_delegate"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_init_delegate_object"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_init_delegate"
-	.quad L_m_32
-	.quad Lme_32
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1010=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1010
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1011=Lfde423_end - Lfde423_start
-	.long LDIFF_SYM1011
-Lfde423_start:
-
-	.long 0
-	.align 3
-	.quad L_m_32
-
-LDIFF_SYM1012=Lme_32 - L_m_32
-	.long LDIFF_SYM1012
-	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde423_end:
+Lfde422_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -63797,43 +63722,43 @@ Lfde423_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_init_delegate_virtual"
-	.quad L_m_33
-	.quad Lme_33
+	.quad L_m_32
+	.quad Lme_32
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1013=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1013
+LDIFF_SYM1010=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1010
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1014=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1014
+LDIFF_SYM1011=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1011
 	.byte 3,119,200,0,3
 	.asciz "param2"
 
-LDIFF_SYM1015=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1015
+LDIFF_SYM1012=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1012
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1016=Lfde424_end - Lfde424_start
-	.long LDIFF_SYM1016
-Lfde424_start:
+LDIFF_SYM1013=Lfde423_end - Lfde423_start
+	.long LDIFF_SYM1013
+Lfde423_start:
 
 	.long 0
 	.align 3
-	.quad L_m_33
+	.quad L_m_32
 
-LDIFF_SYM1017=Lme_33 - L_m_33
-	.long LDIFF_SYM1017
+LDIFF_SYM1014=Lme_32 - L_m_32
+	.long LDIFF_SYM1014
 	.long 0
 	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde424_end:
+Lfde423_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -63843,38 +63768,38 @@ Lfde424_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_init_vtable_slot"
-	.quad L_m_34
-	.quad Lme_34
+	.quad L_m_33
+	.quad Lme_33
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1018=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1018
+LDIFF_SYM1015=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1015
 	.byte 1,94,3
 	.asciz "param1"
 
-LDIFF_SYM1019=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1019
+LDIFF_SYM1016=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1016
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1020=Lfde425_end - Lfde425_start
-	.long LDIFF_SYM1020
-Lfde425_start:
+LDIFF_SYM1017=Lfde424_end - Lfde424_start
+	.long LDIFF_SYM1017
+Lfde424_start:
 
 	.long 0
 	.align 3
-	.quad L_m_34
+	.quad L_m_33
 
-LDIFF_SYM1021=Lme_34 - L_m_34
-	.long LDIFF_SYM1021
+LDIFF_SYM1018=Lme_33 - L_m_33
+	.long LDIFF_SYM1018
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde425_end:
+Lfde424_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -63884,43 +63809,43 @@ Lfde425_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_resolve_generic_virtual_call"
-	.quad L_m_35
-	.quad Lme_35
+	.quad L_m_34
+	.quad Lme_34
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1022=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1022
+LDIFF_SYM1019=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1019
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1023=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1023
+LDIFF_SYM1020=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1020
 	.byte 1,94,3
 	.asciz "param2"
 
-LDIFF_SYM1024=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1024
+LDIFF_SYM1021=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1021
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1025=Lfde426_end - Lfde426_start
-	.long LDIFF_SYM1025
-Lfde426_start:
+LDIFF_SYM1022=Lfde425_end - Lfde425_start
+	.long LDIFF_SYM1022
+Lfde425_start:
 
 	.long 0
 	.align 3
-	.quad L_m_35
+	.quad L_m_34
 
-LDIFF_SYM1026=Lme_35 - L_m_35
-	.long LDIFF_SYM1026
+LDIFF_SYM1023=Lme_34 - L_m_34
+	.long LDIFF_SYM1023
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde426_end:
+Lfde425_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -63930,43 +63855,43 @@ Lfde426_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_resolve_generic_virtual_iface_call"
-	.quad L_m_36
-	.quad Lme_36
+	.quad L_m_35
+	.quad Lme_35
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1027=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1027
+LDIFF_SYM1024=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1024
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1028=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1028
+LDIFF_SYM1025=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1025
 	.byte 1,94,3
 	.asciz "param2"
 
-LDIFF_SYM1029=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1029
+LDIFF_SYM1026=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1026
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1030=Lfde427_end - Lfde427_start
-	.long LDIFF_SYM1030
-Lfde427_start:
+LDIFF_SYM1027=Lfde426_end - Lfde426_start
+	.long LDIFF_SYM1027
+Lfde426_start:
 
 	.long 0
 	.align 3
-	.quad L_m_36
+	.quad L_m_35
 
-LDIFF_SYM1031=Lme_36 - L_m_36
-	.long LDIFF_SYM1031
+LDIFF_SYM1028=Lme_35 - L_m_35
+	.long LDIFF_SYM1028
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde427_end:
+Lfde426_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -63976,48 +63901,48 @@ Lfde427_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_resolve_iface_call_gsharedvt"
-	.quad L_m_37
-	.quad Lme_37
+	.quad L_m_36
+	.quad Lme_36
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1032=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1032
+LDIFF_SYM1029=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1029
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1033=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1033
+LDIFF_SYM1030=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1030
 	.byte 3,119,200,0,3
 	.asciz "param2"
 
-LDIFF_SYM1034=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1034
+LDIFF_SYM1031=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1031
 	.byte 1,94,3
 	.asciz "param3"
 
-LDIFF_SYM1035=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1035
+LDIFF_SYM1032=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1032
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1036=Lfde428_end - Lfde428_start
-	.long LDIFF_SYM1036
-Lfde428_start:
+LDIFF_SYM1033=Lfde427_end - Lfde427_start
+	.long LDIFF_SYM1033
+Lfde427_start:
 
 	.long 0
 	.align 3
-	.quad L_m_37
+	.quad L_m_36
 
-LDIFF_SYM1037=Lme_37 - L_m_37
-	.long LDIFF_SYM1037
+LDIFF_SYM1034=Lme_36 - L_m_36
+	.long LDIFF_SYM1034
 	.long 0
 	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde428_end:
+Lfde427_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -64027,48 +63952,48 @@ Lfde428_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_resolve_vcall_gsharedvt"
-	.quad L_m_38
-	.quad Lme_38
+	.quad L_m_37
+	.quad Lme_37
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1038=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1038
+LDIFF_SYM1035=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1035
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1039=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1039
+LDIFF_SYM1036=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1036
 	.byte 3,119,200,0,3
 	.asciz "param2"
 
-LDIFF_SYM1040=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1040
+LDIFF_SYM1037=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1037
 	.byte 1,94,3
 	.asciz "param3"
 
-LDIFF_SYM1041=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1041
+LDIFF_SYM1038=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1038
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1042=Lfde429_end - Lfde429_start
-	.long LDIFF_SYM1042
-Lfde429_start:
+LDIFF_SYM1039=Lfde428_end - Lfde428_start
+	.long LDIFF_SYM1039
+Lfde428_start:
 
 	.long 0
 	.align 3
-	.quad L_m_38
+	.quad L_m_37
 
-LDIFF_SYM1043=Lme_38 - L_m_38
-	.long LDIFF_SYM1043
+LDIFF_SYM1040=Lme_37 - L_m_37
+	.long LDIFF_SYM1040
 	.long 0
 	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde429_end:
+Lfde428_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -64078,10 +64003,46 @@ Lfde429_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_throw_nullref_exception"
+	.quad L_m_38
+	.quad Lme_38
+
+	.byte 2,118,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1041=Lfde429_end - Lfde429_start
+	.long LDIFF_SYM1041
+Lfde429_start:
+
+	.long 0
+	.align 3
+	.quad L_m_38
+
+LDIFF_SYM1042=Lme_38 - L_m_38
+	.long LDIFF_SYM1042
+	.long 0
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
+	.align 3
+Lfde429_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_throw_aot_failed_exception"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_throw_aot_failed_exception_intptr"
+
+	.byte 0,0
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_throw_aot_failed_exception"
 	.quad L_m_39
 	.quad Lme_39
 
-	.byte 2,118,16,0
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1043=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1043
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -64104,11 +64065,11 @@ Lfde430_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_throw_aot_failed_exception"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_throw_aot_failed_exception_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_pop_lmf"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_pop_lmf_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_throw_aot_failed_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_pop_lmf"
 	.quad L_m_3a
 	.quad Lme_3a
 
@@ -64140,11 +64101,11 @@ Lfde431_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_pop_lmf"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_pop_lmf_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_get_interp_entry"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_get_interp_entry_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_pop_lmf"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_get_interp_entry"
 	.quad L_m_3b
 	.quad Lme_3b
 
@@ -64176,33 +64137,28 @@ Lfde432_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_get_interp_entry"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mini_llvmonly_get_interp_entry_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_amd64_throw_exception"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_amd64_throw_exception"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mini_llvmonly_get_interp_entry"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_amd64_throw_exception"
 	.quad L_m_3c
 	.quad Lme_3c
 
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1052=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1052
-	.byte 1,95,0
+	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1053=Lfde433_end - Lfde433_start
-	.long LDIFF_SYM1053
+LDIFF_SYM1052=Lfde433_end - Lfde433_start
+	.long LDIFF_SYM1052
 Lfde433_start:
 
 	.long 0
 	.align 3
 	.quad L_m_3c
 
-LDIFF_SYM1054=Lme_3c - L_m_3c
-	.long LDIFF_SYM1054
+LDIFF_SYM1053=Lme_3c - L_m_3c
+	.long LDIFF_SYM1053
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -64212,15 +64168,20 @@ Lfde433_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_amd64_throw_exception"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_amd64_throw_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_arch_rethrow_exception"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_arch_rethrow_exception_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_amd64_throw_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_arch_rethrow_exception"
 	.quad L_m_3d
 	.quad Lme_3d
 
-	.byte 2,118,16,0
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1054=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1054
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -64243,18 +64204,18 @@ Lfde434_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_arch_rethrow_exception"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_arch_rethrow_exception_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_arch_throw_corlib_exception"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_arch_throw_corlib_exception_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_arch_rethrow_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_arch_throw_corlib_exception"
 	.quad L_m_3e
 	.quad Lme_3e
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1057=LDIE_OBJECT - Ldebug_info_start
+LDIFF_SYM1057=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1057
 	.byte 1,95,0
 
@@ -64279,18 +64240,18 @@ Lfde435_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_arch_throw_corlib_exception"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_arch_throw_corlib_exception_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_arch_throw_exception"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_arch_throw_exception_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_arch_throw_corlib_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_arch_throw_exception"
 	.quad L_m_3f
 	.quad Lme_3f
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1060=LDIE_I - Ldebug_info_start
+LDIFF_SYM1060=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1060
 	.byte 1,95,0
 
@@ -64315,33 +64276,38 @@ Lfde436_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_arch_throw_exception"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_arch_throw_exception_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_1"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_array_new_1_intptr_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_arch_throw_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_1"
 	.quad L_m_40
 	.quad Lme_40
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1063=LDIE_OBJECT - Ldebug_info_start
+LDIFF_SYM1063=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1063
+	.byte 1,94,3
+	.asciz "param1"
+
+LDIFF_SYM1064=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1064
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1064=Lfde437_end - Lfde437_start
-	.long LDIFF_SYM1064
+LDIFF_SYM1065=Lfde437_end - Lfde437_start
+	.long LDIFF_SYM1065
 Lfde437_start:
 
 	.long 0
 	.align 3
 	.quad L_m_40
 
-LDIFF_SYM1065=Lme_40 - L_m_40
-	.long LDIFF_SYM1065
+LDIFF_SYM1066=Lme_40 - L_m_40
+	.long LDIFF_SYM1066
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -64351,38 +64317,43 @@ Lfde437_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_1"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_array_new_1_intptr_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_2"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_array_new_2_intptr_int_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_1"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_2"
 	.quad L_m_41
 	.quad Lme_41
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1066=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1066
-	.byte 1,94,3
+LDIFF_SYM1067=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1067
+	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1067=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1067
+LDIFF_SYM1068=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1068
+	.byte 1,94,3
+	.asciz "param2"
+
+LDIFF_SYM1069=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1069
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1068=Lfde438_end - Lfde438_start
-	.long LDIFF_SYM1068
+LDIFF_SYM1070=Lfde438_end - Lfde438_start
+	.long LDIFF_SYM1070
 Lfde438_start:
 
 	.long 0
 	.align 3
 	.quad L_m_41
 
-LDIFF_SYM1069=Lme_41 - L_m_41
-	.long LDIFF_SYM1069
+LDIFF_SYM1071=Lme_41 - L_m_41
+	.long LDIFF_SYM1071
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -64392,99 +64363,53 @@ Lfde438_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_2"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_array_new_2_intptr_int_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_3"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_array_new_3_intptr_int_int_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_2"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_3"
 	.quad L_m_42
 	.quad Lme_42
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1070=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1070
+LDIFF_SYM1072=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1072
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1071=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1071
-	.byte 1,94,3
+LDIFF_SYM1073=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1073
+	.byte 3,119,200,0,3
 	.asciz "param2"
 
-LDIFF_SYM1072=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1072
+LDIFF_SYM1074=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1074
+	.byte 1,94,3
+	.asciz "param3"
+
+LDIFF_SYM1075=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1075
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1073=Lfde439_end - Lfde439_start
-	.long LDIFF_SYM1073
+LDIFF_SYM1076=Lfde439_end - Lfde439_start
+	.long LDIFF_SYM1076
 Lfde439_start:
 
 	.long 0
 	.align 3
 	.quad L_m_42
 
-LDIFF_SYM1074=Lme_42 - L_m_42
-	.long LDIFF_SYM1074
-	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde439_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_3"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_array_new_3_intptr_int_int_int"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_3"
-	.quad L_m_43
-	.quad Lme_43
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1075=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1075
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1076=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1076
-	.byte 3,119,200,0,3
-	.asciz "param2"
-
-LDIFF_SYM1077=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1077=Lme_42 - L_m_42
 	.long LDIFF_SYM1077
-	.byte 1,94,3
-	.asciz "param3"
-
-LDIFF_SYM1078=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1078
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1079=Lfde440_end - Lfde440_start
-	.long LDIFF_SYM1079
-Lfde440_start:
-
-	.long 0
-	.align 3
-	.quad L_m_43
-
-LDIFF_SYM1080=Lme_43 - L_m_43
-	.long LDIFF_SYM1080
 	.long 0
 	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde440_end:
+Lfde439_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -64494,53 +64419,53 @@ Lfde440_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_4"
-	.quad L_m_44
-	.quad Lme_44
+	.quad L_m_43
+	.quad Lme_43
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1081=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1081
+LDIFF_SYM1078=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1078
 	.byte 3,119,200,0,3
 	.asciz "param1"
 
-LDIFF_SYM1082=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1082
+LDIFF_SYM1079=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1079
 	.byte 3,119,208,0,3
 	.asciz "param2"
 
-LDIFF_SYM1083=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1083
+LDIFF_SYM1080=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1080
 	.byte 3,119,216,0,3
 	.asciz "param3"
 
-LDIFF_SYM1084=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1084
+LDIFF_SYM1081=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1081
 	.byte 1,94,3
 	.asciz "param4"
 
-LDIFF_SYM1085=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1085
+LDIFF_SYM1082=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1082
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1086=Lfde441_end - Lfde441_start
-	.long LDIFF_SYM1086
-Lfde441_start:
+LDIFF_SYM1083=Lfde440_end - Lfde440_start
+	.long LDIFF_SYM1083
+Lfde440_start:
 
 	.long 0
 	.align 3
-	.quad L_m_44
+	.quad L_m_43
 
-LDIFF_SYM1087=Lme_44 - L_m_44
-	.long LDIFF_SYM1087
+LDIFF_SYM1084=Lme_43 - L_m_43
+	.long LDIFF_SYM1084
 	.long 0
 	.byte 68,14,112,74,134,7,68,131,14,69,134,13,69,140,12,69,141,11,69,142,10,69,143,9,10,69,8,6,68,8,3,69
 	.byte 8,6,69,8,12,69,8,13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde441_end:
+Lfde440_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -64550,43 +64475,43 @@ Lfde441_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_new_n_icall"
-	.quad L_m_45
-	.quad Lme_45
+	.quad L_m_44
+	.quad Lme_44
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1088=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1088
+LDIFF_SYM1085=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1085
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1089=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1089
+LDIFF_SYM1086=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1086
 	.byte 1,94,3
 	.asciz "param2"
 
-LDIFF_SYM1090=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1090
+LDIFF_SYM1087=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1087
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1091=Lfde442_end - Lfde442_start
-	.long LDIFF_SYM1091
-Lfde442_start:
+LDIFF_SYM1088=Lfde441_end - Lfde441_start
+	.long LDIFF_SYM1088
+Lfde441_start:
 
 	.long 0
 	.align 3
-	.quad L_m_45
+	.quad L_m_44
 
-LDIFF_SYM1092=Lme_45 - L_m_45
-	.long LDIFF_SYM1092
+LDIFF_SYM1089=Lme_44 - L_m_44
+	.long LDIFF_SYM1089
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde442_end:
+Lfde441_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -64596,23 +64521,59 @@ Lfde442_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_to_byte_byvalarray"
+	.quad L_m_45
+	.quad Lme_45
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1090=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1090
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1091=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1091
+	.byte 3,119,200,0,3
+	.asciz "param2"
+
+LDIFF_SYM1092=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1092
+	.byte 1,95,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1093=Lfde442_end - Lfde442_start
+	.long LDIFF_SYM1093
+Lfde442_start:
+
+	.long 0
+	.align 3
+	.quad L_m_45
+
+LDIFF_SYM1094=Lme_45 - L_m_45
+	.long LDIFF_SYM1094
+	.long 0
+	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
+	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
+	.align 3
+Lfde442_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_to_lparray"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_array_to_lparray_object"
+
+	.byte 0,0
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_to_lparray"
 	.quad L_m_46
 	.quad Lme_46
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1093=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1093
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1094=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1094
-	.byte 3,119,200,0,3
-	.asciz "param2"
-
-LDIFF_SYM1095=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1095=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1095
 	.byte 1,95,0
 
@@ -64629,7 +64590,7 @@ Lfde443_start:
 LDIFF_SYM1097=Lme_46 - L_m_46
 	.long LDIFF_SYM1097
 	.long 0
-	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
 Lfde443_end:
@@ -64637,11 +64598,11 @@ Lfde443_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_to_lparray"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_array_to_lparray_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_to_savearray"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_array_to_savearray_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_to_lparray"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_to_savearray"
 	.quad L_m_47
 	.quad Lme_47
 
@@ -64673,11 +64634,11 @@ Lfde444_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_to_savearray"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_array_to_savearray_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_byvalarray_to_byte_array"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_byvalarray_to_byte_array_object_intptr_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_array_to_savearray"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_byvalarray_to_byte_array"
 	.quad L_m_48
 	.quad Lme_48
 
@@ -64686,22 +64647,32 @@ Lfde444_end:
 
 LDIFF_SYM1101=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1101
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1102=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1102
+	.byte 3,119,200,0,3
+	.asciz "param2"
+
+LDIFF_SYM1103=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1103
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1102=Lfde445_end - Lfde445_start
-	.long LDIFF_SYM1102
+LDIFF_SYM1104=Lfde445_end - Lfde445_start
+	.long LDIFF_SYM1104
 Lfde445_start:
 
 	.long 0
 	.align 3
 	.quad L_m_48
 
-LDIFF_SYM1103=Lme_48 - L_m_48
-	.long LDIFF_SYM1103
+LDIFF_SYM1105=Lme_48 - L_m_48
+	.long LDIFF_SYM1105
 	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
 Lfde445_end:
@@ -64709,30 +64680,20 @@ Lfde445_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_byvalarray_to_byte_array"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_byvalarray_to_byte_array_object_intptr_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ckfinite"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ckfinite_double"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_byvalarray_to_byte_array"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ckfinite"
 	.quad L_m_49
 	.quad Lme_49
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1104=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1104
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1105=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1105
-	.byte 3,119,200,0,3
-	.asciz "param2"
-
-LDIFF_SYM1106=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1106=LDIE_R8 - Ldebug_info_start
 	.long LDIFF_SYM1106
-	.byte 1,95,0
+	.byte 3,119,200,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -64755,20 +64716,20 @@ Lfde446_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ckfinite"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ckfinite_double"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_class_static_field_address"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_class_static_field_address_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ckfinite"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_class_static_field_address"
 	.quad L_m_4a
 	.quad Lme_4a
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1109=LDIE_R8 - Ldebug_info_start
+LDIFF_SYM1109=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1109
-	.byte 3,119,200,0,0
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -64783,7 +64744,7 @@ Lfde447_start:
 LDIFF_SYM1111=Lme_4a - L_m_4a
 	.long LDIFF_SYM1111
 	.long 0
-	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
 Lfde447_end:
@@ -64791,18 +64752,18 @@ Lfde447_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_class_static_field_address"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_class_static_field_address_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_create_corlib_exception_0"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_0_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_class_static_field_address"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_create_corlib_exception_0"
 	.quad L_m_4b
 	.quad Lme_4b
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1112=LDIE_I - Ldebug_info_start
+LDIFF_SYM1112=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1112
 	.byte 1,95,0
 
@@ -64827,11 +64788,11 @@ Lfde448_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_create_corlib_exception_0"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_0_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_create_corlib_exception_1"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_1_int_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_create_corlib_exception_0"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_create_corlib_exception_1"
 	.quad L_m_4c
 	.quad Lme_4c
 
@@ -64840,20 +64801,25 @@ Lfde448_end:
 
 LDIFF_SYM1115=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1115
+	.byte 1,94,3
+	.asciz "param1"
+
+LDIFF_SYM1116=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1116
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1116=Lfde449_end - Lfde449_start
-	.long LDIFF_SYM1116
+LDIFF_SYM1117=Lfde449_end - Lfde449_start
+	.long LDIFF_SYM1117
 Lfde449_start:
 
 	.long 0
 	.align 3
 	.quad L_m_4c
 
-LDIFF_SYM1117=Lme_4c - L_m_4c
-	.long LDIFF_SYM1117
+LDIFF_SYM1118=Lme_4c - L_m_4c
+	.long LDIFF_SYM1118
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -64863,38 +64829,43 @@ Lfde449_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_create_corlib_exception_1"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_1_int_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_create_corlib_exception_2"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_2_int_object_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_create_corlib_exception_1"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_create_corlib_exception_2"
 	.quad L_m_4d
 	.quad Lme_4d
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1118=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1118
-	.byte 1,94,3
+LDIFF_SYM1119=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1119
+	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1119=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1119
+LDIFF_SYM1120=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1120
+	.byte 1,94,3
+	.asciz "param2"
+
+LDIFF_SYM1121=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1121
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1120=Lfde450_end - Lfde450_start
-	.long LDIFF_SYM1120
+LDIFF_SYM1122=Lfde450_end - Lfde450_start
+	.long LDIFF_SYM1122
 Lfde450_start:
 
 	.long 0
 	.align 3
 	.quad L_m_4d
 
-LDIFF_SYM1121=Lme_4d - L_m_4d
-	.long LDIFF_SYM1121
+LDIFF_SYM1123=Lme_4d - L_m_4d
+	.long LDIFF_SYM1123
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -64904,104 +64875,58 @@ Lfde450_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_create_corlib_exception_2"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_create_corlib_exception_2_int_object_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_debug_personality"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_debug_personality_int_int_intptr_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_create_corlib_exception_2"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_debug_personality"
 	.quad L_m_4e
 	.quad Lme_4e
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1122=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1122
-	.byte 3,119,192,0,3
+LDIFF_SYM1124=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1124
+	.byte 3,119,200,0,3
 	.asciz "param1"
 
-LDIFF_SYM1123=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1123
-	.byte 1,94,3
+LDIFF_SYM1125=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1125
+	.byte 3,119,208,0,3
 	.asciz "param2"
 
-LDIFF_SYM1124=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1124
+LDIFF_SYM1126=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1126
+	.byte 3,119,216,0,3
+	.asciz "param3"
+
+LDIFF_SYM1127=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1127
+	.byte 1,94,3
+	.asciz "param4"
+
+LDIFF_SYM1128=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1128
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1125=Lfde451_end - Lfde451_start
-	.long LDIFF_SYM1125
+LDIFF_SYM1129=Lfde451_end - Lfde451_start
+	.long LDIFF_SYM1129
 Lfde451_start:
 
 	.long 0
 	.align 3
 	.quad L_m_4e
 
-LDIFF_SYM1126=Lme_4e - L_m_4e
-	.long LDIFF_SYM1126
-	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde451_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_debug_personality"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_debug_personality_int_int_intptr_intptr_intptr"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_debug_personality"
-	.quad L_m_4f
-	.quad Lme_4f
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1127=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1127
-	.byte 3,119,200,0,3
-	.asciz "param1"
-
-LDIFF_SYM1128=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1128
-	.byte 3,119,208,0,3
-	.asciz "param2"
-
-LDIFF_SYM1129=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1129
-	.byte 3,119,216,0,3
-	.asciz "param3"
-
-LDIFF_SYM1130=LDIE_I - Ldebug_info_start
+LDIFF_SYM1130=Lme_4e - L_m_4e
 	.long LDIFF_SYM1130
-	.byte 1,94,3
-	.asciz "param4"
-
-LDIFF_SYM1131=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1131
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1132=Lfde452_end - Lfde452_start
-	.long LDIFF_SYM1132
-Lfde452_start:
-
-	.long 0
-	.align 3
-	.quad L_m_4f
-
-LDIFF_SYM1133=Lme_4f - L_m_4f
-	.long LDIFF_SYM1133
 	.long 0
 	.byte 68,14,112,74,134,7,68,131,14,69,134,13,69,140,12,69,141,11,69,142,10,69,143,9,10,69,8,6,68,8,3,69
 	.byte 8,6,69,8,12,69,8,13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde452_end:
+Lfde451_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -65011,28 +64936,28 @@ Lfde452_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_debugger_agent_user_break"
-	.quad L_m_50
-	.quad Lme_50
+	.quad L_m_4f
+	.quad Lme_4f
 
 	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1134=Lfde453_end - Lfde453_start
-	.long LDIFF_SYM1134
-Lfde453_start:
+LDIFF_SYM1131=Lfde452_end - Lfde452_start
+	.long LDIFF_SYM1131
+Lfde452_start:
 
 	.long 0
 	.align 3
-	.quad L_m_50
+	.quad L_m_4f
 
-LDIFF_SYM1135=Lme_50 - L_m_50
-	.long LDIFF_SYM1135
+LDIFF_SYM1132=Lme_4f - L_m_4f
+	.long LDIFF_SYM1132
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde453_end:
+Lfde452_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -65042,38 +64967,38 @@ Lfde453_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_delegate_begin_invoke"
-	.quad L_m_51
-	.quad Lme_51
+	.quad L_m_50
+	.quad Lme_50
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1136=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1136
+LDIFF_SYM1133=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1133
 	.byte 1,94,3
 	.asciz "param1"
 
-LDIFF_SYM1137=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1137
+LDIFF_SYM1134=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1134
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1138=Lfde454_end - Lfde454_start
-	.long LDIFF_SYM1138
-Lfde454_start:
+LDIFF_SYM1135=Lfde453_end - Lfde453_start
+	.long LDIFF_SYM1135
+Lfde453_start:
 
 	.long 0
 	.align 3
-	.quad L_m_51
+	.quad L_m_50
 
-LDIFF_SYM1139=Lme_51 - L_m_51
-	.long LDIFF_SYM1139
+LDIFF_SYM1136=Lme_50 - L_m_50
+	.long LDIFF_SYM1136
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde454_end:
+Lfde453_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -65083,18 +65008,54 @@ Lfde454_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_delegate_end_invoke"
+	.quad L_m_51
+	.quad Lme_51
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1137=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1137
+	.byte 1,94,3
+	.asciz "param1"
+
+LDIFF_SYM1138=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1138
+	.byte 1,95,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1139=Lfde454_end - Lfde454_start
+	.long LDIFF_SYM1139
+Lfde454_start:
+
+	.long 0
+	.align 3
+	.quad L_m_51
+
+LDIFF_SYM1140=Lme_51 - L_m_51
+	.long LDIFF_SYM1140
+	.long 0
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
+	.align 3
+Lfde454_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_delegate_to_ftnptr"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_delegate_to_ftnptr_object"
+
+	.byte 0,0
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_delegate_to_ftnptr"
 	.quad L_m_52
 	.quad Lme_52
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1140=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1140
-	.byte 1,94,3
-	.asciz "param1"
-
-LDIFF_SYM1141=LDIE_I - Ldebug_info_start
+LDIFF_SYM1141=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1141
 	.byte 1,95,0
 
@@ -65119,33 +65080,28 @@ Lfde455_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_delegate_to_ftnptr"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_delegate_to_ftnptr_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_domain_get"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_domain_get"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_delegate_to_ftnptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_domain_get"
 	.quad L_m_53
 	.quad Lme_53
 
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1144=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1144
-	.byte 1,95,0
+	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1145=Lfde456_end - Lfde456_start
-	.long LDIFF_SYM1145
+LDIFF_SYM1144=Lfde456_end - Lfde456_start
+	.long LDIFF_SYM1144
 Lfde456_start:
 
 	.long 0
 	.align 3
 	.quad L_m_53
 
-LDIFF_SYM1146=Lme_53 - L_m_53
-	.long LDIFF_SYM1146
+LDIFF_SYM1145=Lme_53 - L_m_53
+	.long LDIFF_SYM1145
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -65155,11 +65111,11 @@ Lfde456_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_domain_get"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_domain_get"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_dummy_jit_icall"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_dummy_jit_icall"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_domain_get"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_dummy_jit_icall"
 	.quad L_m_54
 	.quad Lme_54
 
@@ -65167,16 +65123,16 @@ Lfde456_end:
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1147=Lfde457_end - Lfde457_start
-	.long LDIFF_SYM1147
+LDIFF_SYM1146=Lfde457_end - Lfde457_start
+	.long LDIFF_SYM1146
 Lfde457_start:
 
 	.long 0
 	.align 3
 	.quad L_m_54
 
-LDIFF_SYM1148=Lme_54 - L_m_54
-	.long LDIFF_SYM1148
+LDIFF_SYM1147=Lme_54 - L_m_54
+	.long LDIFF_SYM1147
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -65186,28 +65142,38 @@ Lfde457_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_dummy_jit_icall"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_dummy_jit_icall"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_fill_class_rgctx"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_fill_class_rgctx_intptr_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_dummy_jit_icall"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_fill_class_rgctx"
 	.quad L_m_55
 	.quad Lme_55
 
-	.byte 2,118,16,0
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1148=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1148
+	.byte 1,94,3
+	.asciz "param1"
+
+LDIFF_SYM1149=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1149
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1149=Lfde458_end - Lfde458_start
-	.long LDIFF_SYM1149
+LDIFF_SYM1150=Lfde458_end - Lfde458_start
+	.long LDIFF_SYM1150
 Lfde458_start:
 
 	.long 0
 	.align 3
 	.quad L_m_55
 
-LDIFF_SYM1150=Lme_55 - L_m_55
-	.long LDIFF_SYM1150
+LDIFF_SYM1151=Lme_55 - L_m_55
+	.long LDIFF_SYM1151
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -65217,38 +65183,38 @@ Lfde458_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_fill_class_rgctx"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_fill_class_rgctx_intptr_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_fill_method_rgctx"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_fill_method_rgctx_intptr_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_fill_class_rgctx"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_fill_method_rgctx"
 	.quad L_m_56
 	.quad Lme_56
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1151=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1151
+LDIFF_SYM1152=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1152
 	.byte 1,94,3
 	.asciz "param1"
 
-LDIFF_SYM1152=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1152
+LDIFF_SYM1153=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1153
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1153=Lfde459_end - Lfde459_start
-	.long LDIFF_SYM1153
+LDIFF_SYM1154=Lfde459_end - Lfde459_start
+	.long LDIFF_SYM1154
 Lfde459_start:
 
 	.long 0
 	.align 3
 	.quad L_m_56
 
-LDIFF_SYM1154=Lme_56 - L_m_56
-	.long LDIFF_SYM1154
+LDIFF_SYM1155=Lme_56 - L_m_56
+	.long LDIFF_SYM1155
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -65258,23 +65224,18 @@ Lfde459_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_fill_method_rgctx"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_fill_method_rgctx_intptr_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_free_bstr"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_free_bstr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_fill_method_rgctx"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_free_bstr"
 	.quad L_m_57
 	.quad Lme_57
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1155=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1155
-	.byte 1,94,3
-	.asciz "param1"
-
-LDIFF_SYM1156=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1156=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1156
 	.byte 1,95,0
 
@@ -65299,33 +65260,38 @@ Lfde460_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_free_bstr"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_free_bstr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_free_lparray"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_free_lparray_object_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_free_bstr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_free_lparray"
 	.quad L_m_58
 	.quad Lme_58
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1159=LDIE_I - Ldebug_info_start
+LDIFF_SYM1159=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1159
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1160=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1160
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1160=Lfde461_end - Lfde461_start
-	.long LDIFF_SYM1160
+LDIFF_SYM1161=Lfde461_end - Lfde461_start
+	.long LDIFF_SYM1161
 Lfde461_start:
 
 	.long 0
 	.align 3
 	.quad L_m_58
 
-LDIFF_SYM1161=Lme_58 - L_m_58
-	.long LDIFF_SYM1161
+LDIFF_SYM1162=Lme_58 - L_m_58
+	.long LDIFF_SYM1162
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -65335,38 +65301,38 @@ Lfde461_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_free_lparray"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_free_lparray_object_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ftnptr_to_delegate"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ftnptr_to_delegate_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_free_lparray"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ftnptr_to_delegate"
 	.quad L_m_59
 	.quad Lme_59
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1162=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1162
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
 LDIFF_SYM1163=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1163
+	.byte 1,94,3
+	.asciz "param1"
+
+LDIFF_SYM1164=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1164
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1164=Lfde462_end - Lfde462_start
-	.long LDIFF_SYM1164
+LDIFF_SYM1165=Lfde462_end - Lfde462_start
+	.long LDIFF_SYM1165
 Lfde462_start:
 
 	.long 0
 	.align 3
 	.quad L_m_59
 
-LDIFF_SYM1165=Lme_59 - L_m_59
-	.long LDIFF_SYM1165
+LDIFF_SYM1166=Lme_59 - L_m_59
+	.long LDIFF_SYM1166
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -65376,38 +65342,38 @@ Lfde462_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ftnptr_to_delegate"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ftnptr_to_delegate_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_alloc_obj"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_obj_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ftnptr_to_delegate"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_alloc_obj"
 	.quad L_m_5a
 	.quad Lme_5a
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1166=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1166
+LDIFF_SYM1167=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1167
 	.byte 1,94,3
 	.asciz "param1"
 
-LDIFF_SYM1167=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1167
+LDIFF_SYM1168=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1168
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1168=Lfde463_end - Lfde463_start
-	.long LDIFF_SYM1168
+LDIFF_SYM1169=Lfde463_end - Lfde463_start
+	.long LDIFF_SYM1169
 Lfde463_start:
 
 	.long 0
 	.align 3
 	.quad L_m_5a
 
-LDIFF_SYM1169=Lme_5a - L_m_5a
-	.long LDIFF_SYM1169
+LDIFF_SYM1170=Lme_5a - L_m_5a
+	.long LDIFF_SYM1170
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -65417,38 +65383,43 @@ Lfde463_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_alloc_obj"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_obj_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_alloc_string"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_string_intptr_intptr_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_alloc_obj"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_alloc_string"
 	.quad L_m_5b
 	.quad Lme_5b
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1170=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1170
-	.byte 1,94,3
-	.asciz "param1"
-
 LDIFF_SYM1171=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1171
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1172=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1172
+	.byte 1,94,3
+	.asciz "param2"
+
+LDIFF_SYM1173=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1173
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1172=Lfde464_end - Lfde464_start
-	.long LDIFF_SYM1172
+LDIFF_SYM1174=Lfde464_end - Lfde464_start
+	.long LDIFF_SYM1174
 Lfde464_start:
 
 	.long 0
 	.align 3
 	.quad L_m_5b
 
-LDIFF_SYM1173=Lme_5b - L_m_5b
-	.long LDIFF_SYM1173
+LDIFF_SYM1175=Lme_5b - L_m_5b
+	.long LDIFF_SYM1175
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -65458,43 +65429,43 @@ Lfde464_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_alloc_string"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_string_intptr_intptr_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_alloc_vector"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_vector_intptr_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_alloc_string"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_alloc_vector"
 	.quad L_m_5c
 	.quad Lme_5c
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1174=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1174
+LDIFF_SYM1176=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1176
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1175=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1175
+LDIFF_SYM1177=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1177
 	.byte 1,94,3
 	.asciz "param2"
 
-LDIFF_SYM1176=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1176
+LDIFF_SYM1178=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1178
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1177=Lfde465_end - Lfde465_start
-	.long LDIFF_SYM1177
+LDIFF_SYM1179=Lfde465_end - Lfde465_start
+	.long LDIFF_SYM1179
 Lfde465_start:
 
 	.long 0
 	.align 3
 	.quad L_m_5c
 
-LDIFF_SYM1178=Lme_5c - L_m_5c
-	.long LDIFF_SYM1178
+LDIFF_SYM1180=Lme_5c - L_m_5c
+	.long LDIFF_SYM1180
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -65504,26 +65475,16 @@ Lfde465_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_alloc_vector"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gc_alloc_vector_intptr_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_wbarrier_generic_nostore_internal"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gc_wbarrier_generic_nostore_internal_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_alloc_vector"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_wbarrier_generic_nostore_internal"
 	.quad L_m_5d
 	.quad Lme_5d
 
 	.byte 2,118,16,3
 	.asciz "param0"
-
-LDIFF_SYM1179=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1179
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1180=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1180
-	.byte 1,94,3
-	.asciz "param2"
 
 LDIFF_SYM1181=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1181
@@ -65550,11 +65511,11 @@ Lfde466_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_wbarrier_generic_nostore_internal"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gc_wbarrier_generic_nostore_internal_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_wbarrier_range_copy"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gc_wbarrier_range_copy_intptr_intptr_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_wbarrier_generic_nostore_internal"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_wbarrier_range_copy"
 	.quad L_m_5e
 	.quad Lme_5e
 
@@ -65563,22 +65524,32 @@ Lfde466_end:
 
 LDIFF_SYM1184=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1184
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1185=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1185
+	.byte 3,119,200,0,3
+	.asciz "param2"
+
+LDIFF_SYM1186=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1186
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1185=Lfde467_end - Lfde467_start
-	.long LDIFF_SYM1185
+LDIFF_SYM1187=Lfde467_end - Lfde467_start
+	.long LDIFF_SYM1187
 Lfde467_start:
 
 	.long 0
 	.align 3
 	.quad L_m_5e
 
-LDIFF_SYM1186=Lme_5e - L_m_5e
-	.long LDIFF_SYM1186
+LDIFF_SYM1188=Lme_5e - L_m_5e
+	.long LDIFF_SYM1188
 	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
 Lfde467_end:
@@ -65586,28 +65557,18 @@ Lfde467_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_wbarrier_range_copy"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gc_wbarrier_range_copy_intptr_intptr_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gchandle_get_target_internal"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gchandle_get_target_internal_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gc_wbarrier_range_copy"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gchandle_get_target_internal"
 	.quad L_m_5f
 	.quad Lme_5f
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1187=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1187
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1188=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1188
-	.byte 3,119,200,0,3
-	.asciz "param2"
-
-LDIFF_SYM1189=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1189=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1189
 	.byte 1,95,0
 
@@ -65624,7 +65585,7 @@ Lfde468_start:
 LDIFF_SYM1191=Lme_5f - L_m_5f
 	.long LDIFF_SYM1191
 	.long 0
-	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
 Lfde468_end:
@@ -65632,11 +65593,11 @@ Lfde468_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gchandle_get_target_internal"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gchandle_get_target_internal_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_generic_class_init"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_generic_class_init_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gchandle_get_target_internal"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_generic_class_init"
 	.quad L_m_60
 	.quad Lme_60
 
@@ -65668,11 +65629,11 @@ Lfde469_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_generic_class_init"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_generic_class_init_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_assembly_object"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_get_assembly_object_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_generic_class_init"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_assembly_object"
 	.quad L_m_61
 	.quad Lme_61
 
@@ -65704,11 +65665,11 @@ Lfde470_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_assembly_object"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_get_assembly_object_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_method_object"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_get_method_object_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_assembly_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_method_object"
 	.quad L_m_62
 	.quad Lme_62
 
@@ -65740,11 +65701,11 @@ Lfde471_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_method_object"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_get_method_object_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_native_calli_wrapper"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_get_native_calli_wrapper_intptr_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_method_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_native_calli_wrapper"
 	.quad L_m_63
 	.quad Lme_63
 
@@ -65753,20 +65714,30 @@ Lfde471_end:
 
 LDIFF_SYM1201=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1201
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1202=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1202
+	.byte 1,94,3
+	.asciz "param2"
+
+LDIFF_SYM1203=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1203
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1202=Lfde472_end - Lfde472_start
-	.long LDIFF_SYM1202
+LDIFF_SYM1204=Lfde472_end - Lfde472_start
+	.long LDIFF_SYM1204
 Lfde472_start:
 
 	.long 0
 	.align 3
 	.quad L_m_63
 
-LDIFF_SYM1203=Lme_63 - L_m_63
-	.long LDIFF_SYM1203
+LDIFF_SYM1205=Lme_63 - L_m_63
+	.long LDIFF_SYM1205
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -65776,28 +65747,18 @@ Lfde472_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_native_calli_wrapper"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_get_native_calli_wrapper_intptr_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_special_static_data"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_get_special_static_data_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_native_calli_wrapper"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_special_static_data"
 	.quad L_m_64
 	.quad Lme_64
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1204=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1204
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1205=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1205
-	.byte 1,94,3
-	.asciz "param2"
-
-LDIFF_SYM1206=LDIE_I - Ldebug_info_start
+LDIFF_SYM1206=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1206
 	.byte 1,95,0
 
@@ -65822,94 +65783,58 @@ Lfde473_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_special_static_data"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_get_special_static_data_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gsharedvt_constrained_call"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gsharedvt_constrained_call_intptr_intptr_intptr_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_get_special_static_data"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gsharedvt_constrained_call"
 	.quad L_m_65
 	.quad Lme_65
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1209=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1209=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1209
+	.byte 3,119,200,0,3
+	.asciz "param1"
+
+LDIFF_SYM1210=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1210
+	.byte 3,119,208,0,3
+	.asciz "param2"
+
+LDIFF_SYM1211=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1211
+	.byte 3,119,216,0,3
+	.asciz "param3"
+
+LDIFF_SYM1212=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1212
+	.byte 1,94,3
+	.asciz "param4"
+
+LDIFF_SYM1213=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1213
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1210=Lfde474_end - Lfde474_start
-	.long LDIFF_SYM1210
+LDIFF_SYM1214=Lfde474_end - Lfde474_start
+	.long LDIFF_SYM1214
 Lfde474_start:
 
 	.long 0
 	.align 3
 	.quad L_m_65
 
-LDIFF_SYM1211=Lme_65 - L_m_65
-	.long LDIFF_SYM1211
-	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde474_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gsharedvt_constrained_call"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_gsharedvt_constrained_call_intptr_intptr_intptr_intptr_intptr"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gsharedvt_constrained_call"
-	.quad L_m_66
-	.quad Lme_66
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1212=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1212
-	.byte 3,119,200,0,3
-	.asciz "param1"
-
-LDIFF_SYM1213=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1213
-	.byte 3,119,208,0,3
-	.asciz "param2"
-
-LDIFF_SYM1214=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1214
-	.byte 3,119,216,0,3
-	.asciz "param3"
-
-LDIFF_SYM1215=LDIE_I - Ldebug_info_start
+LDIFF_SYM1215=Lme_65 - L_m_65
 	.long LDIFF_SYM1215
-	.byte 1,94,3
-	.asciz "param4"
-
-LDIFF_SYM1216=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1216
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1217=Lfde475_end - Lfde475_start
-	.long LDIFF_SYM1217
-Lfde475_start:
-
-	.long 0
-	.align 3
-	.quad L_m_66
-
-LDIFF_SYM1218=Lme_66 - L_m_66
-	.long LDIFF_SYM1218
 	.long 0
 	.byte 68,14,112,74,134,7,68,131,14,69,134,13,69,140,12,69,141,11,69,142,10,69,143,9,10,69,8,6,68,8,3,69
 	.byte 8,6,69,8,12,69,8,13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde475_end:
+Lfde474_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -65919,43 +65844,43 @@ Lfde475_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_gsharedvt_value_copy"
-	.quad L_m_67
-	.quad Lme_67
+	.quad L_m_66
+	.quad Lme_66
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1219=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1219
+LDIFF_SYM1216=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1216
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1220=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1220
+LDIFF_SYM1217=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1217
 	.byte 3,119,200,0,3
 	.asciz "param2"
 
-LDIFF_SYM1221=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1221
+LDIFF_SYM1218=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1218
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1222=Lfde476_end - Lfde476_start
-	.long LDIFF_SYM1222
-Lfde476_start:
+LDIFF_SYM1219=Lfde475_end - Lfde475_start
+	.long LDIFF_SYM1219
+Lfde475_start:
 
 	.long 0
 	.align 3
-	.quad L_m_67
+	.quad L_m_66
 
-LDIFF_SYM1223=Lme_67 - L_m_67
-	.long LDIFF_SYM1223
+LDIFF_SYM1220=Lme_66 - L_m_66
+	.long LDIFF_SYM1220
 	.long 0
 	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde476_end:
+Lfde475_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -65965,43 +65890,43 @@ Lfde476_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_compile_generic_method"
-	.quad L_m_68
-	.quad Lme_68
+	.quad L_m_67
+	.quad Lme_67
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1224=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1224
+LDIFF_SYM1221=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1221
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1225=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1225
+LDIFF_SYM1222=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1222
 	.byte 1,94,3
 	.asciz "param2"
 
-LDIFF_SYM1226=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1226
+LDIFF_SYM1223=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1223
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1227=Lfde477_end - Lfde477_start
-	.long LDIFF_SYM1227
-Lfde477_start:
+LDIFF_SYM1224=Lfde476_end - Lfde476_start
+	.long LDIFF_SYM1224
+Lfde476_start:
 
 	.long 0
 	.align 3
-	.quad L_m_68
+	.quad L_m_67
 
-LDIFF_SYM1228=Lme_68 - L_m_68
-	.long LDIFF_SYM1228
+LDIFF_SYM1225=Lme_67 - L_m_67
+	.long LDIFF_SYM1225
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde477_end:
+Lfde476_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -66011,16 +65936,52 @@ Lfde477_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_ldstr"
+	.quad L_m_68
+	.quad Lme_68
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1226=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1226
+	.byte 1,94,3
+	.asciz "param1"
+
+LDIFF_SYM1227=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1227
+	.byte 1,95,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1228=Lfde477_end - Lfde477_start
+	.long LDIFF_SYM1228
+Lfde477_start:
+
+	.long 0
+	.align 3
+	.quad L_m_68
+
+LDIFF_SYM1229=Lme_68 - L_m_68
+	.long LDIFF_SYM1229
+	.long 0
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
+	.align 3
+Lfde477_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_ldstr_mscorlib"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_helper_ldstr_mscorlib_int"
+
+	.byte 0,0
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_ldstr_mscorlib"
 	.quad L_m_69
 	.quad Lme_69
 
 	.byte 2,118,16,3
 	.asciz "param0"
-
-LDIFF_SYM1229=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1229
-	.byte 1,94,3
-	.asciz "param1"
 
 LDIFF_SYM1230=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1230
@@ -66047,11 +66008,11 @@ Lfde478_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_ldstr_mscorlib"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_helper_ldstr_mscorlib_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_newobj_mscorlib"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_helper_newobj_mscorlib_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_ldstr_mscorlib"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_newobj_mscorlib"
 	.quad L_m_6a
 	.quad Lme_6a
 
@@ -66083,33 +66044,38 @@ Lfde479_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_newobj_mscorlib"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_helper_newobj_mscorlib_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_stelem_ref_check"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_helper_stelem_ref_check_object_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_newobj_mscorlib"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_stelem_ref_check"
 	.quad L_m_6b
 	.quad Lme_6b
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1236=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1236=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1236
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1237=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1237
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1237=Lfde480_end - Lfde480_start
-	.long LDIFF_SYM1237
+LDIFF_SYM1238=Lfde480_end - Lfde480_start
+	.long LDIFF_SYM1238
 Lfde480_start:
 
 	.long 0
 	.align 3
 	.quad L_m_6b
 
-LDIFF_SYM1238=Lme_6b - L_m_6b
-	.long LDIFF_SYM1238
+LDIFF_SYM1239=Lme_6b - L_m_6b
+	.long LDIFF_SYM1239
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -66119,38 +66085,38 @@ Lfde480_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_stelem_ref_check"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_helper_stelem_ref_check_object_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_interp_entry_from_trampoline"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_interp_entry_from_trampoline_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_helper_stelem_ref_check"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_interp_entry_from_trampoline"
 	.quad L_m_6c
 	.quad Lme_6c
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1239=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1239
+LDIFF_SYM1240=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1240
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1240=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1240
+LDIFF_SYM1241=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1241
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1241=Lfde481_end - Lfde481_start
-	.long LDIFF_SYM1241
+LDIFF_SYM1242=Lfde481_end - Lfde481_start
+	.long LDIFF_SYM1242
 Lfde481_start:
 
 	.long 0
 	.align 3
 	.quad L_m_6c
 
-LDIFF_SYM1242=Lme_6c - L_m_6c
-	.long LDIFF_SYM1242
+LDIFF_SYM1243=Lme_6c - L_m_6c
+	.long LDIFF_SYM1243
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -66160,38 +66126,38 @@ Lfde481_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_interp_entry_from_trampoline"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_interp_entry_from_trampoline_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_interp_to_native_trampoline"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_interp_to_native_trampoline_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_interp_entry_from_trampoline"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_interp_to_native_trampoline"
 	.quad L_m_6d
 	.quad Lme_6d
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1243=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1243
+LDIFF_SYM1244=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1244
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1244=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1244
+LDIFF_SYM1245=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1245
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1245=Lfde482_end - Lfde482_start
-	.long LDIFF_SYM1245
+LDIFF_SYM1246=Lfde482_end - Lfde482_start
+	.long LDIFF_SYM1246
 Lfde482_start:
 
 	.long 0
 	.align 3
 	.quad L_m_6d
 
-LDIFF_SYM1246=Lme_6d - L_m_6d
-	.long LDIFF_SYM1246
+LDIFF_SYM1247=Lme_6d - L_m_6d
+	.long LDIFF_SYM1247
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -66201,21 +66167,16 @@ Lfde482_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_interp_to_native_trampoline"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_interp_to_native_trampoline_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldftn"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ldftn_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_interp_to_native_trampoline"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldftn"
 	.quad L_m_6e
 	.quad Lme_6e
 
 	.byte 2,118,16,3
 	.asciz "param0"
-
-LDIFF_SYM1247=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1247
-	.byte 3,119,192,0,3
-	.asciz "param1"
 
 LDIFF_SYM1248=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1248
@@ -66242,11 +66203,11 @@ Lfde483_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldftn"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ldftn_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldtoken_wrapper"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ldtoken_wrapper_intptr_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldftn"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldtoken_wrapper"
 	.quad L_m_6f
 	.quad Lme_6f
 
@@ -66255,20 +66216,30 @@ Lfde483_end:
 
 LDIFF_SYM1251=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1251
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1252=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1252
+	.byte 1,94,3
+	.asciz "param2"
+
+LDIFF_SYM1253=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1253
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1252=Lfde484_end - Lfde484_start
-	.long LDIFF_SYM1252
+LDIFF_SYM1254=Lfde484_end - Lfde484_start
+	.long LDIFF_SYM1254
 Lfde484_start:
 
 	.long 0
 	.align 3
 	.quad L_m_6f
 
-LDIFF_SYM1253=Lme_6f - L_m_6f
-	.long LDIFF_SYM1253
+LDIFF_SYM1255=Lme_6f - L_m_6f
+	.long LDIFF_SYM1255
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -66278,43 +66249,43 @@ Lfde484_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldtoken_wrapper"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ldtoken_wrapper_intptr_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldtoken_wrapper_generic_shared"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ldtoken_wrapper_generic_shared_intptr_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldtoken_wrapper"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldtoken_wrapper_generic_shared"
 	.quad L_m_70
 	.quad Lme_70
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1254=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1254
+LDIFF_SYM1256=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1256
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1255=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1255
+LDIFF_SYM1257=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1257
 	.byte 1,94,3
 	.asciz "param2"
 
-LDIFF_SYM1256=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1256
+LDIFF_SYM1258=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1258
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1257=Lfde485_end - Lfde485_start
-	.long LDIFF_SYM1257
+LDIFF_SYM1259=Lfde485_end - Lfde485_start
+	.long LDIFF_SYM1259
 Lfde485_start:
 
 	.long 0
 	.align 3
 	.quad L_m_70
 
-LDIFF_SYM1258=Lme_70 - L_m_70
-	.long LDIFF_SYM1258
+LDIFF_SYM1260=Lme_70 - L_m_70
+	.long LDIFF_SYM1260
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -66324,43 +66295,38 @@ Lfde485_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldtoken_wrapper_generic_shared"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ldtoken_wrapper_generic_shared_intptr_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldvirtfn"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ldvirtfn_object_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldtoken_wrapper_generic_shared"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldvirtfn"
 	.quad L_m_71
 	.quad Lme_71
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1259=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1259
-	.byte 3,119,192,0,3
+LDIFF_SYM1261=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1261
+	.byte 1,94,3
 	.asciz "param1"
 
-LDIFF_SYM1260=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1260
-	.byte 1,94,3
-	.asciz "param2"
-
-LDIFF_SYM1261=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1261
+LDIFF_SYM1262=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1262
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1262=Lfde486_end - Lfde486_start
-	.long LDIFF_SYM1262
+LDIFF_SYM1263=Lfde486_end - Lfde486_start
+	.long LDIFF_SYM1263
 Lfde486_start:
 
 	.long 0
 	.align 3
 	.quad L_m_71
 
-LDIFF_SYM1263=Lme_71 - L_m_71
-	.long LDIFF_SYM1263
+LDIFF_SYM1264=Lme_71 - L_m_71
+	.long LDIFF_SYM1264
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -66370,38 +66336,38 @@ Lfde486_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldvirtfn"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ldvirtfn_object_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldvirtfn_gshared"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ldvirtfn_gshared_object_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldvirtfn"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldvirtfn_gshared"
 	.quad L_m_72
 	.quad Lme_72
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1264=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1264
+LDIFF_SYM1265=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1265
 	.byte 1,94,3
 	.asciz "param1"
 
-LDIFF_SYM1265=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1265
+LDIFF_SYM1266=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1266
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1266=Lfde487_end - Lfde487_start
-	.long LDIFF_SYM1266
+LDIFF_SYM1267=Lfde487_end - Lfde487_start
+	.long LDIFF_SYM1267
 Lfde487_start:
 
 	.long 0
 	.align 3
 	.quad L_m_72
 
-LDIFF_SYM1267=Lme_72 - L_m_72
-	.long LDIFF_SYM1267
+LDIFF_SYM1268=Lme_72 - L_m_72
+	.long LDIFF_SYM1268
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -66411,38 +66377,28 @@ Lfde487_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldvirtfn_gshared"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_ldvirtfn_gshared_object_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_load_exception"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_llvm_load_exception"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_ldvirtfn_gshared"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_load_exception"
 	.quad L_m_73
 	.quad Lme_73
 
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1268=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1268
-	.byte 1,94,3
-	.asciz "param1"
-
-LDIFF_SYM1269=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1269
-	.byte 1,95,0
+	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1270=Lfde488_end - Lfde488_start
-	.long LDIFF_SYM1270
+LDIFF_SYM1269=Lfde488_end - Lfde488_start
+	.long LDIFF_SYM1269
 Lfde488_start:
 
 	.long 0
 	.align 3
 	.quad L_m_73
 
-LDIFF_SYM1271=Lme_73 - L_m_73
-	.long LDIFF_SYM1271
+LDIFF_SYM1270=Lme_73 - L_m_73
+	.long LDIFF_SYM1270
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -66452,89 +66408,58 @@ Lfde488_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_load_exception"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_llvm_load_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_match_exception"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_llvm_match_exception_intptr_int_int_intptr_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_load_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_match_exception"
 	.quad L_m_74
 	.quad Lme_74
 
-	.byte 2,118,16,0
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1271=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1271
+	.byte 3,119,200,0,3
+	.asciz "param1"
+
+LDIFF_SYM1272=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1272
+	.byte 3,119,208,0,3
+	.asciz "param2"
+
+LDIFF_SYM1273=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1273
+	.byte 3,119,216,0,3
+	.asciz "param3"
+
+LDIFF_SYM1274=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1274
+	.byte 1,94,3
+	.asciz "param4"
+
+LDIFF_SYM1275=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1275
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1272=Lfde489_end - Lfde489_start
-	.long LDIFF_SYM1272
+LDIFF_SYM1276=Lfde489_end - Lfde489_start
+	.long LDIFF_SYM1276
 Lfde489_start:
 
 	.long 0
 	.align 3
 	.quad L_m_74
 
-LDIFF_SYM1273=Lme_74 - L_m_74
-	.long LDIFF_SYM1273
-	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde489_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_match_exception"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_llvm_match_exception_intptr_int_int_intptr_object"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_match_exception"
-	.quad L_m_75
-	.quad Lme_75
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1274=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1274
-	.byte 3,119,200,0,3
-	.asciz "param1"
-
-LDIFF_SYM1275=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1275
-	.byte 3,119,208,0,3
-	.asciz "param2"
-
-LDIFF_SYM1276=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1276
-	.byte 3,119,216,0,3
-	.asciz "param3"
-
-LDIFF_SYM1277=LDIE_I - Ldebug_info_start
+LDIFF_SYM1277=Lme_74 - L_m_74
 	.long LDIFF_SYM1277
-	.byte 1,94,3
-	.asciz "param4"
-
-LDIFF_SYM1278=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1278
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1279=Lfde490_end - Lfde490_start
-	.long LDIFF_SYM1279
-Lfde490_start:
-
-	.long 0
-	.align 3
-	.quad L_m_75
-
-LDIFF_SYM1280=Lme_75 - L_m_75
-	.long LDIFF_SYM1280
 	.long 0
 	.byte 68,14,112,74,134,7,68,131,14,69,134,13,69,140,12,69,141,11,69,142,10,69,143,9,10,69,8,6,68,8,3,69
 	.byte 8,6,69,8,12,69,8,13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde490_end:
+Lfde489_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -66544,10 +66469,46 @@ Lfde490_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_resume_exception"
+	.quad L_m_75
+	.quad Lme_75
+
+	.byte 2,118,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1278=Lfde490_end - Lfde490_start
+	.long LDIFF_SYM1278
+Lfde490_start:
+
+	.long 0
+	.align 3
+	.quad L_m_75
+
+LDIFF_SYM1279=Lme_75 - L_m_75
+	.long LDIFF_SYM1279
+	.long 0
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
+	.align 3
+Lfde490_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_rethrow_exception"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_llvm_rethrow_exception_object"
+
+	.byte 0,0
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_rethrow_exception"
 	.quad L_m_76
 	.quad Lme_76
 
-	.byte 2,118,16,0
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1280=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1280
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -66570,18 +66531,18 @@ Lfde491_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_rethrow_exception"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_llvm_rethrow_exception_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_throw_corlib_exception"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_llvm_throw_corlib_exception_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_rethrow_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_throw_corlib_exception"
 	.quad L_m_77
 	.quad Lme_77
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1283=LDIE_OBJECT - Ldebug_info_start
+LDIFF_SYM1283=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1283
 	.byte 1,95,0
 
@@ -66606,18 +66567,18 @@ Lfde492_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_throw_corlib_exception"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_llvm_throw_corlib_exception_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_throw_exception"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_llvm_throw_exception_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_throw_corlib_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_throw_exception"
 	.quad L_m_78
 	.quad Lme_78
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1286=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1286=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1286
 	.byte 1,95,0
 
@@ -66642,11 +66603,11 @@ Lfde493_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_throw_exception"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_llvm_throw_exception_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_asany"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_asany_object_int_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_llvm_throw_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_asany"
 	.quad L_m_79
 	.quad Lme_79
 
@@ -66655,20 +66616,30 @@ Lfde493_end:
 
 LDIFF_SYM1289=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1289
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1290=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1290
+	.byte 1,94,3
+	.asciz "param2"
+
+LDIFF_SYM1291=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1291
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1290=Lfde494_end - Lfde494_start
-	.long LDIFF_SYM1290
+LDIFF_SYM1292=Lfde494_end - Lfde494_start
+	.long LDIFF_SYM1292
 Lfde494_start:
 
 	.long 0
 	.align 3
 	.quad L_m_79
 
-LDIFF_SYM1291=Lme_79 - L_m_79
-	.long LDIFF_SYM1291
+LDIFF_SYM1293=Lme_79 - L_m_79
+	.long LDIFF_SYM1293
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -66678,43 +66649,28 @@ Lfde494_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_asany"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_asany_object_int_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_clear_last_error"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_clear_last_error"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_asany"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_clear_last_error"
 	.quad L_m_7a
 	.quad Lme_7a
 
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1292=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1292
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1293=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1293
-	.byte 1,94,3
-	.asciz "param2"
-
-LDIFF_SYM1294=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1294
-	.byte 1,95,0
+	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1295=Lfde495_end - Lfde495_start
-	.long LDIFF_SYM1295
+LDIFF_SYM1294=Lfde495_end - Lfde495_start
+	.long LDIFF_SYM1294
 Lfde495_start:
 
 	.long 0
 	.align 3
 	.quad L_m_7a
 
-LDIFF_SYM1296=Lme_7a - L_m_7a
-	.long LDIFF_SYM1296
+LDIFF_SYM1295=Lme_7a - L_m_7a
+	.long LDIFF_SYM1295
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -66724,15 +66680,20 @@ Lfde495_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_clear_last_error"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_clear_last_error"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_free"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_free_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_clear_last_error"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_free"
 	.quad L_m_7b
 	.quad Lme_7b
 
-	.byte 2,118,16,0
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1296=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1296
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -66755,11 +66716,11 @@ Lfde496_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_free"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_free_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_free_array"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_free_array_intptr_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_free"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_free_array"
 	.quad L_m_7c
 	.quad Lme_7c
 
@@ -66768,20 +66729,25 @@ Lfde496_end:
 
 LDIFF_SYM1299=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1299
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1300=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1300
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1300=Lfde497_end - Lfde497_start
-	.long LDIFF_SYM1300
+LDIFF_SYM1301=Lfde497_end - Lfde497_start
+	.long LDIFF_SYM1301
 Lfde497_start:
 
 	.long 0
 	.align 3
 	.quad L_m_7c
 
-LDIFF_SYM1301=Lme_7c - L_m_7c
-	.long LDIFF_SYM1301
+LDIFF_SYM1302=Lme_7c - L_m_7c
+	.long LDIFF_SYM1302
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -66791,40 +66757,50 @@ Lfde497_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_free_array"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_free_array_intptr_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_free_asany"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_free_asany_object_intptr_int_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_free_array"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_free_asany"
 	.quad L_m_7d
 	.quad Lme_7d
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1302=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1302
+LDIFF_SYM1303=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1303
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1303=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1303
+LDIFF_SYM1304=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1304
+	.byte 3,119,200,0,3
+	.asciz "param2"
+
+LDIFF_SYM1305=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1305
+	.byte 3,119,208,0,3
+	.asciz "param3"
+
+LDIFF_SYM1306=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1306
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1304=Lfde498_end - Lfde498_start
-	.long LDIFF_SYM1304
+LDIFF_SYM1307=Lfde498_end - Lfde498_start
+	.long LDIFF_SYM1307
 Lfde498_start:
 
 	.long 0
 	.align 3
 	.quad L_m_7d
 
-LDIFF_SYM1305=Lme_7d - L_m_7d
-	.long LDIFF_SYM1305
+LDIFF_SYM1308=Lme_7d - L_m_7d
+	.long LDIFF_SYM1308
 	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
 Lfde498_end:
@@ -66832,33 +66808,18 @@ Lfde498_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_free_asany"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_free_asany_object_intptr_int_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_get_type_object"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_get_type_object_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_free_asany"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_get_type_object"
 	.quad L_m_7e
 	.quad Lme_7e
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1306=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1306
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1307=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1307
-	.byte 3,119,200,0,3
-	.asciz "param2"
-
-LDIFF_SYM1308=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1308
-	.byte 3,119,208,0,3
-	.asciz "param3"
-
-LDIFF_SYM1309=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1309=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1309
 	.byte 1,95,0
 
@@ -66875,46 +66836,10 @@ Lfde499_start:
 LDIFF_SYM1311=Lme_7e - L_m_7e
 	.long LDIFF_SYM1311
 	.long 0
-	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde499_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_get_type_object"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_get_type_object_intptr"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_get_type_object"
-	.quad L_m_7f
-	.quad Lme_7f
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1312=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1312
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1313=Lfde500_end - Lfde500_start
-	.long LDIFF_SYM1313
-Lfde500_start:
-
-	.long 0
-	.align 3
-	.quad L_m_7f
-
-LDIFF_SYM1314=Lme_7f - L_m_7f
-	.long LDIFF_SYM1314
-	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde500_end:
+Lfde499_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -66924,43 +66849,43 @@ Lfde500_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_isinst_with_cache"
-	.quad L_m_80
-	.quad Lme_80
+	.quad L_m_7f
+	.quad Lme_7f
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1315=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1315
+LDIFF_SYM1312=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1312
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1316=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1316
+LDIFF_SYM1313=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1313
 	.byte 1,94,3
 	.asciz "param2"
 
-LDIFF_SYM1317=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1317
+LDIFF_SYM1314=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1314
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1318=Lfde501_end - Lfde501_start
-	.long LDIFF_SYM1318
-Lfde501_start:
+LDIFF_SYM1315=Lfde500_end - Lfde500_start
+	.long LDIFF_SYM1315
+Lfde500_start:
 
 	.long 0
 	.align 3
-	.quad L_m_80
+	.quad L_m_7f
 
-LDIFF_SYM1319=Lme_80 - L_m_80
-	.long LDIFF_SYM1319
+LDIFF_SYM1316=Lme_7f - L_m_7f
+	.long LDIFF_SYM1316
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde501_end:
+Lfde500_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -66970,10 +66895,46 @@ Lfde501_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_set_last_error"
+	.quad L_m_80
+	.quad Lme_80
+
+	.byte 2,118,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1317=Lfde501_end - Lfde501_start
+	.long LDIFF_SYM1317
+Lfde501_start:
+
+	.long 0
+	.align 3
+	.quad L_m_80
+
+LDIFF_SYM1318=Lme_80 - L_m_80
+	.long LDIFF_SYM1318
+	.long 0
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
+	.align 3
+Lfde501_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_set_last_error_windows"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_set_last_error_windows_int"
+
+	.byte 0,0
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_set_last_error_windows"
 	.quad L_m_81
 	.quad Lme_81
 
-	.byte 2,118,16,0
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1319=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1319
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -66996,18 +66957,18 @@ Lfde502_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_set_last_error_windows"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_set_last_error_windows_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_string_to_utf16"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_string_to_utf16_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_set_last_error_windows"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_string_to_utf16"
 	.quad L_m_82
 	.quad Lme_82
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1322=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1322=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1322
 	.byte 1,95,0
 
@@ -67032,11 +66993,11 @@ Lfde503_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_string_to_utf16"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_string_to_utf16_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_string_to_utf16_copy"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_string_to_utf16_copy_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_string_to_utf16"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_string_to_utf16_copy"
 	.quad L_m_83
 	.quad Lme_83
 
@@ -67068,11 +67029,11 @@ Lfde504_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_string_to_utf16_copy"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_string_to_utf16_copy_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_fast"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_fast_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_string_to_utf16_copy"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_fast"
 	.quad L_m_84
 	.quad Lme_84
 
@@ -67104,11 +67065,11 @@ Lfde505_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_fast"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_fast_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_internal"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_internal_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_fast"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_internal"
 	.quad L_m_85
 	.quad Lme_85
 
@@ -67140,11 +67101,11 @@ Lfde506_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_internal"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_internal_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_v4_fast"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_v4_fast_object_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_internal"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_v4_fast"
 	.quad L_m_86
 	.quad Lme_86
 
@@ -67153,20 +67114,25 @@ Lfde506_end:
 
 LDIFF_SYM1334=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1334
+	.byte 1,94,3
+	.asciz "param1"
+
+LDIFF_SYM1335=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1335
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1335=Lfde507_end - Lfde507_start
-	.long LDIFF_SYM1335
+LDIFF_SYM1336=Lfde507_end - Lfde507_start
+	.long LDIFF_SYM1336
 Lfde507_start:
 
 	.long 0
 	.align 3
 	.quad L_m_86
 
-LDIFF_SYM1336=Lme_86 - L_m_86
-	.long LDIFF_SYM1336
+LDIFF_SYM1337=Lme_86 - L_m_86
+	.long LDIFF_SYM1337
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -67176,38 +67142,38 @@ Lfde507_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_v4_fast"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_v4_fast_object_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_v4_internal"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_v4_internal_object_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_v4_fast"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_v4_internal"
 	.quad L_m_87
 	.quad Lme_87
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1337=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1337
-	.byte 1,94,3
+LDIFF_SYM1338=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1338
+	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1338=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1338
+LDIFF_SYM1339=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1339
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1339=Lfde508_end - Lfde508_start
-	.long LDIFF_SYM1339
+LDIFF_SYM1340=Lfde508_end - Lfde508_start
+	.long LDIFF_SYM1340
 Lfde508_start:
 
 	.long 0
 	.align 3
 	.quad L_m_87
 
-LDIFF_SYM1340=Lme_87 - L_m_87
-	.long LDIFF_SYM1340
+LDIFF_SYM1341=Lme_87 - L_m_87
+	.long LDIFF_SYM1341
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -67217,38 +67183,38 @@ Lfde508_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_v4_internal"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_monitor_enter_v4_internal_object_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_castclass_unbox"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_object_castclass_unbox_object_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_monitor_enter_v4_internal"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_castclass_unbox"
 	.quad L_m_88
 	.quad Lme_88
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1341=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1341
-	.byte 3,119,192,0,3
+LDIFF_SYM1342=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1342
+	.byte 1,94,3
 	.asciz "param1"
 
-LDIFF_SYM1342=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1342
+LDIFF_SYM1343=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1343
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1343=Lfde509_end - Lfde509_start
-	.long LDIFF_SYM1343
+LDIFF_SYM1344=Lfde509_end - Lfde509_start
+	.long LDIFF_SYM1344
 Lfde509_start:
 
 	.long 0
 	.align 3
 	.quad L_m_88
 
-LDIFF_SYM1344=Lme_88 - L_m_88
-	.long LDIFF_SYM1344
+LDIFF_SYM1345=Lme_88 - L_m_88
+	.long LDIFF_SYM1345
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -67258,38 +67224,43 @@ Lfde509_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_castclass_unbox"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_object_castclass_unbox_object_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_castclass_with_cache"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_object_castclass_with_cache_object_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_castclass_unbox"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_castclass_with_cache"
 	.quad L_m_89
 	.quad Lme_89
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1345=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1345
-	.byte 1,94,3
+LDIFF_SYM1346=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1346
+	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1346=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1346
+LDIFF_SYM1347=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1347
+	.byte 1,94,3
+	.asciz "param2"
+
+LDIFF_SYM1348=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1348
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1347=Lfde510_end - Lfde510_start
-	.long LDIFF_SYM1347
+LDIFF_SYM1349=Lfde510_end - Lfde510_start
+	.long LDIFF_SYM1349
 Lfde510_start:
 
 	.long 0
 	.align 3
 	.quad L_m_89
 
-LDIFF_SYM1348=Lme_89 - L_m_89
-	.long LDIFF_SYM1348
+LDIFF_SYM1350=Lme_89 - L_m_89
+	.long LDIFF_SYM1350
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -67299,43 +67270,38 @@ Lfde510_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_castclass_with_cache"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_object_castclass_with_cache_object_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_isinst_icall"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_object_isinst_icall_object_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_castclass_with_cache"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_isinst_icall"
 	.quad L_m_8a
 	.quad Lme_8a
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1349=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1349
-	.byte 3,119,192,0,3
+LDIFF_SYM1351=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1351
+	.byte 1,94,3
 	.asciz "param1"
 
-LDIFF_SYM1350=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1350
-	.byte 1,94,3
-	.asciz "param2"
-
-LDIFF_SYM1351=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1351
+LDIFF_SYM1352=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1352
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1352=Lfde511_end - Lfde511_start
-	.long LDIFF_SYM1352
+LDIFF_SYM1353=Lfde511_end - Lfde511_start
+	.long LDIFF_SYM1353
 Lfde511_start:
 
 	.long 0
 	.align 3
 	.quad L_m_8a
 
-LDIFF_SYM1353=Lme_8a - L_m_8a
-	.long LDIFF_SYM1353
+LDIFF_SYM1354=Lme_8a - L_m_8a
+	.long LDIFF_SYM1354
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -67345,38 +67311,43 @@ Lfde511_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_isinst_icall"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_object_isinst_icall_object_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_isinst_with_cache"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_object_isinst_with_cache_object_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_isinst_icall"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_isinst_with_cache"
 	.quad L_m_8b
 	.quad Lme_8b
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1354=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1354
-	.byte 1,94,3
+LDIFF_SYM1355=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1355
+	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1355=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1355
+LDIFF_SYM1356=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1356
+	.byte 1,94,3
+	.asciz "param2"
+
+LDIFF_SYM1357=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1357
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1356=Lfde512_end - Lfde512_start
-	.long LDIFF_SYM1356
+LDIFF_SYM1358=Lfde512_end - Lfde512_start
+	.long LDIFF_SYM1358
 Lfde512_start:
 
 	.long 0
 	.align 3
 	.quad L_m_8b
 
-LDIFF_SYM1357=Lme_8b - L_m_8b
-	.long LDIFF_SYM1357
+LDIFF_SYM1359=Lme_8b - L_m_8b
+	.long LDIFF_SYM1359
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -67386,45 +67357,50 @@ Lfde512_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_isinst_with_cache"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_object_isinst_with_cache_object_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_profiler_raise_exception_clause"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_exception_clause_intptr_int_int_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_object_isinst_with_cache"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_profiler_raise_exception_clause"
 	.quad L_m_8c
 	.quad Lme_8c
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1358=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1358
+LDIFF_SYM1360=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1360
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1359=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1359
-	.byte 1,94,3
+LDIFF_SYM1361=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1361
+	.byte 3,119,200,0,3
 	.asciz "param2"
 
-LDIFF_SYM1360=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1360
+LDIFF_SYM1362=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1362
+	.byte 3,119,208,0,3
+	.asciz "param3"
+
+LDIFF_SYM1363=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1363
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1361=Lfde513_end - Lfde513_start
-	.long LDIFF_SYM1361
+LDIFF_SYM1364=Lfde513_end - Lfde513_start
+	.long LDIFF_SYM1364
 Lfde513_start:
 
 	.long 0
 	.align 3
 	.quad L_m_8c
 
-LDIFF_SYM1362=Lme_8c - L_m_8c
-	.long LDIFF_SYM1362
+LDIFF_SYM1365=Lme_8c - L_m_8c
+	.long LDIFF_SYM1365
 	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
 Lfde513_end:
@@ -67432,31 +67408,16 @@ Lfde513_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_profiler_raise_exception_clause"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_exception_clause_intptr_int_int_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_profiler_raise_gc_allocation"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_gc_allocation_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_profiler_raise_exception_clause"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_profiler_raise_gc_allocation"
 	.quad L_m_8d
 	.quad Lme_8d
 
 	.byte 2,118,16,3
 	.asciz "param0"
-
-LDIFF_SYM1363=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1363
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1364=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1364
-	.byte 3,119,200,0,3
-	.asciz "param2"
-
-LDIFF_SYM1365=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1365
-	.byte 3,119,208,0,3
-	.asciz "param3"
 
 LDIFF_SYM1366=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1366
@@ -67475,46 +67436,10 @@ Lfde514_start:
 LDIFF_SYM1368=Lme_8d - L_m_8d
 	.long LDIFF_SYM1368
 	.long 0
-	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde514_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_profiler_raise_gc_allocation"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_profiler_raise_gc_allocation_object"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_profiler_raise_gc_allocation"
-	.quad L_m_8e
-	.quad Lme_8e
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1369=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1369
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1370=Lfde515_end - Lfde515_start
-	.long LDIFF_SYM1370
-Lfde515_start:
-
-	.long 0
-	.align 3
-	.quad L_m_8e
-
-LDIFF_SYM1371=Lme_8e - L_m_8e
-	.long LDIFF_SYM1371
-	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde515_end:
+Lfde514_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -67524,38 +67449,38 @@ Lfde515_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_profiler_raise_method_enter"
-	.quad L_m_8f
-	.quad Lme_8f
+	.quad L_m_8e
+	.quad Lme_8e
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1372=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1372
+LDIFF_SYM1369=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1369
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1373=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1373
+LDIFF_SYM1370=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1370
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1374=Lfde516_end - Lfde516_start
-	.long LDIFF_SYM1374
-Lfde516_start:
+LDIFF_SYM1371=Lfde515_end - Lfde515_start
+	.long LDIFF_SYM1371
+Lfde515_start:
 
 	.long 0
 	.align 3
-	.quad L_m_8f
+	.quad L_m_8e
 
-LDIFF_SYM1375=Lme_8f - L_m_8f
-	.long LDIFF_SYM1375
+LDIFF_SYM1372=Lme_8e - L_m_8e
+	.long LDIFF_SYM1372
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde516_end:
+Lfde515_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -67565,38 +67490,38 @@ Lfde516_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_profiler_raise_method_leave"
-	.quad L_m_90
-	.quad Lme_90
+	.quad L_m_8f
+	.quad Lme_8f
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1376=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1376
+LDIFF_SYM1373=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1373
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1377=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1377
+LDIFF_SYM1374=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1374
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1378=Lfde517_end - Lfde517_start
-	.long LDIFF_SYM1378
-Lfde517_start:
+LDIFF_SYM1375=Lfde516_end - Lfde516_start
+	.long LDIFF_SYM1375
+Lfde516_start:
 
 	.long 0
 	.align 3
-	.quad L_m_90
+	.quad L_m_8f
 
-LDIFF_SYM1379=Lme_90 - L_m_90
-	.long LDIFF_SYM1379
+LDIFF_SYM1376=Lme_8f - L_m_8f
+	.long LDIFF_SYM1376
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde517_end:
+Lfde516_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -67606,16 +67531,52 @@ Lfde517_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_profiler_raise_method_tail_call"
+	.quad L_m_90
+	.quad Lme_90
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1377=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1377
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1378=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1378
+	.byte 1,95,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1379=Lfde517_end - Lfde517_start
+	.long LDIFF_SYM1379
+Lfde517_start:
+
+	.long 0
+	.align 3
+	.quad L_m_90
+
+LDIFF_SYM1380=Lme_90 - L_m_90
+	.long LDIFF_SYM1380
+	.long 0
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
+	.align 3
+Lfde517_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_resume_unwind"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_resume_unwind_intptr"
+
+	.byte 0,0
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_resume_unwind"
 	.quad L_m_91
 	.quad Lme_91
 
 	.byte 2,118,16,3
 	.asciz "param0"
-
-LDIFF_SYM1380=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1380
-	.byte 3,119,192,0,3
-	.asciz "param1"
 
 LDIFF_SYM1381=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1381
@@ -67642,18 +67603,18 @@ Lfde518_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_resume_unwind"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_resume_unwind_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_builder_to_utf16"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_builder_to_utf16_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_resume_unwind"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_builder_to_utf16"
 	.quad L_m_92
 	.quad Lme_92
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1384=LDIE_I - Ldebug_info_start
+LDIFF_SYM1384=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1384
 	.byte 1,95,0
 
@@ -67678,11 +67639,11 @@ Lfde519_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_builder_to_utf16"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_builder_to_utf16_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_builder_to_utf8"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_builder_to_utf8_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_builder_to_utf16"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_builder_to_utf8"
 	.quad L_m_93
 	.quad Lme_93
 
@@ -67714,18 +67675,18 @@ Lfde520_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_builder_to_utf8"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_builder_to_utf8_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_ansibstr"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_from_ansibstr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_builder_to_utf8"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_ansibstr"
 	.quad L_m_94
 	.quad Lme_94
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1390=LDIE_OBJECT - Ldebug_info_start
+LDIFF_SYM1390=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1390
 	.byte 1,95,0
 
@@ -67750,11 +67711,11 @@ Lfde521_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_ansibstr"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_from_ansibstr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_bstr_icall"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_from_bstr_icall_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_ansibstr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_bstr_icall"
 	.quad L_m_95
 	.quad Lme_95
 
@@ -67786,11 +67747,11 @@ Lfde522_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_bstr_icall"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_from_bstr_icall_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_byvalstr"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_from_byvalstr_intptr_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_bstr_icall"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_byvalstr"
 	.quad L_m_96
 	.quad Lme_96
 
@@ -67799,20 +67760,25 @@ Lfde522_end:
 
 LDIFF_SYM1396=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1396
+	.byte 1,94,3
+	.asciz "param1"
+
+LDIFF_SYM1397=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1397
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1397=Lfde523_end - Lfde523_start
-	.long LDIFF_SYM1397
+LDIFF_SYM1398=Lfde523_end - Lfde523_start
+	.long LDIFF_SYM1398
 Lfde523_start:
 
 	.long 0
 	.align 3
 	.quad L_m_96
 
-LDIFF_SYM1398=Lme_96 - L_m_96
-	.long LDIFF_SYM1398
+LDIFF_SYM1399=Lme_96 - L_m_96
+	.long LDIFF_SYM1399
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -67822,38 +67788,38 @@ Lfde523_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_byvalstr"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_from_byvalstr_intptr_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_byvalwstr"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_from_byvalwstr_intptr_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_byvalstr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_byvalwstr"
 	.quad L_m_97
 	.quad Lme_97
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1399=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1399
+LDIFF_SYM1400=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1400
 	.byte 1,94,3
 	.asciz "param1"
 
-LDIFF_SYM1400=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1400
+LDIFF_SYM1401=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1401
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1401=Lfde524_end - Lfde524_start
-	.long LDIFF_SYM1401
+LDIFF_SYM1402=Lfde524_end - Lfde524_start
+	.long LDIFF_SYM1402
 Lfde524_start:
 
 	.long 0
 	.align 3
 	.quad L_m_97
 
-LDIFF_SYM1402=Lme_97 - L_m_97
-	.long LDIFF_SYM1402
+LDIFF_SYM1403=Lme_97 - L_m_97
+	.long LDIFF_SYM1403
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -67863,23 +67829,18 @@ Lfde524_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_byvalwstr"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_from_byvalwstr_intptr_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_tbstr"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_from_tbstr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_byvalwstr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_tbstr"
 	.quad L_m_98
 	.quad Lme_98
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1403=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1403
-	.byte 1,94,3
-	.asciz "param1"
-
-LDIFF_SYM1404=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1404=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1404
 	.byte 1,95,0
 
@@ -67904,11 +67865,11 @@ Lfde525_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_tbstr"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_from_tbstr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_new_len_wrapper"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_new_len_wrapper_intptr_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_from_tbstr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_new_len_wrapper"
 	.quad L_m_99
 	.quad Lme_99
 
@@ -67917,20 +67878,25 @@ Lfde525_end:
 
 LDIFF_SYM1407=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1407
+	.byte 1,94,3
+	.asciz "param1"
+
+LDIFF_SYM1408=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1408
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1408=Lfde526_end - Lfde526_start
-	.long LDIFF_SYM1408
+LDIFF_SYM1409=Lfde526_end - Lfde526_start
+	.long LDIFF_SYM1409
 Lfde526_start:
 
 	.long 0
 	.align 3
 	.quad L_m_99
 
-LDIFF_SYM1409=Lme_99 - L_m_99
-	.long LDIFF_SYM1409
+LDIFF_SYM1410=Lme_99 - L_m_99
+	.long LDIFF_SYM1410
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -67940,23 +67906,18 @@ Lfde526_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_new_len_wrapper"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_new_len_wrapper_intptr_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_new_wrapper_internal"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_new_wrapper_internal_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_new_len_wrapper"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_new_wrapper_internal"
 	.quad L_m_9a
 	.quad Lme_9a
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1410=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1410
-	.byte 1,94,3
-	.asciz "param1"
-
-LDIFF_SYM1411=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1411=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1411
 	.byte 1,95,0
 
@@ -67981,18 +67942,18 @@ Lfde527_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_new_wrapper_internal"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_new_wrapper_internal_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_ansibstr"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_to_ansibstr_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_new_wrapper_internal"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_ansibstr"
 	.quad L_m_9b
 	.quad Lme_9b
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1414=LDIE_I - Ldebug_info_start
+LDIFF_SYM1414=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1414
 	.byte 1,95,0
 
@@ -68017,11 +67978,11 @@ Lfde528_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_ansibstr"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_to_ansibstr_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_bstr"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_to_bstr_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_ansibstr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_bstr"
 	.quad L_m_9c
 	.quad Lme_9c
 
@@ -68053,84 +68014,48 @@ Lfde529_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_bstr"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_to_bstr_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_byvalstr"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_to_byvalstr_intptr_intptr_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_bstr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_byvalstr"
 	.quad L_m_9d
 	.quad Lme_9d
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1420=LDIE_OBJECT - Ldebug_info_start
+LDIFF_SYM1420=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1420
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1421=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1421
+	.byte 3,119,200,0,3
+	.asciz "param2"
+
+LDIFF_SYM1422=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1422
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1421=Lfde530_end - Lfde530_start
-	.long LDIFF_SYM1421
+LDIFF_SYM1423=Lfde530_end - Lfde530_start
+	.long LDIFF_SYM1423
 Lfde530_start:
 
 	.long 0
 	.align 3
 	.quad L_m_9d
 
-LDIFF_SYM1422=Lme_9d - L_m_9d
-	.long LDIFF_SYM1422
-	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde530_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_byvalstr"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_to_byvalstr_intptr_intptr_int"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_byvalstr"
-	.quad L_m_9e
-	.quad Lme_9e
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1423=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1423
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1424=LDIE_I - Ldebug_info_start
+LDIFF_SYM1424=Lme_9d - L_m_9d
 	.long LDIFF_SYM1424
-	.byte 3,119,200,0,3
-	.asciz "param2"
-
-LDIFF_SYM1425=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1425
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1426=Lfde531_end - Lfde531_start
-	.long LDIFF_SYM1426
-Lfde531_start:
-
-	.long 0
-	.align 3
-	.quad L_m_9e
-
-LDIFF_SYM1427=Lme_9e - L_m_9e
-	.long LDIFF_SYM1427
 	.long 0
 	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde531_end:
+Lfde530_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -68140,23 +68065,59 @@ Lfde531_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_byvalwstr"
+	.quad L_m_9e
+	.quad Lme_9e
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1425=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1425
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1426=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1426
+	.byte 3,119,200,0,3
+	.asciz "param2"
+
+LDIFF_SYM1427=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1427
+	.byte 1,95,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1428=Lfde531_end - Lfde531_start
+	.long LDIFF_SYM1428
+Lfde531_start:
+
+	.long 0
+	.align 3
+	.quad L_m_9e
+
+LDIFF_SYM1429=Lme_9e - L_m_9e
+	.long LDIFF_SYM1429
+	.long 0
+	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
+	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
+	.align 3
+Lfde531_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_tbstr"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_to_tbstr_object"
+
+	.byte 0,0
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_tbstr"
 	.quad L_m_9f
 	.quad Lme_9f
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1428=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1428
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1429=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1429
-	.byte 3,119,200,0,3
-	.asciz "param2"
-
-LDIFF_SYM1430=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1430=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1430
 	.byte 1,95,0
 
@@ -68173,7 +68134,7 @@ Lfde532_start:
 LDIFF_SYM1432=Lme_9f - L_m_9f
 	.long LDIFF_SYM1432
 	.long 0
-	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
 Lfde532_end:
@@ -68181,11 +68142,11 @@ Lfde532_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_tbstr"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_to_tbstr_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_utf16_internal"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_to_utf16_internal_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_tbstr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_utf16_internal"
 	.quad L_m_a0
 	.quad Lme_a0
 
@@ -68217,11 +68178,11 @@ Lfde533_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_utf16_internal"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_to_utf16_internal_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_utf8str"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_to_utf8str_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_utf16_internal"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_utf8str"
 	.quad L_m_a1
 	.quad Lme_a1
 
@@ -68253,33 +68214,38 @@ Lfde534_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_utf8str"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_to_utf8str_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf16_to_builder"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_utf16_to_builder_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_to_utf8str"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf16_to_builder"
 	.quad L_m_a2
 	.quad Lme_a2
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1439=LDIE_OBJECT - Ldebug_info_start
+LDIFF_SYM1439=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1439
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1440=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1440
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1440=Lfde535_end - Lfde535_start
-	.long LDIFF_SYM1440
+LDIFF_SYM1441=Lfde535_end - Lfde535_start
+	.long LDIFF_SYM1441
 Lfde535_start:
 
 	.long 0
 	.align 3
 	.quad L_m_a2
 
-LDIFF_SYM1441=Lme_a2 - L_m_a2
-	.long LDIFF_SYM1441
+LDIFF_SYM1442=Lme_a2 - L_m_a2
+	.long LDIFF_SYM1442
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68289,21 +68255,16 @@ Lfde535_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf16_to_builder"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_utf16_to_builder_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf16_to_builder2"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_utf16_to_builder2_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf16_to_builder"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf16_to_builder2"
 	.quad L_m_a3
 	.quad Lme_a3
 
 	.byte 2,118,16,3
 	.asciz "param0"
-
-LDIFF_SYM1442=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1442
-	.byte 3,119,192,0,3
-	.asciz "param1"
 
 LDIFF_SYM1443=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1443
@@ -68330,11 +68291,11 @@ Lfde536_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf16_to_builder2"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_utf16_to_builder2_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf8_to_builder"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_utf8_to_builder_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf16_to_builder2"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf8_to_builder"
 	.quad L_m_a4
 	.quad Lme_a4
 
@@ -68343,20 +68304,25 @@ Lfde536_end:
 
 LDIFF_SYM1446=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1446
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1447=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1447
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1447=Lfde537_end - Lfde537_start
-	.long LDIFF_SYM1447
+LDIFF_SYM1448=Lfde537_end - Lfde537_start
+	.long LDIFF_SYM1448
 Lfde537_start:
 
 	.long 0
 	.align 3
 	.quad L_m_a4
 
-LDIFF_SYM1448=Lme_a4 - L_m_a4
-	.long LDIFF_SYM1448
+LDIFF_SYM1449=Lme_a4 - L_m_a4
+	.long LDIFF_SYM1449
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68366,21 +68332,16 @@ Lfde537_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf8_to_builder"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_utf8_to_builder_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf8_to_builder2"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_utf8_to_builder2_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf8_to_builder"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf8_to_builder2"
 	.quad L_m_a5
 	.quad Lme_a5
 
 	.byte 2,118,16,3
 	.asciz "param0"
-
-LDIFF_SYM1449=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1449
-	.byte 3,119,192,0,3
-	.asciz "param1"
 
 LDIFF_SYM1450=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1450
@@ -68407,11 +68368,11 @@ Lfde538_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf8_to_builder2"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_string_utf8_to_builder2_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_struct_delete_old"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_struct_delete_old_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_string_utf8_to_builder2"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_struct_delete_old"
 	.quad L_m_a6
 	.quad Lme_a6
 
@@ -68420,20 +68381,25 @@ Lfde538_end:
 
 LDIFF_SYM1453=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1453
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1454=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1454
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1454=Lfde539_end - Lfde539_start
-	.long LDIFF_SYM1454
+LDIFF_SYM1455=Lfde539_end - Lfde539_start
+	.long LDIFF_SYM1455
 Lfde539_start:
 
 	.long 0
 	.align 3
 	.quad L_m_a6
 
-LDIFF_SYM1455=Lme_a6 - L_m_a6
-	.long LDIFF_SYM1455
+LDIFF_SYM1456=Lme_a6 - L_m_a6
+	.long LDIFF_SYM1456
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68443,38 +68409,28 @@ Lfde539_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_struct_delete_old"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_struct_delete_old_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_thread_force_interruption_checkpoint_noraise"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_thread_force_interruption_checkpoint_noraise"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_struct_delete_old"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_thread_force_interruption_checkpoint_noraise"
 	.quad L_m_a7
 	.quad Lme_a7
 
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1456=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1456
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1457=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1457
-	.byte 1,95,0
+	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1458=Lfde540_end - Lfde540_start
-	.long LDIFF_SYM1458
+LDIFF_SYM1457=Lfde540_end - Lfde540_start
+	.long LDIFF_SYM1457
 Lfde540_start:
 
 	.long 0
 	.align 3
 	.quad L_m_a7
 
-LDIFF_SYM1459=Lme_a7 - L_m_a7
-	.long LDIFF_SYM1459
+LDIFF_SYM1458=Lme_a7 - L_m_a7
+	.long LDIFF_SYM1458
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68484,11 +68440,11 @@ Lfde540_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_thread_force_interruption_checkpoint_noraise"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_thread_force_interruption_checkpoint_noraise"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_thread_get_undeniable_exception"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_thread_get_undeniable_exception"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_thread_force_interruption_checkpoint_noraise"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_thread_get_undeniable_exception"
 	.quad L_m_a8
 	.quad Lme_a8
 
@@ -68496,16 +68452,16 @@ Lfde540_end:
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1460=Lfde541_end - Lfde541_start
-	.long LDIFF_SYM1460
+LDIFF_SYM1459=Lfde541_end - Lfde541_start
+	.long LDIFF_SYM1459
 Lfde541_start:
 
 	.long 0
 	.align 3
 	.quad L_m_a8
 
-LDIFF_SYM1461=Lme_a8 - L_m_a8
-	.long LDIFF_SYM1461
+LDIFF_SYM1460=Lme_a8 - L_m_a8
+	.long LDIFF_SYM1460
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68515,11 +68471,11 @@ Lfde541_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_thread_get_undeniable_exception"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_thread_get_undeniable_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_thread_interruption_checkpoint"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_thread_interruption_checkpoint"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_thread_get_undeniable_exception"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_thread_interruption_checkpoint"
 	.quad L_m_a9
 	.quad Lme_a9
 
@@ -68527,16 +68483,16 @@ Lfde541_end:
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1462=Lfde542_end - Lfde542_start
-	.long LDIFF_SYM1462
+LDIFF_SYM1461=Lfde542_end - Lfde542_start
+	.long LDIFF_SYM1461
 Lfde542_start:
 
 	.long 0
 	.align 3
 	.quad L_m_a9
 
-LDIFF_SYM1463=Lme_a9 - L_m_a9
-	.long LDIFF_SYM1463
+LDIFF_SYM1462=Lme_a9 - L_m_a9
+	.long LDIFF_SYM1462
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68546,28 +68502,38 @@ Lfde542_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_thread_interruption_checkpoint"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_thread_interruption_checkpoint"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_attach_coop"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_attach_coop_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_thread_interruption_checkpoint"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_attach_coop"
 	.quad L_m_aa
 	.quad Lme_aa
 
-	.byte 2,118,16,0
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1463=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1463
+	.byte 1,94,3
+	.asciz "param1"
+
+LDIFF_SYM1464=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1464
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1464=Lfde543_end - Lfde543_start
-	.long LDIFF_SYM1464
+LDIFF_SYM1465=Lfde543_end - Lfde543_start
+	.long LDIFF_SYM1465
 Lfde543_start:
 
 	.long 0
 	.align 3
 	.quad L_m_aa
 
-LDIFF_SYM1465=Lme_aa - L_m_aa
-	.long LDIFF_SYM1465
+LDIFF_SYM1466=Lme_aa - L_m_aa
+	.long LDIFF_SYM1466
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68577,38 +68543,38 @@ Lfde543_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_attach_coop"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_attach_coop_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_detach_coop"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_detach_coop_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_attach_coop"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_detach_coop"
 	.quad L_m_ab
 	.quad Lme_ab
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1466=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1466
-	.byte 1,94,3
-	.asciz "param1"
-
 LDIFF_SYM1467=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1467
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1468=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1468
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1468=Lfde544_end - Lfde544_start
-	.long LDIFF_SYM1468
+LDIFF_SYM1469=Lfde544_end - Lfde544_start
+	.long LDIFF_SYM1469
 Lfde544_start:
 
 	.long 0
 	.align 3
 	.quad L_m_ab
 
-LDIFF_SYM1469=Lme_ab - L_m_ab
-	.long LDIFF_SYM1469
+LDIFF_SYM1470=Lme_ab - L_m_ab
+	.long LDIFF_SYM1470
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68618,21 +68584,16 @@ Lfde544_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_detach_coop"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_detach_coop_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_enter_gc_safe_region_unbalanced"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_enter_gc_safe_region_unbalanced_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_detach_coop"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_enter_gc_safe_region_unbalanced"
 	.quad L_m_ac
 	.quad Lme_ac
 
 	.byte 2,118,16,3
 	.asciz "param0"
-
-LDIFF_SYM1470=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1470
-	.byte 3,119,192,0,3
-	.asciz "param1"
 
 LDIFF_SYM1471=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1471
@@ -68659,11 +68620,11 @@ Lfde545_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_enter_gc_safe_region_unbalanced"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_enter_gc_safe_region_unbalanced_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_enter_gc_unsafe_region_unbalanced"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_enter_gc_unsafe_region_unbalanced_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_enter_gc_safe_region_unbalanced"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_enter_gc_unsafe_region_unbalanced"
 	.quad L_m_ad
 	.quad Lme_ad
 
@@ -68695,11 +68656,11 @@ Lfde546_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_enter_gc_unsafe_region_unbalanced"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_enter_gc_unsafe_region_unbalanced_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_exit_gc_safe_region_unbalanced"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_exit_gc_safe_region_unbalanced_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_enter_gc_unsafe_region_unbalanced"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_exit_gc_safe_region_unbalanced"
 	.quad L_m_ae
 	.quad Lme_ae
 
@@ -68708,20 +68669,25 @@ Lfde546_end:
 
 LDIFF_SYM1477=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1477
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1478=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1478
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1478=Lfde547_end - Lfde547_start
-	.long LDIFF_SYM1478
+LDIFF_SYM1479=Lfde547_end - Lfde547_start
+	.long LDIFF_SYM1479
 Lfde547_start:
 
 	.long 0
 	.align 3
 	.quad L_m_ae
 
-LDIFF_SYM1479=Lme_ae - L_m_ae
-	.long LDIFF_SYM1479
+LDIFF_SYM1480=Lme_ae - L_m_ae
+	.long LDIFF_SYM1480
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68731,38 +68697,38 @@ Lfde547_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_exit_gc_safe_region_unbalanced"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_exit_gc_safe_region_unbalanced_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_exit_gc_unsafe_region_unbalanced"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_exit_gc_unsafe_region_unbalanced_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_exit_gc_safe_region_unbalanced"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_exit_gc_unsafe_region_unbalanced"
 	.quad L_m_af
 	.quad Lme_af
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1480=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1480
+LDIFF_SYM1481=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1481
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1481=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1481
+LDIFF_SYM1482=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1482
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1482=Lfde548_end - Lfde548_start
-	.long LDIFF_SYM1482
+LDIFF_SYM1483=Lfde548_end - Lfde548_start
+	.long LDIFF_SYM1483
 Lfde548_start:
 
 	.long 0
 	.align 3
 	.quad L_m_af
 
-LDIFF_SYM1483=Lme_af - L_m_af
-	.long LDIFF_SYM1483
+LDIFF_SYM1484=Lme_af - L_m_af
+	.long LDIFF_SYM1484
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68772,38 +68738,28 @@ Lfde548_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_exit_gc_unsafe_region_unbalanced"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_exit_gc_unsafe_region_unbalanced_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_state_poll"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_state_poll"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_exit_gc_unsafe_region_unbalanced"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_state_poll"
 	.quad L_m_b0
 	.quad Lme_b0
 
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1484=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1484
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1485=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1485
-	.byte 1,95,0
+	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1486=Lfde549_end - Lfde549_start
-	.long LDIFF_SYM1486
+LDIFF_SYM1485=Lfde549_end - Lfde549_start
+	.long LDIFF_SYM1485
 Lfde549_start:
 
 	.long 0
 	.align 3
 	.quad L_m_b0
 
-LDIFF_SYM1487=Lme_b0 - L_m_b0
-	.long LDIFF_SYM1487
+LDIFF_SYM1486=Lme_b0 - L_m_b0
+	.long LDIFF_SYM1486
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68813,28 +68769,38 @@ Lfde549_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_state_poll"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_threads_state_poll"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_method_access"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_throw_method_access_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_threads_state_poll"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_method_access"
 	.quad L_m_b1
 	.quad Lme_b1
 
-	.byte 2,118,16,0
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1487=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1487
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1488=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1488
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1488=Lfde550_end - Lfde550_start
-	.long LDIFF_SYM1488
+LDIFF_SYM1489=Lfde550_end - Lfde550_start
+	.long LDIFF_SYM1489
 Lfde550_start:
 
 	.long 0
 	.align 3
 	.quad L_m_b1
 
-LDIFF_SYM1489=Lme_b1 - L_m_b1
-	.long LDIFF_SYM1489
+LDIFF_SYM1490=Lme_b1 - L_m_b1
+	.long LDIFF_SYM1490
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68844,38 +68810,28 @@ Lfde550_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_method_access"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_throw_method_access_intptr_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_bad_image"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_throw_bad_image"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_method_access"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_bad_image"
 	.quad L_m_b2
 	.quad Lme_b2
 
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1490=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1490
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1491=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1491
-	.byte 1,95,0
+	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1492=Lfde551_end - Lfde551_start
-	.long LDIFF_SYM1492
+LDIFF_SYM1491=Lfde551_end - Lfde551_start
+	.long LDIFF_SYM1491
 Lfde551_start:
 
 	.long 0
 	.align 3
 	.quad L_m_b2
 
-LDIFF_SYM1493=Lme_b2 - L_m_b2
-	.long LDIFF_SYM1493
+LDIFF_SYM1492=Lme_b2 - L_m_b2
+	.long LDIFF_SYM1492
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68885,11 +68841,11 @@ Lfde551_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_bad_image"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_throw_bad_image"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_not_supported"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_throw_not_supported"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_bad_image"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_not_supported"
 	.quad L_m_b3
 	.quad Lme_b3
 
@@ -68897,16 +68853,16 @@ Lfde551_end:
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1494=Lfde552_end - Lfde552_start
-	.long LDIFF_SYM1494
+LDIFF_SYM1493=Lfde552_end - Lfde552_start
+	.long LDIFF_SYM1493
 Lfde552_start:
 
 	.long 0
 	.align 3
 	.quad L_m_b3
 
-LDIFF_SYM1495=Lme_b3 - L_m_b3
-	.long LDIFF_SYM1495
+LDIFF_SYM1494=Lme_b3 - L_m_b3
+	.long LDIFF_SYM1494
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68916,11 +68872,11 @@ Lfde552_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_not_supported"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_throw_not_supported"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_platform_not_supported"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_throw_platform_not_supported"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_not_supported"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_platform_not_supported"
 	.quad L_m_b4
 	.quad Lme_b4
 
@@ -68928,16 +68884,16 @@ Lfde552_end:
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1496=Lfde553_end - Lfde553_start
-	.long LDIFF_SYM1496
+LDIFF_SYM1495=Lfde553_end - Lfde553_start
+	.long LDIFF_SYM1495
 Lfde553_start:
 
 	.long 0
 	.align 3
 	.quad L_m_b4
 
-LDIFF_SYM1497=Lme_b4 - L_m_b4
-	.long LDIFF_SYM1497
+LDIFF_SYM1496=Lme_b4 - L_m_b4
+	.long LDIFF_SYM1496
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -68947,15 +68903,20 @@ Lfde553_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_platform_not_supported"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_throw_platform_not_supported"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_invalid_program"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_throw_invalid_program_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_platform_not_supported"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_invalid_program"
 	.quad L_m_b5
 	.quad Lme_b5
 
-	.byte 2,118,16,0
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1497=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1497
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -68978,11 +68939,11 @@ Lfde554_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_invalid_program"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_throw_invalid_program_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_trace_enter_method"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_trace_enter_method_intptr_intptr_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_throw_invalid_program"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_trace_enter_method"
 	.quad L_m_b6
 	.quad Lme_b6
 
@@ -68991,71 +68952,35 @@ Lfde554_end:
 
 LDIFF_SYM1500=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1500
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1501=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1501
+	.byte 3,119,200,0,3
+	.asciz "param2"
+
+LDIFF_SYM1502=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1502
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1501=Lfde555_end - Lfde555_start
-	.long LDIFF_SYM1501
+LDIFF_SYM1503=Lfde555_end - Lfde555_start
+	.long LDIFF_SYM1503
 Lfde555_start:
 
 	.long 0
 	.align 3
 	.quad L_m_b6
 
-LDIFF_SYM1502=Lme_b6 - L_m_b6
-	.long LDIFF_SYM1502
-	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde555_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_trace_enter_method"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_trace_enter_method_intptr_intptr_intptr"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_trace_enter_method"
-	.quad L_m_b7
-	.quad Lme_b7
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1503=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1503
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1504=LDIE_I - Ldebug_info_start
+LDIFF_SYM1504=Lme_b6 - L_m_b6
 	.long LDIFF_SYM1504
-	.byte 3,119,200,0,3
-	.asciz "param2"
-
-LDIFF_SYM1505=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1505
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1506=Lfde556_end - Lfde556_start
-	.long LDIFF_SYM1506
-Lfde556_start:
-
-	.long 0
-	.align 3
-	.quad L_m_b7
-
-LDIFF_SYM1507=Lme_b7 - L_m_b7
-	.long LDIFF_SYM1507
 	.long 0
 	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde556_end:
+Lfde555_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -69065,43 +68990,43 @@ Lfde556_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_trace_leave_method"
-	.quad L_m_b8
-	.quad Lme_b8
+	.quad L_m_b7
+	.quad Lme_b7
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1508=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1508
+LDIFF_SYM1505=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1505
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1509=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1509
+LDIFF_SYM1506=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1506
 	.byte 3,119,200,0,3
 	.asciz "param2"
 
-LDIFF_SYM1510=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1510
+LDIFF_SYM1507=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1507
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1511=Lfde557_end - Lfde557_start
-	.long LDIFF_SYM1511
-Lfde557_start:
+LDIFF_SYM1508=Lfde556_end - Lfde556_start
+	.long LDIFF_SYM1508
+Lfde556_start:
 
 	.long 0
 	.align 3
-	.quad L_m_b8
+	.quad L_m_b7
 
-LDIFF_SYM1512=Lme_b8 - L_m_b8
-	.long LDIFF_SYM1512
+LDIFF_SYM1509=Lme_b7 - L_m_b7
+	.long LDIFF_SYM1509
 	.long 0
 	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde557_end:
+Lfde556_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -69111,43 +69036,43 @@ Lfde557_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_trace_tail_method"
-	.quad L_m_b9
-	.quad Lme_b9
+	.quad L_m_b8
+	.quad Lme_b8
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1513=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1513
+LDIFF_SYM1510=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1510
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1514=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1514
+LDIFF_SYM1511=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1511
 	.byte 3,119,200,0,3
 	.asciz "param2"
 
-LDIFF_SYM1515=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1515
+LDIFF_SYM1512=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1512
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1516=Lfde558_end - Lfde558_start
-	.long LDIFF_SYM1516
-Lfde558_start:
+LDIFF_SYM1513=Lfde557_end - Lfde557_start
+	.long LDIFF_SYM1513
+Lfde557_start:
 
 	.long 0
 	.align 3
-	.quad L_m_b9
+	.quad L_m_b8
 
-LDIFF_SYM1517=Lme_b9 - L_m_b9
-	.long LDIFF_SYM1517
+LDIFF_SYM1514=Lme_b8 - L_m_b8
+	.long LDIFF_SYM1514
 	.long 0
 	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde558_end:
+Lfde557_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -69157,43 +69082,43 @@ Lfde558_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_value_copy_internal"
-	.quad L_m_ba
-	.quad Lme_ba
+	.quad L_m_b9
+	.quad Lme_b9
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1518=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1518
+LDIFF_SYM1515=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1515
 	.byte 3,119,192,0,3
 	.asciz "param1"
 
-LDIFF_SYM1519=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1519
+LDIFF_SYM1516=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1516
 	.byte 3,119,200,0,3
 	.asciz "param2"
 
-LDIFF_SYM1520=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1520
+LDIFF_SYM1517=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1517
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1521=Lfde559_end - Lfde559_start
-	.long LDIFF_SYM1521
-Lfde559_start:
+LDIFF_SYM1518=Lfde558_end - Lfde558_start
+	.long LDIFF_SYM1518
+Lfde558_start:
 
 	.long 0
 	.align 3
-	.quad L_m_ba
+	.quad L_m_b9
 
-LDIFF_SYM1522=Lme_ba - L_m_ba
-	.long LDIFF_SYM1522
+LDIFF_SYM1519=Lme_b9 - L_m_b9
+	.long LDIFF_SYM1519
 	.long 0
 	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde559_end:
+Lfde558_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -69203,18 +69128,54 @@ Lfde559_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_array_new_specific"
+	.quad L_m_ba
+	.quad Lme_ba
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1520=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1520
+	.byte 1,94,3
+	.asciz "param1"
+
+LDIFF_SYM1521=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1521
+	.byte 1,95,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1522=Lfde559_end - Lfde559_start
+	.long LDIFF_SYM1522
+Lfde559_start:
+
+	.long 0
+	.align 3
+	.quad L_m_ba
+
+LDIFF_SYM1523=Lme_ba - L_m_ba
+	.long LDIFF_SYM1523
+	.long 0
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
+	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
+	.align 3
+Lfde559_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_marshal_alloc"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_marshal_alloc_intptr"
+
+	.byte 0,0
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_marshal_alloc"
 	.quad L_m_bb
 	.quad Lme_bb
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1523=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1523
-	.byte 1,94,3
-	.asciz "param1"
-
-LDIFF_SYM1524=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1524=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1524
 	.byte 1,95,0
 
@@ -69239,84 +69200,48 @@ Lfde560_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_marshal_alloc"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_marshal_alloc_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_delegate_ctor"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_delegate_ctor_object_object_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_marshal_alloc"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_delegate_ctor"
 	.quad L_m_bc
 	.quad Lme_bc
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1527=LDIE_I - Ldebug_info_start
+LDIFF_SYM1527=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1527
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1528=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1528
+	.byte 3,119,200,0,3
+	.asciz "param2"
+
+LDIFF_SYM1529=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1529
 	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1528=Lfde561_end - Lfde561_start
-	.long LDIFF_SYM1528
+LDIFF_SYM1530=Lfde561_end - Lfde561_start
+	.long LDIFF_SYM1530
 Lfde561_start:
 
 	.long 0
 	.align 3
 	.quad L_m_bc
 
-LDIFF_SYM1529=Lme_bc - L_m_bc
-	.long LDIFF_SYM1529
-	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde561_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_delegate_ctor"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_delegate_ctor_object_object_intptr"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_delegate_ctor"
-	.quad L_m_bd
-	.quad Lme_bd
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1530=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1530
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1531=LDIE_OBJECT - Ldebug_info_start
+LDIFF_SYM1531=Lme_bc - L_m_bc
 	.long LDIFF_SYM1531
-	.byte 3,119,200,0,3
-	.asciz "param2"
-
-LDIFF_SYM1532=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1532
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1533=Lfde562_end - Lfde562_start
-	.long LDIFF_SYM1533
-Lfde562_start:
-
-	.long 0
-	.align 3
-	.quad L_m_bd
-
-LDIFF_SYM1534=Lme_bd - L_m_bd
-	.long LDIFF_SYM1534
 	.long 0
 	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
-Lfde562_end:
+Lfde561_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -69326,21 +69251,57 @@ Lfde562_end:
 
 	.byte 0,0
 	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_delegate_ctor_interp"
+	.quad L_m_bd
+	.quad Lme_bd
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1532=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1532
+	.byte 3,119,192,0,3
+	.asciz "param1"
+
+LDIFF_SYM1533=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1533
+	.byte 3,119,200,0,3
+	.asciz "param2"
+
+LDIFF_SYM1534=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1534
+	.byte 1,95,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1535=Lfde562_end - Lfde562_start
+	.long LDIFF_SYM1535
+Lfde562_start:
+
+	.long 0
+	.align 3
+	.quad L_m_bd
+
+LDIFF_SYM1536=Lme_bd - L_m_bd
+	.long LDIFF_SYM1536
+	.long 0
+	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
+	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
+	.align 3
+Lfde562_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_string_from_utf16"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_string_from_utf16_intptr"
+
+	.byte 0,0
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_string_from_utf16"
 	.quad L_m_be
 	.quad Lme_be
 
 	.byte 2,118,16,3
 	.asciz "param0"
-
-LDIFF_SYM1535=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1535
-	.byte 3,119,192,0,3
-	.asciz "param1"
-
-LDIFF_SYM1536=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1536
-	.byte 3,119,200,0,3
-	.asciz "param2"
 
 LDIFF_SYM1537=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1537
@@ -69359,7 +69320,7 @@ Lfde563_start:
 LDIFF_SYM1539=Lme_be - L_m_be
 	.long LDIFF_SYM1539
 	.long 0
-	.byte 68,14,96,74,134,6,68,131,12,69,140,11,69,141,10,69,142,9,69,143,8,10,8,6,68,8,3,69,8,12,69,8
+	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
 Lfde563_end:
@@ -69367,18 +69328,18 @@ Lfde563_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_string_from_utf16"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_string_from_utf16_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_string_to_utf8"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_string_to_utf8_object"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_string_from_utf16"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_string_to_utf8"
 	.quad L_m_bf
 	.quad Lme_bf
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1540=LDIE_I - Ldebug_info_start
+LDIFF_SYM1540=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM1540
 	.byte 1,95,0
 
@@ -69403,18 +69364,18 @@ Lfde564_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_string_to_utf8"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_mono_string_to_utf8_object"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_object_new"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_object_new_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_mono_string_to_utf8"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_object_new"
 	.quad L_m_c0
 	.quad Lme_c0
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1543=LDIE_OBJECT - Ldebug_info_start
+LDIFF_SYM1543=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1543
 	.byte 1,95,0
 
@@ -69439,11 +69400,11 @@ Lfde565_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_object_new"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_object_new_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_object_new_specific"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_object_new_specific_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_object_new"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_object_new_specific"
 	.quad L_m_c1
 	.quad Lme_c1
 
@@ -69475,11 +69436,11 @@ Lfde566_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_object_new_specific"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_object_new_specific_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_runtime_class_init"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_runtime_class_init_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_object_new_specific"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_runtime_class_init"
 	.quad L_m_c2
 	.quad Lme_c2
 
@@ -69511,18 +69472,18 @@ Lfde567_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_runtime_class_init"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_runtime_class_init_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_string_alloc"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_string_alloc_int"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_runtime_class_init"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_string_alloc"
 	.quad L_m_c3
 	.quad Lme_c3
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1552=LDIE_I - Ldebug_info_start
+LDIFF_SYM1552=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1552
 	.byte 1,95,0
 
@@ -69547,18 +69508,18 @@ Lfde568_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_string_alloc"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_string_alloc_int"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_string_new_wrapper"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_string_new_wrapper_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_string_alloc"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_string_new_wrapper"
 	.quad L_m_c4
 	.quad Lme_c4
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM1555=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1555=LDIE_I - Ldebug_info_start
 	.long LDIFF_SYM1555
 	.byte 1,95,0
 
@@ -69583,33 +69544,28 @@ Lfde569_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_string_new_wrapper"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_string_new_wrapper_intptr"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_thread_finish_async_abort"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_thread_finish_async_abort"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_string_new_wrapper"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_thread_finish_async_abort"
 	.quad L_m_c5
 	.quad Lme_c5
 
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1558=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1558
-	.byte 1,95,0
+	.byte 2,118,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1559=Lfde570_end - Lfde570_start
-	.long LDIFF_SYM1559
+LDIFF_SYM1558=Lfde570_end - Lfde570_start
+	.long LDIFF_SYM1558
 Lfde570_start:
 
 	.long 0
 	.align 3
 	.quad L_m_c5
 
-LDIFF_SYM1560=Lme_c5 - L_m_c5
-	.long LDIFF_SYM1560
+LDIFF_SYM1559=Lme_c5 - L_m_c5
+	.long LDIFF_SYM1559
 	.long 0
 	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
@@ -69619,15 +69575,20 @@ Lfde570_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_thread_finish_async_abort"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_ves_icall_thread_finish_async_abort"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_lookup_pinvoke"
+	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_lookup_pinvoke_intptr"
 
 	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_ves_icall_thread_finish_async_abort"
+	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_lookup_pinvoke"
 	.quad L_m_c6
 	.quad Lme_c6
 
-	.byte 2,118,16,0
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM1560=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1560
+	.byte 1,95,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -69646,42 +69607,6 @@ LDIFF_SYM1562=Lme_c6 - L_m_c6
 	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
 	.align 3
 Lfde571_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_lookup_pinvoke"
-	.asciz "wrapper_managed_to_native_object___icall_wrapper_mono_marshal_lookup_pinvoke_intptr"
-
-	.byte 0,0
-	.asciz "(wrapper_managed-to-native)_object:__icall_wrapper_mono_marshal_lookup_pinvoke"
-	.quad L_m_c7
-	.quad Lme_c7
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM1563=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1563
-	.byte 1,95,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1564=Lfde572_end - Lfde572_start
-	.long LDIFF_SYM1564
-Lfde572_start:
-
-	.long 0
-	.align 3
-	.quad L_m_c7
-
-LDIFF_SYM1565=Lme_c7 - L_m_c7
-	.long LDIFF_SYM1565
-	.long 0
-	.byte 68,14,80,74,134,4,68,131,10,69,140,9,69,141,8,69,142,7,69,143,6,10,8,6,68,8,3,69,8,12,69,8
-	.byte 13,69,8,14,69,8,15,68,12,7,8,65,11
-	.align 3
-Lfde572_end:
 
 .section __DWARF, __debug_info,regular,debug
 

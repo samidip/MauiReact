@@ -16,6 +16,9 @@
     <_LinkerFrameworks Include="AdSupport">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="AppClip">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="AppKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
@@ -106,6 +109,9 @@
     <_LinkerFrameworks Include="CoreSpotlight">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="CoreTelephony">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="CoreText">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
@@ -116,6 +122,9 @@
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="EventKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="EventKitUI">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="ExternalAccessory">
@@ -136,10 +145,19 @@
     <_LinkerFrameworks Include="GameplayKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="HealthKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="HealthKitUI">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="HomeKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="IdentityLookup">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="IdentityLookupUI">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="ImageIO">
@@ -173,6 +191,12 @@
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="MediaToolbox">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="Messages">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="MessageUI">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="Metal">
@@ -292,10 +316,19 @@
     <_LinkerFrameworks Include="Vision">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="VisionKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="WebKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="AdServices">
+      <IsWeak>true</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="CoreLocationUI">
+      <IsWeak>true</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="CoreNFC">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="CoreWLAN">
